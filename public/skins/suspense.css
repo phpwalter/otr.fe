@@ -1,0 +1,25 @@
+/* Independent suspense presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#090807;color:#f3dfc5;font-family:Georgia,serif}
+.header{background:#0b0d11;border-bottom:2px solid #c52017;position:absolute;left:0;top:0;bottom:0;width:165px;display:block;padding:35px 20px;}
+.header nav{display:flex;flex-direction:column;gap:21px;margin-top:45px;}
+.header a{color:#f3dfc5}.header a.active{color:#c52017}
+.masthead{font-size:13px;line-height:2}
+.canvas{margin-left:165px;grid-template-columns:2.15fr 1fr;grid-template-areas:"hero hero" "cards featured" "about about";gap:15px;padding:10px}
+.hero{min-height:610px;border:1px solid #493728}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/suspense-hero.webp')}
+.hero-copy{padding:78px 65px;max-width:100%}
+.hero h1{font-family:Georgia,serif;font-style:italic;font-size:115px;color:#c52017;text-shadow:3px 4px #000}
+.tagline{color:#fff0ce}
+.hero-link{background:#c52017;color:#fff5de}
+.featured{border:2px solid #c52017;background:#100e0e;color:#f3dfc5;align-self:start;}
+.anniversary-number{color:#c52017}
+.featured-art{background-image:url('/art/suspense-card.webp')}
+.player button{border-color:#c52017;color:#c52017}
+.player input{accent-color:#c52017}
+.cards{grid-template-columns:repeat(2,1fr);align-self:start}
+.archive-card{background:#131b21;color:#f3dfc5;border:1px solid #c52017}
+.archive-card .card-image{background-image:url('/art/suspense-hero.webp')}
+.archive-card h2{color:#c52017}
+.about{border-top:1px solid #c52017}
+.footer{color:#f3dfc5;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
