@@ -48,7 +48,7 @@
   grid-template-columns:25% 25% 50%;
   grid-template-rows:1fr;
   gap:0;
-  padding:10px 10px 12px;
+  padding:14px 10px 12px;
   align-items:stretch;
   background:transparent url('/art/suspense/cards-panel.png') center / 100% 100% no-repeat;
   border:0;
