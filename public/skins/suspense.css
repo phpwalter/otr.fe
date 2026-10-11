@@ -1,43 +1,39 @@
-/* Suspense skin: 1448x1086 fixed desktop reconstruction; shared React DOM. */
-.site.skin-suspense{width:1448px;height:1086px;min-height:1086px;overflow:hidden;background:radial-gradient(ellipse at 72% 35%,#36312a,#14110f 40%,#060606 77%);color:#f4e8d7;font-family:Georgia,serif}
-.skin-suspense .header{z-index:7;position:absolute;top:0;left:0;width:203px;height:704px;background:linear-gradient(90deg,#070706 70%,#171310 98%);border:0;border-right:1px solid #2c2722;display:block;padding:32px 22px 0 52px}
-.skin-suspense .masthead{font:normal 22px/1.5 Georgia,serif;letter-spacing:1px;width:140px;text-align:center;margin-left:-14px;color:#eadbcb}
-.skin-suspense .masthead:after{content:'';display:block;background:#e7d0ab;width:60px;height:2px;margin:18px auto 0}
-.skin-suspense .header nav{display:flex;flex-direction:column;gap:29px;margin-top:65px}
-.skin-suspense .header nav a{color:#f6e4cc;font:normal 23px/1.25 Georgia,serif;letter-spacing:1px}
-.skin-suspense .header nav a.active{color:#f22c22;border-bottom:3px solid #ed2e22;width:max-content;padding-bottom:6px}
+/* Suspense: one shared React DOM, standalone desktop CSS skin. */
+.site.skin-suspense{position:relative;width:1448px;height:1086px;min-height:1086px;overflow:hidden;background:#090807 url('/art/suspense/hero.png') center/cover no-repeat;color:#f4e8d2;font-family:Georgia,serif}
+.skin-suspense .header{position:absolute;z-index:4;left:0;top:0;width:200px;height:755px;border:0;background:transparent;display:block;padding:0}
+.skin-suspense .masthead{display:none}
+.skin-suspense .header nav{position:absolute;left:50px;top:219px;display:flex;flex-direction:column;align-items:flex-start;gap:28px;margin:0}
+.skin-suspense .header nav a{font:normal 24px/1 Georgia,serif;letter-spacing:.4px;color:#f2e7d7;text-transform:uppercase;text-shadow:1px 2px 3px #000}
+.skin-suspense .header nav a.active{color:#ff3428;padding-bottom:10px;border-bottom:3px solid #ff3327}
 .skin-suspense .canvas{display:block;margin:0;padding:0}
-.skin-suspense .hero{position:absolute;top:0;left:203px;width:1245px;height:707px;min-height:0;border:0;overflow:hidden;background:radial-gradient(ellipse at 33% 50%,#3f3a32,#1e1b17 48%,#0b0907 85%)}
-.skin-suspense .hero-art{position:absolute;inset:0;background-image:linear-gradient(90deg,#11100e,transparent 29%),url('/art/suspense-hero.webp');background-size:100% 100%,auto 100%;background-position:center,right top;background-repeat:no-repeat}
-.skin-suspense .hero-copy{z-index:1;position:absolute;inset:0;padding:0;text-shadow:none}
-.skin-suspense .hero h1{position:absolute;top:31px;left:17px;width:770px;height:448px;margin:0;font-size:0;line-height:0;background:url('/art/suspense-logo.png') center/contain no-repeat;color:transparent;text-shadow:none}
-.skin-suspense .eyebrow{position:absolute;top:45px;left:125px;width:460px;transform:rotate(-7deg);font:italic 25px/1.15 Georgia,serif;text-align:center;color:#f1e1ce;letter-spacing:3px}
-.skin-suspense .tagline{position:absolute;top:317px;left:390px;width:360px;font:normal 25px/1.42 Georgia,serif;letter-spacing:2px;text-transform:uppercase;color:#f5e8d4}
-.skin-suspense .hero-link{display:none}
-.skin-suspense .cards,.skin-suspense .featured{position:absolute;top:704px;height:323px;border:0;background:linear-gradient(110deg,#f6e2c0,#ecd4b2 50%,#f1ddc1);color:#1e1511;box-shadow:inset 0 2px 4px #b99b72}
-.skin-suspense .cards{left:32px;width:671px;padding:19px 11px 16px 12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;border-radius:11px 0 0 9px;align-items:stretch}
-.skin-suspense .archive-card{position:relative;background:transparent;border:0;border-right:1px solid #cbb499;color:#15100e;text-align:center;padding:0 1px;min-height:0}
-.skin-suspense .archive-card .card-image{height:153px;background-size:cover;background-position:center;filter:sepia(.3) saturate(.8)}
-.skin-suspense .card-0 .card-image{background-image:url('/art/suspense-episodes.webp')}
-.skin-suspense .card-1 .card-image{background-image:url('/art/suspense-cast.webp')}
-.skin-suspense .archive-card h2{font:700 25px Georgia,serif;color:#8d0d0d;text-transform:uppercase;margin:14px 0 7px}
-.skin-suspense .archive-card p{font:19px/1.3 Georgia,serif;margin:0 15px}
-.skin-suspense .archive-card span{display:block;font-size:0;margin:18px auto 0;width:72px;border-bottom:2px solid #ae291e}
+.skin-suspense .hero{position:absolute;inset:0;min-height:0;background:transparent;border:0;pointer-events:none}
+.skin-suspense .hero-art,.skin-suspense .hero-copy{display:none}
+.skin-suspense .cards,.skin-suspense .featured{position:absolute;z-index:3;top:728px;height:300px;background:#efddbd;color:#221814;border:0;box-shadow:0 2px 6px #0504039c}
+.skin-suspense .cards{left:32px;width:678px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding:16px 10px;border-radius:9px 0 0 11px;background:linear-gradient(110deg,#f3e2c3,#ead2b0)}
+.skin-suspense .archive-card{border:0;border-right:1px solid #cbb59b;padding:0 9px;min-height:0;color:#251914;text-align:center;background:transparent;display:block}
+.skin-suspense .archive-card:nth-child(2){border-right:0}
 .skin-suspense .archive-card:nth-child(n+3){display:none}
-.skin-suspense .featured{left:703px;right:62px;top:704px;height:323px;padding:19px 17px 10px 0;border-radius:0 10px 9px 0;display:grid;grid-template-columns:300px 1fr;grid-template-rows:215px 52px;column-gap:15px}
-.skin-suspense .section-head{grid-column:2;grid-row:1;display:block;text-align:center;position:relative;height:80px}
-.skin-suspense .anniversary-number{font:700 0 Georgia;color:#a01416}
-.skin-suspense .section-head h2{font:700 30px Georgia;color:#9c1415;white-space:nowrap;margin:-3px 0 0}
-.skin-suspense .section-head h2:before{content:attr(data-years);font-weight:700}
-.skin-suspense .section-head time{font:23px Georgia,serif;color:#1b1716}
+.skin-suspense .archive-card .card-image{height:155px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:none}
+.skin-suspense .card-0 .card-image{background-image:url('/art/suspense/card-episodes.png')}
+.skin-suspense .card-1 .card-image{background-image:url('/art/suspense/card-cast.png')}
+.skin-suspense .archive-card h2{color:#961a16;font:bold 25px/1.1 Georgia,serif;text-transform:uppercase;margin:8px 0}
+.skin-suspense .archive-card p{font:18px/1.28 Georgia,serif;margin:0 10px}
+.skin-suspense .archive-card span{display:block;font-size:0;width:74px;border-bottom:2px solid #ad3225;margin:20px auto 0}
+.skin-suspense .featured{right:31px;width:707px;border-radius:0 11px 11px 0;padding:0;background:linear-gradient(90deg,#f3e2c3,#efe0c6)}
+.skin-suspense .featured-art{position:absolute;left:0;top:0;width:320px;height:300px;margin:0;background:url('/art/suspense/card-feature.png') left center/auto 300px no-repeat}
 .skin-suspense .featured-body{display:contents}
-.skin-suspense .featured-art{grid-column:1;grid-row:1/span 2;height:292px;margin:0;background:url('/art/suspense-featured.webp') center/cover no-repeat}
-.skin-suspense .featured-text{grid-column:2;grid-row:1;position:relative;padding-top:88px;text-align:center}
-.skin-suspense .featured-text h3{font:700 29px/1.1 Georgia,serif;color:#9d1215;margin:0 0 3px}
-.skin-suspense .featured-text .broadcast-label{font:13px Georgia,serif;letter-spacing:0;margin:0 0 3px}
-.skin-suspense .featured-text p:not(.broadcast-label){font:17px/1.31 Georgia,serif;margin:4px 2px}
-.skin-suspense .player{grid-column:2;grid-row:2;display:flex;align-self:end;gap:7px;margin:0}
-.skin-suspense .player button{border:0;background:#1f1d1c;color:#f8e1ba;width:43px;height:43px;min-width:43px}
-.skin-suspense .player input{accent-color:#222}
-.skin-suspense .player time{color:#211c1a}
+.skin-suspense .section-head{position:absolute;left:315px;right:8px;top:12px;display:block;text-align:center;height:76px}
+.skin-suspense .anniversary-number{font-size:0}
+.skin-suspense .section-head>div{display:block}
+.skin-suspense .section-head h2{color:#9e1915;font:bold 26px/1.05 Georgia,serif;margin:0;white-space:nowrap}
+.skin-suspense .section-head h2::before{content:attr(data-years);font:bold 35px/1 Georgia,serif;margin-right:8px}
+.skin-suspense .section-head time{display:block;margin-top:5px;font:20px Georgia,serif;color:#241712}
+.skin-suspense .featured-text{position:absolute;left:323px;right:15px;top:92px;text-align:center;color:#241712}
+.skin-suspense .featured-text h3{font:bold 27px/1.07 Georgia,serif;color:#9e1915;margin:0 0 5px}
+.skin-suspense .featured-text .broadcast-label{font:12px Georgia,serif;letter-spacing:.2px;margin:0 0 5px}
+.skin-suspense .featured-text p:not(.broadcast-label){font:16px/1.25 Georgia,serif;margin:3px auto;max-height:85px;overflow:hidden}
+.skin-suspense .player{position:absolute;left:305px;right:17px;bottom:12px;display:flex;gap:8px;align-items:center;margin:0}
+.skin-suspense .player button{width:44px;height:44px;min-width:44px;border:0;border-radius:50%;background:#1b1917;color:#f5d6a5}
+.skin-suspense .player input{accent-color:#2f2b27}
+.skin-suspense .player time{font:13px Georgia,serif;color:#271e16}
 .skin-suspense .about,.skin-suspense .footer{display:none}
