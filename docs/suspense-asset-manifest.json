@@ -1,60 +1,43 @@
 {
   "series": "suspense",
-  "referenceCanvas": {
+  "canvas": {
     "width": 1448,
     "height": 1086
   },
-  "assets": {
-    "/art/suspense-hero.webp": {
-      "role": "hero right-side photographic image",
-      "crop": [
-        919,
-        0,
-        1448,
-        700
-      ]
-    },
-    "/art/suspense-logo.png": {
-      "role": "transparent red brush title",
-      "crop": [
-        208,
-        29,
-        962,
-        473
-      ],
-      "extraction": "red saturation alpha mask"
-    },
-    "/art/suspense-episodes.webp": {
-      "role": "lower Episodes tile",
-      "crop": [
-        33,
-        722,
-        367,
-        874
-      ]
-    },
-    "/art/suspense-cast.webp": {
-      "role": "lower Cast tile",
-      "crop": [
-        395,
-        723,
-        694,
-        876
-      ]
-    },
-    "/art/suspense-featured.webp": {
-      "role": "featured episode illustration",
-      "crop": [
-        708,
-        721,
-        1007,
-        1016
-      ]
-    }
+  "background": {
+    "path": "/art/suspense/hero.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "fit": "cover",
+    "lettering": "embedded"
   },
-  "notes": [
-    "Artwork crops are extracted from the user-supplied flattened 1448x1086 mockup.",
-    "Text embedded in the original artwork may require repainting or regeneration.",
-    "Current source code expects these assets to exist at the specified paths."
-  ]
+  "panels": [
+    {
+      "path": "/art/suspense/card-episodes.png",
+      "size": [
+        325,
+        166
+      ],
+      "link": "episodes"
+    },
+    {
+      "path": "/art/suspense/card-cast.png",
+      "size": [
+        325,
+        166
+      ],
+      "link": "cast"
+    },
+    {
+      "path": "/art/suspense/card-feature.png",
+      "size": [
+        680,
+        308
+      ],
+      "role": "featured episode illustration with transparent region"
+    }
+  ],
+  "source": "Four user-supplied original assets, unaltered"
 }
