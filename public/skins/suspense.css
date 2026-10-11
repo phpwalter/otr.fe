@@ -9,7 +9,7 @@
 .skin-suspense .hero{position:absolute;inset:0;min-height:0;background:transparent;border:0;pointer-events:none}
 .skin-suspense .hero-art,.skin-suspense .hero-copy{display:none}
 .skin-suspense .cards,.skin-suspense .featured{position:absolute;z-index:3;top:728px;height:300px;background:#efddbd;color:#221814;border:0;box-shadow:0 2px 6px #0504039c}
-.skin-suspense .cards{left:32px;width:678px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding:16px 10px;border-radius:9px 0 0 11px;background:linear-gradient(110deg,#f3e2c3,#ead2b0)}
+.skin-suspense .cards{left:32px;width:678px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding:16px 10px;border-radius:9px 0 0 11px;background:transparent url('/art/suspense/cards-panel.png') center/100% 100% no-repeat;box-shadow:none;border-radius:0}
 .skin-suspense .archive-card{border:0;border-right:1px solid #cbb59b;padding:0 9px;min-height:0;color:#251914;text-align:center;background:transparent;display:block}
 .skin-suspense .archive-card:nth-child(2){border-right:0}
 .skin-suspense .archive-card:nth-child(n+3){display:none}
