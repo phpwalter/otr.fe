@@ -1,0 +1,25 @@
+/* Independent journey-into-space presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#071a2a;color:#fff0ca;font-family:Arial,serif}
+.header{background:#0b0d11;border-bottom:2px solid #ff482d;padding:15px 28px;}
+.header nav{display:flex;justify-content:center;gap:25px;}
+.header a{color:#fff0ca}.header a.active{color:#ff482d}
+.masthead{font-size:12px;white-space:nowrap}
+.canvas{grid-template-columns:2.15fr 1fr;grid-template-areas:"hero featured" "cards cards" "about about";gap:15px;padding:16px}
+.hero{min-height:555px;border:1px solid #493728}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/journey-into-space-hero.webp')}
+.hero-copy{padding:75px 45px;max-width:100%}
+.hero h1{font-family:Arial,serif;font-style:italic;font-size:115px;color:#ff482d;text-shadow:3px 4px #000}
+.tagline{color:#fff0ce}
+.hero-link{background:#ff482d;color:#fff5de}
+.featured{border:2px solid #ff482d;background:#100e0e;color:#fff0ca;}
+.anniversary-number{color:#ff482d}
+.featured-art{background-image:url('/art/journey-into-space-card.webp')}
+.player button{border-color:#ff482d;color:#ff482d}
+.player input{accent-color:#ff482d}
+.cards{grid-template-columns:repeat(5,1fr);align-self:start}
+.archive-card{background:#131b21;color:#fff0ca;border:1px solid #ff482d}
+.archive-card .card-image{background-image:url('/art/journey-into-space-hero.webp')}
+.archive-card h2{color:#ff482d}
+.about{border-top:1px solid #ff482d}
+.footer{color:#fff0ca;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
