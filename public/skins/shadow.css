@@ -2,10 +2,10 @@
 .site.skin-shadow{position:relative;width:1648px;height:928px;min-height:928px;overflow:hidden;background:#02070b;color:#efe7da;font-family:Georgia,serif}
 .skin-shadow .header{position:absolute;left:0;top:0;z-index:8;width:1280px;height:54px;padding:0 0 0 130px;background:linear-gradient(90deg,#01060bd9,#02080dc9);border:0;border-bottom:1px solid #655e4b;display:flex;align-items:center}
 .skin-shadow .masthead{display:none}
-.skin-shadow .header nav{display:flex;gap:53px;align-items:center;justify-content:flex-start}
+.skin-shadow .header nav{display:flex;gap:48px;align-items:center;justify-content:flex-start}
 .skin-shadow .header nav a{font:normal 17px/1 Arial,sans-serif;letter-spacing:1.4px;color:#f1e9dc;white-space:nowrap;text-transform:uppercase}
 .skin-shadow .header nav a.active{color:#ef2929;border-bottom:3px solid #f22;padding-bottom:13px;margin-top:16px}
-.skin-shadow .header nav a:nth-child(4),.skin-shadow .header nav a:nth-child(5){display:none}
+/* All seven Shadow top-navigation items remain visible. */
 .skin-shadow .canvas{display:block;margin:0;padding:0}
 .skin-shadow .hero{position:absolute;top:0;left:0;width:1280px;height:760px;min-height:0;border:0;overflow:hidden;background:#020910}
 .skin-shadow .hero-art{inset:0;background:url('/art/shadow/hero.png') center center / cover no-repeat}
