@@ -10,7 +10,7 @@
 .skin-xminus1 .x1-nav-link:hover:not(.is-active)::before{background:#e7ca9c}
 .skin-xminus1 .x1-nav-star{font-size:20px;line-height:1;color:inherit}
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
-.skin-xminus1 .x1-nav-planet{position:absolute;left:0;top:566px;width:193px;height:116px;background:url('/art/x-minus-1/nav.column.png') left bottom/193px 670px no-repeat;pointer-events:none}
+
 .skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1225px;height:534px;background:#f6e2b7 url('/art/x-minus-1/hero.png') center center/cover no-repeat}
 .skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:#090e17}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
