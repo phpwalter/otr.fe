@@ -18,7 +18,7 @@
 .skin-xminus1 .x1-feature-heading{position:relative;left:14px;top:26px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
 .skin-xminus1 .x1-feature-heading strong{color:#ffd059;font:bold 107px/.91 Impact,'Arial Narrow',sans-serif}
 .skin-xminus1 .x1-feature-heading h2{font:bold 37px/1 Impact,'Arial Narrow',sans-serif;margin:1px 0 10px;white-space:nowrap;color:#f7ead2}
-.skin-xminus1 .x1-feature-heading time{position:relative;top:65px;font:20px Georgia,serif;color:#fbe5b7;white-space:nowrap}
+.skin-xminus1 .x1-feature-heading time{position:relative;top:60px;font:20px Georgia,serif;color:#fbe5b7;white-space:nowrap}
 .skin-xminus1 .x1-feature-info{position:absolute;left:5px;top:124px;width:275px;bottom:50px;padding:0 5px;background:#07131ff2;overflow:hidden}
 .skin-xminus1 .x1-feature-info h3{box-sizing:border-box;width:335px;height:70px;font:bold 31px/1.05 Georgia,serif;margin:4px 0 12px;color:#f5ead6;overflow:hidden}
 .skin-xminus1 .x1-feature-info p{font:16px/1.24 Georgia,serif;margin:0;color:#f7ead4}
@@ -45,7 +45,7 @@
 /* Featured text overlay is transparent over the restored image. */
 .skin-xminus1 .x1-feature-live,.skin-xminus1 .x1-feature-heading,.skin-xminus1 .x1-feature-info{background:transparent}
 
-.skin-xminus1 .x1-feature-info{width:360px;overflow:visible}
+.skin-xminus1 .x1-feature-info{width:550px;overflow:visible}
 
 /* Center the date within its 206px heading column. */
 .skin-xminus1 .x1-feature-heading > div{width:206px;flex:0 0 206px;text-align:center}
