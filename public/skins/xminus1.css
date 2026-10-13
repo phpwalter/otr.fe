@@ -1,9 +1,9 @@
 /* X Minus One: fixed 1408 x 1056 reference layout, isolated from other skins. */
 .site.skin-xminus1{position:relative;width:1400px;height:1000px;min-height:1000px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
 .skin-xminus1 .x1-layout{position:relative;width:1400px;height:1000px;background:#f6e2b7}
-.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:945px;z-index:5;background:#f6e2b7;color:#171914}
+.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:885px;z-index:5;background:#f6e2b7;color:#171914}
 .skin-xminus1 .x1-nav-brand{position:absolute;left:0;top:0;width:193px;height:214px;background:url('/art/x-minus-1/nav.column.png') left top/193px 670px no-repeat}
-.skin-xminus1 .x1-nav-list{position:absolute;left:9px;top:217px;width:177px;display:flex;flex-direction:column;gap:4px}
+.skin-xminus1 .x1-nav-list{position:absolute;left:9px;top:187px;width:177px;display:flex;flex-direction:column;gap:4px}
 .skin-xminus1 .x1-nav-link{position:relative;display:flex;align-items:center;gap:12px;width:177px;height:47px;padding:0 14px 0 18px;color:#191c1c;font:700 16px/1 'Arial Narrow',Impact,sans-serif;letter-spacing:1.1px;text-transform:uppercase;isolation:isolate;cursor:pointer}
 .skin-xminus1 .x1-nav-link::before{content:'';position:absolute;inset:2px 1px;z-index:-1;background:transparent;clip-path:polygon(4% 12%,100% 0,94% 88%,0 100%);transition:background .15s ease}
 .skin-xminus1 .x1-nav-link.is-active{color:#fff7e9}
