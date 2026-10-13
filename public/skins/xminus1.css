@@ -1,10 +1,17 @@
 /* X Minus One: fixed 1408 x 1056 reference layout, isolated from other skins. */
 .site.skin-xminus1{position:relative;width:1400px;height:1000px;min-height:1000px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
 .skin-xminus1 .x1-layout{position:relative;width:1400px;height:1000px;background:#f6e2b7}
-.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:945px;z-index:5;background:url('/art/x-minus-1/nav.column.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-nav-link{display:block;position:absolute;left:14px;width:160px;height:48px;cursor:pointer}
-.skin-xminus1 .x1-nav-home{top:216px}.skin-xminus1 .x1-nav-episodes{top:274px}.skin-xminus1 .x1-nav-cast{top:324px}.skin-xminus1 .x1-nav-writers{top:375px}.skin-xminus1 .x1-nav-about{top:426px}.skin-xminus1 .x1-nav-gallery{top:476px}.skin-xminus1 .x1-nav-contact{top:527px}
+.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:945px;z-index:5;background:#f6e2b7;color:#171914}
+.skin-xminus1 .x1-nav-brand{position:absolute;left:0;top:0;width:193px;height:214px;background:url('/art/x-minus-1/nav.column.png') left top/193px 670px no-repeat}
+.skin-xminus1 .x1-nav-list{position:absolute;left:9px;top:217px;width:177px;display:flex;flex-direction:column;gap:4px}
+.skin-xminus1 .x1-nav-link{position:relative;display:flex;align-items:center;gap:12px;width:177px;height:47px;padding:0 14px 0 18px;color:#191c1c;font:700 16px/1 'Arial Narrow',Impact,sans-serif;letter-spacing:1.1px;text-transform:uppercase;isolation:isolate;cursor:pointer}
+.skin-xminus1 .x1-nav-link::before{content:'';position:absolute;inset:2px 1px;z-index:-1;background:transparent;clip-path:polygon(4% 12%,100% 0,94% 88%,0 100%);transition:background .15s ease}
+.skin-xminus1 .x1-nav-link.is-active{color:#fff7e9}
+.skin-xminus1 .x1-nav-link.is-active::before{background:#a52518}
+.skin-xminus1 .x1-nav-link:hover:not(.is-active)::before{background:#e7ca9c}
+.skin-xminus1 .x1-nav-star{font-size:20px;line-height:1;color:inherit}
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
+.skin-xminus1 .x1-nav-planet{position:absolute;left:0;top:566px;width:193px;height:116px;background:url('/art/x-minus-1/nav.column.png') left bottom/193px 670px no-repeat;pointer-events:none}
 .skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1225px;height:534px;background:#f6e2b7 url('/art/x-minus-1/hero.png') center center/cover no-repeat}
 .skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:#090e17}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
