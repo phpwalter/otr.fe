@@ -6,7 +6,7 @@
 .skin-xminus1 .x1-nav-home{top:216px}.skin-xminus1 .x1-nav-episodes{top:274px}.skin-xminus1 .x1-nav-cast{top:324px}.skin-xminus1 .x1-nav-writers{top:375px}.skin-xminus1 .x1-nav-about{top:426px}.skin-xminus1 .x1-nav-gallery{top:476px}.skin-xminus1 .x1-nav-contact{top:527px}
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
 .skin-xminus1 .x1-hero{position:absolute;left:179px;top:0;width:1229px;height:534px;background:#061c2a url('/art/x-minus-1/hero.png') center center/cover no-repeat}
-.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:410px;z-index:2;overflow:hidden;background:#090e17}
+.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:#090e17}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{position:absolute;inset:12px 18px 8px 17px;color:#fff0c9}
 .skin-xminus1 .x1-feature-heading{display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
@@ -22,8 +22,11 @@
 .skin-xminus1 .player time{color:#e7d7b4}
 .skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/x-minus-1/card.about.png') top left/100% 100% no-repeat}
 .skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/x-minus-1/card.creator.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-starfield{position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/x-minus-1/bottom.row.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-starfield{z-index:0;position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/x-minus-1/bottom.row.png') center center/100% 100% no-repeat}
 
 /* Temporarily display a blank FEATURE card: the source artwork includes baked-in text. */
-.skin-xminus1 .x1-feature-art{background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-feature-art{background:url('/art/x-minus-1/card.feature.png') center center/contain no-repeat}
 .skin-xminus1 .x1-feature-live{display:none}
+
+/* All content regions sit above the decorative starfield. */
+.skin-xminus1 .x1-hero,.skin-xminus1 .x1-about,.skin-xminus1 .x1-creators{z-index:1}
