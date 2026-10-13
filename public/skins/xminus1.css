@@ -36,3 +36,8 @@
 
 /* All content regions sit above the decorative starfield. */
 .skin-xminus1 .x1-hero,.skin-xminus1 .x1-about,.skin-xminus1 .x1-creators{z-index:1}
+
+/* Text-only feature overlay preview: suppress baked-in background artwork and controls. */
+.skin-xminus1 .x1-feature-art{display:none}
+.skin-xminus1 .x1-feature-live{display:block}
+.skin-xminus1 .x1-feature .player{display:none}
