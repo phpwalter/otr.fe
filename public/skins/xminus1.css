@@ -38,6 +38,9 @@
 .skin-xminus1 .x1-hero,.skin-xminus1 .x1-about,.skin-xminus1 .x1-creators{z-index:1}
 
 /* Text-only feature overlay preview: suppress baked-in background artwork and controls. */
-.skin-xminus1 .x1-feature-art{display:none}
+.skin-xminus1 .x1-feature-art{display:block}
 .skin-xminus1 .x1-feature-live{display:block}
 .skin-xminus1 .x1-feature .player{display:none}
+
+/* Featured text overlay is transparent over the restored image. */
+.skin-xminus1 .x1-feature-live,.skin-xminus1 .x1-feature-heading,.skin-xminus1 .x1-feature-info{background:transparent}
