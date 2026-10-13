@@ -23,3 +23,7 @@
 .skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/x-minus-1/card.about.png') top left/100% 100% no-repeat}
 .skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/x-minus-1/card.creator.png') top left/100% 100% no-repeat}
 .skin-xminus1 .x1-starfield{position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/x-minus-1/bottom.row.png') center center/100% 100% no-repeat}
+
+/* Temporarily display a blank FEATURE card: the source artwork includes baked-in text. */
+.skin-xminus1 .x1-feature-art{background:#090e17}
+.skin-xminus1 .x1-feature-live{display:none}
