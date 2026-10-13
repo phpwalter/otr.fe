@@ -1,0 +1,25 @@
+/* X Minus One: fixed 1408 x 1056 reference layout, isolated from other skins. */
+.site.skin-xminus1{position:relative;width:1408px;height:1056px;min-height:1056px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
+.skin-xminus1 .x1-layout{position:relative;width:1408px;height:1056px;background:#f6e2b7}
+.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:945px;z-index:5;background:url('/art/x-minus-1/nav.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-nav-link{display:block;position:absolute;left:14px;width:160px;height:48px;cursor:pointer}
+.skin-xminus1 .x1-nav-home{top:216px}.skin-xminus1 .x1-nav-episodes{top:274px}.skin-xminus1 .x1-nav-cast{top:324px}.skin-xminus1 .x1-nav-writers{top:375px}.skin-xminus1 .x1-nav-about{top:426px}.skin-xminus1 .x1-nav-gallery{top:476px}.skin-xminus1 .x1-nav-contact{top:527px}
+.skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
+.skin-xminus1 .x1-hero{position:absolute;left:179px;top:0;width:1229px;height:534px;background:#061c2a url('/art/x-minus-1/hero.png') center center/cover no-repeat}
+.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:392px;overflow:hidden;background:#090e17}
+.skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-feature-live{position:absolute;inset:12px 18px 8px 17px;color:#fff0c9}
+.skin-xminus1 .x1-feature-heading{display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
+.skin-xminus1 .x1-feature-heading strong{color:#ffd059;font:bold 107px/.91 Impact,'Arial Narrow',sans-serif}
+.skin-xminus1 .x1-feature-heading h2{font:bold 37px/1 Impact,'Arial Narrow',sans-serif;margin:1px 0 10px;white-space:nowrap;color:#f7ead2}
+.skin-xminus1 .x1-feature-heading time{font:20px Georgia,serif;color:#fbe5b7;white-space:nowrap}
+.skin-xminus1 .x1-feature-info{position:absolute;left:5px;top:124px;width:275px;bottom:50px;padding:0 5px;background:#07131ff2;overflow:hidden}
+.skin-xminus1 .x1-feature-info h3{font:bold 31px/1.05 Georgia,serif;margin:4px 0 12px;color:#f5ead6}
+.skin-xminus1 .x1-feature-info p{font:16px/1.24 Georgia,serif;margin:0;color:#f7ead4}
+.skin-xminus1 .player{position:absolute;bottom:1px;left:5px;right:5px;min-height:49px;margin:0;padding:4px 7px;background:#0b1119ef;border:1px solid #b59d71;border-radius:12px;display:flex;gap:10px;z-index:3}
+.skin-xminus1 .player button{background:#bb2420;color:#fff;border:2px solid #f7e0a0;height:44px;min-width:44px;border-radius:50%}
+.skin-xminus1 .player input{accent-color:#b92521}
+.skin-xminus1 .player time{color:#e7d7b4}
+.skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/x-minus-1/card.about.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/x-minus-1/card.creator.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-starfield{position:absolute;left:12px;top:944px;width:1384px;height:112px;background:#061b27 url('/art/x-minus-1/bottom.png') center center/cover no-repeat}
