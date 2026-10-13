@@ -6,7 +6,7 @@
 .skin-xminus1 .x1-nav-home{top:216px}.skin-xminus1 .x1-nav-episodes{top:274px}.skin-xminus1 .x1-nav-cast{top:324px}.skin-xminus1 .x1-nav-writers{top:375px}.skin-xminus1 .x1-nav-about{top:426px}.skin-xminus1 .x1-nav-gallery{top:476px}.skin-xminus1 .x1-nav-contact{top:527px}
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
 .skin-xminus1 .x1-hero{position:absolute;left:179px;top:0;width:1229px;height:534px;background:#061c2a url('/art/x-minus-1/hero.png') center center/cover no-repeat}
-.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:392px;overflow:hidden;background:#090e17}
+.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:380px;overflow:hidden;background:#090e17}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{position:absolute;inset:12px 18px 8px 17px;color:#fff0c9}
 .skin-xminus1 .x1-feature-heading{display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
