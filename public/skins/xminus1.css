@@ -1,6 +1,6 @@
 /* X Minus One: fixed 1408 x 1056 reference layout, isolated from other skins. */
-.site.skin-xminus1{position:relative;width:1400px;height:1056px;min-height:1056px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
-.skin-xminus1 .x1-layout{position:relative;width:1400px;height:1056px;background:#f6e2b7}
+.site.skin-xminus1{position:relative;width:1400px;height:1000px;min-height:1000px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
+.skin-xminus1 .x1-layout{position:relative;width:1400px;height:1000px;background:#f6e2b7}
 .skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:945px;z-index:5;background:url('/art/x-minus-1/nav.png') top left/100% 100% no-repeat}
 .skin-xminus1 .x1-nav-link{display:block;position:absolute;left:14px;width:160px;height:48px;cursor:pointer}
 .skin-xminus1 .x1-nav-home{top:216px}.skin-xminus1 .x1-nav-episodes{top:274px}.skin-xminus1 .x1-nav-cast{top:324px}.skin-xminus1 .x1-nav-writers{top:375px}.skin-xminus1 .x1-nav-about{top:426px}.skin-xminus1 .x1-nav-gallery{top:476px}.skin-xminus1 .x1-nav-contact{top:527px}
@@ -22,4 +22,4 @@
 .skin-xminus1 .player time{color:#e7d7b4}
 .skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/x-minus-1/card.about.png') top left/100% 100% no-repeat}
 .skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/x-minus-1/card.creator.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-starfield{position:absolute;left:0;top:944px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/x-minus-1/bottom.row.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-starfield{position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/x-minus-1/bottom.row.png') center center/100% 100% no-repeat}
