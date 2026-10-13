@@ -15,7 +15,7 @@
 .skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:#090e17}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{position:absolute;inset:-6px 18px 26px 17px;color:#fff0c9}
-.skin-xminus1 .x1-feature-heading{position:relative;left:16px;top:8px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
+.skin-xminus1 .x1-feature-heading{position:relative;left:14px;top:28px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
 .skin-xminus1 .x1-feature-heading strong{color:#ffd059;font:bold 107px/.91 Impact,'Arial Narrow',sans-serif}
 .skin-xminus1 .x1-feature-heading h2{font:bold 37px/1 Impact,'Arial Narrow',sans-serif;margin:1px 0 10px;white-space:nowrap;color:#f7ead2}
 .skin-xminus1 .x1-feature-heading time{position:relative;top:65px;font:20px Georgia,serif;color:#fbe5b7;white-space:nowrap}
@@ -45,4 +45,4 @@
 /* Featured text overlay is transparent over the restored image. */
 .skin-xminus1 .x1-feature-live,.skin-xminus1 .x1-feature-heading,.skin-xminus1 .x1-feature-info{background:transparent}
 
-.skin-xminus1 .x1-feature-info{width:345px;overflow:visible}
+.skin-xminus1 .x1-feature-info{width:360px;overflow:visible}
