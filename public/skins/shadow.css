@@ -12,7 +12,7 @@
 .skin-shadow .hero-copy{display:none}
 .skin-shadow .shadow-side{position:absolute;right:0;top:0;width:368px;height:708px;z-index:5;background:#02070b url('/art/shadow/nav.panel.background.png') center/100% 100% no-repeat}
 .skin-shadow .shadow-intro{height:214px;width:100%;background:url('/art/shadow/nav.panel.background.png') top center/100% auto no-repeat}
-.skin-shadow .shadow-side-links{position:absolute;left:24px;right:21px;top:220px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,73px);row-gap:9px}
+.skin-shadow .shadow-side-links{position:absolute;left:24px;right:21px;top:220px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(5,73px);row-gap:9px}
 .skin-shadow .shadow-side-links a{display:block;width:100%;height:73px;background-position:center;background-size:100% 100%;background-repeat:no-repeat}
 .skin-shadow .cards{position:absolute;top:775px;left:25px;width:1037px;height:140px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;padding:0;background:none;border:0;box-shadow:none}
 .skin-shadow .cards>.shadow-card{display:block;min-width:0;min-height:0;width:100%;height:140px;padding:0;margin:0;border:0;background:transparent;overflow:hidden}
