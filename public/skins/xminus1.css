@@ -60,4 +60,4 @@
 
 /* Let the play/pause disc protrude beyond the audio bar without clipping it. */
 .skin-xminus1 .x1-feature .player{overflow:visible;padding-left:24px}
-.skin-xminus1 .x1-feature .player button:first-of-type{position:absolute;left:-44px;top:50%;transform:translateY(-50%);margin-right:0;z-index:7}
+.skin-xminus1 .x1-feature .player button:first-of-type{position:absolute;left:-44px;top:50%;transform:translateY(-50%);margin-right:0;z-index:7;opacity:1}
