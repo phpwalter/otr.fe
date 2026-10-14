@@ -39,6 +39,7 @@
 
 /* Text-only feature overlay preview: suppress baked-in background artwork and controls. */
 .skin-xminus1 .x1-feature-art{display:block}
+.skin-xminus1 .x1-feature-art{opacity:.5}
 .skin-xminus1 .x1-feature-live{display:block}
 .skin-xminus1 .x1-feature .player{display:flex}
 
