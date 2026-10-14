@@ -12,7 +12,7 @@
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
 
 .skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1225px;height:534px;background:#f6e2b7 url('/art/x-minus-1/hero.png') center center/cover no-repeat}
-.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:#090e17}
+.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:transparent}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{position:absolute;inset:-6px 18px 26px 17px;color:#fff0c9}
 .skin-xminus1 .x1-feature-heading{position:relative;left:14px;top:26px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
@@ -59,4 +59,4 @@
 
 /* Let the play/pause disc protrude beyond the audio bar without clipping it. */
 .skin-xminus1 .x1-feature .player{overflow:visible;padding-left:24px}
-.skin-xminus1 .x1-feature .player button:first-of-type{position:absolute;left:-44px;top:50%;transform:translateY(-50%);margin-right:0;z-index:7}
+.skin-xminus1 .x1-feature .player button:first-of-type{position:absolute;left:-64px;top:50%;transform:translateY(-50%);margin-right:0;z-index:7}
