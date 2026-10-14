@@ -53,10 +53,10 @@
 
 /* X Minus One radio dial — reference-style functional playback strip. */
 .skin-xminus1 .x1-feature .player{position:absolute;left:50%;right:auto;transform:translateX(-50%);width:530px;bottom:0px;height:46px;min-height:46px;padding:4px 12px;display:flex;align-items:center;gap:18px;background:transparent;border:0;border-radius:0;z-index:6;box-shadow:none}
-.skin-xminus1 .x1-feature .player button:first-of-type{width:40.67px;min-width:40.67px;height:40.67px;background:#c52620;border:2px solid #f6dca6;border-radius:50%;font:bold 26px Arial,sans-serif;color:#fff}
+.skin-xminus1 .x1-feature .player button:first-of-type{width:40.67px;min-width:40.67px;height:40.67px;background:#c52620;border:2px solid #f6dca6;border-radius:50%;font:bold 20.8px Arial,sans-serif;color:#fff}
 .skin-xminus1 .x1-feature .player input[type="range"]{height:8px;min-width:0;flex:1;accent-color:#d42a25;cursor:pointer}
 .skin-xminus1 .x1-feature .player time{color:#f6e9c6;font:17px Georgia,serif;white-space:nowrap}
-.skin-xminus1 .x1-feature .player button:not(:first-of-type){width:40.67px;min-width:40.67px;height:40.67px;border:2px solid #f6dca6;border-radius:50%;background:#c52620;color:#fff;font-size:26px;opacity:.99;position:relative;left:18px}
+.skin-xminus1 .x1-feature .player button:not(:first-of-type){width:40.67px;min-width:40.67px;height:40.67px;border:2px solid #f6dca6;border-radius:50%;background:#c52620;color:#fff;font-size:20.8px;opacity:.99;position:relative;left:18px}
 
 /* Let the play/pause disc protrude beyond the audio bar without clipping it. */
 .skin-xminus1 .x1-feature .player{overflow:visible;padding-left:72px}
