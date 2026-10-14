@@ -66,6 +66,6 @@
 .skin-xminus1 .x1-feature .player input[type="range"]{align-self:center;margin-top:0;margin-bottom:0}
 
 /* X Minus One: playback clock immediately below and right-aligned with seek bar. */
-.skin-xminus1 .x1-feature .player .x1-progress-group{display:flex;flex:1;min-width:0;flex-direction:column;justify-content:center;gap:2px;align-self:center}
+.skin-xminus1 .x1-feature .player .x1-progress-group{display:flex;flex:1;min-width:0;flex-direction:column;justify-content:center;gap:2px;align-self:center;transform:translateY(8px)}
 .skin-xminus1 .x1-feature .player .x1-progress-group input[type="range"]{display:block;width:100%;flex:none;margin:0}
 .skin-xminus1 .x1-feature .player .x1-progress-group time{display:block;text-align:right;font:13px/1.1 Georgia,serif;margin:0;color:#f6e9c6}
