@@ -60,7 +60,7 @@
 
 /* Let the play/pause disc protrude beyond the audio bar without clipping it. */
 .skin-xminus1 .x1-feature .player{overflow:visible;padding-left:72px}
-.skin-xminus1 .x1-feature .player button:first-of-type{position:absolute;left:-24px;top:50%;transform:translate(36px,-50%);margin-right:0;z-index:7;opacity:1}
+.skin-xminus1 .x1-feature .player button:first-of-type{position:absolute;left:-24px;top:50%;transform:translate(44px,-50%);margin-right:0;z-index:7;opacity:1}
 
 /* Keep the progress bar opposite the center of the protruding Play button. */
 .skin-xminus1 .x1-feature .player input[type="range"]{align-self:center;margin-top:0;margin-bottom:0}
