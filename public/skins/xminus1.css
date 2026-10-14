@@ -56,7 +56,7 @@
 .skin-xminus1 .x1-feature .player button:first-of-type{width:40.67px;min-width:40.67px;height:40.67px;background:#c52620;border:2px solid #f6dca6;border-radius:50%;font:bold 20.8px Arial,sans-serif;color:#fff}
 .skin-xminus1 .x1-feature .player input[type="range"]{height:8px;min-width:0;flex:1;accent-color:#d42a25;cursor:pointer}
 .skin-xminus1 .x1-feature .player time{color:#f6e9c6;font:17px Georgia,serif;white-space:nowrap}
-.skin-xminus1 .x1-feature .player button:not(:first-of-type){width:40.67px;min-width:40.67px;height:40.67px;border:2px solid #f6dca6;border-radius:50%;background:#c52620;color:#fff;font-size:20.8px;opacity:.99;position:relative;left:18px}
+.skin-xminus1 .x1-feature .player button:not(:first-of-type){width:40.67px;min-width:40.67px;height:40.67px;border:0;border-radius:0;background:transparent;color:#fff;font-size:20.8px;opacity:.99;position:relative;left:33px;top:-6px;box-shadow:none}
 
 /* Let the play/pause disc protrude beyond the audio bar without clipping it. */
 .skin-xminus1 .x1-feature .player{overflow:visible;padding-left:72px}
@@ -67,5 +67,5 @@
 
 /* X Minus One: playback clock immediately below and right-aligned with seek bar. */
 .skin-xminus1 .x1-feature .player .x1-progress-group{display:flex;flex:1;min-width:0;flex-direction:column;justify-content:center;gap:2px;align-self:center;transform:translateY(8px);margin-left:-15px;margin-right:-15px}
-.skin-xminus1 .x1-feature .player .x1-progress-group input[type="range"]{display:block;width:100%;flex:none;margin:0}
+.skin-xminus1 .x1-feature .player .x1-progress-group input[type="range"]{display:block;width:calc(100% - 15px);height:7.2px;flex:none;margin:0 7.5px;position:relative;top:-3px}
 .skin-xminus1 .x1-feature .player .x1-progress-group time{display:block;text-align:right;font:13px/1.1 Georgia,serif;margin:0;color:#f6e9c6}
