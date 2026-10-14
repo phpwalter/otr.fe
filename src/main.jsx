@@ -1,4 +1,4 @@
-import React,{useEffect,useRef,useState} from 'react';
+import React,{useEffect,useState} from 'react';
 import{createRoot}from'react-dom/client';
 import{shows,slugs,currentSlug}from './series';
 import{getLanding,preview}from './api';
