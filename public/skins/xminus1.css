@@ -56,7 +56,7 @@
 .skin-xminus1 .x1-feature .player button:first-of-type{width:61px;min-width:61px;height:61px;background:#c52620;border:2px solid #f6dca6;border-radius:50%;font:bold 26px Arial,sans-serif;color:#fff}
 .skin-xminus1 .x1-feature .player input[type="range"]{height:8px;min-width:0;flex:1;accent-color:#d42a25;cursor:pointer}
 .skin-xminus1 .x1-feature .player time{color:#f6e9c6;font:17px Georgia,serif;white-space:nowrap}
-.skin-xminus1 .x1-feature .player button:last-of-type{width:53px;min-width:53px;height:37px;border:0;border-left:1px solid #776d5c;border-radius:0;background:transparent;color:#fff;font-size:23px}
+.skin-xminus1 .x1-feature .player button:not(:first-of-type){width:53px;min-width:53px;height:37px;border:0;border-left:1px solid #776d5c;border-radius:0;background:transparent;color:#fff;font-size:23px}
 
 /* Let the play/pause disc protrude beyond the audio bar without clipping it. */
 .skin-xminus1 .x1-feature .player{overflow:visible;padding-left:72px}
