@@ -5,6 +5,7 @@ export const shows={
 'sherlock-holmes':['Sherlock Holmes','THE WORLD’S GREATEST DETECTIVE COMES TO RADIO',75],
 'inner-sanctum':['Inner Sanctum Mysteries','MYSTERY… SUSPENSE… THE UNEXPECTED…',75],
 'x-minus-one':['X Minus One','SCIENCE FICTION ON THE AIR',75],
+'xminus1':['X Minus One','SCIENCE FICTION ON THE AIR',75],
 'dimension-x':['Dimension X','DRAMAS OF TOMORROW’S WORLDS',75],
 'journey-into-space':['Journey Into Space','BOLD ADVENTURES IN THE UNKNOWN',75],
 'buck-rogers':['Buck Rogers','IN THE 25TH CENTURY',90],
