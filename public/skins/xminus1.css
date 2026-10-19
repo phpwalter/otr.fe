@@ -1,7 +1,7 @@
 /* X Minus One: fixed 1408 x 1056 reference layout, isolated from other skins. */
 .site.skin-xminus1{position:relative;width:1400px;height:1000px;min-height:1000px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
 .skin-xminus1 .x1-layout{position:relative;width:1400px;height:1000px;background:#f6e2b7}
-.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:885px;z-index:0;background:#f6e2b7 url('/art/sci-fi/x-minus-1/nav.column.png') left top/100% 100% no-repeat;color:#171914}
+.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:885px;z-index:0;background:#f6e2b7 url('/art/sci-fi/xminus1/nav.column.png') left top/100% 100% no-repeat;color:#171914}
 .skin-xminus1 .x1-nav-list{position:absolute;z-index:0;left:9px;top:202px;width:177px;display:flex;flex-direction:column;gap:4px}
 .skin-xminus1 .x1-nav-link{position:relative;display:flex;align-items:center;gap:12px;width:177px;height:47px;padding:0 14px 0 18px;color:#191c1c;font:700 16px/1 'Arial Narrow',Impact,sans-serif;letter-spacing:1.1px;text-transform:uppercase;isolation:isolate;cursor:pointer}
 .skin-xminus1 .x1-nav-link::before{content:'';position:absolute;inset:2px 1px;z-index:-1;background:transparent;clip-path:polygon(4% 12%,100% 0,94% 88%,0 100%);transition:background .15s ease}
@@ -11,9 +11,9 @@
 .skin-xminus1 .x1-nav-star{font-size:20px;line-height:1;color:inherit}
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
 
-.skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1225px;height:534px;background:#f6e2b7 url('/art/sci-fi/x-minus-1/hero.png') center center/cover no-repeat}
+.skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1225px;height:534px;background:#f6e2b7 url('/art/sci-fi/xminus1/hero.png') center center/cover no-repeat}
 .skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:transparent}
-.skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/sci-fi/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/sci-fi/xminus1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{position:absolute;inset:-6px 18px 26px 17px;color:#fff0c9}
 .skin-xminus1 .x1-feature-heading{position:relative;left:14px;top:26px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
 .skin-xminus1 .x1-feature-heading strong{color:#F83114;font:bold 107px/.91 Impact,'Arial Narrow',sans-serif}
@@ -26,12 +26,12 @@
 .skin-xminus1 .player button{background:#bb2420;color:#fff;border:2px solid #f7e0a0;height:44px;min-width:44px;border-radius:50%}
 .skin-xminus1 .player input{accent-color:#b92521}
 .skin-xminus1 .player time{color:#e7d7b4}
-.skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/sci-fi/x-minus-1/card.about.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/sci-fi/x-minus-1/card.creator.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-starfield{z-index:0;position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/sci-fi/x-minus-1/bottom.row.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/sci-fi/xminus1/card.about.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/sci-fi/xminus1/card.creator.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-starfield{z-index:0;position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/sci-fi/xminus1/bottom.row.png') center center/100% 100% no-repeat}
 
 /* Temporarily display a blank FEATURE card: the source artwork includes baked-in text. */
-.skin-xminus1 .x1-feature-art{background:url('/art/sci-fi/x-minus-1/card.feature.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-feature-art{background:url('/art/sci-fi/xminus1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{display:none}
 
 /* All content regions sit above the decorative starfield. */
@@ -52,7 +52,7 @@
 .skin-xminus1 .x1-feature-heading > div{width:206px;flex:0 0 206px;text-align:center}
 
 /* X Minus One radio dial — reference-style functional playback strip. */
-.skin-xminus1 .x1-feature .player{position:absolute;left:5px;right:auto;transform:none;width:390px;bottom:0px;height:46px;min-height:46px;padding:4px 12px;display:flex;align-items:center;gap:18px;background:transparent url('/art/sci-fi/x-minus-1/audio.background.png') center center/100% 100% no-repeat;border:0;border-radius:0;z-index:6;box-shadow:none}
+.skin-xminus1 .x1-feature .player{position:absolute;left:5px;right:auto;transform:none;width:390px;bottom:0px;height:46px;min-height:46px;padding:4px 12px;display:flex;align-items:center;gap:18px;background:transparent url('/art/sci-fi/xminus1/audio.background.png') center center/100% 100% no-repeat;border:0;border-radius:0;z-index:6;box-shadow:none}
 .skin-xminus1 .x1-feature .player button:first-of-type{width:40.67px;min-width:40.67px;height:40.67px;background:#c52620;border:2px solid #f6dca6;border-radius:50%;font:bold 20.8px Arial,sans-serif;color:#fff}
 .skin-xminus1 .x1-feature .player input[type="range"]{height:8px;min-width:0;flex:1;accent-color:#d42a25;cursor:pointer}
 .skin-xminus1 .x1-feature .player time{color:#f6e9c6;font:17px Georgia,serif;white-space:nowrap}
