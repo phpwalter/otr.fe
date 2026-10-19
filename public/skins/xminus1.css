@@ -129,7 +129,7 @@
 .skin-xminus1 .x1-feature-heading {
     position: relative;
     left: 14px;
-    top: 16px;
+    top: 20px;
     display: flex;
     gap: 16px;
     align-items: flex-start;
@@ -151,7 +151,7 @@
 
 .skin-xminus1 .x1-feature-heading time {
     position: relative;
-    top: 60px;
+    top: 56px;
     font: 20px Georgia, serif;
     color: #fbe5b7;
     white-space: nowrap
