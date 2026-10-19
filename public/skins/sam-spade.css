@@ -1,0 +1,25 @@
+/* Independent sam-spade presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#100c09;color:#e4cbb2;font-family:Georgia,serif}
+.header{background:#0b0d11;border-bottom:2px solid #bd1018;position:absolute;left:0;top:0;bottom:0;width:165px;display:block;padding:35px 20px;}
+.header nav{display:flex;flex-direction:column;gap:21px;margin-top:45px;}
+.header a{color:#e4cbb2}.header a.active{color:#bd1018}
+.masthead{font-size:13px;line-height:2}
+.canvas{margin-left:165px;grid-template-columns:2.15fr 1fr;grid-template-areas:"hero hero" "cards featured" "about about";gap:15px;padding:10px}
+.hero{min-height:610px;border:1px solid #493728}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/sam-spade-hero.webp')}
+.hero-copy{padding:78px 65px;max-width:100%}
+.hero h1{font-family:Georgia,serif;font-style:normal;font-size:115px;color:#bd1018;text-shadow:3px 4px #000}
+.tagline{color:#fff0ce}
+.hero-link{background:#bd1018;color:#fff5de}
+.featured{border:2px solid #bd1018;background:#100e0e;color:#e4cbb2;align-self:start;}
+.anniversary-number{color:#bd1018}
+.featured-art{background-image:url('/art/sam-spade-card.webp')}
+.player button{border-color:#bd1018;color:#bd1018}
+.player input{accent-color:#bd1018}
+.cards{grid-template-columns:repeat(2,1fr);align-self:start}
+.archive-card{background:#131b21;color:#e4cbb2;border:1px solid #bd1018}
+.archive-card .card-image{background-image:url('/art/sam-spade-hero.webp')}
+.archive-card h2{color:#bd1018}
+.about{border-top:1px solid #bd1018}
+.footer{color:#e4cbb2;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}

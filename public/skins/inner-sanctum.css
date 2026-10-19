@@ -1,0 +1,25 @@
+/* Independent inner-sanctum presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#080808;color:#f3e2cb;font-family:Georgia,serif}
+.header{background:#0b0d11;border-bottom:2px solid #a92018;padding:15px 28px;}
+.header nav{display:flex;justify-content:center;gap:25px;}
+.header a{color:#f3e2cb}.header a.active{color:#a92018}
+.masthead{font-size:12px;white-space:nowrap}
+.canvas{grid-template-columns:2.15fr 1fr;grid-template-areas:"hero featured" "cards cards" "about about";gap:15px;padding:16px}
+.hero{min-height:555px;border:1px solid #493728}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/inner-sanctum-hero.webp')}
+.hero-copy{padding:75px 45px;max-width:100%}
+.hero h1{font-family:Georgia,serif;font-style:italic;font-size:100px;color:#a92018;text-shadow:3px 4px #000}
+.tagline{color:#fff0ce}
+.hero-link{background:#a92018;color:#fff5de}
+.featured{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
+.anniversary-number{color:#a92018}
+.featured-art{background-image:url('/art/inner-sanctum-card.webp')}
+.player button{border-color:#a92018;color:#a92018}
+.player input{accent-color:#a92018}
+.cards{grid-template-columns:repeat(5,1fr);align-self:start}
+.archive-card{background:#131b21;color:#f3e2cb;border:1px solid #a92018}
+.archive-card .card-image{background-image:url('/art/inner-sanctum-hero.webp')}
+.archive-card h2{color:#a92018}
+.about{border-top:1px solid #a92018}
+.footer{color:#f3e2cb;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}

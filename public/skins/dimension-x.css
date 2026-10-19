@@ -1,0 +1,25 @@
+/* Independent dimension-x presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#071a24;color:#f5d47a;font-family:Arial,serif}
+.header{background:#0b0d11;border-bottom:2px solid #ed4a2e;padding:15px 28px;}
+.header nav{display:flex;justify-content:center;gap:25px;}
+.header a{color:#f5d47a}.header a.active{color:#ed4a2e}
+.masthead{font-size:12px;white-space:nowrap}
+.canvas{grid-template-columns:2.15fr 1fr;grid-template-areas:"hero featured" "cards cards" "about about";gap:15px;padding:16px}
+.hero{min-height:555px;border:1px solid #493728}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/dimension-x-hero.webp')}
+.hero-copy{padding:75px 45px;max-width:100%}
+.hero h1{font-family:Arial,serif;font-style:italic;font-size:115px;color:#ed4a2e;text-shadow:3px 4px #000}
+.tagline{color:#fff0ce}
+.hero-link{background:#ed4a2e;color:#fff5de}
+.featured{border:2px solid #ed4a2e;background:#100e0e;color:#f5d47a;}
+.anniversary-number{color:#ed4a2e}
+.featured-art{background-image:url('/art/dimension-x-card.webp')}
+.player button{border-color:#ed4a2e;color:#ed4a2e}
+.player input{accent-color:#ed4a2e}
+.cards{grid-template-columns:repeat(5,1fr);align-self:start}
+.archive-card{background:#131b21;color:#f5d47a;border:1px solid #ed4a2e}
+.archive-card .card-image{background-image:url('/art/dimension-x-hero.webp')}
+.archive-card h2{color:#ed4a2e}
+.about{border-top:1px solid #ed4a2e}
+.footer{color:#f5d47a;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
