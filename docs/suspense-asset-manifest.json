@@ -5,7 +5,7 @@
     "height": 1086
   },
   "background": {
-    "path": "/art/suspense/hero.png",
+    "path": "/art/mystery/suspense/hero.png",
     "size": [
       1536,
       1024
@@ -15,7 +15,7 @@
   },
   "panels": [
     {
-      "path": "/art/suspense/card-episodes.png",
+      "path": "/art/mystery/suspense/card-episodes.png",
       "size": [
         325,
         166
@@ -23,7 +23,7 @@
       "link": "episodes"
     },
     {
-      "path": "/art/suspense/card-cast.png",
+      "path": "/art/mystery/suspense/card-cast.png",
       "size": [
         325,
         166
@@ -31,7 +31,7 @@
       "link": "cast"
     },
     {
-      "path": "/art/suspense/card-feature.png",
+      "path": "/art/mystery/suspense/card-feature.png",
       "size": [
         680,
         308
