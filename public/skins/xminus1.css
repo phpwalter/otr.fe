@@ -1,8 +1,8 @@
-/* X Minus One: fixed 1408 x 1056 reference layout, isolated from other skins. */
-.site.skin-xminus1{position:relative;width:1400px;height:1000px;min-height:1000px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
-.skin-xminus1 .x1-layout{position:relative;width:1400px;height:1000px;background:#f6e2b7}
-.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:885px;z-index:0;background:#f6e2b7 url('/art/sci-fi/xminus1/nav.column.png') left top/100% 100% no-repeat;color:#171914}
-.skin-xminus1 .x1-nav-list{position:absolute;z-index:0;left:9px;top:202px;width:177px;display:flex;flex-direction:column;gap:4px}
+/* X Minus One: fixed 1440 x 900 canvas, isolated from other skins. */
+.site.skin-xminus1{position:relative;width:1440px;height:900px;min-height:900px;max-height:900px;margin:0 auto;overflow:hidden;background:#f6e2b7;color:#231b12;font-family:Georgia,serif}
+.skin-xminus1 .x1-layout{position:relative;width:1440px;height:900px;background:#f6e2b7}
+.skin-xminus1 .x1-nav{position:absolute;left:0;top:0;width:193px;height:800px;z-index:0;background:#f6e2b7 url('/art/sci-fi/xminus1/nav.column.png') left top/100% 100% no-repeat;color:#171914}
+.skin-xminus1 .x1-nav-list{position:absolute;z-index:0;left:9px;top:178px;width:177px;display:flex;flex-direction:column;gap:4px}
 .skin-xminus1 .x1-nav-link{position:relative;display:flex;align-items:center;gap:12px;width:177px;height:47px;padding:0 14px 0 18px;color:#191c1c;font:700 16px/1 'Arial Narrow',Impact,sans-serif;letter-spacing:1.1px;text-transform:uppercase;isolation:isolate;cursor:pointer}
 .skin-xminus1 .x1-nav-link::before{content:'';position:absolute;inset:2px 1px;z-index:-1;background:transparent;clip-path:polygon(4% 12%,100% 0,94% 88%,0 100%);transition:background .15s ease}
 .skin-xminus1 .x1-nav-link.is-active{color:#fff7e9}
@@ -11,24 +11,24 @@
 .skin-xminus1 .x1-nav-star{font-size:20px;line-height:1;color:inherit}
 .skin-xminus1 .x1-nav-link:focus-visible{outline:3px solid #b62215;outline-offset:2px}
 
-.skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1225px;height:534px;background:#f6e2b7 url('/art/sci-fi/xminus1/hero.png') center center/cover no-repeat}
-.skin-xminus1 .x1-feature{position:absolute;left:191px;top:532px;width:663px;height:370px;z-index:2;overflow:hidden;background:transparent}
+.skin-xminus1 .x1-hero{position:absolute;left:179px;top:6px;width:1261px;height:477px;background:#f6e2b7 url('/art/sci-fi/xminus1/hero.png') center center/cover no-repeat}
+.skin-xminus1 .x1-feature{position:absolute;left:191px;top:475px;width:663px;height:331px;z-index:2;overflow:hidden;background:transparent}
 .skin-xminus1 .x1-feature-art{position:absolute;inset:0;background:url('/art/sci-fi/xminus1/card.feature.png') center center/100% 100% no-repeat}
 .skin-xminus1 .x1-feature-live{position:absolute;inset:-6px 18px 26px 17px;color:#fff0c9}
-.skin-xminus1 .x1-feature-heading{position:relative;left:14px;top:26px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
+.skin-xminus1 .x1-feature-heading{position:relative;left:14px;top:16px;display:flex;gap:16px;align-items:flex-start;width:58%;background:#07131ff2}
 .skin-xminus1 .x1-feature-heading strong{color:#F83114;font:bold 107px/.91 Impact,'Arial Narrow',sans-serif}
 .skin-xminus1 .x1-feature-heading h2{font:bold 37px/1 Impact,'Arial Narrow',sans-serif;margin:1px 0 10px;white-space:nowrap;color:#f7ead2}
-.skin-xminus1 .x1-feature-heading time{position:relative;top:60px;font:20px Georgia,serif;color:#fbe5b7;white-space:nowrap}
-.skin-xminus1 .x1-feature-info{position:absolute;left:5px;top:124px;width:275px;bottom:50px;padding:0 5px;background:#07131ff2;overflow:hidden}
+.skin-xminus1 .x1-feature-heading time{position:relative;top:50px;font:20px Georgia,serif;color:#fbe5b7;white-space:nowrap}
+.skin-xminus1 .x1-feature-info{position:absolute;left:5px;top:110px;width:275px;bottom:50px;padding:0 5px;background:#07131ff2;overflow:hidden}
 .skin-xminus1 .x1-feature-info h3{box-sizing:border-box;width:335px;height:70px;font:bold 31px/1.05 Georgia,serif;margin:4px 0 12px;color:#f5ead6;overflow:hidden}
 .skin-xminus1 .x1-feature-info p{font:16px/1.24 Georgia,serif;margin:0;color:#f7ead4}
 .skin-xminus1 .player{position:absolute;bottom:1px;left:5px;right:5px;min-height:49px;margin:0;padding:4px 7px;background:#0b1119ef;border:1px solid #b59d71;border-radius:12px;display:flex;gap:10px;z-index:3}
 .skin-xminus1 .player button{background:#bb2420;color:#fff;border:2px solid #f7e0a0;height:44px;min-width:44px;border-radius:50%}
 .skin-xminus1 .player input{accent-color:#b92521}
 .skin-xminus1 .player time{color:#e7d7b4}
-.skin-xminus1 .x1-about{position:absolute;left:868px;top:546px;width:247px;height:369px;background:url('/art/sci-fi/xminus1/card.about.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-creators{position:absolute;left:1129px;top:546px;width:260px;height:369px;background:url('/art/sci-fi/xminus1/card.creator.png') top left/100% 100% no-repeat}
-.skin-xminus1 .x1-starfield{z-index:0;position:absolute;left:0;top:888px;width:1400px;height:112px;margin:0;padding:0;background:#061b27 url('/art/sci-fi/xminus1/bottom.row.png') center center/100% 100% no-repeat}
+.skin-xminus1 .x1-about{position:absolute;left:868px;top:485px;width:247px;height:333px;background:url('/art/sci-fi/xminus1/card.about.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-creators{position:absolute;left:1129px;top:485px;width:260px;height:333px;background:url('/art/sci-fi/xminus1/card.creator.png') top left/100% 100% no-repeat}
+.skin-xminus1 .x1-starfield{z-index:0;position:absolute;left:0;top:800px;width:1440px;height:100px;margin:0;padding:0;background:#061b27 url('/art/sci-fi/xminus1/bottom.row.png') center center/100% 100% no-repeat}
 
 /* Temporarily display a blank FEATURE card: the source artwork includes baked-in text. */
 .skin-xminus1 .x1-feature-art{background:url('/art/sci-fi/xminus1/card.feature.png') center center/100% 100% no-repeat}
