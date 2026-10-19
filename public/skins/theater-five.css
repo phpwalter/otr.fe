@@ -1,0 +1,17 @@
+/* theater-five: placeholder shell using the shared React page. */
+.site.skin-theater-five{width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#141b26;color:#f5e8d0}
+.skin-theater-five .canvas{grid-template-columns:2fr 1fr;gap:14px}
+.skin-theater-five .hero{min-height:530px;background:linear-gradient(135deg,#243344,#111923 72%);border:1px solid #ac956c}
+.skin-theater-five .hero-art{background:none}
+.skin-theater-five .hero-copy{padding:65px 45px}
+.skin-theater-five .hero h1{font-size:76px}
+.skin-theater-five .featured{min-height:530px}
+.skin-theater-five .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
+.skin-theater-five .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
+.skin-theater-five .archive-card{min-height:172px}
+.skin-theater-five .card-image{height:40px;background:none}
+.skin-theater-five .archive-card h2{font-size:18px}
+.skin-theater-five .archive-card p{font-size:12px}
+.skin-theater-five .about{padding:8px}
+.skin-theater-five .footer{padding:6px}
+/* Category: Drama; no artwork is required until a final skin is designed. */

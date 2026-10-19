@@ -1,0 +1,17 @@
+/* jack-benny: placeholder shell using the shared React page. */
+.site.skin-jack-benny{width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#141b26;color:#f5e8d0}
+.skin-jack-benny .canvas{grid-template-columns:2fr 1fr;gap:14px}
+.skin-jack-benny .hero{min-height:530px;background:linear-gradient(135deg,#243344,#111923 72%);border:1px solid #ac956c}
+.skin-jack-benny .hero-art{background:none}
+.skin-jack-benny .hero-copy{padding:65px 45px}
+.skin-jack-benny .hero h1{font-size:76px}
+.skin-jack-benny .featured{min-height:530px}
+.skin-jack-benny .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
+.skin-jack-benny .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
+.skin-jack-benny .archive-card{min-height:172px}
+.skin-jack-benny .card-image{height:40px;background:none}
+.skin-jack-benny .archive-card h2{font-size:18px}
+.skin-jack-benny .archive-card p{font-size:12px}
+.skin-jack-benny .about{padding:8px}
+.skin-jack-benny .footer{padding:6px}
+/* Category: Comedy; no artwork is required until a final skin is designed. */
