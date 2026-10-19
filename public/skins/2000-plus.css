@@ -1,0 +1,25 @@
+/* Independent 2000-plus presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#ecdab7;color:#17232e;font-family:Georgia,serif}
+.header{background:#e8d0ab;border-bottom:2px solid #7b1920;padding:15px 28px;}
+.header nav{display:flex;justify-content:center;gap:25px;}
+.header a{color:#25323c}.header a.active{color:#7b1920}
+.masthead{font-size:12px;white-space:nowrap}
+.canvas{grid-template-columns:1.5fr 1fr;grid-template-areas:"hero featured" "cards cards" "about about";gap:8px;padding:16px}
+.hero{min-height:555px;border:1px solid #987c54}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/2000-plus-hero.webp')}
+.hero-copy{padding:75px 45px;max-width:100%}
+.hero h1{font-family:Georgia,serif;font-style:normal;font-size:90px;color:#7b1920;text-shadow:none}
+.tagline{color:#213041}
+.hero-link{background:#7b1920;color:#fff}
+.featured{border:2px solid #7b1920;background:#eedec0;color:#1b1d1e;}
+.anniversary-number{color:#7b1920}
+.featured-art{background-image:url('/art/2000-plus-card.webp')}
+.player button{border-color:#7b1920;color:#7b1920}
+.player input{accent-color:#7b1920}
+.cards{grid-template-columns:repeat(5,1fr);align-self:start}
+.archive-card{background:#efe0bf;color:#17242a;border:1px solid #7b1920}
+.archive-card .card-image{background-image:url('/art/2000-plus-hero.webp')}
+.archive-card h2{color:#7b1920}
+.about{border-top:1px solid #7b1920}
+.footer{color:#25323c;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}

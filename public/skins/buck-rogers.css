@@ -1,0 +1,25 @@
+/* Independent buck-rogers presentation. Shared HTML/DOM remains unchanged. */
+.site{background:#102038;color:#ffe6a8;font-family:Arial,serif}
+.header{background:#0b0d11;border-bottom:2px solid #dd2b1a;position:absolute;left:0;top:0;bottom:0;width:165px;display:block;padding:35px 20px;}
+.header nav{display:flex;flex-direction:column;gap:21px;margin-top:45px;}
+.header a{color:#ffe6a8}.header a.active{color:#dd2b1a}
+.masthead{font-size:13px;line-height:2}
+.canvas{margin-left:165px;grid-template-columns:2.15fr 1fr;grid-template-areas:"hero hero" "cards featured" "about about";gap:15px;padding:10px}
+.hero{min-height:610px;border:1px solid #493728}
+.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/buck-rogers-hero.webp')}
+.hero-copy{padding:78px 65px;max-width:100%}
+.hero h1{font-family:Arial,serif;font-style:italic;font-size:105px;color:#dd2b1a;text-shadow:3px 4px #000}
+.tagline{color:#fff0ce}
+.hero-link{background:#dd2b1a;color:#fff5de}
+.featured{border:2px solid #dd2b1a;background:#100e0e;color:#ffe6a8;align-self:start;}
+.anniversary-number{color:#dd2b1a}
+.featured-art{background-image:url('/art/buck-rogers-card.webp')}
+.player button{border-color:#dd2b1a;color:#dd2b1a}
+.player input{accent-color:#dd2b1a}
+.cards{grid-template-columns:repeat(2,1fr);align-self:start}
+.archive-card{background:#131b21;color:#ffe6a8;border:1px solid #dd2b1a}
+.archive-card .card-image{background-image:url('/art/buck-rogers-hero.webp')}
+.archive-card h2{color:#dd2b1a}
+.about{border-top:1px solid #dd2b1a}
+.footer{color:#ffe6a8;font-size:12px}
+@media(max-width:1400px){.site{margin-left:0;margin-right:0}}

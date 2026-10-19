@@ -1,0 +1,79 @@
+/* Suspense: one shared React DOM, standalone desktop CSS skin. */
+.site.skin-suspense{position:relative;width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#090807 url('/art/mystery/suspense/hero.png') center/cover no-repeat;color:#f4e8d2;font-family:Georgia,serif}
+.skin-suspense .header{position:absolute;z-index:4;left:0;top:0;width:200px;height:640px;border:0;background:transparent;display:block;padding:0}
+.skin-suspense .masthead{display:none}
+.skin-suspense .header nav{position:absolute;left:50px;top:180px;display:flex;flex-direction:column;align-items:flex-start;gap:23px;margin:0}
+.skin-suspense .header nav a{font:normal 24px/1 Georgia,serif;letter-spacing:.4px;color:#f2e7d7;text-transform:uppercase;text-shadow:1px 2px 3px #000}
+.skin-suspense .header nav a.active{color:#ff3428;padding-bottom:10px;border-bottom:3px solid #ff3327}
+.skin-suspense .canvas{display:block;margin:0;padding:0}
+.skin-suspense .hero{position:absolute;inset:0;min-height:0;background:transparent;border:0;pointer-events:none}
+.skin-suspense .hero-art,.skin-suspense .hero-copy{display:none}
+.skin-suspense .cards,.skin-suspense .featured{position:absolute;z-index:3;top:728px;height:300px;background:#efddbd;color:#221814;border:0;box-shadow:0 2px 6px #0504039c}
+.skin-suspense .cards{left:32px;width:1385px;display:grid;grid-template-columns:repeat(2,329px);gap:0;padding:16px 10px;background:transparent url('/art/mystery/suspense/cards-panel.png') center/100% 100% no-repeat;box-shadow:none;border-radius:0}
+.skin-suspense .archive-card{border:0;border-right:1px solid #cbb59b;padding:0 9px;min-height:0;color:#251914;text-align:center;background:transparent;display:block}
+.skin-suspense .archive-card:nth-child(2){border-right:0}
+.skin-suspense .archive-card:nth-child(n+3){display:none}
+.skin-suspense .archive-card .card-image{height:155px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:none}
+.skin-suspense .card-0 .card-image{background-image:url('/art/mystery/suspense/card-episodes.png')}
+.skin-suspense .card-1 .card-image{background-image:url('/art/mystery/suspense/card-cast.png')}
+.skin-suspense .archive-card h2{color:#961a16;font:bold 25px/1.1 Georgia,serif;text-transform:uppercase;margin:8px 0}
+.skin-suspense .archive-card p{font:18px/1.28 Georgia,serif;margin:0 10px}
+.skin-suspense .archive-card span{display:block;font-size:0;width:74px;border-bottom:2px solid #ad3225;margin:20px auto 0}
+.skin-suspense .cards>.featured{position:absolute;top:0;right:0;width:707px;height:300px;z-index:1;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none}
+.skin-suspense .featured-art{position:absolute;left:0;top:0;width:320px;height:300px;margin:0;background:url('/art/mystery/suspense/card-feature.png') left center/auto 300px no-repeat}
+.skin-suspense .featured-body{display:contents}
+.skin-suspense .section-head{position:absolute;left:315px;right:8px;top:12px;display:block;text-align:center;height:76px}
+.skin-suspense .anniversary-number{font-size:0}
+.skin-suspense .section-head>div{display:block}
+.skin-suspense .section-head h2{color:#9e1915;font:bold 26px/1.05 Georgia,serif;margin:0;white-space:nowrap}
+.skin-suspense .section-head h2::before{content:attr(data-years);font:bold 35px/1 Georgia,serif;margin-right:8px}
+.skin-suspense .section-head time{display:block;margin-top:5px;font:20px Georgia,serif;color:#241712}
+.skin-suspense .featured-text{position:absolute;left:323px;right:15px;top:92px;text-align:center;color:#241712}
+.skin-suspense .featured-text h3{font:bold 27px/1.07 Georgia,serif;color:#9e1915;margin:0 0 5px}
+.skin-suspense .featured-text .broadcast-label{font:12px Georgia,serif;letter-spacing:.2px;margin:0 0 5px}
+.skin-suspense .featured-text p:not(.broadcast-label){font:16px/1.25 Georgia,serif;margin:3px auto;max-height:85px;overflow:hidden}
+.skin-suspense .player{position:absolute;left:305px;right:17px;bottom:12px;display:flex;gap:8px;align-items:center;margin:0}
+.skin-suspense .player button{width:44px;height:44px;min-width:44px;border:0;border-radius:50%;background:#1b1917;color:#f5d6a5}
+.skin-suspense .player input{accent-color:#2f2b27}
+.skin-suspense .player time{font:13px Georgia,serif;color:#271e16}
+.skin-suspense .about,.skin-suspense .footer{display:none}
+
+/* Reference-matched three-column parchment strip; override earlier prototype rules. */
+.skin-suspense .cards{
+  top:585px;
+  left:32px;
+  width:1376px;
+  height:290px;
+  display:grid;
+  grid-template-columns:25% 25% 50%;
+  grid-template-rows:1fr;
+  gap:0;
+  padding:12px 10px 10px;
+  align-items:stretch;
+  background:transparent url('/art/mystery/suspense/cards-panel.png') center / 100% 100% no-repeat;
+  border:0;
+  box-shadow:none;
+  border-radius:0;
+}
+.skin-suspense .cards>.archive-card{min-width:0;min-height:0;height:100%;padding:0 10px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;background:transparent;border:0;border-right:1px solid #cfb99e;text-align:center}
+.skin-suspense .cards>.archive-card:nth-child(2){border-right:0}
+.skin-suspense .cards>.archive-card:nth-child(n+3){display:none}
+.skin-suspense .archive-card .card-image{height:125px;width:100%;flex:0 0 125px;background-size:contain;background-position:center;background-repeat:no-repeat}
+.skin-suspense .archive-card h2{margin:8px 0 7px;color:#9b1a17;font:700 26px/1.05 Georgia,'Times New Roman',serif}
+.skin-suspense .archive-card p{font:17px/1.25 Georgia,'Times New Roman',serif;margin:0 14px;max-width:290px}
+.skin-suspense .archive-card span{margin:18px auto 0}
+.skin-suspense .cards>.featured{position:relative;grid-column:3;grid-row:1;top:auto;right:auto;left:auto;width:auto;height:100%;min-height:0;z-index:auto;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent}
+.skin-suspense .featured-art{position:absolute;left:0;top:0;height:100%;width:46%;margin:0;background:url('/art/mystery/suspense/card-feature.png') left center / auto 100% no-repeat;pointer-events:none}
+.skin-suspense .section-head{left:45%;right:6px;top:13px}
+.skin-suspense .featured-text{left:46%;right:14px;top:104px}
+.skin-suspense .player{left:45%;right:16px;bottom:12px}
+
+/* Compact featured content for the fixed 1440 x 900 canvas. */
+.skin-suspense .section-head{top:6px;height:65px}
+.skin-suspense .section-head h2{font-size:21px}
+.skin-suspense .section-head h2::before{font-size:28px}
+.skin-suspense .section-head time{font-size:16px;margin-top:3px}
+.skin-suspense .featured-text{top:76px}
+.skin-suspense .featured-text h3{font-size:23px}
+.skin-suspense .featured-text p:not(.broadcast-label){font-size:14px;max-height:70px}
+.skin-suspense .player{bottom:8px}
