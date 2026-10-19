@@ -2,7 +2,7 @@
 """Validate the four user-supplied Suspense skin assets."""
 from pathlib import Path
 from PIL import Image
-root=Path("public/art/suspense")
+root=Path("public/art/mystery/suspense")
 expected={"hero.png":(1536,1024),"card-cast.png":(325,166),"card-episodes.png":(325,166),"card-feature.png":(680,308)}
 failures=[]
 for name,size in expected.items():
