@@ -4,7 +4,6 @@ export const shows={
 'sam-spade':['The Adventures of Sam Spade','CRIME. WIT. SAN FRANCISCO.',75],
 'sherlock-holmes':['Sherlock Holmes','THE WORLD’S GREATEST DETECTIVE COMES TO RADIO',75],
 'inner-sanctum':['Inner Sanctum Mysteries','MYSTERY… SUSPENSE… THE UNEXPECTED…',75],
-'x-minus-one':['X Minus One','SCIENCE FICTION ON THE AIR',75],
 'xminus1':['X Minus One','SCIENCE FICTION ON THE AIR',75],
 'dimension-x':['Dimension X','DRAMAS OF TOMORROW’S WORLDS',75],
 'journey-into-space':['Journey Into Space','BOLD ADVENTURES IN THE UNKNOWN',75],
@@ -12,4 +11,4 @@ export const shows={
 '2000-plus':['2000 Plus','A RADIO ANTHOLOGY OF TOMORROW',75]
 };
 export const slugs=Object.keys(shows);
-export const currentSlug=()=>{const segment=decodeURIComponent(window.location.pathname.split('/')[1]||'');return shows[segment]?segment:'suspense'};
+export const currentSlug=()=>{const segment=decodeURIComponent(window.location.pathname.split('/')[1]||'');return segment==='x-minus-one'?'xminus1':shows[segment]?segment:'suspense'};
