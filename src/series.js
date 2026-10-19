@@ -8,7 +8,7 @@ export const shows={
 'dimension-x':['Dimension X','DRAMAS OF TOMORROW’S WORLDS',75],
 'journey-into-space':['Journey Into Space','BOLD ADVENTURES IN THE UNKNOWN',75],
 'buck-rogers':['Buck Rogers','IN THE 25TH CENTURY',90],
-'2000-plus':['2000 Plus','A RADIO ANTHOLOGY OF TOMORROW',75]
+'2000-plus':['2000 Plus','A RADIO ANTHOLOGY OF TOMORROW',75],
 'aldrich':["The Aldrich Family","COMEDY RADIO ARCHIVE",75],
 'bickersons':["The Bickersons","COMEDY RADIO ARCHIVE",75],
 'bob-hope':["The Bob Hope Show","COMEDY RADIO ARCHIVE",75],
