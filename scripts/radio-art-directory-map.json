@@ -1,0 +1,102 @@
+[
+  {
+    "from": "comedy/bob.hope",
+    "to": "comedy/bob-hope"
+  },
+  {
+    "from": "comedy/burns.allen",
+    "to": "comedy/burns-and-allen"
+  },
+  {
+    "from": "comedy/duffys.tavern",
+    "to": "comedy/duffys-tavern"
+  },
+  {
+    "from": "comedy/edgar.bergen",
+    "to": "comedy/edgar-bergen"
+  },
+  {
+    "from": "comedy/father.knows.best",
+    "to": "comedy/father-knows-best"
+  },
+  {
+    "from": "comedy/jack.benny",
+    "to": "comedy/jack-benny"
+  },
+  {
+    "from": "comedy/life of.riley",
+    "to": "comedy/life-of-riley"
+  },
+  {
+    "from": "comedy/ozzie.harriet",
+    "to": "comedy/ozzie-and-harriet"
+  },
+  {
+    "from": "detective/dick.tracey",
+    "to": "detective/dick-tracy"
+  },
+  {
+    "from": "detective/green.hornet",
+    "to": "detective/green-hornet"
+  },
+  {
+    "from": "detective/holmes",
+    "to": "detective/sherlock-holmes"
+  },
+  {
+    "from": "detective/johnny.dollar",
+    "to": "detective/johnny-dollar"
+  },
+  {
+    "from": "detective/sam.spade",
+    "to": "detective/sam-spade"
+  },
+  {
+    "from": "detective/thin.man",
+    "to": "detective/thin-man"
+  },
+  {
+    "from": "drama/theater.5",
+    "to": "drama/theater-five"
+  },
+  {
+    "from": "mystery/inner.sanctum",
+    "to": "mystery/inner-sanctum"
+  },
+  {
+    "from": "mystery/mysterious.traveler",
+    "to": "mystery/mysterious-traveler"
+  },
+  {
+    "from": "mystery/the.whistler",
+    "to": "mystery/whistler"
+  },
+  {
+    "from": "sci-fi/2000+",
+    "to": "sci-fi/2000-plus"
+  },
+  {
+    "from": "sci-fi/buck.rogers",
+    "to": "sci-fi/buck-rogers"
+  },
+  {
+    "from": "sci-fi/dimensionx",
+    "to": "sci-fi/dimension-x"
+  },
+  {
+    "from": "sci-fi/exploring.tomorrow",
+    "to": "sci-fi/exploring-tomorrow"
+  },
+  {
+    "from": "sci-fi/journey.into.space",
+    "to": "sci-fi/journey-into-space"
+  },
+  {
+    "from": "sci-fi/space.patrol",
+    "to": "sci-fi/space-patrol"
+  },
+  {
+    "from": "western/lone.ranger",
+    "to": "western/lone-ranger"
+  }
+]
