@@ -1,0 +1,17 @@
+/* lux: placeholder shell using the shared React page. */
+.site.skin-lux{width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#141b26;color:#f5e8d0}
+.skin-lux .canvas{grid-template-columns:2fr 1fr;gap:14px}
+.skin-lux .hero{min-height:530px;background:linear-gradient(135deg,#243344,#111923 72%);border:1px solid #ac956c}
+.skin-lux .hero-art{background:none}
+.skin-lux .hero-copy{padding:65px 45px}
+.skin-lux .hero h1{font-size:76px}
+.skin-lux .featured{min-height:530px}
+.skin-lux .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
+.skin-lux .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
+.skin-lux .archive-card{min-height:172px}
+.skin-lux .card-image{height:40px;background:none}
+.skin-lux .archive-card h2{font-size:18px}
+.skin-lux .archive-card p{font-size:12px}
+.skin-lux .about{padding:8px}
+.skin-lux .footer{padding:6px}
+/* Category: Drama; no artwork is required until a final skin is designed. */

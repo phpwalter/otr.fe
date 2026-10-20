@@ -1,0 +1,17 @@
+/* father-knows-best: placeholder shell using the shared React page. */
+.site.skin-father-knows-best{width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#141b26;color:#f5e8d0}
+.skin-father-knows-best .canvas{grid-template-columns:2fr 1fr;gap:14px}
+.skin-father-knows-best .hero{min-height:530px;background:linear-gradient(135deg,#243344,#111923 72%);border:1px solid #ac956c}
+.skin-father-knows-best .hero-art{background:none}
+.skin-father-knows-best .hero-copy{padding:65px 45px}
+.skin-father-knows-best .hero h1{font-size:76px}
+.skin-father-knows-best .featured{min-height:530px}
+.skin-father-knows-best .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
+.skin-father-knows-best .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
+.skin-father-knows-best .archive-card{min-height:172px}
+.skin-father-knows-best .card-image{height:40px;background:none}
+.skin-father-knows-best .archive-card h2{font-size:18px}
+.skin-father-knows-best .archive-card p{font-size:12px}
+.skin-father-knows-best .about{padding:8px}
+.skin-father-knows-best .footer{padding:6px}
+/* Category: Comedy; no artwork is required until a final skin is designed. */

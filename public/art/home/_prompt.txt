@@ -1,0 +1,546 @@
+
+# CLASSIC RADIO VAULT
+
+## SHOW CARD ARTWORK — MASTER PRODUCTION PROMPT
+
+**Version 2.0 — October 2026**
+
+### Objective
+
+Create premium, historically evocative promotional collector-card artwork for **[RADIO SHOW TITLE]**, a classic American radio program.
+
+Use the supplied *Jack Benny Program* collector card as the primary visual reference for illustration quality, professional craftsmanship, authentic vintage printing characteristics, composition, and distressed-paper treatment.
+
+The finished artwork must resemble an authentic, beautifully preserved illustrated radio magazine advertisement or promotional collector card from approximately 1935–1955.
+
+Each image must possess its own distinct identity while remaining unmistakably part of the **Classic Radio Vault** collection.
+
+---
+
+## 1. Mandatory Historical Research
+
+**Research each radio program before generating its artwork.**
+
+Do not rely exclusively on general familiarity with the program or assumptions about its historical appearance.
+
+Establish the following:
+
+1. The official radio program title and historically recognized title variations.
+2. The earliest verified original radio broadcast year.
+3. The latest verified original radio broadcast year.
+4. The principal performers and characters most strongly associated with the program.
+5. Historical promotional advertisements, magazine illustrations, publicity photographs, and original title treatments.
+6. The show's principal genre, setting, atmosphere, and recognizable visual characteristics.
+7. Period-appropriate costumes, hairstyles, props, equipment, architecture, and other relevant details.
+
+### Research priorities
+
+Use historically credible sources, including:
+
+- Original radio program advertisements and promotional materials.
+- Period radio magazines and newspaper advertising.
+- Original publicity photography and studio portraits.
+- Broadcast network archives and historical radio reference works.
+- Established old-time-radio research collections.
+- Cross-referenced historical broadcast schedules and programographies.
+
+When the historical evidence conflicts, prioritize primary contemporary sources and corroborated broadcast records.
+
+### Historical fidelity
+
+Represent the performers as they appeared during the radio program's original broadcast era, rather than at unrelated stages of their careers.
+
+Maintain recognizable facial characteristics and historically appropriate wardrobe.
+
+Original promotional artwork should inform the visual identity of the new card without requiring an exact reproduction of an existing advertisement.
+
+**Historical research is a mandatory prerequisite to artwork generation.**
+
+---
+
+## 2. Required Image Dimensions
+
+- **Final resolution: exactly 1399 × 1124 pixels.**
+- Landscape orientation, approximately 5:4.
+- The artwork must completely occupy the image canvas.
+- No blank margins, letterboxing, external backgrounds, or transparent padding.
+- No visible tabletop or presentation surface.
+- No external postcard shadows.
+
+Compose the artwork natively for these dimensions.
+
+Do not resize an incompatible image by stretching or squeezing it.
+
+If an existing composition does not fit, reposition, extend, crop, or reconstruct the visual elements while preserving their natural proportions.
+
+All essential performers, titles, and dates must fit comfortably within the image.
+
+The card must remain visually effective when displayed on the website at approximately **254 × 204 pixels**.
+
+---
+
+## 3. Artistic Style
+
+Reproduce the aesthetic of premium American radio advertising, illustrated entertainment magazines, and theatrical promotional cards from approximately 1935–1955.
+
+### Required characteristics
+
+- Cinematic, semi-photorealistic illustration combined with vintage commercial poster artistry.
+- Authentic mid-century magazine advertising craftsmanship.
+- Believable human faces with recognizable, naturally proportioned facial features.
+- Rich photographic detail enhanced by restrained painterly rendering.
+- Dramatic period studio lighting and carefully controlled contrast.
+- Deep shadows, atmospheric depth, and natural highlights.
+- Subtle halftone printing characteristics.
+- Aged lithographic ink textures.
+- Minor color-registration imperfections.
+- Paper grain, fine scratches, light stains, and organically worn printing.
+- Warm, tactile qualities associated with vintage printed materials.
+
+The image must resemble a professionally commissioned illustration produced during the program's original broadcast era.
+
+Avoid the appearance of contemporary digital concept art, generic AI illustration, cartoon artwork, or modern movie-poster design.
+
+---
+
+## 4. Composition and Principal Performers
+
+Design each card around **one or two dominant performers or defining characters**.
+
+### Single-performer programs
+
+Use one clearly recognizable dominant performer when a radio program is strongly associated with a particular star.
+
+The primary performer should occupy a substantial portion of the composition and establish the immediate visual identity of the program.
+
+### Two-performer programs
+
+Where two performers are strongly associated with the program, include both when historically appropriate.
+
+Examples include:
+
+- Married performing couples.
+- Detective and assistant partnerships.
+- Comedic double acts.
+- Two central dramatic characters.
+
+Balance the figures naturally without forcing symmetrical poses.
+
+One performer may remain compositionally dominant where historically appropriate.
+
+### Ensemble programs
+
+Do not attempt to include the entire cast.
+
+Select the one or two performers most recognizable or most important to the show's identity.
+
+### Programs without a recognizable principal performer
+
+For anthology, science-fiction, suspense, adventure, or similar productions without a central on-air character, feature one or two dramatic subjects or a defining visual scene representing the program.
+
+### Anatomical requirements
+
+- Preserve natural head-to-body proportions.
+- Maintain recognizable facial structures.
+- Use believable facial expressions.
+- Ensure hands, fingers, and limbs are anatomically correct.
+- Avoid unnaturally staged or exaggerated poses.
+- Never compress or distort human features to satisfy the aspect ratio.
+
+The composition must be created around the subjects, not the subjects distorted to accommodate the frame.
+
+---
+
+## 5. Program-Specific Environments
+
+Construct a cinematic background associated with the program's genre, story world, historical period, or recognizable promotional imagery.
+
+Possible treatments include:
+
+**Comedy and variety**
+
+Broadcast studios, theatrical stages, orchestra settings, vintage microphones, velvet curtains, studio spotlights, and period entertainment interiors.
+
+**Detective and crime**
+
+Shadowed detective offices, rain-soaked streets, period automobiles, city skylines, fedoras, dramatic interiors, and atmospheric cigarette smoke.
+
+**Mystery and suspense**
+
+Threatening shadows, mysterious interiors, dramatic lighting, isolated architecture, fog, and psychologically tense environments.
+
+**Western**
+
+Frontier settlements, saloons, horseback riders, plains, desert landscapes, and period Western clothing.
+
+**Science fiction**
+
+Retro-futuristic spacecraft, planetary landscapes, observatories, radio laboratories, strange worlds, and imaginative machinery reflecting the science-fiction illustration of the broadcast era.
+
+**Adventure**
+
+Distant landscapes, ships, aircraft, wilderness settings, dangerous terrain, and dramatic historical environments.
+
+### Environmental requirements
+
+The background must enhance the identity of the radio program without overwhelming the performers or title.
+
+Use a single coherent composition, not a collage of unrelated scenes.
+
+The environment should feel integrated with the principal subject through lighting, atmosphere, perspective, and color.
+
+---
+
+## 6. Historically Authentic, Show-Specific Typography
+
+**The title typography must be researched and designed individually for each radio program.**
+
+Do not apply the same lettering style indiscriminately across the collection.
+
+### Primary references
+
+Examine historical examples of:
+
+- The show's original magazine advertising.
+- Radio network promotional artwork.
+- Original program title cards.
+- Newspaper advertisements.
+- Publicity posters.
+- Studio promotional materials.
+
+Use the program's original advertising typography as the principal inspiration for the new card.
+
+### Typography treatment
+
+Where historically appropriate, use:
+
+- Bold dimensional display lettering.
+- Period-authentic serif or sans-serif lettering.
+- Hand-painted commercial lettering.
+- Condensed theatrical typefaces.
+- Script or decorative lettering associated with the original program.
+- Carefully controlled drop shadows.
+- Subtle beveling and printed highlights.
+- Antique cream, ivory, gold, silver-gray, or other period-appropriate lettering colors.
+
+Titles may be angled, arched, stacked, or arranged dynamically when supported by the original advertising identity.
+
+### Critical typography rules
+
+- The title must be immediately legible.
+- The lettering must be a prominent element of the artwork.
+- Typography must integrate naturally with the illustration.
+- The title must remain within the printed area.
+- Do not allow important lettering to be lost beneath distressing or edge damage.
+- Avoid modern font treatments and contemporary branding conventions.
+- Do not substitute generic vintage lettering when original promotional references are available.
+
+### Mandatory text
+
+**[RADIO SHOW TITLE]**
+
+**[START YEAR] – [END YEAR]**
+
+No additional slogans, network names, logos, descriptive text, episode titles, or decorative wording unless specifically requested.
+
+All lettering and numerical dates must be accurate.
+
+---
+
+## 7. Broadcast Date Research and Display Rules
+
+Display the earliest and latest verified years of the program's **original radio broadcasts**, regardless of interruptions between broadcast runs.
+
+### Rules
+
+1. **START YEAR** is the earliest documented year in which the program originally aired.
+2. **END YEAR** is the latest documented year in which the program originally aired.
+3. Include documented revivals or later original broadcast runs when they are properly recognized as continuations of the same radio program.
+4. Do not limit the date range to the show's longest uninterrupted run.
+5. Do not use years from syndicated reruns, rebroadcasts, modern restorations, or later television adaptations.
+6. Research and verify both years before producing the card.
+7. When a title was used for historically distinct productions, distinguish those productions before assigning the date range.
+
+### Date typography
+
+- Position the years near the bottom of the artwork.
+- Use smaller lettering than the program title.
+- Maintain sufficient contrast for readability.
+- Apply a period-appropriate typographic treatment consistent with the title.
+- Use the format **YYYY – YYYY**.
+
+Do not invent or estimate dates when reliable historical information is available.
+
+---
+
+## 8. Individually Differentiated Color Palettes
+
+**Every radio program must receive a distinctive color palette appropriate to its individual identity.**
+
+The Jack Benny reference card establishes the quality standard, not a mandatory color scheme.
+
+Do not repeatedly reuse the same red-and-gold composition.
+
+### Palette development
+
+Select colors based on:
+
+- The show's genre.
+- Its historical promotional materials.
+- The emotional character of the program.
+- Its principal performers and environment.
+- The need for visual differentiation within the larger collection.
+
+### Suggested palettes
+
+| Program category        | Possible palette                                       |
+| ----------------------- | ------------------------------------------------------ |
+| Comedy and variety      | Burgundy, amber, theatrical gold, warm ivory           |
+| Detective and crime     | Midnight blue, charcoal, smoky gray, muted amber       |
+| Mystery and suspense    | Deep violet, black, antique brass, desaturated crimson |
+| Western                 | Dusty ochre, saddle brown, copper, faded turquoise     |
+| Science fiction         | Deep teal, muted cobalt, metallic gray, antique yellow |
+| Adventure               | Forest green, weathered bronze, burnt sienna           |
+| Historical drama        | Sepia, olive, aged parchment, charcoal                 |
+| Horror and supernatural | Dark plum, oxidized green, near-black, faded gold      |
+
+These palettes are illustrative rather than mandatory prescriptions.
+
+Each program's historical artwork should influence its final color choices.
+
+### Collection-level requirements
+
+All cards must share:
+
+- Comparable richness and tonal sophistication.
+- Consistent illustration quality.
+- Historically plausible printing characteristics.
+- Comparable aging and distressed-edge treatments.
+
+However, the cards should not appear to be recolored copies of one another.
+
+Avoid fluorescent colors, excessive saturation, glossy gradients, synthetic digital lighting, and contemporary color effects.
+
+---
+
+## 9. Mandatory Distressed Postcard Edge Treatment
+
+**This treatment must remain visually consistent across the entire Classic Radio Vault collection.**
+
+Surround the illustrated image with an organically irregular, aged cream-paper perimeter resembling a heavily handled vintage promotional card.
+
+### Required characteristics
+
+- Slightly rounded outer corners.
+- Irregular, naturally ragged printed edges.
+- Small patches of missing, chipped, or flaking ink.
+- Exposed cream-colored paper substrate.
+- Fine scratches and occasional hairline cracks.
+- Subtle staining and worn corners.
+- Minor abrasions and naturally scuffed surfaces.
+- Localized accumulation of darker pigment near portions of the printed perimeter.
+- Uneven ink wear, avoiding mechanical repetition.
+
+### Physical realism
+
+The deterioration must resemble genuine aging of ink printed on old paper.
+
+Wear should be irregular and slightly asymmetric.
+
+Avoid perfectly repeated distress patterns, artificial brush borders, decorative vignettes, or uniformly applied edge effects.
+
+### Canvas integration
+
+The distressed card itself must occupy the entire image canvas.
+
+There must be:
+
+- No external background.
+- No floating postcard effect.
+- No drop shadow around the card.
+- No simulated tabletop.
+- No transparent area outside the paper.
+- No ornate geometric picture frame.
+
+The aged paper perimeter should remain relatively thin, preserving the visual importance of the artwork.
+
+The border must be consistent in character across cards without being an identical repeated texture.
+
+---
+
+## 10. Historical and Visual Authenticity
+
+Every visible design element must be plausible for the radio program's period and historical context.
+
+### Performers
+
+- Accurate likenesses based on contemporary publicity photographs.
+- Historically appropriate hairstyles and wardrobe.
+- Natural facial structure and expression.
+- Appropriate age and recognizable appearance from the broadcast era.
+
+### Environments and props
+
+- Historically appropriate broadcast microphones.
+- Period-correct furniture and architectural details.
+- Authentic automobiles and transportation equipment.
+- Plausible theater and radio-studio technology.
+- Period-consistent advertising conventions.
+
+### Visual storytelling
+
+The composition must communicate the character of the program immediately.
+
+A viewer should be able to recognize the show's genre and, when applicable, its most important performer without reading supplemental text.
+
+Historical credibility takes precedence over exaggerated spectacle.
+
+---
+
+## 11. Composition and Readability at Website Size
+
+The original artwork will be displayed at full resolution and as a smaller website card measuring approximately **254 × 204 pixels**.
+
+Therefore:
+
+- Faces must remain recognizable at thumbnail size.
+- The title must remain easily readable.
+- The principal subject must have a clear silhouette.
+- Contrast must distinguish the lettering from the background.
+- The composition must avoid unnecessary visual clutter.
+- Fine background details must not compete with the main subject.
+- Dates must remain legible without dominating the design.
+
+Use strong visual hierarchy and deliberate placement of subjects, typography, and environmental details.
+
+The artwork must feel balanced and compelling at both display sizes.
+
+---
+
+## 12. Quality and Collection Consistency
+
+Every finished card must satisfy the following requirements:
+
+- Exact final dimensions of 1399 × 1124 pixels.
+- Historically researched program identity.
+- Correct program title and date range.
+- One or two dominant performers, where appropriate.
+- Recognizable, naturally proportioned human faces.
+- Individually researched period typography.
+- A distinctive, show-specific color palette.
+- A coherent cinematic environment.
+- Authentic mid-century commercial illustration quality.
+- Consistent aged lithographic printing characteristics.
+- Consistent distressed cream-paper perimeter.
+- Excellent readability at website thumbnail dimensions.
+- No unnecessary decorative elements.
+- No visual distortion caused by fitting the canvas.
+
+The quality target is a premium illustrated radio collector-card series, not a set of generic promotional thumbnails.
+
+---
+
+## 13. Strict Prohibitions
+
+Do not include:
+
+- Modern flat graphic design.
+- Cartoon, caricature, or comic-book rendering, unless expressly requested.
+- Generic modern movie-poster compositions.
+- Ornate Art Deco geometric picture frames.
+- Clean contemporary rounded-card borders.
+- Repetitive, artificial distress patterns.
+- Unrelated decorative symbols.
+- Extra titles, slogans, text, or network logos.
+- Anatomically distorted faces, hands, or bodies.
+- Oversized or unnaturally compressed heads.
+- Awkward or physically implausible character poses.
+- Collage panels or split-screen compositions.
+- Modern clothing, microphones, architecture, or props inconsistent with the scene's period.
+- External backgrounds or transparent canvas padding.
+- Watermarks, artist signatures, or modern branding.
+- Identical typography across unrelated radio programs.
+- Repeated color palettes without an appropriate historical reason.
+- Unverified broadcast years presented as confirmed facts.
+
+---
+
+## 14. Mandatory Production Workflow
+
+For every requested radio program, follow this sequence.
+
+### Step 1 — Research the program
+
+Identify and verify:
+
+- Official title.
+- Earliest and latest original broadcast years.
+- One or two principal performers, if applicable.
+- Original advertising typography.
+- Historical promotional imagery.
+- Genre and defining visual characteristics.
+
+### Step 2 — Establish the visual concept
+
+Choose:
+
+- Principal subject or subjects.
+- Show-specific environment.
+- Dominant color palette.
+- Historically inspired title treatment.
+- Composition and lighting approach.
+
+### Step 3 — Produce the illustration
+
+Create a coherent, cinematic vintage commercial illustration with the correct subject proportions and historical visual details.
+
+Compose specifically for 1399 × 1124 pixels.
+
+### Step 4 — Integrate typography
+
+Add the correctly spelled program title and verified broadcast years.
+
+Ensure strong legibility at both full resolution and website thumbnail size.
+
+### Step 5 — Apply vintage print treatment
+
+Integrate halftone texture, lithographic ink wear, fine paper grain, restrained printing imperfections, and the mandatory distressed cream-paper edge treatment.
+
+### Step 6 — Validate the final image
+
+Verify:
+
+- Exact pixel dimensions.
+- Title spelling.
+- Historical date accuracy.
+- Performer recognizability.
+- Natural anatomy and proportions.
+- Period authenticity.
+- Distinctive palette and typography.
+- Consistent distressed-edge characteristics.
+- No additional text or unwanted objects.
+- Full-bleed composition without external padding.
+
+Correct defects before accepting the image as finished.
+
+---
+
+## 15. Final Production Instruction
+
+**Create the Classic Radio Vault collector card for:**
+
+**[RADIO SHOW TITLE]**
+
+First research the program's historical broadcasts, principal performers, and original promotional advertising.
+
+Use the historical findings to create an original, premium-quality, mid-century illustrated promotional card.
+
+Feature one or two dominant performers where appropriate, with recognizable and naturally proportioned facial features.
+
+Derive the title typography from the show's original promotional identity and select a distinctive period-appropriate color palette.
+
+Display the verified earliest and latest original broadcast years.
+
+Match the artistic quality, aged printing characteristics, and organically distressed cream-paper edges of the supplied Jack Benny reference card.
+
+**Output exactly one finished, full-canvas image at 1399 × 1124 pixels, with no additional text or elements beyond the approved title and years.**

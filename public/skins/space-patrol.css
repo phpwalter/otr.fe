@@ -1,0 +1,17 @@
+/* space-patrol: placeholder shell using the shared React page. */
+.site.skin-space-patrol{width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#141b26;color:#f5e8d0}
+.skin-space-patrol .canvas{grid-template-columns:2fr 1fr;gap:14px}
+.skin-space-patrol .hero{min-height:530px;background:linear-gradient(135deg,#243344,#111923 72%);border:1px solid #ac956c}
+.skin-space-patrol .hero-art{background:none}
+.skin-space-patrol .hero-copy{padding:65px 45px}
+.skin-space-patrol .hero h1{font-size:76px}
+.skin-space-patrol .featured{min-height:530px}
+.skin-space-patrol .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
+.skin-space-patrol .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
+.skin-space-patrol .archive-card{min-height:172px}
+.skin-space-patrol .card-image{height:40px;background:none}
+.skin-space-patrol .archive-card h2{font-size:18px}
+.skin-space-patrol .archive-card p{font-size:12px}
+.skin-space-patrol .about{padding:8px}
+.skin-space-patrol .footer{padding:6px}
+/* Category: Science Fiction; no artwork is required until a final skin is designed. */
