@@ -1,0 +1,335 @@
+Absolutely — here is a **complete reusable production prompt** based on the two reference images and your newly established standard.
+
+---
+
+# CLASSIC RADIO SHOW CARD — REUSABLE MASTER PRODUCTION PROMPT
+
+## Objective
+
+Create a premium promotional artwork card for the classic radio program **[SHOW TITLE]**, presented as a visually rich, historically evocative collector-style image.
+
+The finished card must feel like a **cinematic, photorealistic period poster** with a subtle illustrated-poster quality, combining realism, atmosphere, vintage design, and historically grounded storytelling.
+
+Use the supplied reference examples as the quality benchmark for:
+
+- composition strength
+- dramatic period atmosphere
+- title treatment prominence
+- distressed vintage border treatment
+- historical mood
+- lighting and texture
+- polished collector-card presentation
+
+Each new card should be unique to the individual program, while preserving the overall production quality and collectible aesthetic shown in the reference images.
+
+---
+
+## Required Output Specifications
+
+- **Final dimensions: exactly 1399 × 1124 pixels**
+- **Orientation:** landscape
+- **Format:** premium show card artwork
+- **Canvas must be fully filled**
+- No empty margins
+- No modern graphic design look
+- No flat template appearance
+- No stretched faces, squeezed bodies, or distorted title treatment
+
+---
+
+## Core Visual Standard
+
+Create the image in a style that is:
+
+- **Photorealistic**
+- **Cinematic**
+- **Historically immersive**
+- **Subtly enhanced with illustrated-poster sensibility**
+- **Rich in texture and atmosphere**
+- **Aged and collectible in appearance**
+
+The card should look like a beautifully preserved or lightly weathered **mid-century promotional card, lobby card, magazine premium, or radio program collector print**.
+
+---
+
+## Title Artwork Rule
+
+Use the supplied **original title art exactly as provided**, without redesigning it.
+
+### Requirements:
+- Preserve the supplied title artwork’s:
+  - wording
+  - shape
+  - styling
+  - color palette
+  - proportions
+  - period character
+- Do **not** reinterpret or modernize the logo
+- Do **not** redraw it in a different style unless absolutely necessary for integration
+- The title art should remain visually dominant and authentic
+
+### Placement:
+- Position the title art where it best serves the final composition
+- It may appear left, upper-left, top-center, or another compositionally strong location
+- Integrate it naturally into the artwork while keeping it readable and prominent
+
+---
+
+## Broadcast Years Rule
+
+Always include the program’s **earliest and latest broadcast years**.
+
+### Requirements:
+- Display as: **[START YEAR] - [END YEAR]**
+- Use typography appropriate to the card’s overall design
+- The year treatment should support the composition, not overpower it
+- It may appear:
+  - beneath the title
+  - near the title
+  - integrated into a badge, banner, or simple line treatment
+- Must always be clearly readable
+
+---
+
+## Border and Aging Treatment
+
+The outer border must match the overall treatment shown in the reference images.
+
+### Required border qualities:
+- distressed parchment edges
+- visible wear
+- aging
+- fine cracking
+- scratches
+- scuffs
+- timeworn texture
+- slight irregularity
+- collectible antique appearance
+
+The border should frame the artwork beautifully and give the card a worn archival feel, but should **not** obscure important details.
+
+### Important:
+- The border is part of the design language
+- It should feel authentic and consistent with vintage printed ephemera
+- Keep it visually rich, not sloppy
+
+---
+
+## Character / Performer Depiction Rule
+
+Depict the people, hosts, stars, or characters in a way that fits the specific show.
+
+### Standard:
+- Decide individually based on the program
+- Some shows may call for:
+  - a single dominant lead figure
+  - a duo
+  - an ensemble
+  - a suspense tableau
+  - an action-oriented dramatic scene
+  - a symbolic environment with little or no visible performer emphasis
+
+### Requirements:
+- Characters and performers should appear:
+  - natural
+  - expressive
+  - era-appropriate
+  - anatomically correct
+  - believable
+  - emotionally engaged
+- Avoid stiff posing unless the subject matter specifically calls for it
+- Wardrobe, grooming, posture, and expression must fit the show’s era and tone
+
+---
+
+## Background and Scene Selection Rule
+
+Research the program and create a **historically appropriate scene** that reflects the nature of the show.
+
+### The background should be selected based on:
+- the show’s genre
+- setting
+- subject matter
+- stars
+- tone
+- era
+- recurring visual associations
+- original broadcast identity
+
+### Examples of historically grounded background types:
+- radio studio interiors
+- urban noir streets
+- police headquarters
+- haunted mansions
+- western landscapes
+- elegant drawing rooms
+- newspaper offices
+- courtroom interiors
+- space-age laboratories
+- domestic comedy interiors
+- wartime or espionage settings
+- performance stages
+- small-town American streets
+- gothic staircases
+- city skylines appropriate to the show
+
+### Requirements:
+- The setting must help tell the story of the show
+- It should feel authentic to the program’s world
+- It must support the title art and character placement
+- It should never feel generic if a more distinctive show-specific scene is possible
+
+---
+
+## Composition Rule
+
+Let the individual show dictate the composition.
+
+Each card should feel custom-designed rather than templated.
+
+### However, all cards should share these strengths:
+- strong focal point
+- clear hierarchy
+- visually balanced layout
+- readable title placement
+- meaningful relationship between people and setting
+- compelling depth
+- dramatic staging
+- collector-card polish
+
+The composition may be:
+- portrait-driven
+- scene-driven
+- prop-driven
+- environment-driven
+- ensemble-driven
+
+As long as the result feels premium and historically appropriate.
+
+---
+
+## Lighting and Atmosphere
+
+Use lighting that enhances drama and mood, tailored to the specific program.
+
+### Lighting may include:
+- noir shadows
+- theatrical spotlights
+- warm studio glow
+- moonlight
+- candlelight
+- streetlamp reflections
+- smoky ambience
+- suspense fog
+- radio booth lighting
+- stage illumination
+- dramatic backlight or silhouette
+
+### The goal:
+Make the image feel cinematic and immersive, with rich atmosphere and clear emotional tone.
+
+---
+
+## Texture and Surface Treatment
+
+The final card should have visible material richness.
+
+Include subtle vintage surface qualities such as:
+- paper aging
+- print wear
+- grain
+- light scratches
+- worn texture
+- mild fading or patina where appropriate
+
+These should enhance the collectible aesthetic without degrading readability or image quality.
+
+---
+
+## Typography Beyond the Title
+
+Any additional typography besides the supplied title art and broadcast years should be minimal and supportive.
+
+### Typography should:
+- feel period-appropriate
+- complement the title art
+- integrate naturally into the design
+- remain readable
+
+Avoid excessive text clutter.
+
+---
+
+## Show-by-Show Variation Rule
+
+Each card should vary significantly according to the show itself.
+
+### Allow variation in:
+- palette
+- mood
+- lighting
+- staging
+- props
+- background
+- number of figures
+- energy level
+- genre emphasis
+- title placement
+- visual symbolism
+
+### Keep consistent only:
+- final dimensions
+- high production quality
+- title-art authenticity
+- inclusion of broadcast years
+- distressed collector-style border
+- overall collectible premium look
+
+---
+
+## Quality Bar
+
+Every finished card should feel like:
+
+- a premium collectible
+- a historically inspired promotional image
+- a cinematic visual summary of the radio show
+- a card worthy of being part of a unified classic radio archive
+
+It should look intentional, polished, evocative, and visually memorable.
+
+---
+
+## Reusable Fill-In Prompt Template
+
+Use the following as the direct production prompt template:
+
+---
+
+**Create a premium classic radio show collector card for “[SHOW TITLE]” at exactly 1399 × 1124 pixels. Use the supplied original title art exactly as provided, without modification, preserving its wording, styling, colors, and proportions. Include the broadcast years “[START YEAR] - [END YEAR]” clearly in the design.**
+
+**The artwork should be photorealistic and cinematic, with a subtle illustrated-poster treatment. It should feel like a historically evocative vintage promotional card or collector print from the mid-20th century. The image must have a strong custom composition, not a generic template, and should be tailored specifically to the show.**
+
+**Research the program and create a historically appropriate background scene that reflects the show’s identity, era, tone, and genre. Choose the performers, characters, props, and environment based on the program itself. Depict people naturally and convincingly, with accurate anatomy, expressive faces, period-appropriate wardrobe, and believable poses.**
+
+**Use lighting and atmosphere that match the show’s tone — such as noir shadows, theatrical glow, haunted ambience, urban night lighting, candlelight, studio illumination, or other dramatically appropriate mood.**
+
+**Frame the card with distressed parchment-like vintage edges, including aging, cracks, scratches, scuffs, and subtle wear, matching the reference examples. The border should feel antique and collectible while still polished and attractive.**
+
+**Allow the show itself to dictate the palette, mood, layout, and staging. Some cards may emphasize a lead performer, others a duo, ensemble, symbolic prop, or dramatic setting. Ensure the final result feels visually rich, historically grounded, cinematic, and premium — like a collector-quality classic radio show card.**
+
+---
+
+## Optional Short Production Version
+
+If you want a tighter version for repeated use, use this:
+
+**Create a 1399 × 1124 premium collector-style artwork card for “[SHOW TITLE]”. Use the supplied original title art exactly as provided and include the years “[START YEAR] - [END YEAR]”. Render the card in a photorealistic cinematic style with subtle illustrated-poster character. Research the show and build a historically appropriate scene, characters, and atmosphere that reflect its identity and genre. Let the show dictate the composition, palette, and mood. Depict performers or characters naturally and convincingly. Add distressed parchment-like vintage edges with cracks, scratches, wear, and aging, matching the provided reference examples. The final image should feel like a premium mid-century promotional collector card: dramatic, polished, atmospheric, and unique to the show.**
+
+---
+
+If you want, I can next turn this into:
+
+1. a **generator-ready production prompt with placeholders**,  
+2. a **shorter operational prompt for batch use**, or  
+3. a **filled-out prompt for a specific show**.
