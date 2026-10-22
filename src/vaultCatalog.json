@@ -1,229 +1,243 @@
 {
   "categories": {
     "adventure": {
-      "name": "Adventure",
-      "art": "adventure",
       "shows": {
         "escape": {
           "title": "Escape",
           "href": "/shows?show=escape",
-          "years": "1947–1954"
+          "years": "1947–1954",
+          "featuredEligible": true
         }
       }
     },
     "comedy": {
-      "name": "Comedy",
-      "art": "comedy",
       "shows": {
         "aldrich": {
           "title": "The Aldrich Family",
           "href": "/aldrich",
-          "years": "1939–1953"
+          "years": "1939–1953",
+          "featuredEligible": true
         },
         "bickersons": {
           "title": "The Bickersons",
           "href": "/bickersons",
-          "years": "1946–1951"
+          "years": "1946–1951",
+          "featuredEligible": true
         },
         "bob-hope": {
           "title": "The Bob Hope Show",
           "href": "/bob-hope",
-          "years": "1938–1955"
+          "years": "1938–1955",
+          "featuredEligible": true
         },
         "burns-and-allen": {
           "title": "The Burns and Allen Show",
           "href": "/burns-and-allen",
-          "years": "1932–1950"
+          "years": "1932–1950",
+          "featuredEligible": true
         },
         "duffys-tavern": {
           "title": "Duffy's Tavern",
           "href": "/duffys-tavern",
-          "years": "1941–1951"
+          "years": "1941–1951",
+          "featuredEligible": true
         },
         "edgar-bergen": {
           "title": "The Edgar Bergen and Charlie McCarthy Show",
           "href": "/edgar-bergen",
-          "years": "1937–1956"
+          "years": "1937–1956",
+          "featuredEligible": true
         },
         "father-knows-best": {
           "title": "Father Knows Best",
           "href": "/father-knows-best",
-          "years": "1949–1954"
+          "years": "1949–1954",
+          "featuredEligible": true
         },
         "jack-benny": {
           "title": "The Jack Benny Program",
           "href": "/jack-benny",
-          "years": "1932–1955"
+          "years": "1932–1955",
+          "featuredEligible": true
         },
         "life-of-riley": {
           "title": "The Life of Riley",
           "href": "/life-of-riley",
-          "years": "1944–1951"
+          "years": "1944–1951",
+          "featuredEligible": true
         },
         "maisie": {
           "title": "Maisie",
           "href": "/maisie",
-          "years": "1945–1953"
+          "years": "1945–1953",
+          "featuredEligible": true
         },
         "ozzie-and-harriet": {
           "title": "The Adventures of Ozzie and Harriet",
           "href": "/ozzie-and-harriet",
-          "years": "1944–1954"
+          "years": "1944–1954",
+          "featuredEligible": true
         }
       }
     },
     "detective": {
-      "name": "Detective",
-      "art": "detective",
       "shows": {
         "sam-spade": {
           "title": "The Adventures of Sam Spade",
           "href": "/sam-spade",
-          "years": "1946–1951"
+          "years": "1946–1951",
+          "featuredEligible": true
         },
         "sherlock-holmes": {
           "title": "Sherlock Holmes",
           "href": "/sherlock-holmes",
-          "years": "1930–1959"
+          "years": "1930–1959",
+          "featuredEligible": true
         },
         "dick-tracy": {
           "title": "Dick Tracy",
-          "href": "/dick-tracy"
+          "href": "/dick-tracy",
+          "featuredEligible": true
         },
         "dragnet": {
           "title": "Dragnet",
           "href": "/dragnet",
-          "years": "1949–1957"
+          "years": "1949–1957",
+          "featuredEligible": true
         },
         "green-hornet": {
           "title": "The Green Hornet",
           "href": "/green-hornet",
-          "years": "1936–1952"
+          "years": "1936–1952",
+          "featuredEligible": true
         },
         "johnny-dollar": {
           "title": "Yours Truly",
           "href": "/johnny-dollar",
-          "years": "1949–1962"
+          "years": "1949–1962",
+          "featuredEligible": true
         },
         "thin-man": {
           "title": "The Thin Man",
-          "href": "/thin-man"
+          "href": "/thin-man",
+          "featuredEligible": true
         }
       }
     },
     "drama": {
-      "name": "Drama",
-      "art": "drama",
       "shows": {
         "columbia": {
           "title": "Columbia Workshop",
-          "href": "/columbia"
+          "href": "/columbia",
+          "featuredEligible": true
         },
         "lux": {
           "title": "Lux Radio Theatre",
-          "href": "/lux"
+          "href": "/lux",
+          "featuredEligible": true
         },
         "theater-five": {
           "title": "Theater Five",
           "href": "/theater-five",
-          "years": "1964–1965"
+          "years": "1964–1965",
+          "featuredEligible": true
         }
       }
     },
     "mystery": {
-      "name": "Mystery",
-      "art": "mystery",
       "shows": {
         "suspense": {
           "title": "Suspense",
           "href": "/suspense",
           "years": "1942–1962",
-          "fallback": "mystery/suspense/hero.png"
+          "fallback": "mystery/suspense/hero.png",
+          "featuredEligible": true
         },
         "shadow": {
           "title": "The Shadow",
           "href": "/shadow",
           "years": "1930–1954",
-          "fallback": "mystery/shadow/hero.png"
+          "fallback": "mystery/shadow/hero.png",
+          "featuredEligible": true
         },
         "inner-sanctum": {
           "title": "Inner Sanctum Mysteries",
           "href": "/inner-sanctum",
-          "years": "1941–1952"
+          "years": "1941–1952",
+          "featuredEligible": true
         },
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
-          "href": "/mysterious-traveler"
+          "href": "/mysterious-traveler",
+          "featuredEligible": true
         },
         "whistler": {
           "title": "The Whistler",
           "href": "/whistler",
-          "years": "1942–1955"
+          "years": "1942–1955",
+          "featuredEligible": true
         }
       }
     },
     "sci-fi": {
-      "name": "Science Fiction",
-      "art": "sci-fi",
       "shows": {
         "xminus1": {
           "title": "X Minus One",
           "href": "/xminus1",
-          "years": "1955–1958"
+          "years": "1955–1958",
+          "featuredEligible": true
         },
         "dimension-x": {
           "title": "Dimension X",
           "href": "/dimension-x",
-          "years": "1950–1951"
+          "years": "1950–1951",
+          "featuredEligible": true
         },
         "journey-into-space": {
           "title": "Journey Into Space",
           "href": "/journey-into-space",
-          "years": "1953–1958"
+          "years": "1953–1958",
+          "featuredEligible": true
         },
         "buck-rogers": {
           "title": "Buck Rogers",
           "href": "/buck-rogers",
-          "years": "1932–1947"
+          "years": "1932–1947",
+          "featuredEligible": true
         },
         "2000-plus": {
           "title": "2000 Plus",
           "href": "/2000-plus",
-          "years": "1950–1952"
+          "years": "1950–1952",
+          "featuredEligible": true
         },
         "exploring-tomorrow": {
           "title": "Exploring Tomorrow",
-          "href": "/exploring-tomorrow"
+          "href": "/exploring-tomorrow",
+          "featuredEligible": true
         },
         "space-patrol": {
           "title": "Space Patrol",
-          "href": "/space-patrol"
+          "href": "/space-patrol",
+          "featuredEligible": true
         }
       }
     },
     "western": {
-      "name": "Westerns",
-      "art": "westerns",
       "shows": {
         "gunsmoke": {
           "title": "Gunsmoke",
           "href": "/gunsmoke",
-          "years": "1952–1961"
+          "years": "1952–1961",
+          "featuredEligible": true
         },
         "lone-ranger": {
           "title": "The Lone Ranger",
           "href": "/lone-ranger",
-          "years": "1933–1954"
+          "years": "1933–1954",
+          "featuredEligible": true
         }
       }
     }
-  },
-  "featured": [
-    "suspense",
-    "shadow",
-    "xminus1",
-    "escape",
-    "whistler",
-    "sam-spade"
-  ]
+  }
 }
