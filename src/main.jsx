@@ -55,7 +55,7 @@ function ShowApp(){
   case 'cast':page=<CastPage slug={slug} show={show} data={pageData}/>;break;
   default:page=<main className="page page-not-found"><h1>Page not found</h1><a href={'/'+slug}>Return to {show[0]}</a></main>;
  }
- return <ShowShell slug={slug} scrollable={route.type!=='landing'}>
+ return <ShowShell slug={slug} scrollable={route.type!=='landing' && route.type!=='contact'}>
   {page}
   {error&&<aside className="api-notice" role="status">API unavailable: {error}</aside>}
  </ShowShell>;
