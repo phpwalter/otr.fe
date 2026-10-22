@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import vaultConfig from './vaultCatalog.json';
-import SiteHeader from './components/SiteHeader.jsx';
-import SiteFooter from './components/SiteFooter.jsx';
+import ShowShell from './components/ShowShell.jsx';
 
 const catalog = Object.entries(vaultConfig.categories).flatMap(([category, data]) =>
     Object.entries(data.shows).map(([slug, show]) => ({
@@ -127,7 +126,5 @@ export default function Vault() {
         };
         content = <Info title={pages[path][0]} description={pages[path][1]}/>;
     } else content = <Info title="Page not found" description="This page does not exist in the Classic Radio Vault."/>;
-    return <div className="vault-page"><SiteHeader/>
-        <main className="vault-main">{content}</main>
-        <SiteFooter/></div>
+    return <ShowShell scrollable={path!=="/" && path!=="/contact"}><main className="vault-main">{content}</main></ShowShell>
 }
