@@ -4,7 +4,7 @@
       "shows": {
         "escape": {
           "title": "Escape",
-          "href": "/shows?show=escape",
+          "href": "/escape",
           "years": "1947–1954",
           "featuredEligible": true
         }
