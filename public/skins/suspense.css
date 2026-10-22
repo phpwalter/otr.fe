@@ -1,5 +1,5 @@
 /* Suspense: one shared React DOM, standalone desktop CSS skin. */
-.site.skin-suspense{position:relative;width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#090807 url('/art/mystery/suspense/hero.png') center/cover no-repeat;color:#f4e8d2;font-family:Georgia,serif}
+.site.skin-suspense{position:relative;width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#090807;color:#f4e8d2;font-family:Georgia,serif}
 .skin-suspense .header{position:absolute;z-index:4;left:0;top:0;width:200px;height:640px;border:0;background:transparent;display:block;padding:0}
 .skin-suspense .masthead{display:none}
 .skin-suspense .header nav{position:absolute;left:50px;top:180px;display:flex;flex-direction:column;align-items:flex-start;gap:23px;margin:0}
@@ -77,3 +77,15 @@
 .skin-suspense .featured-text h3{font-size:23px}
 .skin-suspense .featured-text p:not(.broadcast-label){font-size:14px;max-height:70px}
 .skin-suspense .player{bottom:8px}
+
+/* Anchored SiteViewport compatibility: use the standardized hero-art element.
+   Align at the top so 'cover' cannot crop away the upper portion of the image. */
+.skin-suspense .hero-art{
+  display:block;
+  position:absolute;
+  inset:0;
+  background-image:url('/art/mystery/suspense/hero.png');
+  background-position:center top;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
