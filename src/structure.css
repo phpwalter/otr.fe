@@ -26,7 +26,7 @@
   height:886px;
   overflow:hidden;
 }
-.show-viewport>.site{
+.show-viewport>.site[class*="skin-"]{
   position:relative;
   width:1674px;
   height:886px;
