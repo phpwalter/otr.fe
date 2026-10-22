@@ -1,39 +1,10 @@
-export const shows={
-'suspense':['Suspense','RADIO’S MASTERPIECES OF THRILLING DRAMA',75],
-'shadow':['The Shadow','WHO KNOWS WHAT EVIL LURKS IN THE HEARTS OF MEN?',75],
-'sam-spade':['The Adventures of Sam Spade','CRIME. WIT. SAN FRANCISCO.',75],
-'sherlock-holmes':['Sherlock Holmes','THE WORLD’S GREATEST DETECTIVE COMES TO RADIO',75],
-'inner-sanctum':['Inner Sanctum Mysteries','MYSTERY… SUSPENSE… THE UNEXPECTED…',75],
-'xminus1':['X Minus One','SCIENCE FICTION ON THE AIR',75],
-'dimension-x':['Dimension X','DRAMAS OF TOMORROW’S WORLDS',75],
-'journey-into-space':['Journey Into Space','BOLD ADVENTURES IN THE UNKNOWN',75],
-'buck-rogers':['Buck Rogers','IN THE 25TH CENTURY',90],
-'2000-plus':['2000 Plus','A RADIO ANTHOLOGY OF TOMORROW',75],
-'aldrich':["The Aldrich Family","COMEDY RADIO ARCHIVE",75],
-'bickersons':["The Bickersons","COMEDY RADIO ARCHIVE",75],
-'bob-hope':["The Bob Hope Show","COMEDY RADIO ARCHIVE",75],
-'burns-and-allen':["The Burns and Allen Show","COMEDY RADIO ARCHIVE",75],
-'duffys-tavern':["Duffy's Tavern","COMEDY RADIO ARCHIVE",75],
-'edgar-bergen':["The Edgar Bergen and Charlie McCarthy Show","COMEDY RADIO ARCHIVE",75],
-'father-knows-best':["Father Knows Best","COMEDY RADIO ARCHIVE",75],
-'jack-benny':["The Jack Benny Program","COMEDY RADIO ARCHIVE",75],
-'life-of-riley':["The Life of Riley","COMEDY RADIO ARCHIVE",75],
-'maisie':["Maisie","COMEDY RADIO ARCHIVE",75],
-'ozzie-and-harriet':["The Adventures of Ozzie and Harriet","COMEDY RADIO ARCHIVE",75],
-'dick-tracy':["Dick Tracy","DETECTIVE RADIO ARCHIVE",75],
-'dragnet':["Dragnet","DETECTIVE RADIO ARCHIVE",75],
-'green-hornet':["The Green Hornet","DETECTIVE RADIO ARCHIVE",75],
-'johnny-dollar':["Yours Truly, Johnny Dollar","DETECTIVE RADIO ARCHIVE",75],
-'thin-man':["The Thin Man","DETECTIVE RADIO ARCHIVE",75],
-'columbia':["Columbia Workshop","DRAMA RADIO ARCHIVE",75],
-'lux':["Lux Radio Theatre","DRAMA RADIO ARCHIVE",75],
-'theater-five':["Theater Five","DRAMA RADIO ARCHIVE",75],
-'mysterious-traveler':["The Mysterious Traveler","MYSTERY RADIO ARCHIVE",75],
-'whistler':["The Whistler","MYSTERY RADIO ARCHIVE",75],
-'exploring-tomorrow':["Exploring Tomorrow","SCIENCE FICTION RADIO ARCHIVE",75],
-'space-patrol':["Space Patrol","SCIENCE FICTION RADIO ARCHIVE",75],
-'gunsmoke':["Gunsmoke","WESTERN RADIO ARCHIVE",75],
-'lone-ranger':["The Lone Ranger","WESTERN RADIO ARCHIVE",75],
+// Compatibility exports derived from the Vault's single source of truth.
+import vaultCatalog from './vaultCatalog.json';
+
+const catalogShows = Object.values(vaultCatalog.categories).flatMap(category => Object.entries(category.shows));
+export const shows = Object.fromEntries(catalogShows.map(([slug, show]) => [slug, [show.title, show.tagline || 'CLASSIC RADIO ARCHIVE', show.anniversaryYears ?? 75]]));
+export const slugs = Object.keys(shows);
+export const currentSlug = () => {
+  const segment = decodeURIComponent(window.location.pathname.split('/')[1] || '');
+  return segment === 'x-minus-one' ? 'xminus1' : shows[segment] ? segment : 'suspense';
 };
-export const slugs=Object.keys(shows);
-export const currentSlug=()=>{const segment=decodeURIComponent(window.location.pathname.split('/')[1]||'');return segment==='x-minus-one'?'xminus1':shows[segment]?segment:'suspense'};
