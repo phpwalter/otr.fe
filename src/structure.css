@@ -5,3 +5,8 @@
 .generic-site-shell>.site{margin:0 auto;width:1400px}
 .generic-site-shell>.vault-header{width:1674px}
 .generic-site-shell>.vault-footer{width:1674px}
+
+/* Keep HOME chrome at its approved coordinates; fit the existing 1440x900 generic artwork within the remaining 851px. */
+.generic-site-shell{height:1030px;min-height:1030px}
+.generic-show-viewport{height:851px;width:1674px;overflow:hidden;display:flex;align-items:flex-start;justify-content:center}
+.generic-show-viewport>.site{width:1440px;height:900px;min-height:900px;flex:none;margin:0;transform:scale(.945555556);transform-origin:top center}
