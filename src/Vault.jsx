@@ -10,14 +10,28 @@ const catalog = Object.entries(vaultConfig.categories).flatMap(([category, data]
     href: show.href || '/' + slug,
     years: show.years,
     fallback: show.fallback,
-    card: show.card || '/art/' + category + '/' + slug + '/card.png'
+    card: show.card || '/art/' + category + '/' + slug + '/card.png',
+    featuredEligible: show.featuredEligible === true
   }))
 );
-const categories = Object.entries(vaultConfig.categories).map(([slug, data]) => ({
-  slug, name: data.name, art: data.art || slug, alt: data.alt
+const displayCategory = slug => slug === 'sci-fi' ? 'Sci-Fi' : slug === 'western' ? 'Westerns' : slug.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+const categories = Object.keys(vaultConfig.categories).map(slug => ({
+  slug, name: displayCategory(slug), art: slug === 'western' ? 'westerns' : slug
 }));
-const bySlug = new Map(catalog.map(show => [show.slug, show]));
-const featured = vaultConfig.featured.map(slug => bySlug.get(slug)).filter(Boolean);
+const shuffle = values => {
+  const items = [...values];
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+  return items;
+};
+const selectFeatured = () => {
+  const eligibleGroups = Object.keys(vaultConfig.categories).map(category =>
+    catalog.filter(show => show.category === category && show.featuredEligible === true)
+  ).filter(group => group.length);
+  return shuffle(eligibleGroups).slice(0, 6).map(group => shuffle(group)[0]);
+};
 import './vault.css';
 
 const navigation=[['Home','/'],['Shows','/shows'],['Browse','/browse'],['Categories','/categories'],['About','/about']];
@@ -29,7 +43,7 @@ function Header(){const [term,setTerm]=useState('');return <header className="va
 function Footer(){return <footer className="vault-footer"><div><a href="/about">About</a><span>|</span><a href="/help">Help</a><span>|</span><a href="/contact">Contact</a><span>|</span><a href="/privacy">Privacy</a><span>|</span><a href="/terms">Terms</a></div><div className="vault-social"><span>f</span><span>𝕏</span><span>◎</span><span>▶</span></div><p>© {new Date().getFullYear()} Classic Radio Vault<br/>All rights reserved.</p></footer>}
 function FeaturedCard({item,i}){const src=item.card;const fallback=item.fallback?'/art/'+item.fallback:null;return <a className={'vault-show-card vault-show-'+i} href={item.href} aria-label={'Explore '+item.name}><Img src={src} fallback={fallback} alt={item.name+' radio artwork'} /></a>}
 function CategoryCard({item}){return <a className={'vault-cat-card vault-cat-'+item.fallback} href={'/categories/'+item.slug}><Img src={'/art/categories/'+item.art+'.png'} alt={item.alt||item.name+' category artwork'}/></a>}
-function Home(){const [homeCategories] = useState(() => {const shuffled=[...categories];for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}return shuffled.slice(0,4);});return <><section className="vault-hero"></section>
+function Home(){const [homeCategories] = useState(() => shuffle(categories).slice(0,4));const [featured] = useState(selectFeatured);return <><section className="vault-hero"></section>
  <section className="vault-stats"><div><strong>200+</strong><span>RADIO SHOWS</span></div><div><strong>5,000+</strong><span>EPISODES</span></div><div><strong>1930s – 1950s</strong><span>THE GOLDEN AGE</span></div><div><strong>100%</strong><span>FREE TO EXPLORE</span></div></section>
  <section className="vault-section"><div className="vault-section-title"><h2>FEATURED RADIO PROGRAMS</h2><span/><a href="/shows">BROWSE ALL SHOWS →</a></div><div className="vault-featured-grid">{featured.map((x,i)=><FeaturedCard key={x.slug} item={x} i={i}/>)}</div></section>
  <section className="vault-section vault-category-section"><div className="vault-section-title"><h2>EXPLORE BY CATEGORY</h2><span/><a href="/categories">VIEW ALL CATEGORIES →</a></div><div className="vault-category-grid">{homeCategories.map(c=><CategoryCard key={c.slug} item={c}/>)}</div></section></>}
