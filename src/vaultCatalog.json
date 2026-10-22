@@ -1,76 +1,229 @@
 {
-  "categoryBySlug": {
-    "suspense": "mystery",
-    "shadow": "mystery",
-    "sam-spade": "detective",
-    "sherlock-holmes": "detective",
-    "inner-sanctum": "mystery",
-    "whistler": "mystery",
-    "mysterious-traveler": "mystery",
-    "xminus1": "sci-fi",
-    "dimension-x": "sci-fi",
-    "journey-into-space": "sci-fi",
-    "buck-rogers": "sci-fi",
-    "2000-plus": "sci-fi",
-    "exploring-tomorrow": "sci-fi",
-    "space-patrol": "sci-fi",
-    "gunsmoke": "western",
-    "lone-ranger": "western",
-    "columbia": "drama",
-    "lux": "drama",
-    "theater-five": "drama"
-  },
-  "comedySlugs": [
-    "aldrich",
-    "bickersons",
-    "bob-hope",
-    "burns-and-allen",
-    "duffys-tavern",
-    "edgar-bergen",
-    "father-knows-best",
-    "jack-benny",
-    "life-of-riley",
-    "maisie",
-    "ozzie-and-harriet"
-  ],
-  "extraShows": [
-    {
-      "slug": "escape",
-      "name": "Escape",
-      "category": "adventure",
-      "href": "/shows?show=escape",
-      "years": "1947 – 1954"
+  "categories": {
+    "adventure": {
+      "name": "Adventure",
+      "art": "adventure",
+      "shows": {
+        "escape": {
+          "title": "Escape",
+          "href": "/shows?show=escape",
+          "years": "1947–1954"
+        }
+      }
+    },
+    "comedy": {
+      "name": "Comedy",
+      "art": "comedy",
+      "shows": {
+        "aldrich": {
+          "title": "The Aldrich Family",
+          "href": "/aldrich",
+          "years": "1939–1953"
+        },
+        "bickersons": {
+          "title": "The Bickersons",
+          "href": "/bickersons",
+          "years": "1946–1951"
+        },
+        "bob-hope": {
+          "title": "The Bob Hope Show",
+          "href": "/bob-hope",
+          "years": "1938–1955"
+        },
+        "burns-and-allen": {
+          "title": "The Burns and Allen Show",
+          "href": "/burns-and-allen",
+          "years": "1932–1950"
+        },
+        "duffys-tavern": {
+          "title": "Duffy's Tavern",
+          "href": "/duffys-tavern",
+          "years": "1941–1951"
+        },
+        "edgar-bergen": {
+          "title": "The Edgar Bergen and Charlie McCarthy Show",
+          "href": "/edgar-bergen",
+          "years": "1937–1956"
+        },
+        "father-knows-best": {
+          "title": "Father Knows Best",
+          "href": "/father-knows-best",
+          "years": "1949–1954"
+        },
+        "jack-benny": {
+          "title": "The Jack Benny Program",
+          "href": "/jack-benny",
+          "years": "1932–1955"
+        },
+        "life-of-riley": {
+          "title": "The Life of Riley",
+          "href": "/life-of-riley",
+          "years": "1944–1951"
+        },
+        "maisie": {
+          "title": "Maisie",
+          "href": "/maisie",
+          "years": "1945–1953"
+        },
+        "ozzie-and-harriet": {
+          "title": "The Adventures of Ozzie and Harriet",
+          "href": "/ozzie-and-harriet",
+          "years": "1944–1954"
+        }
+      }
+    },
+    "detective": {
+      "name": "Detective",
+      "art": "detective",
+      "shows": {
+        "sam-spade": {
+          "title": "The Adventures of Sam Spade",
+          "href": "/sam-spade",
+          "years": "1946–1951"
+        },
+        "sherlock-holmes": {
+          "title": "Sherlock Holmes",
+          "href": "/sherlock-holmes",
+          "years": "1930–1959"
+        },
+        "dick-tracy": {
+          "title": "Dick Tracy",
+          "href": "/dick-tracy"
+        },
+        "dragnet": {
+          "title": "Dragnet",
+          "href": "/dragnet",
+          "years": "1949–1957"
+        },
+        "green-hornet": {
+          "title": "The Green Hornet",
+          "href": "/green-hornet",
+          "years": "1936–1952"
+        },
+        "johnny-dollar": {
+          "title": "Yours Truly",
+          "href": "/johnny-dollar",
+          "years": "1949–1962"
+        },
+        "thin-man": {
+          "title": "The Thin Man",
+          "href": "/thin-man"
+        }
+      }
+    },
+    "drama": {
+      "name": "Drama",
+      "art": "drama",
+      "shows": {
+        "columbia": {
+          "title": "Columbia Workshop",
+          "href": "/columbia"
+        },
+        "lux": {
+          "title": "Lux Radio Theatre",
+          "href": "/lux"
+        },
+        "theater-five": {
+          "title": "Theater Five",
+          "href": "/theater-five",
+          "years": "1964–1965"
+        }
+      }
+    },
+    "mystery": {
+      "name": "Mystery",
+      "art": "mystery",
+      "shows": {
+        "suspense": {
+          "title": "Suspense",
+          "href": "/suspense",
+          "years": "1942–1962",
+          "fallback": "mystery/suspense/hero.png"
+        },
+        "shadow": {
+          "title": "The Shadow",
+          "href": "/shadow",
+          "years": "1930–1954",
+          "fallback": "mystery/shadow/hero.png"
+        },
+        "inner-sanctum": {
+          "title": "Inner Sanctum Mysteries",
+          "href": "/inner-sanctum",
+          "years": "1941–1952"
+        },
+        "mysterious-traveler": {
+          "title": "The Mysterious Traveler",
+          "href": "/mysterious-traveler"
+        },
+        "whistler": {
+          "title": "The Whistler",
+          "href": "/whistler",
+          "years": "1942–1955"
+        }
+      }
+    },
+    "sci-fi": {
+      "name": "Science Fiction",
+      "art": "sci-fi",
+      "shows": {
+        "xminus1": {
+          "title": "X Minus One",
+          "href": "/xminus1",
+          "years": "1955–1958"
+        },
+        "dimension-x": {
+          "title": "Dimension X",
+          "href": "/dimension-x",
+          "years": "1950–1951"
+        },
+        "journey-into-space": {
+          "title": "Journey Into Space",
+          "href": "/journey-into-space",
+          "years": "1953–1958"
+        },
+        "buck-rogers": {
+          "title": "Buck Rogers",
+          "href": "/buck-rogers",
+          "years": "1932–1947"
+        },
+        "2000-plus": {
+          "title": "2000 Plus",
+          "href": "/2000-plus",
+          "years": "1950–1952"
+        },
+        "exploring-tomorrow": {
+          "title": "Exploring Tomorrow",
+          "href": "/exploring-tomorrow"
+        },
+        "space-patrol": {
+          "title": "Space Patrol",
+          "href": "/space-patrol"
+        }
+      }
+    },
+    "western": {
+      "name": "Westerns",
+      "art": "westerns",
+      "shows": {
+        "gunsmoke": {
+          "title": "Gunsmoke",
+          "href": "/gunsmoke",
+          "years": "1952–1961"
+        },
+        "lone-ranger": {
+          "title": "The Lone Ranger",
+          "href": "/lone-ranger",
+          "years": "1933–1954"
+        }
+      }
     }
-  ],
-  "featuredSlugs": [
+  },
+  "featured": [
     "suspense",
     "shadow",
     "xminus1",
     "escape",
     "whistler",
     "sam-spade"
-  ],
-  "categories": [
-    {
-      "slug": "mystery",
-      "name": "Drama & Mystery",
-      "art": "drama",
-      "alt": "Mystery category artwork"
-    },
-    {
-      "slug": "sci-fi",
-      "name": "Sci-Fi",
-      "art": "sci-fi"
-    },
-    {
-      "slug": "western",
-      "name": "Westerns",
-      "art": "westerns"
-    },
-    {
-      "slug": "comedy",
-      "name": "Comedy",
-      "art": "comedy"
-    }
   ]
 }
