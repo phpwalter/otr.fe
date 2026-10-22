@@ -5,9 +5,6 @@
 .page-landing>.page-navigation{position:absolute;left:0;top:0;z-index:7}
 .page-landing>.page-navigation .page-navigation__link{padding:6px}
 .page-landing .shadow-side{display:none}
-.show-viewport--scrollable{height:auto;min-height:886px;overflow:visible}
-.generic-site-shell.is-scrollable{height:auto;min-height:1030px;overflow:visible}
-.show-viewport--scrollable>.site[class*="skin-"]{height:auto;min-height:886px;max-height:none;overflow:visible}
 .page-episodes,.page-episode-detail,.page-cast,.page-not-found{min-height:886px;padding:48px 65px 75px;background:#f6e2c5;color:#261d17}
 .page-heading h1{font-size:44px;margin:0 0 20px}
 .page-episodes .page-navigation,.page-cast .page-navigation,.page-episode-detail .page-navigation{margin:20px 0 30px}
@@ -20,10 +17,10 @@
 .page-empty-message{font-size:20px}
 .episode-detail{max-width:1050px}
 .episode-detail__art{height:260px}
-.show-viewport .skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
-.show-viewport .skin-suspense .featured-art{left:0}
-.show-viewport .skin-suspense .cards>.featured{display:none}
-.show-viewport .skin-shadow .shadow-side{display:block}
-.show-viewport .skin-shadow .shadow-side-links a{display:block}
-.show-viewport .skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
-.show-viewport .skin-suspense .page-navigation,.show-viewport .skin-shadow .page-navigation{display:none}
+.site-viewport .skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
+.site-viewport .skin-suspense .featured-art{left:0}
+.site-viewport .skin-suspense .cards>.featured{display:none}
+.site-viewport .skin-shadow .shadow-side{display:block}
+.site-viewport .skin-shadow .shadow-side-links a{display:block}
+.site-viewport .skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
+.site-viewport .skin-suspense .page-navigation,.site-viewport .skin-shadow .page-navigation{display:none}
