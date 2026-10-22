@@ -53,7 +53,8 @@ const defaultCategory = slug =>
 export const catalog = [
   ...slugs.map(slug=>({
     slug, name:shows[slug][0], category:defaultCategory(slug),
-    href:'/'+slug
+    href:'/'+slug,
+    fallback:slug==='suspense'?'mystery/suspense/hero.png':slug==='shadow'?'mystery/shadow/hero.png':undefined
   })),
   ...extraShows
 ].map(show=>({
