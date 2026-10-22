@@ -1,0 +1,26 @@
+/* Page type contracts: identical DOM across show skins. */
+.page .is-empty{display:none!important}
+.page-empty-message.is-empty{display:none}
+.page-navigation{display:flex;gap:20px;align-items:center}
+.page-landing>.page-navigation{position:absolute;left:0;top:0;z-index:7}
+.page-landing>.page-navigation .page-navigation__link{padding:6px}
+.page-landing .shadow-side{display:none}
+.page-episodes,.page-episode-detail,.page-cast,.page-not-found{min-height:886px;padding:48px 65px 75px;background:#f6e2c5;color:#261d17}
+.page-heading h1{font-size:44px;margin:0 0 20px}
+.page-episodes .page-navigation,.page-cast .page-navigation,.page-episode-detail .page-navigation{margin:20px 0 30px}
+.episode-grid,.cast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.episode-card,.person-card,.episode-detail{border:1px solid #9a7652;padding:18px;background:#fdf1da}
+.episode-card__art,.person-card__portrait,.episode-detail__art{height:135px;background:#c8b291}
+.episode-card__title,.person-card__name{font-size:25px;margin:14px 0 6px}
+.episode-detail__title{font-size:36px}
+.episode-card__description,.person-card__biography,.episode-detail__description{line-height:1.5}
+.page-empty-message{font-size:20px}
+.episode-detail{max-width:1050px}
+.episode-detail__art{height:260px}
+.site-viewport .skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
+.site-viewport .skin-suspense .featured-art{left:0}
+.site-viewport .skin-suspense .cards>.featured{display:none}
+.site-viewport .skin-shadow .shadow-side{display:block}
+.site-viewport .skin-shadow .shadow-side-links a{display:block}
+.site-viewport .skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
+.site-viewport .skin-suspense .page-navigation,.site-viewport .skin-shadow .page-navigation{display:none}
