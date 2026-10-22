@@ -1,0 +1,76 @@
+{
+  "categoryBySlug": {
+    "suspense": "mystery",
+    "shadow": "mystery",
+    "sam-spade": "detective",
+    "sherlock-holmes": "detective",
+    "inner-sanctum": "mystery",
+    "whistler": "mystery",
+    "mysterious-traveler": "mystery",
+    "xminus1": "sci-fi",
+    "dimension-x": "sci-fi",
+    "journey-into-space": "sci-fi",
+    "buck-rogers": "sci-fi",
+    "2000-plus": "sci-fi",
+    "exploring-tomorrow": "sci-fi",
+    "space-patrol": "sci-fi",
+    "gunsmoke": "western",
+    "lone-ranger": "western",
+    "columbia": "drama",
+    "lux": "drama",
+    "theater-five": "drama"
+  },
+  "comedySlugs": [
+    "aldrich",
+    "bickersons",
+    "bob-hope",
+    "burns-and-allen",
+    "duffys-tavern",
+    "edgar-bergen",
+    "father-knows-best",
+    "jack-benny",
+    "life-of-riley",
+    "maisie",
+    "ozzie-and-harriet"
+  ],
+  "extraShows": [
+    {
+      "slug": "escape",
+      "name": "Escape",
+      "category": "adventure",
+      "href": "/shows?show=escape",
+      "years": "1947 – 1954"
+    }
+  ],
+  "featuredSlugs": [
+    "suspense",
+    "shadow",
+    "xminus1",
+    "escape",
+    "whistler",
+    "sam-spade"
+  ],
+  "categories": [
+    {
+      "slug": "mystery",
+      "name": "Drama & Mystery",
+      "art": "drama",
+      "alt": "Mystery category artwork"
+    },
+    {
+      "slug": "sci-fi",
+      "name": "Sci-Fi",
+      "art": "sci-fi"
+    },
+    {
+      "slug": "western",
+      "name": "Westerns",
+      "art": "westerns"
+    },
+    {
+      "slug": "comedy",
+      "name": "Comedy",
+      "art": "comedy"
+    }
+  ]
+}
