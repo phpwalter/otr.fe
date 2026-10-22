@@ -4,3 +4,8 @@ html:has(.vault-page),body:has(.vault-page){margin:0;min-width:1674px;background
 
 /* Display the show title when its featured card artwork is unavailable. */
 .vault-show-card-title{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:12px;text-align:center;font:normal 24px/1.25 Georgia,serif;color:#481a12;background:#efd5a5;overflow-wrap:anywhere}
+
+/* Shared artwork fallback for featured and listing cards. */
+.vault-listing-card .vault-show-card-title{min-height:150px;font-size:20px}
+.vault-listing-card>img{display:block}
+.vault-image-fallback{display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:100px;padding:12px;text-align:center;color:#f5d9a7;background:#39231a}
