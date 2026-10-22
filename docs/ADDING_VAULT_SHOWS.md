@@ -1,18 +1,23 @@
 # Adding shows to Classic Radio Vault
 
-The home page, Browse, Shows, Categories and show-title Search share the catalog in `src/vaultCatalog.json`. You do not need to edit `src/Vault.jsx` or `src/vault.css` when adding a show.
+All Vault show data lives in `src/vaultCatalog.json`. The catalog includes 36 shows grouped by category. `src/Vault.jsx` derives Browse, Shows, Categories, search, and featured cards from it; the page layout does not require changes when adding a show.
 
-1. Add the artwork at `public/art/<category>/<slug>/card.png` (for example, `public/art/adventure/escape/card.png`).
-2. Add an object to the `extraShows` array in `src/vaultCatalog.json`:
-   ```json
-   {"slug":"new-show", "name":"New Show", "category":"adventure",
-    "href":"/shows?show=new-show", "years":"1948 – 1953"}
-   ```
-   Provide a real `href` if its custom landing page already exists. An entry in this catalog alone does **not** create an individual show page.
-3. Optionally add `"new-show"` to the `featuredSlugs` array. The home page currently has **six fixed featured slots**, so replace an existing slug if you want to keep the same layout.
-4. For an existing show registered in `src/series.js`, do **not** duplicate it in `extraShows`. Its catalog entry is automatic; update the `categoryBySlug` object if the default category is incorrect.
-5. To add an actual dedicated show landing page, register it in `src/series.js`, supply its show-specific artwork and implement/verify the corresponding skin or route. The Vault catalog only handles discovery and links.
+## Add a show
+1. Place its art at `public/art/<category>/<slug>/card.png`.
+2. Find the category in `categories` and add a show object under its `shows` map (keyed by slug). Example inside `categories.adventure.shows`:
 
-Categories, image paths, featured ordering and existing show metadata are configured centrally. The layout is unchanged by catalog edits. The artwork must be present on the branch being served.
+```json
+"new-show": {
+  "title": "New Show",
+  "href": "/shows?show=new-show",
+  "years": "1948–1953"
+}
+```
 
-The catalog is strict JSON: use double quotes, commas between entries, and no comments or trailing commas. Existing dedicated-show metadata continues to come from `src/series.js`.
+3. To feature it on the homepage, add its slug to the ordered root `featured` array. The current homepage is designed for six featured cards; replace one slug to preserve that layout.
+
+The image path is automatically `/art/<category>/<slug>/card.png`; optional `card` or `fallback` fields override art behavior. `years` may be omitted if the broadcast years have not been verified.
+
+A `href` must point to a working landing page to enable navigation; catalog registration alone does not implement one. Existing dedicated pages and their API remain defined through `src/series.js` for now. Do not remove those entries until that router is migrated.
+
+The JSON format requires double-quoted strings and keys, with no JavaScript comments or trailing commas.
