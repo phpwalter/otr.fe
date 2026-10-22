@@ -1,23 +1,27 @@
 # Adding shows to Classic Radio Vault
 
-All Vault show data lives in `src/vaultCatalog.json`. The catalog includes 36 shows grouped by category. `src/Vault.jsx` derives Browse, Shows, Categories, search, and featured cards from it; the page layout does not require changes when adding a show.
+The single source of truth for the Vault's 36 shows is `src/vaultCatalog.json`. Category names and artwork paths are derived from the keys under `categories`; no separate category list or featured-slug list is maintained.
 
-## Add a show
-1. Place its art at `public/art/<category>/<slug>/card.png`.
-2. Find the category in `categories` and add a show object under its `shows` map (keyed by slug). Example inside `categories.adventure.shows`:
+## Adding a show
+
+1. Put its image at `public/art/<category>/<slug>/card.png`.
+2. Insert the show into the `shows` object for its category:
 
 ```json
 "new-show": {
   "title": "New Show",
-  "href": "/shows?show=new-show",
-  "years": "1948–1953"
+  "href": "/new-show",
+  "years": "1948–1953",
+  "featuredEligible": true
 }
 ```
 
-3. To feature it on the homepage, add its slug to the ordered root `featured` array. The current homepage is designed for six featured cards; replace one slug to preserve that layout.
+Set `featuredEligible` to `false` to exclude the show from the homepage's featured-program lottery. Each page load picks six different eligible categories at random, then one eligible show from each, in randomized order. The separate Explore by Category section independently chooses four categories per load.
 
-The image path is automatically `/art/<category>/<slug>/card.png`; optional `card` or `fallback` fields override art behavior. `years` may be omitted if the broadcast years have not been verified.
+**Keep at least six categories containing one or more eligible shows** to guarantee all six featured slots are filled. Only include shows whose card artwork is available when enabling them for the featured row.
 
-A `href` must point to a working landing page to enable navigation; catalog registration alone does not implement one. Existing dedicated pages and their API remain defined through `src/series.js` for now. Do not remove those entries until that router is migrated.
+The frontend automatically constructs `/art/<category>/<slug>/card.png`. You may supply a `card` property to override that path and `fallback` for another image. For the Western category, the category banner is `westerns.png`; for other categories, its filename follows the category slug.
 
-The JSON format requires double-quoted strings and keys, with no JavaScript comments or trailing commas.
+The category key provides the public category name (e.g., `sci-fi` displays as Sci-Fi); no display-name field is necessary. Dedicated show-page routes and API setup still live in `src/series.js` until migrated; a catalog entry alone does not create a dedicated page.
+
+JSON uses double-quoted keys and strings, with no comments or trailing commas.
