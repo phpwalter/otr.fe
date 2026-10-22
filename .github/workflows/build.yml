@@ -1,9 +1,9 @@
 name: Frontend build
 on:
   push:
-    branches: [main, feature/radio-landing-page-skins]
+    branches: [main, vault, 'feature/**']
   pull_request:
-    branches: [main]
+    branches: [main, vault]
 jobs:
   build:
     runs-on: ubuntu-latest
