@@ -1,0 +1,315 @@
+{
+  "categories": {
+    "adventure": {
+      "shows": {
+        "escape": {
+          "title": "Escape",
+          "href": "/escape",
+          "years": "1947–1954",
+          "featuredEligible": true,
+          "tagline": "CLASSIC RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    },
+    "comedy": {
+      "shows": {
+        "aldrich": {
+          "title": "The Aldrich Family",
+          "href": "/aldrich",
+          "years": "1939–1953",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "bickersons": {
+          "title": "The Bickersons",
+          "href": "/bickersons",
+          "years": "1946–1951",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "bob-hope": {
+          "title": "The Bob Hope Show",
+          "href": "/bob-hope",
+          "years": "1938–1955",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "burns-and-allen": {
+          "title": "The Burns and Allen Show",
+          "href": "/burns-and-allen",
+          "years": "1932–1950",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "duffys-tavern": {
+          "title": "Duffy's Tavern",
+          "href": "/duffys-tavern",
+          "years": "1941–1951",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "edgar-bergen": {
+          "title": "The Edgar Bergen and Charlie McCarthy Show",
+          "href": "/edgar-bergen",
+          "years": "1937–1956",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "father-knows-best": {
+          "title": "Father Knows Best",
+          "href": "/father-knows-best",
+          "years": "1949–1954",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "jack-benny": {
+          "title": "The Jack Benny Program",
+          "href": "/jack-benny",
+          "years": "1932–1955",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "life-of-riley": {
+          "title": "The Life of Riley",
+          "href": "/life-of-riley",
+          "years": "1944–1951",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "maisie": {
+          "title": "Maisie",
+          "href": "/maisie",
+          "years": "1945–1953",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "ozzie-and-harriet": {
+          "title": "The Adventures of Ozzie and Harriet",
+          "href": "/ozzie-and-harriet",
+          "years": "1944–1954",
+          "featuredEligible": true,
+          "tagline": "COMEDY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    },
+    "detective": {
+      "shows": {
+        "sam-spade": {
+          "title": "The Adventures of Sam Spade",
+          "href": "/sam-spade",
+          "years": "1946–1951",
+          "featuredEligible": true,
+          "tagline": "CRIME. WIT. SAN FRANCISCO.",
+          "anniversaryYears": 75
+        },
+        "sherlock-holmes": {
+          "title": "Sherlock Holmes",
+          "href": "/sherlock-holmes",
+          "years": "1930–1959",
+          "featuredEligible": true,
+          "tagline": "THE WORLD’S GREATEST DETECTIVE COMES TO RADIO",
+          "anniversaryYears": 75
+        },
+        "dick-tracy": {
+          "title": "Dick Tracy",
+          "href": "/dick-tracy",
+          "featuredEligible": true,
+          "tagline": "DETECTIVE RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "dragnet": {
+          "title": "Dragnet",
+          "href": "/dragnet",
+          "years": "1949–1957",
+          "featuredEligible": true,
+          "tagline": "DETECTIVE RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "green-hornet": {
+          "title": "The Green Hornet",
+          "href": "/green-hornet",
+          "years": "1936–1952",
+          "featuredEligible": true,
+          "tagline": "DETECTIVE RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "johnny-dollar": {
+          "title": "Yours Truly, Johnny Dollar",
+          "href": "/johnny-dollar",
+          "years": "1949–1962",
+          "featuredEligible": true,
+          "tagline": "DETECTIVE RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "thin-man": {
+          "title": "The Thin Man",
+          "href": "/thin-man",
+          "featuredEligible": true,
+          "tagline": "DETECTIVE RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    },
+    "drama": {
+      "shows": {
+        "columbia": {
+          "title": "Columbia Workshop",
+          "href": "/columbia",
+          "featuredEligible": true,
+          "tagline": "DRAMA RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "lux": {
+          "title": "Lux Radio Theatre",
+          "href": "/lux",
+          "featuredEligible": true,
+          "tagline": "DRAMA RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "theater-five": {
+          "title": "Theater Five",
+          "href": "/theater-five",
+          "years": "1964–1965",
+          "featuredEligible": true,
+          "tagline": "DRAMA RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    },
+    "mystery": {
+      "shows": {
+        "suspense": {
+          "title": "Suspense",
+          "href": "/suspense",
+          "years": "1942–1962",
+          "fallback": "mystery/suspense/hero.png",
+          "featuredEligible": true,
+          "tagline": "RADIO’S MASTERPIECES OF THRILLING DRAMA",
+          "anniversaryYears": 75
+        },
+        "shadow": {
+          "title": "The Shadow",
+          "href": "/shadow",
+          "years": "1930–1954",
+          "fallback": "mystery/shadow/hero.png",
+          "featuredEligible": true,
+          "tagline": "WHO KNOWS WHAT EVIL LURKS IN THE HEARTS OF MEN?",
+          "anniversaryYears": 75
+        },
+        "inner-sanctum": {
+          "title": "Inner Sanctum Mysteries",
+          "href": "/inner-sanctum",
+          "years": "1941–1952",
+          "featuredEligible": true,
+          "tagline": "MYSTERY… SUSPENSE… THE UNEXPECTED…",
+          "anniversaryYears": 75
+        },
+        "mysterious-traveler": {
+          "title": "The Mysterious Traveler",
+          "href": "/mysterious-traveler",
+          "featuredEligible": true,
+          "tagline": "MYSTERY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "whistler": {
+          "title": "The Whistler",
+          "href": "/whistler",
+          "years": "1942–1955",
+          "featuredEligible": true,
+          "tagline": "MYSTERY RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    },
+    "sci-fi": {
+      "shows": {
+        "xminus1": {
+          "title": "X Minus One",
+          "href": "/xminus1",
+          "years": "1955–1958",
+          "featuredEligible": true,
+          "tagline": "SCIENCE FICTION ON THE AIR",
+          "anniversaryYears": 75
+        },
+        "dimension-x": {
+          "title": "Dimension X",
+          "href": "/dimension-x",
+          "years": "1950–1951",
+          "featuredEligible": true,
+          "tagline": "DRAMAS OF TOMORROW’S WORLDS",
+          "anniversaryYears": 75
+        },
+        "journey-into-space": {
+          "title": "Journey Into Space",
+          "href": "/journey-into-space",
+          "years": "1953–1958",
+          "featuredEligible": true,
+          "tagline": "BOLD ADVENTURES IN THE UNKNOWN",
+          "anniversaryYears": 75
+        },
+        "buck-rogers": {
+          "title": "Buck Rogers",
+          "href": "/buck-rogers",
+          "years": "1932–1947",
+          "featuredEligible": true,
+          "tagline": "IN THE 25TH CENTURY",
+          "anniversaryYears": 90
+        },
+        "2000-plus": {
+          "title": "2000 Plus",
+          "href": "/2000-plus",
+          "years": "1950–1952",
+          "featuredEligible": true,
+          "tagline": "A RADIO ANTHOLOGY OF TOMORROW",
+          "anniversaryYears": 75
+        },
+        "exploring-tomorrow": {
+          "title": "Exploring Tomorrow",
+          "href": "/exploring-tomorrow",
+          "featuredEligible": true,
+          "tagline": "SCIENCE FICTION RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "space-patrol": {
+          "title": "Space Patrol",
+          "href": "/space-patrol",
+          "featuredEligible": true,
+          "tagline": "SCIENCE FICTION RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    },
+    "western": {
+      "shows": {
+        "gunsmoke": {
+          "title": "Gunsmoke",
+          "href": "/gunsmoke",
+          "years": "1952–1961",
+          "featuredEligible": true,
+          "tagline": "WESTERN RADIO ARCHIVE",
+          "anniversaryYears": 75
+        },
+        "lone-ranger": {
+          "title": "The Lone Ranger",
+          "href": "/lone-ranger",
+          "years": "1933–1954",
+          "featuredEligible": true,
+          "tagline": "WESTERN RADIO ARCHIVE",
+          "anniversaryYears": 75
+        }
+      }
+    }
+  }
+}
