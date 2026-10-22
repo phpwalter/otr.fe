@@ -18,7 +18,7 @@ const featured=[
 const categories=[
   {slug:'drama',name:'Drama & Mystery',art:'drama',fallback:0},
   {slug:'sci-fi',name:'Sci-Fi',art:'sci-fi',fallback:1},
-  {slug:'western',name:'Westerns',art:'western',fallback:2},
+  {slug:'western',name:'Westerns',art:'westerns',fallback:2},
   {slug:'comedy',name:'Comedy',art:'comedy',fallback:3}
 ];
 const navigation=[['Home','/'],['Shows','/shows'],['Browse','/browse'],['Categories','/categories'],['About','/about']];
