@@ -13,8 +13,8 @@ const featured=[
   {slug:'xminus1',name:'X Minus One',years:'1955 – 1958'},
   {slug:'escape',name:'Escape',years:'1947 – 1954',fallback:null},
   {slug:'whistler',name:'The Whistler',years:'1942 – 1955'},
-  {slug:'sam-spade',name:'Sam Spade',years:'1946 – 1951'},
-  {slug:'bob-hope',name:'Bob Hope',years:'1938 – 1955'}
+  {slug:'sam-spade',name:'Sam Spade',years:'1946 – 1951'}
+
 ];
 const categories=[
   {slug:'drama',name:'Drama & Mystery',art:'drama',fallback:0},
