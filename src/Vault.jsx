@@ -1,5 +1,24 @@
 import React, {useState} from 'react';
-import {catalog, featured, categories} from './vaultCatalog';
+import vaultConfig from './vaultCatalog.json';
+import {shows, slugs} from './series';
+
+const {categoryBySlug, comedySlugs, extraShows, featuredSlugs, categories} = vaultConfig;
+const comedy = new Set(comedySlugs);
+const catalog = [
+  ...slugs.map(slug => ({
+    slug,
+    name: shows[slug][0],
+    category: categoryBySlug[slug] || (comedy.has(slug) ? 'comedy' : 'detective'),
+    href: '/' + slug,
+    fallback: slug === 'suspense' ? 'mystery/suspense/hero.png' : slug === 'shadow' ? 'mystery/shadow/hero.png' : undefined
+  })),
+  ...extraShows
+].map(show => ({
+  ...show,
+  card: show.card || '/art/' + show.category + '/' + show.slug + '/card.png'
+}));
+const bySlug = new Map(catalog.map(show => [show.slug, show]));
+const featured = featuredSlugs.map(slug => bySlug.get(slug)).filter(Boolean);
 import './vault.css';
 
 const navigation=[['Home','/'],['Shows','/shows'],['Browse','/browse'],['Categories','/categories'],['About','/about']];
