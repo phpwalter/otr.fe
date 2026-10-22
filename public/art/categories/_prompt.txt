@@ -1,0 +1,51 @@
+## 4. Mandatory Category Title Standards
+
+Display the category name in **Cap Case (Title Case)**, followed by a right-pointing arrow.
+
+### Capitalization Rules
+
+- Capitalize the first letter of each principal word.
+- Use lowercase letters for the remaining characters.
+- **Do not use ALL CAPS or SMALL CAPS.**
+- Preserve the category's exact wording.
+- Use true uppercase and lowercase letterforms.
+
+Examples:
+
+- Mystery →
+- Westerns →
+- Science Fiction →
+- Comedy →
+- Drama & Mystery →
+- Horror →
+- Adventure →
+- Historical →
+
+### Font
+
+- Classic Roman serif typeface.
+- Preferred font: Cinzel or a visually similar traditional serif with genuine lowercase letters.
+- Warm ivory or aged parchment lettering.
+- Subtle dark shadow.
+- Consistent visual weight and apparent font size across all category cards.
+- No modern sans-serif or decorative script fonts.
+
+### Mandatory Horizontal Positioning
+
+For every **2048 × 700 pixel** category card:
+
+| Element | Distance from right edge | X coordinate |
+|---|---:|---:|
+| Rightmost edge of final letter | 251 px | 1797 px |
+| Tip of right-pointing arrow | 122 px | 1926 px |
+
+These coordinates must remain fixed regardless of category title length.
+
+### Vertical Positioning
+
+- Match the vertical center of the original Westerns reference.
+- Keep the title baseline consistent across cards.
+- Vertically center the arrow with the text.
+- Accommodate longer titles by extending the text toward the left.
+
+**Critical requirement:** All category titles must use Cap Case, with natural uppercase and lowercase letters, while preserving the established font size, visual appearance, right-edge alignment, and arrow positioning.
