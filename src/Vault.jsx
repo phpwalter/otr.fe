@@ -2,23 +2,22 @@ import React, {useState} from 'react';
 import vaultConfig from './vaultCatalog.json';
 import {shows, slugs} from './series';
 
-const {categoryBySlug, comedySlugs, extraShows, featuredSlugs, categories} = vaultConfig;
-const comedy = new Set(comedySlugs);
-const catalog = [
-  ...slugs.map(slug => ({
+const catalog = Object.entries(vaultConfig.categories).flatMap(([category, data]) =>
+  Object.entries(data.shows).map(([slug, show]) => ({
     slug,
-    name: shows[slug][0],
-    category: categoryBySlug[slug] || (comedy.has(slug) ? 'comedy' : 'detective'),
-    href: '/' + slug,
-    fallback: slug === 'suspense' ? 'mystery/suspense/hero.png' : slug === 'shadow' ? 'mystery/shadow/hero.png' : undefined
-  })),
-  ...extraShows
-].map(show => ({
-  ...show,
-  card: show.card || '/art/' + show.category + '/' + show.slug + '/card.png'
+    name: show.title,
+    category,
+    href: show.href || '/' + slug,
+    years: show.years,
+    fallback: show.fallback,
+    card: show.card || '/art/' + category + '/' + slug + '/card.png'
+  }))
+);
+const categories = Object.entries(vaultConfig.categories).map(([slug, data]) => ({
+  slug, name: data.name, art: data.art || slug, alt: data.alt
 }));
 const bySlug = new Map(catalog.map(show => [show.slug, show]));
-const featured = featuredSlugs.map(slug => bySlug.get(slug)).filter(Boolean);
+const featured = vaultConfig.featured.map(slug => bySlug.get(slug)).filter(Boolean);
 import './vault.css';
 
 const navigation=[['Home','/'],['Shows','/shows'],['Browse','/browse'],['Categories','/categories'],['About','/about']];
