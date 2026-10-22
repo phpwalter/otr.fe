@@ -6,5 +6,5 @@ export const shows = Object.fromEntries(catalogShows.map(([slug, show]) => [slug
 export const slugs = Object.keys(shows);
 export const currentSlug = () => {
   const segment = decodeURIComponent(window.location.pathname.split('/')[1] || '');
-  return segment === 'x-minus-one' ? 'xminus1' : shows[segment] ? segment : 'suspense';
+  return segment === 'x-minus-one' ? 'xminus1' : shows[segment] ? segment : null;
 };
