@@ -10,7 +10,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
   <FeaturedEpisode episode={data.featured_episode} anniversaryYears={show[2]} historicalDate={historicalDate}/>
   <ShowCardGrid slug={slug} cards={data.cards}/>
   <aside className="shadow-side" aria-label="Show artwork"><div className="shadow-intro" aria-hidden="true"/>
-   <div className="shadow-side-links">{['episodes','the-shadow','cast','gallery','contact'].map((route,i)=><a key={route} href={'/'+slug+'/'+route} className={'shadow-side-link shadow-side-link-'+i} aria-label={route}/>)}</div></aside>
+   <div className="shadow-side-links">{['episodes','the-shadow','cast','gallery','contact'].map((route,i)=><a key={route} href={'/'+slug+'/'+route} className={'shadow-side-link shadow-side-link-'+i} aria-label={route} style={{backgroundImage:slug==='shadow'?`url(/art/mystery/shadow/nav.card.${route==='the-shadow'?'shadow':route}.png)`:undefined}}/>)}</div></aside>
   <section className="about show-about"><h2>Stories that live on.</h2><p>Discover the broadcasts, people, and imagination behind {show[0]}.</p></section>
   <PageNavigation slug={slug} active="landing"/>
  </main>;
