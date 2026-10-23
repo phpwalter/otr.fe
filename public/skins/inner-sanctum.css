@@ -120,3 +120,8 @@
   display:block;margin-top:4px;
   font:15px/1.2 Georgia,'Times New Roman',serif;color:#241407;
 }
+
+/* Featured heading: show only the 75, offset from its previous placement. */
+.skin-inner-sanctum .featured-episode__heading h2,
+.skin-inner-sanctum .featured-episode__heading time{display:none}
+.skin-inner-sanctum .featured-episode__heading>.anniversary-number{transform:translate(-10px,-6px)}
