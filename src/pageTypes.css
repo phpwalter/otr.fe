@@ -24,3 +24,7 @@
 .site-viewport .skin-shadow .shadow-side-links a{display:block}
 .site-viewport .skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
 .site-viewport .skin-suspense .page-navigation,.site-viewport .skin-shadow .page-navigation{display:none}
+
+/* Optional landing controls exist in the common DOM; only skins that place them show them. */
+.page-landing .landing-actions{display:none}
+.skin-inner-sanctum .page-landing .landing-actions{display:block}
