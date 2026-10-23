@@ -61,5 +61,5 @@
 .skin-inner-sanctum .page-navigation__link:nth-child(8){display:none}
 
 /* Move both bottom actions together without changing their size or spacing. */
-.skin-inner-sanctum .landing-actions__cast,
-.skin-inner-sanctum .landing-actions__learn-more{transform:translate(-6px,10px)}
+.skin-inner-sanctum .landing-actions__cast{transform:translate(-6px,20px)}
+.skin-inner-sanctum .landing-actions__learn-more{transform:translate(-26px,20px)}
