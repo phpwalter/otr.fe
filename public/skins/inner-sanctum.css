@@ -84,11 +84,11 @@
 .skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(1),
 .skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(7),
 .skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(8){display:none}
-.skin-inner-sanctum .page-navigation__link:nth-child(2){order:1;background-image:url('/art/mystery/inner-sanctum/nav/episodes.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(3){order:2;background-image:url('/art/mystery/inner-sanctum/nav/cast.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(4){order:3;background-image:url('/art/mystery/inner-sanctum/nav/writers.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(6){order:4;background-image:url('/art/mystery/inner-sanctum/nav/history.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(5){order:5;background-image:url('/art/mystery/inner-sanctum/nav/about.png')}
+.skin-inner-sanctum .page-navigation__link:nth-child(2){order:1;background-image:url('/art/mystery/inner-sanctum/nav.card.episodes.png')}
+.skin-inner-sanctum .page-navigation__link:nth-child(3){order:2;background-image:url('/art/mystery/inner-sanctum/nav.card.cast.png')}
+.skin-inner-sanctum .page-navigation__link:nth-child(4){order:3;background-image:url('/art/mystery/inner-sanctum/nav.card.writers.png')}
+.skin-inner-sanctum .page-navigation__link:nth-child(6){order:4;background-image:url('/art/mystery/inner-sanctum/nav.card.history.png')}
+.skin-inner-sanctum .page-navigation__link:nth-child(5){order:5;background-image:url('/art/mystery/inner-sanctum/nav.card.about.png')}
 .skin-inner-sanctum .page-navigation__link:is(:hover,:focus-visible){
   background-color:transparent;outline:2px solid #d2a45d;outline-offset:1px;
 }
