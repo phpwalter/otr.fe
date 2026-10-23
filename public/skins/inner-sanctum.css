@@ -23,3 +23,33 @@
 .about{border-top:1px solid #a92018}
 .footer{color:#f3e2cb;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
+
+
+/* Shared LandingPage overlay skin. Existing art remains unaltered. */
+.site-viewport .site.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
+.skin-inner-sanctum .canvas.page-landing{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
+.skin-inner-sanctum .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
+.skin-inner-sanctum .hero-art,.skin-inner-sanctum .hero-copy{display:none}
+.skin-inner-sanctum .page-navigation{position:absolute;z-index:8;left:3.9%;top:34%;width:14%;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
+.skin-inner-sanctum .page-navigation__link{padding:6px 7px;min-height:33px;font:20px/1.1 Georgia,serif;color:#2b190f;text-shadow:0 1px #eacda6}
+.skin-inner-sanctum .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
+.skin-inner-sanctum .featured-episode{position:absolute;z-index:6;left:2.8%;top:65%;width:39.4%;height:27%;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
+.skin-inner-sanctum .featured-episode__heading{position:absolute;top:0;left:2%;right:1%;height:35px;display:flex;align-items:center;gap:8px}
+.skin-inner-sanctum .featured-episode__heading .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
+.skin-inner-sanctum .featured-episode__heading h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
+.skin-inner-sanctum .featured-episode__heading time{font:13px Georgia,serif;color:#27170d}
+.skin-inner-sanctum .featured-episode__art,.skin-inner-sanctum .broadcast-label{display:none}
+.skin-inner-sanctum .featured-episode__content{position:absolute;left:49%;right:3%;top:17%;max-height:43%;overflow:hidden}
+.skin-inner-sanctum .featured-episode__title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
+.skin-inner-sanctum .featured-episode__description{font:14px/1.25 Georgia,serif;margin:0}
+.skin-inner-sanctum .audio-player{position:absolute;bottom:7%;left:32%;right:3%;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
+.skin-inner-sanctum .audio-player button{flex:0 0 34px;width:34px;min-width:34px;height:34px;border-radius:50%;background:#9e1216;color:#f8dfba;border:1px solid #7f1818;cursor:pointer}
+.skin-inner-sanctum .audio-player input[type="range"]{flex:1;min-width:18px;accent-color:#a41116}
+.skin-inner-sanctum .audio-player input.audio-player__volume{flex:0 0 52px;width:52px}
+.skin-inner-sanctum .audio-player time{font:12px Georgia,serif;color:#21140b;white-space:nowrap}
+.skin-inner-sanctum .cards,.skin-inner-sanctum .shadow-side,.skin-inner-sanctum .about{display:none}
+.skin-inner-sanctum .landing-actions{position:absolute;inset:0;z-index:7;pointer-events:none}
+.skin-inner-sanctum .landing-actions__cast,.skin-inner-sanctum .landing-actions__learn-more{position:absolute;top:87%;width:11.4%;height:4.3%;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #7c1714;border-radius:3px;background:#951015;color:#f9e6c6;font:700 15px Georgia,serif;text-transform:uppercase;pointer-events:auto}
+.skin-inner-sanctum .landing-actions__cast{left:61.1%}
+.skin-inner-sanctum .landing-actions__learn-more{left:83.5%}
+.skin-inner-sanctum .landing-actions__learn-more:disabled{opacity:.65;cursor:not-allowed}
