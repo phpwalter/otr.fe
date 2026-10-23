@@ -55,7 +55,7 @@
 .skin-inner-sanctum .landing-actions__learn-more:disabled{opacity:.65;cursor:not-allowed}
 
 /* Inner Sanctum left navigation adjustment; shared PageNavigation DOM is unchanged. */
-.skin-inner-sanctum .page-navigation{transform:translate(28px,21px);width:160px;padding-bottom:20px}
+.skin-inner-sanctum .page-navigation{transform:translate(28px,27px);width:160px;padding-bottom:20px}
 .skin-inner-sanctum .page-navigation__link:nth-child(1),
 .skin-inner-sanctum .page-navigation__link:nth-child(7),
 .skin-inner-sanctum .page-navigation__link:nth-child(8){display:none}
