@@ -25,33 +25,33 @@
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
 
 
-/* Shared LandingPage overlay skin. Existing art remains unaltered. */
+/* Fixed 1674px by 886px LandingPage overlay. Existing art remains unaltered. */
 .site-viewport .site.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
 .skin-inner-sanctum .canvas.page-landing{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
 .skin-inner-sanctum .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
 .skin-inner-sanctum .hero-art,.skin-inner-sanctum .hero-copy{display:none}
-.skin-inner-sanctum .page-navigation{position:absolute;z-index:8;left:3.9%;top:34%;width:14%;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
+.skin-inner-sanctum .page-navigation{position:absolute;z-index:8;left:65px;top:301px;width:234px;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
 .skin-inner-sanctum .page-navigation__link{padding:6px 7px;min-height:33px;font:20px/1.1 Georgia,serif;color:#2b190f;text-shadow:0 1px #eacda6}
 .skin-inner-sanctum .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
-.skin-inner-sanctum .featured-episode{position:absolute;z-index:6;left:2.8%;top:65%;width:39.4%;height:27%;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
-.skin-inner-sanctum .featured-episode__heading{position:absolute;top:0;left:2%;right:1%;height:35px;display:flex;align-items:center;gap:8px}
+.skin-inner-sanctum .featured-episode{position:absolute;z-index:6;left:47px;top:576px;width:660px;height:239px;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
+.skin-inner-sanctum .featured-episode__heading{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
 .skin-inner-sanctum .featured-episode__heading .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
 .skin-inner-sanctum .featured-episode__heading h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
 .skin-inner-sanctum .featured-episode__heading time{font:13px Georgia,serif;color:#27170d}
 .skin-inner-sanctum .featured-episode__art,.skin-inner-sanctum .broadcast-label{display:none}
-.skin-inner-sanctum .featured-episode__content{position:absolute;left:49%;right:3%;top:17%;max-height:43%;overflow:hidden}
+.skin-inner-sanctum .featured-episode__content{position:absolute;left:326px;right:20px;top:45px;max-height:114px;overflow:hidden}
 .skin-inner-sanctum .featured-episode__title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
 .skin-inner-sanctum .featured-episode__description{font:14px/1.25 Georgia,serif;margin:0}
-.skin-inner-sanctum .audio-player{position:absolute;bottom:7%;left:32%;right:3%;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
+.skin-inner-sanctum .audio-player{position:absolute;bottom:19px;left:213px;right:20px;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
 .skin-inner-sanctum .audio-player button{flex:0 0 34px;width:34px;min-width:34px;height:34px;border-radius:50%;background:#9e1216;color:#f8dfba;border:1px solid #7f1818;cursor:pointer}
 .skin-inner-sanctum .audio-player input[type="range"]{flex:1;min-width:18px;accent-color:#a41116}
 .skin-inner-sanctum .audio-player input.audio-player__volume{flex:0 0 52px;width:52px}
 .skin-inner-sanctum .audio-player time{font:12px Georgia,serif;color:#21140b;white-space:nowrap}
 .skin-inner-sanctum .cards,.skin-inner-sanctum .shadow-side,.skin-inner-sanctum .about{display:none}
 .skin-inner-sanctum .landing-actions{position:absolute;inset:0;z-index:7;pointer-events:none}
-.skin-inner-sanctum .landing-actions__cast,.skin-inner-sanctum .landing-actions__learn-more{position:absolute;top:87%;width:11.4%;height:4.3%;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #7c1714;border-radius:3px;background:#951015;color:#f9e6c6;font:700 15px Georgia,serif;text-transform:uppercase;pointer-events:auto}
-.skin-inner-sanctum .landing-actions__cast{left:61.1%}
-.skin-inner-sanctum .landing-actions__learn-more{left:83.5%}
+.skin-inner-sanctum .landing-actions__cast,.skin-inner-sanctum .landing-actions__learn-more{position:absolute;top:771px;width:191px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #7c1714;border-radius:3px;background:#951015;color:#f9e6c6;font:700 15px Georgia,serif;text-transform:uppercase;pointer-events:auto}
+.skin-inner-sanctum .landing-actions__cast{left:1023px}
+.skin-inner-sanctum .landing-actions__learn-more{left:1398px}
 .skin-inner-sanctum .landing-actions__learn-more:disabled{opacity:.65;cursor:not-allowed}
 
 /* Inner Sanctum left navigation adjustment; shared PageNavigation DOM is unchanged. */
@@ -67,18 +67,18 @@
 
 /* 2026-10-23 approved Inner Sanctum landing composition.
    The five navigation links are the SAME shared PageNavigation DOM;
-   each is an artwork-backed button. Images expected under nav/.
+   each is an artwork-backed button. Artwork is loaded from nav.card.*.png files in the show directory.
    Keep link text accessible to assistive technology. */
 .skin-inner-sanctum .page-landing>.page-navigation{
-  left:3.2%;top:5.8%;width:15%;
+  left:54px;top:51px;width:251px;
   transform:none;padding:0;gap:7px;
   display:flex;align-items:stretch;flex-direction:column;
 }
 .skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link{
   display:block;flex:none;order:10;
-  width:100%;height:88px;min-height:88px;
+  width:251px;height:88px;min-height:88px;
   padding:0;border:0;border-radius:0;background-repeat:no-repeat;
-  background-position:center;background-size:100% 100%;
+  background-position:center;background-size:251px 88px;
   font-size:0;line-height:0;text-shadow:none;
 }
 .skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(1),
@@ -96,10 +96,10 @@
 /* The featured region is the lower-left artwork panel. The numeral spans
    the combined heading and date, with a narrow gap before the heading. */
 .skin-inner-sanctum .featured-episode{
-  left:2.75%;top:63.7%;width:39.7%;height:30%;
+  left:46px;top:564px;width:665px;height:266px;
 }
 .skin-inner-sanctum .featured-episode__heading{
-  left:40.2%;right:2%;top:0;height:66px;
+  left:267px;right:13px;top:0;height:66px;
   display:flex;align-items:flex-start;gap:7px;
 }
 .skin-inner-sanctum .featured-episode__heading>.anniversary-number{
