@@ -55,7 +55,11 @@
 .skin-inner-sanctum .landing-actions__learn-more:disabled{opacity:.65;cursor:not-allowed}
 
 /* Inner Sanctum left navigation adjustment; shared PageNavigation DOM is unchanged. */
-.skin-inner-sanctum .page-navigation{transform:translate(20px,3px)}
+.skin-inner-sanctum .page-navigation{transform:translate(28px,3px);padding-bottom:20px}
 .skin-inner-sanctum .page-navigation__link:nth-child(1),
 .skin-inner-sanctum .page-navigation__link:nth-child(7),
 .skin-inner-sanctum .page-navigation__link:nth-child(8){display:none}
+
+/* Move both bottom actions together without changing their size or spacing. */
+.skin-inner-sanctum .landing-actions__cast,
+.skin-inner-sanctum .landing-actions__learn-more{transform:translate(-6px,10px)}
