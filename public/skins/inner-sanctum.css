@@ -108,7 +108,7 @@
   color:#aa1017;text-shadow:1px 1px 0 #250b08;
 }
 .skin-inner-sanctum .featured-episode__heading>div{
-  display:flex;flex-direction:column;align-items:flex-start;padding-top:5px;
+  display:flex;flex-direction:column;align-items:flex-start;padding-top:5px;transform:translateX(-10px);
 }
 .skin-inner-sanctum .featured-episode__heading h2{
   margin:0;white-space:nowrap;
@@ -117,8 +117,8 @@
 }
 .skin-inner-sanctum .featured-episode__heading h2::before{content:none}
 .skin-inner-sanctum .featured-episode__heading time{
-  display:block;margin-top:4px;
-  font:15px/1.2 Georgia,'Times New Roman',serif;color:#241407;
+  display:block;margin-top:38px;
+  font:16px/1.2 Georgia,'Times New Roman',serif;color:#241407;
 }
 
 /* Featured heading contains only the numeral for this show. */
