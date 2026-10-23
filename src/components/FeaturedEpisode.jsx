@@ -1,10 +1,10 @@
 import React from 'react';
 import AudioPlayer from './AudioPlayer.jsx';
-export default function FeaturedEpisode({episode={},anniversaryYears=75,historicalDate=''}) {
+export default function FeaturedEpisode({episode={},anniversaryYears=75,historicalDate='',showHeadingDetails=true}) {
  const empty=!episode||episode.no_broadcast||!episode.title;
  return <section className={'featured featured-episode'+(empty?' is-empty':'')} aria-label="Featured episode">
   <header className="section-head featured-episode__heading"><strong className="anniversary-number">{anniversaryYears}</strong>
-   <div><h2 data-years={anniversaryYears+' '}>YEARS AGO TONIGHT</h2><time>{historicalDate}</time></div></header>
+   {showHeadingDetails&&<div><h2 data-years={anniversaryYears+' '}>YEARS AGO TONIGHT</h2><time>{historicalDate}</time></div>}</header>
   <div className="featured-body featured-episode__body"><div className="featured-art featured-episode__art" role="img" aria-label="Featured episode artwork"/>
    <div className="featured-text featured-episode__content"><p className="broadcast-label">{empty?'NO BROADCAST THIS DATE':episode.air_date?'ORIGINAL BROADCAST · '+episode.air_date:'ARCHIVE FEATURE'}</p>
     <h3 className="featured-episode__title">{empty?'No broadcast this date':episode.title}</h3>
