@@ -12,6 +12,7 @@ export default function AudioPlayer({episode,radioStyle=false}){
   const [position,setPosition]=useState(0);
   const [duration,setDuration]=useState(0);
   const [muted,setMuted]=useState(false);
+  const [volume,setVolume]=useState(1);
   const url=episode?.audio_url;
   const available=Boolean(url);
 
@@ -40,7 +41,7 @@ export default function AudioPlayer({episode,radioStyle=false}){
   const clock=<time aria-label="Elapsed time and duration">{formatTime(position)} / {formatTime(duration)}</time>;
 
   return <div className="player audio-player">
-    <audio ref={ref} src={url||undefined} preload="metadata" muted={muted}
+    <audio ref={ref} src={url||undefined} preload="metadata" muted={muted} volume={volume}
       onPlay={()=>setPlaying(true)} onPause={()=>setPlaying(false)}
       onEnded={()=>setPlaying(false)} onTimeUpdate={e=>setPosition(e.currentTarget.currentTime)}
       onLoadedMetadata={e=>setDuration(Number.isFinite(e.currentTarget.duration)?e.currentTarget.duration:0)}
@@ -48,5 +49,6 @@ export default function AudioPlayer({episode,radioStyle=false}){
     <button type="button" disabled={!available} onClick={toggle} aria-label={playing?'Pause':'Play'}>{playing?'Ⅱ':'▶'}</button>
     {radioStyle?<div className="x1-progress-group">{progress}{clock}</div>:<>{progress}{clock}</>}
     <button type="button" onClick={()=>setMuted(value=>!value)} disabled={!available} aria-label={muted?'Unmute':'Mute'} aria-pressed={muted}>{muted?'🔇':radioStyle?'🔊':'♪'}</button>
+    <input className="audio-player__volume" type="range" min="0" max="1" step="0.01" value={volume} disabled={!available} aria-label="Volume" onChange={e=>{const v=Number(e.target.value);setVolume(v);if(v>0)setMuted(false);}}/>
   </div>;
 }
