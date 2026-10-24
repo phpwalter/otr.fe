@@ -42,7 +42,7 @@
 .skin-inner-sanctum .featured-episode__content{position:absolute;left:244px;right:20px;top:66px;max-height:114px;overflow:hidden}
 .skin-inner-sanctum .featured-episode__title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
 .skin-inner-sanctum .featured-episode__description{font:14px/1.25 Georgia,serif;margin:0}
-.skin-inner-sanctum .audio-player{position:absolute;bottom:19px;left:233px;right:20px;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
+.skin-inner-sanctum .audio-player{position:absolute;bottom:19px;left:243px;right:20px;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
 .skin-inner-sanctum .audio-player button{flex:0 0 34px;width:34px;min-width:34px;height:34px;border-radius:50%;background:#9e1216;color:#f8dfba;border:1px solid #7f1818;cursor:pointer}
 .skin-inner-sanctum .audio-player input[type="range"]{flex:1;min-width:18px;accent-color:#a41116}
 .skin-inner-sanctum .audio-player input.audio-player__volume{flex:0 0 52px;width:52px}
