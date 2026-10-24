@@ -256,7 +256,7 @@
 .skin-mysterious-traveler .page-landing .featured-episode__heading time{
  display:block;
  padding-right:0;
- transform:translateX(-12px);
+ transform:translate(-6px,-8px);
  width:100%;
  margin:0;
  font-size:22px;
