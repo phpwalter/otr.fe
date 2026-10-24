@@ -142,7 +142,10 @@
  display:block;
 }
 .skin-mysterious-traveler .page-landing .featured-episode__content{
- width:100%;
+ position:absolute;
+ left:0;
+ right:0;
+ width:auto;
  max-height:100%;
 }
 
