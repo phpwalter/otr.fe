@@ -252,11 +252,12 @@
  display:flex;
  justify-content:center;
  align-items:center;
+ transform:translate(-10px,-6px);
 }
 .skin-mysterious-traveler .page-landing .featured-episode__heading time{
  display:block;
  padding-right:0;
- transform:translate(-10px,-6px);
+ transform:none;
  width:100%;
  margin:0;
  font-size:22px;
@@ -281,6 +282,7 @@
  max-height:100%;
  overflow:hidden;
  background:rgba(255,255,0,.8);
+ transform:translateY(-6px);
 }
 .skin-mysterious-traveler .page-landing .featured-episode__description{
  display:-webkit-box;
@@ -307,4 +309,9 @@
 }
 .skin-mysterious-traveler .page-landing .featured-episode__description{
  font-size:10px;
+}
+
+/* Center the Traveler-specific h2 without affecting other shows' h3 titles. */
+.skin-mysterious-traveler .page-landing h2.featured-episode__title{
+ text-align:center;
 }
