@@ -296,9 +296,9 @@
  grid-column:2;grid-row:3;
  position:static;
  left:auto;right:auto;bottom:auto;
- width:100%;height:46px;
+ width:calc(100% - 12px);height:46px;
  min-width:0;
- margin:0;
+ margin:0 auto 0 0;
  transform:translateY(-10px);
  border:0;
  background:rgba(0,128,0,.6);
