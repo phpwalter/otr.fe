@@ -1,7 +1,7 @@
 /* Mysterious Traveler: shared ShowShell header/footer and common LandingPage DOM.
    Fixed 1674 x 1030 outer shell. The 886px content viewport begins at y=53. */
 .site-viewport .site.skin-mysterious-traveler{
- background:#061c19 url('/art/mystery/mysterious-traveler/page.png') center -53px / 1674px 1030px no-repeat;
+ background:transparent url('/art/mystery/mysterious-traveler/page.png') center 10px / 1674px 876px no-repeat;
  color:#f1dbad;
  font-family:Georgia,'Times New Roman',serif;
 }
