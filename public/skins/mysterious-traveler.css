@@ -94,7 +94,7 @@
 /* Restored HTML/CSS Featured Episode panel; keeps the shared React data and audio controls. */
 .skin-mysterious-traveler .page-landing .featured-episode{
  display:block!important;
- position:absolute;left:48px;top:575px;width:772px;height:271px;
+ position:absolute;left:48px;top:565px;width:832px;height:271px;
  background:linear-gradient(155deg,#102b26 0%,#091d1a 57%,#061411 100%);
  border:4px solid #8d6c3c;border-radius:7px;
  box-shadow:inset 0 0 0 2px #d2ac66,0 4px 14px #0008;
