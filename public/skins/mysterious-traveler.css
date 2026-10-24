@@ -340,3 +340,8 @@
  background:rgba(255,255,255,.12);
  box-shadow:0 0 8px 4px rgba(255,255,255,.8),0 0 16px 7px rgba(255,255,255,.35);
 }
+
+/* Traveler lower-right panels: retain existing frames and arrow placement; reveal page art. */
+.skin-mysterious-traveler .show-card-grid .archive-card{
+ background:transparent;
+}
