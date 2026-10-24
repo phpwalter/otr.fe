@@ -219,9 +219,10 @@
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
           "href": "/mysterious-traveler",
+          "years": "1943–1952",
           "featuredEligible": true,
-          "tagline": "MYSTERY RADIO ARCHIVE",
-          "anniversaryYears": 75
+          "tagline": "JOURNEYS INTO THE STRANGE AND TERRIFYING",
+          "anniversaryYears": 80
         },
         "whistler": {
           "title": "The Whistler",

@@ -7,6 +7,7 @@ export function parseShowRoute(pathname){
  if(parts.length===2&&parts[1]==='episodes')return {slug,type:'episodes'};
  if(parts.length===3&&parts[1]==='episodes')return {slug,type:'episodeDetail',episodeId:parts[2]};
  if(parts.length===2&&parts[1]==='cast')return {slug,type:'cast'};
+ if(slug==='mysterious-traveler'&&parts.length===2&&['themes','gallery','history'].includes(parts[1]))return {slug,type:'travelerSection',section:parts[1]};
  return {slug,type:'notFound'};
 }
 export async function fetchPageData({slug,type,episodeId,signal}){

@@ -9,6 +9,7 @@ import LandingPage from './pages/LandingPage.jsx';
 import EpisodesPage from './pages/EpisodesPage.jsx';
 import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
 import CastPage from './pages/CastPage.jsx';
+import TravelerSectionPage from './pages/TravelerSectionPage.jsx';
 import './structure.css';
 import './pageTypes.css';
 
@@ -53,6 +54,7 @@ function ShowApp(){
   case 'episodes':page=<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
   case 'cast':page=<CastPage slug={slug} show={show} data={pageData}/>;break;
+  case 'travelerSection':page=<TravelerSectionPage slug={slug} section={route.section}/>;break;
   default:page=<main className="page page-not-found"><h1>Page not found</h1><a href={'/'+slug}>Return to {show[0]}</a></main>;
  }
  return <ShowShell slug={slug} scrollable={route.type!=='landing' && route.type!=='contact'}>
