@@ -235,6 +235,8 @@
 .skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
  display:block;
  flex:none;
+ font-family:'Times New Roman','Liberation Serif',serif;
+ font-stretch:condensed;
  font-size:52px;
  font-weight:700;
  color:red;
