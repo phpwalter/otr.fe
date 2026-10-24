@@ -88,6 +88,27 @@
 .skin-mysterious-traveler .traveler-back{color:#f8c758}
 .skin-mysterious-traveler .traveler-gallery-image{width:360px;max-height:400px;object-fit:contain}
 
-/* Traveler landing adjustments: hide the dynamic featured panel and shift the four cards right 30px. */
-.skin-mysterious-traveler .page-landing .featured-episode{display:none!important}
+/* Four right-hand cards retain their current position. */
 .skin-mysterious-traveler .show-card-grid{left:861px}
+
+/* Restored HTML/CSS Featured Episode panel; keeps the shared React data and audio controls. */
+.skin-mysterious-traveler .page-landing .featured-episode{
+ display:block!important;
+ position:absolute;left:48px;top:575px;width:772px;height:271px;
+ background:linear-gradient(155deg,#102b26 0%,#091d1a 57%,#061411 100%);
+ border:4px solid #8d6c3c;border-radius:7px;
+ box-shadow:inset 0 0 0 2px #d2ac66,0 4px 14px #0008;
+}
+.skin-mysterious-traveler .page-landing .featured-episode__heading{
+ left:318px;top:10px;right:15px;height:50px;
+}
+.skin-mysterious-traveler .page-landing .featured-episode__body{
+ inset:65px 13px 57px 13px;
+}
+.skin-mysterious-traveler .page-landing .featured-episode__art{
+ flex-basis:287px;
+ border:2px solid #9f8150;
+}
+.skin-mysterious-traveler .page-landing .audio-player{
+ left:316px;right:14px;bottom:11px;
+}
