@@ -112,3 +112,11 @@
 .skin-mysterious-traveler .page-landing .audio-player{
  left:316px;right:14px;bottom:11px;
 }
+
+/* Featured panel: transparent and frameless; retain content and controls. */
+.skin-mysterious-traveler .page-landing .featured-episode{
+ background:transparent;
+ border:0;
+ border-radius:0;
+ box-shadow:none;
+}
