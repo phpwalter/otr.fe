@@ -59,7 +59,7 @@
 .skin-mysterious-traveler .audio-player time{font:12px Georgia,serif;color:#f5dfbd}
 /* Four genuine, independently linked cards replace the baked-in artwork panels. */
 .skin-mysterious-traveler .show-card-grid{
- position:absolute;left:831px;top:575px;width:586px;height:260px;
+ position:absolute;left:831px;top:575px;width:700px;height:260px;
  z-index:6;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
 }
 .skin-mysterious-traveler .show-card-grid .archive-card{
