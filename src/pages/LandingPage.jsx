@@ -7,7 +7,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
   <section className="hero show-hero"><div className="hero-art" role="img" aria-label={show[0]+' artwork'}/>
    <div className="hero-copy"><span className="eyebrow">A CLASSIC RADIO BROADCAST</span><h1>{show[0]}</h1>
     <p className="tagline">{show[1]}</p><a className="hero-link" href={'/'+slug+'/episodes'}>EXPLORE THE EPISODES →</a></div></section>
-  <FeaturedEpisode episode={data.featured_episode} anniversaryYears={show[2]} historicalDate={historicalDate} showHeadingDetails={slug!=='inner-sanctum'} showDate={true} separateArtwork={slug==='mysterious-traveler'}/>
+  <FeaturedEpisode episode={data.featured_episode} anniversaryYears={show[2]} historicalDate={historicalDate} showHeadingDetails={slug!=='inner-sanctum' && slug!=='mysterious-traveler'} showDate={true} separateArtwork={slug==='mysterious-traveler'}/>
   <ShowCardGrid slug={slug} cards={slug==='mysterious-traveler'?[
     {label:'Episodes',desc:'Explore every journey into the unknown.',image:'/art/mystery/mysterious-traveler/card.png'},
     {label:'Themes',desc:'Mystery, the supernatural, and the unexplained.'},
