@@ -9,7 +9,7 @@ export default function ShowCardGrid({slug,cards=[]}){
  const contents=<><div className="card-image" aria-hidden="true">{card?.image?<img src={card.image} alt="" />:null}</div><h2>{label}</h2><p>{card?.desc||''}</p></>;
  const cls='archive-card show-card-grid__card card-'+i+(empty?' is-empty':'');
  if(slug==='mysterious-traveler')return <div key={i} className={cls} aria-hidden={empty?'true':undefined}>
-  {contents}{!empty&&<a className="traveler-card-arrow" href={'/'+slug+'/'+route} aria-label={'Explore '+label}><span aria-hidden="true">›</span></a>}
+  {!empty&&<a className="traveler-card-arrow" href={'/'+slug+'/'+route} aria-label={'Explore '+label}><span aria-hidden="true">›</span></a>}
  </div>;
  return <a key={i} className={cls} href={empty?'#':'/'+slug+'/'+route} tabIndex={empty?-1:undefined} aria-hidden={empty?'true':undefined}>
   {contents}<span>EXPLORE →</span>
