@@ -160,3 +160,9 @@
  font-weight:700;
  transform:translate(30px, 4px);
 }
+
+/* Traveler date: red, moved 200px right and 60px down. */
+.skin-mysterious-traveler .page-landing .featured-episode__heading time{
+ color:red;
+ transform:translate(200px,60px);
+}
