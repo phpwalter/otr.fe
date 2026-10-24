@@ -87,3 +87,7 @@
 .skin-mysterious-traveler .page-traveler-section p{font-size:21px;max-width:900px}
 .skin-mysterious-traveler .traveler-back{color:#f8c758}
 .skin-mysterious-traveler .traveler-gallery-image{width:360px;max-height:400px;object-fit:contain}
+
+/* Traveler landing adjustments: hide the dynamic featured panel and shift the four cards right 30px. */
+.skin-mysterious-traveler .page-landing .featured-episode{display:none!important}
+.skin-mysterious-traveler .show-card-grid{left:861px}
