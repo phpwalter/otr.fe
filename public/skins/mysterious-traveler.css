@@ -299,3 +299,12 @@
  border:0;
  background:rgba(0,128,0,.6);
 }
+
+/* Traveler's custom featured title and description. */
+.skin-mysterious-traveler .page-landing .featured-episode__title{
+ font-family:'Times New Roman','Liberation Serif',serif;
+ text-transform:uppercase;
+}
+.skin-mysterious-traveler .page-landing .featured-episode__description{
+ font-size:10px;
+}
