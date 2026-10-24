@@ -164,5 +164,8 @@
 /* Traveler date: red, moved 200px right and 60px down. */
 .skin-mysterious-traveler .page-landing .featured-episode__heading time{
  color:red;
- transform:translate(190px,0);
+ font-size:28px;
+ transform:translate(110px,60px);
+ text-align:center;
+ background:rgba(255,255,0,0.8);
 }
