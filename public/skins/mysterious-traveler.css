@@ -195,9 +195,9 @@
  column-gap:20px;
  row-gap:0;
  position:absolute;
- left:48px;top:565px;width:832px;height:271px;
+ left:48px;top:565px;width:828px;height:271px;
  padding:10px;
- border:2px solid red;
+ border:0;
  border-radius:0;
  background:transparent;
  box-shadow:none;
