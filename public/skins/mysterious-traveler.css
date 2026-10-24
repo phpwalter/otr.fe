@@ -174,7 +174,13 @@
  color:red;
  font-size:22px;
  font-style:italic;
- transform:translateY(40px);
+ transform:translate(20px,40px);
  text-align:center;
  background:rgba(255,255,0,0.8);
+}
+
+/* Traveler audio controls: borderless, translucent green background. */
+.skin-mysterious-traveler .page-landing .audio-player{
+ border:0;
+ background:rgba(0,128,0,0.6);
 }
