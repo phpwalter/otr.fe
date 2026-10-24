@@ -263,7 +263,7 @@
  font-style:italic;
  color:red;
  text-align:center;
- background:rgba(255,255,0,.8);
+ background:transparent;
 }
 .skin-mysterious-traveler .page-landing .featured-episode__body{
  grid-column:2;grid-row:2;
