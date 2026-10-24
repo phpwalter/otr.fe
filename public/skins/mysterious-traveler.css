@@ -120,3 +120,28 @@
  border-radius:0;
  box-shadow:none;
 }
+
+/* Traveler's artwork and episode body are independent sibling elements.
+   The image retains its original left edge, rises 30px, extends 24px
+   farther right, and reaches 24px farther down. */
+.skin-mysterious-traveler .page-landing .featured-episode__art{
+ position:absolute;
+ left:13px;
+ top:35px;
+ width:311px;
+ height:203px;
+ flex:none;
+ margin:0;
+}
+.skin-mysterious-traveler .page-landing .featured-episode__body{
+ position:absolute;
+ top:65px;
+ left:337px;
+ right:13px;
+ bottom:57px;
+ display:block;
+}
+.skin-mysterious-traveler .page-landing .featured-episode__content{
+ width:100%;
+ max-height:100%;
+}
