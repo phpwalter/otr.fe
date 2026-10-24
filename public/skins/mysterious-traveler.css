@@ -65,7 +65,7 @@
 .skin-mysterious-traveler .show-card-grid .archive-card{
  display:flex;flex-direction:column;align-items:center;text-align:center;
  min-width:0;min-height:0;padding:10px 7px 8px;
- border:5px ridge #ae8251;border-radius:7px;
+ border:0;border-radius:0;
  background:linear-gradient(155deg,#112923,#061511 80%);color:#f4dfae;
 }
 .skin-mysterious-traveler .show-card-grid .archive-card .card-image{
