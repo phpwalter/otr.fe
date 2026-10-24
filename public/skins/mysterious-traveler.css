@@ -235,11 +235,11 @@
 .skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
  display:block;
  flex:none;
- font-size:56px;
+ font-size:52px;
  font-weight:700;
  color:red;
  line-height:1;
- transform:none;
+ transform:translateY(-3px);
 }
 .skin-mysterious-traveler .page-landing .featured-episode__heading>div{
  position:static;
