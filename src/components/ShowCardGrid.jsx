@@ -6,8 +6,13 @@ export default function ShowCardGrid({slug,cards=[]}){
  return <section className="cards show-card-grid" aria-label="Explore this radio show">
  {Array.from({length:5},(_,i)=>{const card=populated[i];const empty=!card;
  const label=card?.label||'';const route=label==='The Shadow'?'the-shadow':label.toLowerCase().replaceAll(' ','-');
- return <a key={i} className={'archive-card show-card-grid__card card-'+i+(empty?' is-empty':'')} href={empty?'#':'/'+slug+'/'+route} tabIndex={empty?-1:undefined} aria-hidden={empty?'true':undefined}>
-  <div className="card-image" aria-hidden="true">{card?.image?<img src={card.image} alt="" />:null}</div><h2>{label}</h2><p>{card?.desc||''}</p><span>EXPLORE →</span>
+ const contents=<><div className="card-image" aria-hidden="true">{card?.image?<img src={card.image} alt="" />:null}</div><h2>{label}</h2><p>{card?.desc||''}</p></>;
+ const cls='archive-card show-card-grid__card card-'+i+(empty?' is-empty':'');
+ if(slug==='mysterious-traveler')return <div key={i} className={cls} aria-hidden={empty?'true':undefined}>
+  {contents}{!empty&&<a className="traveler-card-arrow" href={'/'+slug+'/'+route} aria-label={'Explore '+label}><span aria-hidden="true">›</span></a>}
+ </div>;
+ return <a key={i} className={cls} href={empty?'#':'/'+slug+'/'+route} tabIndex={empty?-1:undefined} aria-hidden={empty?'true':undefined}>
+  {contents}<span>EXPLORE →</span>
  </a>})}
  </section>;
 }
