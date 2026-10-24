@@ -282,6 +282,7 @@
  max-height:100%;
  overflow:hidden;
  background:transparent;
+ transform:translateY(-10px);
 }
 .skin-mysterious-traveler .page-landing .featured-episode__description{
  display:-webkit-box;
