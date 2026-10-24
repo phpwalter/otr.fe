@@ -321,3 +321,22 @@
 .skin-mysterious-traveler .page-landing h2.featured-episode__title{
  text-align:center;
 }
+
+/* Traveler navigation: the arrow alone is an interactive link; no full-panel hover. */
+.skin-mysterious-traveler .show-card-grid .archive-card:is(:hover,:focus-visible){outline:none}
+.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow{
+ display:flex;align-items:center;justify-content:center;
+ margin:auto 0 0;
+ width:28px;height:28px;min-height:28px;
+ border-radius:50%;text-decoration:none;
+ color:#f5c45c;background:transparent;
+ outline:none;
+ transition:background-color .15s ease,box-shadow .15s ease;
+}
+.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow span{
+ font:bold 27px/1 Georgia,serif;color:#f5c45c;
+}
+.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow:is(:hover,:focus-visible){
+ background:rgba(255,255,255,.12);
+ box-shadow:0 0 8px 4px rgba(255,255,255,.8),0 0 16px 7px rgba(255,255,255,.35);
+}
