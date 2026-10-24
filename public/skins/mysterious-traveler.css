@@ -190,7 +190,7 @@
    Border-box 832x271; 2px border, 10px padding, 20px column gap. */
 .skin-mysterious-traveler .page-landing .featured-episode{
  display:grid!important;
- grid-template-columns:295px minmax(0,1fr);
+ grid-template-columns:320px minmax(0,1fr);
  grid-template-rows:90px minmax(0,1fr) 42px;
  column-gap:20px;
  row-gap:0;
@@ -208,7 +208,7 @@
  grid-row:1 / 4;
  position:static;
  left:auto;top:auto;
- width:295px;height:100%;
+ width:320px;height:100%;
  min-width:0;min-height:0;
  margin:0;
  flex:none;
