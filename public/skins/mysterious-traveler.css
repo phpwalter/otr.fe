@@ -156,7 +156,7 @@
 /* Anniversary numeral: red, bold, 80px, shifted 80px to the right. */
 .skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
  color:red;
- font-size:80px;
+ font-size:60px;
  font-weight:700;
- transform:translateX(80px);
+ transform:translate(40px, 8px);
 }
