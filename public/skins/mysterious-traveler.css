@@ -162,10 +162,19 @@
 }
 
 /* Traveler date: red, moved 200px right and 60px down. */
+.skin-mysterious-traveler .page-landing .featured-episode__heading>div{
+ position:absolute;
+ left:0;
+ right:0;
+ width:100%;
+}
 .skin-mysterious-traveler .page-landing .featured-episode__heading time{
+ display:block;
+ width:100%;
  color:red;
- font-size:28px;
- transform:translate(110px,60px);
+ font-size:22px;
+ font-style:italic;
+ transform:translateY(40px);
  text-align:center;
  background:rgba(255,255,0,0.8);
 }
