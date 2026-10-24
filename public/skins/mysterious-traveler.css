@@ -59,7 +59,7 @@
 .skin-mysterious-traveler .audio-player time{font:12px Georgia,serif;color:#f5dfbd}
 /* Four genuine, independently linked cards replace the baked-in artwork panels. */
 .skin-mysterious-traveler .show-card-grid{
- position:absolute;left:831px;top:575px;width:689px;height:250px;
+ position:absolute;left:831px;top:575px;width:689px;height:260px;
  z-index:6;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
 }
 .skin-mysterious-traveler .show-card-grid .archive-card{
@@ -90,7 +90,7 @@
 .skin-mysterious-traveler .traveler-gallery-image{width:360px;max-height:400px;object-fit:contain}
 
 /* Four right-hand cards retain their current position. */
-.skin-mysterious-traveler .show-card-grid{left:1201px}
+.skin-mysterious-traveler .show-card-grid{left:921px}
 
 /* Restored HTML/CSS Featured Episode panel; keeps the shared React data and audio controls. */
 .skin-mysterious-traveler .page-landing .featured-episode{
