@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 /* Mysterious Traveler: shared ShowShell header/footer and common LandingPage DOM.
    Fixed 1674 x 1030 outer shell. The 886px content viewport begins at y=53. */
 .site-viewport .site.skin-mysterious-traveler{
@@ -302,7 +303,11 @@
 
 /* Traveler's custom featured title and description. */
 .skin-mysterious-traveler .page-landing .featured-episode__title{
- font-family:'Times New Roman','Liberation Serif',serif;
+ font-family:'Cinzel','Times New Roman',serif;
+ font-weight:700;
+ letter-spacing:0.025em;
+ color:#eadbb4;
+ text-shadow:0 1px 1px rgba(0,0,0,.9);
  text-transform:uppercase;
 }
 .skin-mysterious-traveler .page-landing .featured-episode__description{
