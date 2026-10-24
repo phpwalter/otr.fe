@@ -152,3 +152,11 @@
 /* Featured panel debugging highlights. */
 .skin-mysterious-traveler .page-landing .featured-episode{border:1px solid red}
 .skin-mysterious-traveler .page-landing .featured-episode__content{background:rgba(255,255,0,.8)}
+
+/* Anniversary numeral: red, bold, 80px, shifted 80px to the right. */
+.skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
+ color:red;
+ font-size:80px;
+ font-weight:700;
+ transform:translateX(80px);
+}
