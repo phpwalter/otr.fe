@@ -44,5 +44,64 @@
 .skin-whistler .whistler-back{color:#f4ce89;text-decoration:underline}
 .skin-whistler .whistler-section-placeholder{font-style:italic;opacity:.75}
 
-/* Temporarily hide the Whistler featured episode overlay; retain its markup. */
-.skin-whistler .page-landing .featured-episode{display:none!important}
+
+/* Whistler featured panel adapted from the Mysterious Traveler's final two-column
+   FeaturedEpisode layout. Shared React audio player and Whistler copy are retained. */
+.skin-whistler .page-landing .featured-episode{
+ display:grid!important;
+ grid-template-columns:320px minmax(0,1fr);
+ grid-template-rows:90px minmax(0,1fr) 42px;
+ column-gap:20px;row-gap:0;
+ position:absolute;left:48px;top:565px;width:828px;height:271px;min-height:0;
+ margin:0;padding:10px;border:0;border-radius:0;
+ background:transparent;box-shadow:none;overflow:hidden;
+}
+.skin-whistler .page-landing .featured-episode__art{
+ grid-column:1;grid-row:1 / 4;position:static;
+ left:auto;top:auto;width:320px;height:100%;min-width:0;min-height:0;
+ margin:0;flex:none;border:0;
+ background-color:transparent;
+ background-image:url('/art/mystery/whistler/hero.png');
+ background-position:center;background-size:contain;background-repeat:no-repeat;
+}
+.skin-whistler .page-landing .featured-episode__heading{
+ grid-column:2;grid-row:1;position:static;
+ left:auto;right:auto;top:auto;width:100%;height:90px;min-width:0;
+ display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+ gap:0;margin:0;padding:0;
+}
+.skin-whistler .page-landing .featured-episode__heading .anniversary-number{
+ display:block;flex:none;font-family:'Times New Roman',Georgia,serif;
+ font-size:52px;font-weight:700;color:red;line-height:1;transform:translateY(-6px);
+}
+.skin-whistler .page-landing .featured-episode__heading>div{
+ position:static;left:auto;right:auto;width:100%;padding:0 20px 0 0;
+ transform:translateY(-6px);display:flex;justify-content:center;align-items:center;
+}
+.skin-whistler .page-landing .featured-episode__heading time{
+ display:block;padding-right:0;transform:none;width:100%;
+ margin:0;font-size:22px;font-style:italic;color:red;
+ text-align:center;background:transparent;
+}
+.skin-whistler .page-landing .featured-episode__body{
+ grid-column:2;grid-row:2;position:relative;z-index:5;
+ transform:translateY(-10px);inset:auto;width:100%;height:80px;
+ min-width:0;min-height:0;display:block;overflow:hidden;
+}
+.skin-whistler .page-landing .featured-episode__content{
+ position:static;left:auto;right:auto;top:auto;width:100%;height:100%;
+ max-height:100%;overflow:hidden;background:transparent;
+}
+.skin-whistler .page-landing .featured-episode__title{
+ font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:.025em;
+ color:#eadbb4;text-shadow:0 1px 1px rgba(0,0,0,.9);text-transform:uppercase;
+}
+.skin-whistler .page-landing .featured-episode__description{
+ font-size:16px;display:-webkit-box;-webkit-box-orient:vertical;
+ -webkit-line-clamp:4;line-clamp:4;overflow:hidden;
+}
+.skin-whistler .page-landing .audio-player{
+ grid-column:2;grid-row:3;position:static;left:auto;right:auto;bottom:auto;
+ width:calc(100% - 12px);height:46px;min-width:0;margin:0 auto 0 0;
+ transform:translateY(-10px);border:0;background:transparent;
+}
