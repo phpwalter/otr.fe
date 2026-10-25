@@ -43,3 +43,6 @@
 .skin-whistler .page-whistler-section p{font:22px/1.5 Georgia,serif}
 .skin-whistler .whistler-back{color:#f4ce89;text-decoration:underline}
 .skin-whistler .whistler-section-placeholder{font-style:italic;opacity:.75}
+
+/* Temporarily hide the Whistler featured episode overlay; retain its markup. */
+.skin-whistler .page-landing .featured-episode{display:none!important}
