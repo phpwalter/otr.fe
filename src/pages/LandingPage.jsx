@@ -3,7 +3,7 @@ import FeaturedEpisode from '../components/FeaturedEpisode.jsx';
 import ShowCardGrid from '../components/ShowCardGrid.jsx';
 import PageNavigation from '../components/PageNavigation.jsx';
 const whistlerNavigation = [
-  ['Episodes','episodes'],['Host','host'],['Themes','themes'],['History','history'],
+  ['Episodes','episodes'],['Host','host'],['History','history'],
   ['Gallery','gallery'],['About','about'],['Contact','contact']
 ];
 export default function LandingPage({slug,show,data={},historicalDate=''}) {
