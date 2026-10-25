@@ -105,3 +105,12 @@
  width:calc(100% - 12px);height:46px;min-width:0;margin:0 auto 0 0;
  transform:translateY(-10px);border:0;background:transparent;
 }
+
+/* Featured-panel layout diagnostics: remove its artwork and frame each
+   visible element without altering dimensions or the shared components. */
+.skin-whistler .page-landing .featured-episode__art{display:none!important}
+.skin-whistler .page-landing .featured-episode,
+.skin-whistler .page-landing .featured-episode *:not(audio){
+ outline:1px solid red;
+ outline-offset:-1px;
+}
