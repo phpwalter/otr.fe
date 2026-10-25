@@ -107,7 +107,10 @@
 }
 
 /* Whistler featured panel: translucent red overlay (60% opacity). */
-.skin-whistler .page-landing .featured-episode{background:rgba(255,0,0,0.6)}
+.skin-whistler .page-landing .featured-episode{background:transparent}
+
+/* Anniversary numeral: translucent red background, Whistler only. */
+.skin-whistler .page-landing .featured-episode__heading .anniversary-number{background:rgba(255,0,0,0.6)}
 
 /* Featured-panel layout diagnostics: remove its artwork and frame each
    visible element without altering dimensions or the shared components. */
