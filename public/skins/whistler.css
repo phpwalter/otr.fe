@@ -1,9 +1,7 @@
-/* The Whistler: fixed 1674 x 1030 artwork skin.
-   The shared shell uses a 53px viewport offset; all overlay coordinates below
-   are expressed relative to that viewport, not the full-page image. */
+/* The Whistler: fixed 1674 x 1030 shared shell and native header/footer.
+   The shared content viewport starts 53px from the top and is 886px tall.
+   All Whistler overlay coordinates below are relative to that viewport. */
 .generic-site-shell:has(.skin-whistler){background:#05090c url('/art/mystery/whistler/page.png') 0 0 / 1674px 1030px no-repeat}
-.generic-site-shell:has(.skin-whistler)>.vault-header,
-.generic-site-shell:has(.skin-whistler)>.vault-footer{display:none}
 .site-viewport .site.skin-whistler{width:1674px;height:886px;min-height:886px;max-height:886px;background:transparent;color:#ebcc91;font-family:Georgia,'Times New Roman',serif}
 .skin-whistler .canvas.page-landing{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
 .skin-whistler .page-landing .hero,
@@ -12,8 +10,8 @@
 .skin-whistler .page-landing .show-about,
 .skin-whistler .page-landing .landing-actions,
 .skin-whistler .page-landing .page-navigation{display:none!important}
-.skin-whistler .whistler-navigation{position:absolute;z-index:8;top:180px;left:1220px;width:385px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(7,102px);gap:9px}
-.skin-whistler .whistler-navigation__card{display:block;width:385px;height:102px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;outline:0;transition:filter 150ms ease}
+.skin-whistler .whistler-navigation{position:absolute;z-index:8;top:130px;left:1220px;width:385px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(7,96px);gap:7px}
+.skin-whistler .whistler-navigation__card{display:block;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;outline:0;transition:filter 150ms ease}
 .skin-whistler .whistler-navigation__card--episodes{background-image:url('/art/mystery/whistler/nav.card.episodes.png')}
 .skin-whistler .whistler-navigation__card--host{background-image:url('/art/mystery/whistler/nav.card.host.png')}
 .skin-whistler .whistler-navigation__card--themes{background-image:url('/art/mystery/whistler/nav.card.themes.png')}
