@@ -10,7 +10,7 @@
 .skin-whistler .page-landing .show-about,
 .skin-whistler .page-landing .landing-actions,
 .skin-whistler .page-landing .page-navigation{display:none!important}
-.skin-whistler .whistler-navigation{position:absolute;z-index:8;top:130px;left:1220px;width:385px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(7,96px);gap:7px}
+.skin-whistler .whistler-navigation{position:absolute;z-index:8;top:354px;left:1220px;width:385px;height:480px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,96px);gap:7px;overflow:visible}
 .skin-whistler .whistler-navigation__card{display:block;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;outline:0;transition:filter 150ms ease}
 .skin-whistler .whistler-navigation__card--episodes{background-image:url('/art/mystery/whistler/nav.card.episodes.png')}
 .skin-whistler .whistler-navigation__card--host{background-image:url('/art/mystery/whistler/nav.card.host.png')}
