@@ -73,7 +73,7 @@
 }
 .skin-whistler .page-landing .featured-episode__heading .anniversary-number{
  display:block;flex:none;font-family:'Times New Roman',Georgia,serif;
- font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(24px,-2px);
+ font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(26px,-3px);
  width:calc(2ch - 6px);
 }
 .skin-whistler .page-landing .featured-episode__heading>div{
@@ -112,7 +112,7 @@
 .skin-whistler .page-landing .featured-episode{background:transparent}
 
 /* Anniversary numeral: translucent red background, Whistler only. */
-.skin-whistler .page-landing .featured-episode__heading .anniversary-number{background:rgba(255,0,0,0.6)}
+.skin-whistler .page-landing .featured-episode__heading .anniversary-number{background:transparent}
 
 /* Featured-panel layout diagnostics: remove its artwork and frame each
    visible element without altering dimensions or the shared components. */
