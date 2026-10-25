@@ -81,8 +81,8 @@
  transform:translateY(-6px);display:flex;justify-content:center;align-items:center;
 }
 .skin-whistler .page-landing .featured-episode__heading time{
- display:block;padding-right:0;transform:translateX(-10px);width:calc(100% - 34px);
- margin:0;font-size:22px;font-style:italic;color:red;
+ display:block;padding-right:0;transform:translateX(-20px);width:382px;
+ margin:0;font-size:22px;font-style:italic;
  text-align:center;background:transparent;
 }
 .skin-whistler .page-landing .featured-episode__body{
