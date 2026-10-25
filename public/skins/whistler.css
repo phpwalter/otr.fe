@@ -114,11 +114,5 @@
 /* Anniversary numeral: translucent red background, Whistler only. */
 .skin-whistler .page-landing .featured-episode__heading .anniversary-number{background:transparent}
 
-/* Featured-panel layout diagnostics: remove its artwork and frame each
-   visible element without altering dimensions or the shared components. */
+/* Keep featured artwork hidden; debugging outlines removed. */
 .skin-whistler .page-landing .featured-episode__art{display:none!important}
-.skin-whistler .page-landing .featured-episode,
-.skin-whistler .page-landing .featured-episode *:not(audio){
- outline:1px solid red;
- outline-offset:-1px;
-}
