@@ -73,7 +73,7 @@
 }
 .skin-whistler .page-landing .featured-episode__heading .anniversary-number{
  display:block;flex:none;font-family:'Times New Roman',Georgia,serif;
- font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(18px,-6px);
+ font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(26px,-6px);
  width:calc(2ch - 6px);
 }
 .skin-whistler .page-landing .featured-episode__heading>div{
