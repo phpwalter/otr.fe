@@ -49,16 +49,16 @@
    FeaturedEpisode layout. Shared React audio player and Whistler copy are retained. */
 .skin-whistler .page-landing .featured-episode{
  display:grid!important;
- grid-template-columns:320px minmax(0,1fr);
+ grid-template-columns:330px minmax(0,1fr);
  grid-template-rows:90px minmax(0,1fr) 42px;
  column-gap:20px;row-gap:0;
- position:absolute;left:40px;top:625px;width:868px;height:211px;min-height:0;
+ position:absolute;left:41px;top:629px;width:864px;height:205px;min-height:0;
  margin:0;padding:10px;border:0;border-radius:0;
  background:transparent;box-shadow:none;overflow:hidden;
 }
 .skin-whistler .page-landing .featured-episode__art{
  grid-column:1;grid-row:1 / 4;position:static;
- left:auto;top:auto;width:320px;height:100%;min-width:0;min-height:0;
+ left:auto;top:auto;width:330px;height:100%;min-width:0;min-height:0;
  margin:0;flex:none;border:0;
  background-color:transparent;
  background-image:url('/art/mystery/whistler/hero.png');
