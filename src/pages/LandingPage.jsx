@@ -3,6 +3,7 @@ import FeaturedEpisode from '../components/FeaturedEpisode.jsx';
 import ShowCardGrid from '../components/ShowCardGrid.jsx';
 import PageNavigation from '../components/PageNavigation.jsx';
 import ShowNav from '../components/ShowNav.jsx';
+import ShadowSide from '../components/ShadowSide.jsx';
 import vaultCatalog from '../vaultCatalog.json';
 export default function LandingPage({slug,show,data={},historicalDate=''}) {
  const showConfig = Object.values(vaultCatalog.categories).map(category => category.shows[slug]).find(Boolean);
@@ -20,8 +21,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
     {label:'Gallery',desc:'Rare photos, artwork, and historical treasures.'},
     {label:'History',desc:'The story behind a classic radio legend.'}
   ]:data.cards}/>}
-  <aside className="shadow-side" aria-label="Show artwork"><div className="shadow-intro" aria-hidden="true"/>
-   <div className="shadow-side-links">{['episodes','the-shadow','cast','gallery','contact'].map((route,i)=><a key={route} href={'/'+slug+'/'+route} className={'shadow-side-link shadow-side-link-'+i} aria-label={route} style={{backgroundImage:slug==='shadow'?`url(/art/mystery/shadow/nav.card.${route==='the-shadow'?'shadow':route}.png)`:undefined}}/>)}</div></aside>
+  {slug==='shadow'&&<ShadowSide slug={slug}/>}
   <section className="about show-about"><h2>Stories that live on.</h2><p>Discover the broadcasts, people, and imagination behind {show[0]}.</p></section>
   <div className="landing-actions" aria-label="Landing page actions"><a className="landing-actions__cast" href={'/'+slug+'/cast'}>Meet the Cast</a><button className="landing-actions__learn-more" type="button" disabled aria-label="Learn more (coming soon)">Learn More</button></div>
   <PageNavigation slug={slug} active="landing"/>
