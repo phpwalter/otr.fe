@@ -22,16 +22,16 @@
 .skin-shadow .cards>.shadow-card.card-2{background-image:url('/art/mystery/shadow/cards.voices.png')}
 .skin-shadow .featured-episode{position:absolute;right:12px;bottom:13px;width:420px;height:252px;z-index:6;border:0;padding:0;background:transparent url('/art/mystery/shadow/card.feature.background.png') center/100% 100% no-repeat;color:#f6eddf;box-shadow:none}
 .skin-shadow .featured-art{display:none}
-.skin-shadow .section-head{position:absolute;left:23px;top:15px;right:22px;height:90px;display:flex;gap:8px;align-items:start}
+.skin-shadow .featured-header{position:absolute;left:23px;top:15px;right:22px;height:90px;display:flex;gap:8px;align-items:start}
 .skin-shadow .anniversary-number{font:900 74px/1 Arial,sans-serif;color:#ed171c}
-.skin-shadow .section-head>div{padding-top:5px}
-.skin-shadow .section-head h2{font:700 24px/.99 Georgia,serif;margin:0;color:#f7efdf;white-space:nowrap}
-.skin-shadow .section-head time{font:18px Georgia,serif;color:#f6eddf}
+.skin-shadow .featured-header>div{padding-top:5px}
+.skin-shadow .featured-header h2{font:700 24px/.99 Georgia,serif;margin:0;color:#f7efdf;white-space:nowrap}
+.skin-shadow .featured-header time{font:18px Georgia,serif;color:#f6eddf}
 .skin-shadow .featured-body{display:contents}
-.skin-shadow .featured-text{position:absolute;left:23px;top:121px;right:24px}
+.skin-shadow .featured-content{position:absolute;left:23px;top:121px;right:24px}
 .skin-shadow .broadcast-label{font-size:13px;letter-spacing:.3px;margin:5px 0}
-.skin-shadow .featured-text h3{font:24px/1.1 Georgia,serif;margin:0}
-.skin-shadow .featured-text p:not(.broadcast-label){display:none}
+.skin-shadow .featured-content h3{font:24px/1.1 Georgia,serif;margin:0}
+.skin-shadow .featured-content p:not(.broadcast-label){display:none}
 .skin-shadow .player{position:absolute;left:23px;right:20px;bottom:6px;margin:0;gap:8px}
 .skin-shadow .player button{height:33px;min-width:33px;width:33px;border:1px solid #d94e40;color:#f9efdb;background:#08090b}
 .skin-shadow .player input{accent-color:#dd252a}
