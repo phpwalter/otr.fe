@@ -11,6 +11,15 @@
 /* Page-mode artwork is on the shared shell. No featured panel or card grid is rendered. */
 .generic-site-shell:has(> .skin-mysterious-traveler){--show-page-image:url('/art/mystery/mysterious-traveler/page.png')}
 /* Traveler section routes retain their existing visual treatment. */
+.page-landing.skin-mysterious-traveler .featured-episode{
+ display:grid!important;
+ grid-template-columns:370px minmax(0,1fr);
+ grid-template-rows:90px minmax(0,1fr) 42px;
+ column-gap:20px;row-gap:0;
+ position:absolute;left:41px;top:629px;width:864px;height:201px;min-height:0;
+ margin:0;padding:10px;border:0;border-radius:0;
+ background:transparent;box-shadow:none;overflow:hidden;
+}
 .skin-mysterious-traveler .page-traveler-section{
  min-height:886px;padding:88px 92px;color:#e9d5aa;
  background:linear-gradient(#061d18e8,#061510f2),url('/art/mystery/mysterious-traveler/page.png') center/cover;
@@ -20,3 +29,5 @@
 .skin-mysterious-traveler .traveler-back{color:#f8c758}
 .skin-mysterious-traveler .traveler-gallery-image{width:360px;max-height:400px;object-fit:contain}
 
+
+.page-landing.skin-mysterious-traveler .featured-episode__art{display:none!important}
