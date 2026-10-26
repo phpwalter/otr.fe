@@ -31,3 +31,76 @@
 
 
 .page-landing.skin-mysterious-traveler .featured-episode__art{display:none!important}
+
+/* Whistler-equivalent FeaturedEpisode positions and dimensions. */
+/* Traveler featured panel adapted from the Mysterious Traveler's final two-column
+   FeaturedEpisode layout. Shared React audio player and Traveler copy are retained. */
+.page-landing.skin-mysterious-traveler .featured-episode{
+ display:grid!important;
+ grid-template-columns:370px minmax(0,1fr);
+ grid-template-rows:90px minmax(0,1fr) 42px;
+ column-gap:20px;row-gap:0;
+ position:absolute;left:41px;top:629px;width:864px;height:201px;min-height:0;
+ margin:0;padding:10px;border:0;border-radius:0;
+ background:transparent;box-shadow:none;overflow:hidden;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__art{
+ grid-column:1;grid-row:1 / 4;position:static;
+ left:auto;top:auto;width:370px;height:100%;min-width:0;min-height:0;
+ margin:0;flex:none;border:0;
+ background-color:transparent;
+ background-image:url('/art/mystery/mysterious-traveler/hero.png');
+ background-position:center;background-size:contain;background-repeat:no-repeat;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__heading{
+ grid-column:2;grid-row:1;position:static;
+ left:auto;right:auto;top:auto;width:100%;height:90px;min-width:0;
+ transform:translateY(-9px);
+ display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+ gap:0;margin:0;padding:0;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__heading .anniversary-number{
+ display:block;flex:none;font-family:'Times New Roman',Georgia,serif;
+ font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(26px,-3px);
+ width:calc(2ch - 6px);
+}
+.page-landing.skin-mysterious-traveler .featured-episode__heading>div{
+ position:static;left:auto;right:auto;width:100%;padding:0 20px 0 0;
+ transform:translateY(-6px);display:flex;justify-content:center;align-items:center;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__heading time{
+ display:block;padding-right:0;transform:translateX(-20px);width:382px;
+ margin:0;font-size:22px;font-style:italic;
+ text-align:center;background:transparent;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__body{
+ grid-column:2;grid-row:2;position:relative;z-index:5;
+ transform:translateY(-30px);inset:auto;width:100%;height:80px;
+ min-width:0;min-height:0;display:block;overflow:hidden;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__content{
+ position:static;left:auto;right:auto;top:auto;width:calc(100% - 6px);height:100%;
+ max-height:100%;overflow:hidden;background:transparent;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__title{
+ font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:.025em;
+ color:#eadbb4;text-shadow:0 1px 1px rgba(0,0,0,.9);text-transform:uppercase;
+}
+.page-landing.skin-mysterious-traveler .featured-episode__description{
+ font-size:16px;display:-webkit-box;-webkit-box-orient:vertical;
+ -webkit-line-clamp:4;line-clamp:4;overflow:hidden;
+}
+.page-landing.skin-mysterious-traveler .audio-player{
+ grid-column:2;grid-row:3;position:static;left:auto;right:auto;bottom:auto;
+ width:calc(100% - 12px);height:46px;min-width:0;margin:0 auto 0 0;
+ transform:translateY(-10px);border:0;background:transparent;
+}
+
+/* Traveler featured panel: translucent red overlay (60% opacity). */
+.page-landing.skin-mysterious-traveler .featured-episode{background:transparent}
+
+/* Anniversary numeral: translucent red background, Traveler only. */
+.page-landing.skin-mysterious-traveler .featured-episode__heading .anniversary-number{background:transparent}
+
+/* Keep featured artwork hidden; debugging outlines removed. */
+.page-landing.skin-mysterious-traveler .featured-episode__art{display:none!important}
