@@ -20,7 +20,7 @@
 .skin-shadow .cards>.shadow-card.card-0{background-image:url('/art/mystery/shadow/cards.episodes.png')}
 .skin-shadow .cards>.shadow-card.card-1{background-image:url('/art/mystery/shadow/cards.characters.png')}
 .skin-shadow .cards>.shadow-card.card-2{background-image:url('/art/mystery/shadow/cards.voices.png')}
-.skin-shadow .featured{position:absolute;right:12px;bottom:13px;width:420px;height:252px;z-index:6;border:0;padding:0;background:transparent url('/art/mystery/shadow/card.feature.background.png') center/100% 100% no-repeat;color:#f6eddf;box-shadow:none}
+.skin-shadow .featured-episode{position:absolute;right:12px;bottom:13px;width:420px;height:252px;z-index:6;border:0;padding:0;background:transparent url('/art/mystery/shadow/card.feature.background.png') center/100% 100% no-repeat;color:#f6eddf;box-shadow:none}
 .skin-shadow .featured-art{display:none}
 .skin-shadow .section-head{position:absolute;left:23px;top:15px;right:22px;height:90px;display:flex;gap:8px;align-items:start}
 .skin-shadow .anniversary-number{font:900 74px/1 Arial,sans-serif;color:#ed171c}
@@ -42,7 +42,7 @@
 .page.skin-shadow .hero{width:75%;height:82%}
 .page.skin-shadow .shadow-side{width:25%;height:73%}
 .page.skin-shadow .cards{left:1.4%;top:83.3%;width:67%;height:15%}
-.page.skin-shadow .featured{right:0.85%;bottom:1.5%}
+.page.skin-shadow .featured-episode{right:0.85%;bottom:1.5%}
 .page.skin-shadow .shadow-side{display:block}
 .page.skin-shadow .shadow-side-links a{display:block}
-.page.skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
+.page.skin-shadow .featured-episode{position:absolute;right:.85%;bottom:1.5%}
