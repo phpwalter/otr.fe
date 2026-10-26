@@ -11,7 +11,7 @@
 .hero h1{font-family:Georgia,serif;font-style:italic;font-size:100px;color:#a92018;text-shadow:3px 4px #000}
 .tagline{color:#fff0ce}
 .hero-link{background:#a92018;color:#fff5de}
-.featured{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
+.featured-episode{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
 .anniversary-number{color:#a92018}
 .featured-art{background-image:url('/art/inner-sanctum-card.webp')}
 .player button{border-color:#a92018;color:#a92018}
