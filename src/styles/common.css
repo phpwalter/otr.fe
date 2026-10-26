@@ -7,12 +7,12 @@
 html,body,#root{height:100%;overflow:hidden}
 .generic-site-shell{background:#f5d9a7 url('/art/home/repeat.bkgrd.png') center/cover;font-family:Georgia,'Times New Roman',serif}
 .site-shell>.page.canvas{width:100%;max-width:100%}
-.page.skin-suspense .cards{left:2.22%;width:95.56%;top:65%;height:32%}
-.page.skin-suspense .cards>.featured{height:100%}
-.page.skin-shadow .hero{width:75%;height:82%}
-.page.skin-shadow .shadow-side{width:25%;height:73%}
-.page.skin-shadow .cards{left:1.4%;top:83.3%;width:67%;height:15%}
-.page.skin-shadow .featured{right:0.85%;bottom:1.5%}
+
+
+
+
+
+
 
 
 /* === src/pageTypes.css === */
@@ -35,13 +35,13 @@ html,body,#root{height:100%;overflow:hidden}
 .page-empty-message{font-size:20px}
 .episode-detail{max-width:1050px}
 .episode-detail__art{height:260px}
-.page.skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
-.page.skin-suspense .featured-art{left:0}
-.page.skin-suspense .cards>.featured{display:none}
-.page.skin-shadow .shadow-side{display:block}
-.page.skin-shadow .shadow-side-links a{display:block}
-.page.skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
-.page.skin-suspense .page-navigation,.page.skin-shadow .page-navigation{display:none}
+
+
+
+
+
+
+
 
 /* Optional landing controls exist in the common DOM; only skins that place them show them. */
 .page-landing .landing-actions{display:none}
