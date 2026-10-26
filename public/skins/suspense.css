@@ -89,3 +89,11 @@
   background-size:cover;
   background-repeat:no-repeat;
 }
+
+/* Migrated from common CSS: show-only positions. */
+.page.skin-suspense .cards{left:2.22%;width:95.56%;top:65%;height:32%}
+.page.skin-suspense .cards>.featured{height:100%}
+.page.skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
+.page.skin-suspense .featured-art{left:0}
+.page.skin-suspense .cards>.featured{display:none}
+.page.skin-suspense .page-navigation,.page.skin-shadow .page-navigation{display:none}
