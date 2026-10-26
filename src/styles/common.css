@@ -17,7 +17,7 @@ html,body,#root{height:100%;overflow:hidden}
 
 /* === src/pageTypes.css === */
 /* Page type contracts: identical DOM across show skins. */
-.page .is-empty{display:none!important}
+.page .is-empty:not(.featured-episode){display:none!important}
 .page-empty-message.is-empty{display:none}
 .page-navigation{display:flex;gap:20px;align-items:center}
 .page-landing>.page-navigation{position:absolute;left:0;top:0;z-index:7}
@@ -45,7 +45,7 @@ html,body,#root{height:100%;overflow:hidden}
 
 /* Optional landing controls exist in the common DOM; only skins that place them show them. */
 .page-landing .landing-actions{display:none}
-.skin-inner-sanctum .page-landing .landing-actions{display:block}
+
 
 /* Full-page artwork is presented by the show skin, not a banner hero. */
 .page-landing[data-artwork-mode="page"] > .hero.show-hero{display:none!important}
@@ -88,4 +88,19 @@ html,body,#root{height:100%;overflow:hidden}
   width: 864px;
   height: 201px;
   min-height: 0;
+}
+
+/* Shared PAGE and HERO landing canvas contract; independent of show identity. */
+.site-shell > .page.page-landing,
+.site-shell > .page.hero-landing {
+  display: block;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 1674px;
+  height: 886px;
+  min-height: 886px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
