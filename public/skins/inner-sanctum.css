@@ -33,7 +33,7 @@
 .skin-inner-sanctum .page-navigation{position:absolute;z-index:8;left:65px;top:301px;width:234px;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
 .skin-inner-sanctum .page-navigation__link{padding:6px 7px;min-height:33px;font:20px/1.1 Georgia,serif;color:#2b190f;text-shadow:0 1px #eacda6}
 .skin-inner-sanctum .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
-.skin-inner-sanctum .featured-episode{;z-index:6;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
+.skin-inner-sanctum .featured-episode{z-index:6;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
 .skin-inner-sanctum .featured-episode__heading{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
 .skin-inner-sanctum .featured-episode__heading .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
 .skin-inner-sanctum .featured-episode__heading h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
@@ -95,8 +95,7 @@
 
 /* The featured region is the lower-left artwork panel. The numeral spans
    the combined heading and date, with a narrow gap before the heading. */
-.skin-inner-sanctum .featured-episode{;
-}
+
 .skin-inner-sanctum .featured-episode__heading{
   left:254px;right:13px;top:0;height:66px;
   display:flex;align-items:flex-start;gap:7px;
