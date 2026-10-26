@@ -139,3 +139,10 @@
 /* Full-page art uses the same fixed 1674px width and 72px offset as Whistler/Traveler. */
 .generic-site-shell:has(> .skin-inner-sanctum){--show-page-image:url('/art/mystery/inner-sanctum/hero.png')}
 .site-shell[data-artwork-mode="page"]>.page.skin-inner-sanctum{background:transparent}
+
+/* Inner Sanctum art has less internal edge padding than the Whistler/Traveler images.
+   Fit within the shared shell without changing the shared 72px top offset. */
+.generic-site-shell[data-artwork-mode="page"]:has(> .skin-inner-sanctum){
+  background-size:1600px auto;
+  background-position:center 72px;
+}
