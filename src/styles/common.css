@@ -1,0 +1,4 @@
+/* Single entry point for universal page and shell styling. Show skins override presentation, never required markup. */
+@import '../structure.css';
+@import '../pageTypes.css';
+@import '../components/siteChrome.css';
