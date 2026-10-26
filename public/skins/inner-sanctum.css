@@ -26,7 +26,7 @@
 
 
 /* Fixed 1674px by 886px LandingPage overlay. Existing art remains unaltered. */
-.page.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
+.page.skin-inner-sanctum{background:transparent;color:#f5dfbd}
 .canvas.page-landing.skin-inner-sanctum{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
 .skin-inner-sanctum .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
 .skin-inner-sanctum .hero-art,.skin-inner-sanctum .hero-copy{display:none}
@@ -135,3 +135,7 @@
 .skin-inner-sanctum .show-nav__card--about{background-image:url('/art/mystery/inner-sanctum/nav.card.about.png')}
 .skin-inner-sanctum .show-nav__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
 .skin-inner-sanctum .show-nav__card .sr-only{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal}
+
+/* Full-page art uses the same fixed 1674px width and 72px offset as Whistler/Traveler. */
+.generic-site-shell:has(> .skin-inner-sanctum){--show-page-image:url('/art/mystery/inner-sanctum/hero.png')}
+.site-shell[data-artwork-mode="page"]>.page.skin-inner-sanctum{background:transparent}
