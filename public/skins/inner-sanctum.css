@@ -1,5 +1,5 @@
 /* Independent inner-sanctum presentation. Shared HTML/DOM remains unchanged. */
-.show-viewport.skin-inner-sanctum{background:#080808;color:#f3e2cb;font-family:Georgia,serif}
+.page.skin-inner-sanctum{background:#080808;color:#f3e2cb;font-family:Georgia,serif}
 .header{background:#0b0d11;border-bottom:2px solid #a92018;padding:15px 28px;}
 .header nav{display:flex;justify-content:center;gap:25px;}
 .header a{color:#f3e2cb}.header a.active{color:#a92018}
@@ -22,12 +22,12 @@
 .archive-card h2{color:#a92018}
 .about{border-top:1px solid #a92018}
 .footer{color:#f3e2cb;font-size:12px}
-@media(max-width:1400px){.show-viewport.skin-inner-sanctum{margin-left:0;margin-right:0}}
+@media(max-width:1400px){.page.skin-inner-sanctum{margin-left:0;margin-right:0}}
 
 
 /* Fixed 1674px by 886px LandingPage overlay. Existing art remains unaltered. */
-.show-viewport.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
-.skin-inner-sanctum .canvas.page-landing{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
+.page.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
+.canvas.page-landing.skin-inner-sanctum{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
 .skin-inner-sanctum .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
 .skin-inner-sanctum .hero-art,.skin-inner-sanctum .hero-copy{display:none}
 .skin-inner-sanctum .page-navigation{position:absolute;z-index:8;left:65px;top:301px;width:234px;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
@@ -69,21 +69,21 @@
    The five navigation links are the SAME shared PageNavigation DOM;
    each is an artwork-backed button. Artwork is loaded from nav.card.*.png files in the show directory.
    Keep link text accessible to assistive technology. */
-.skin-inner-sanctum .page-landing>.page-navigation{
+.page-landing.skin-inner-sanctum>.page-navigation{
   left:54px;top:51px;width:251px;
   transform:none;padding:0;gap:7px;
   display:flex;align-items:stretch;flex-direction:column;
 }
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link{
+.page-landing.skin-inner-sanctum>.page-navigation .page-navigation__link{
   display:block;flex:none;order:10;
   width:251px;height:88px;min-height:88px;
   padding:0;border:0;border-radius:0;background-repeat:no-repeat;
   background-position:center;background-size:251px 88px;
   font-size:0;line-height:0;text-shadow:none;
 }
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(1),
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(7),
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(8){display:none}
+.page-landing.skin-inner-sanctum>.page-navigation .page-navigation__link:nth-child(1),
+.page-landing.skin-inner-sanctum>.page-navigation .page-navigation__link:nth-child(7),
+.page-landing.skin-inner-sanctum>.page-navigation .page-navigation__link:nth-child(8){display:none}
 .skin-inner-sanctum .page-navigation__link:nth-child(2){order:1;background-image:url('/art/mystery/inner-sanctum/nav.card.episodes.png')}
 .skin-inner-sanctum .page-navigation__link:nth-child(3){order:2;background-image:url('/art/mystery/inner-sanctum/nav.card.cast.png')}
 .skin-inner-sanctum .page-navigation__link:nth-child(4){order:3;background-image:url('/art/mystery/inner-sanctum/nav.card.writers.png')}
