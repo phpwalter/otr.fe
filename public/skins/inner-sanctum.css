@@ -26,7 +26,7 @@
 
 
 /* Fixed 1674px by 886px LandingPage overlay. Existing art remains unaltered. */
-.site-viewport .site.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
+.show-viewport .site.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
 .skin-inner-sanctum .canvas.page-landing{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
 .skin-inner-sanctum .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
 .skin-inner-sanctum .hero-art,.skin-inner-sanctum .hero-copy{display:none}
