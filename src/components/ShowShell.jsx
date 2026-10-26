@@ -6,7 +6,7 @@ export default function ShowShell({slug,children,scrollable=false}){
  const home=slug==null;
  return <div className={'site-shell site-chrome '+(home?'vault-page':'generic-site-shell')}>
   <SiteHeader/>
-  <div className={'site-viewport'+(scrollable?' site-viewport--scrollable':'')}>
+  <div className={'show-viewport'+(scrollable?' show-viewport--scrollable':'')}>
    {home?children:<div className={'site skin-'+slug}>{children}</div>}
   </div>
   <SiteFooter/>
