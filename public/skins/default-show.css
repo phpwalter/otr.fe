@@ -1,0 +1,11 @@
+/* Fallback for any show without its own stylesheet. Shared HTML and featured controls remain usable. */
+.generic-site-shell{background:#161b22}
+.site-shell>.page.page-landing{background:#1b2430;color:#f3e8d3}
+.page-landing .hero.show-hero{min-height:360px;background:linear-gradient(120deg,#253448,#121923)}
+.page-landing .hero-copy{padding:64px}
+.page-landing .show-nav{display:flex;flex-wrap:wrap;gap:12px;padding:20px}
+.page-landing .show-nav__card{display:flex;align-items:center;justify-content:center;padding:16px 24px;border:1px solid #c9a86e;color:#f2d7a6}
+.page-landing .show-nav__card .sr-only{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal}
+.page-landing .featured-episode{position:relative;display:block;min-height:245px;margin:16px 22px;padding:22px;border:1px solid #c5a068;background:#17202b;color:#f3e4c4}
+.page-landing .featured-episode__art{background-color:#334252}
+.page-landing .show-card-grid{margin:16px 22px}
