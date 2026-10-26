@@ -4,7 +4,7 @@
 .generic-site-shell:has(.skin-whistler){background:#05090c url('/art/mystery/whistler/page.png') 0 72px / 1674px auto no-repeat}
 .page.skin-whistler{width:1674px;height:886px;min-height:886px;max-height:886px;background:transparent;color:#ebcc91;font-family:Georgia,'Times New Roman',serif}
 .canvas.page-landing.skin-whistler{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
-.page-landing.skin-whistler .hero,
+.page-landing.skin-whistler > section.hero.show-hero,
 .page-landing.skin-whistler .show-card-grid,
 .page-landing.skin-whistler .shadow-side,
 .page-landing.skin-whistler .show-about,
