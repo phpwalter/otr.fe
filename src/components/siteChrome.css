@@ -23,5 +23,5 @@
 .site-shell>.vault-footer{position:absolute;top:939px;left:0;z-index:3;width:1674px;height:91px}
 .site-shell>.show-viewport,.site-shell>.page[class*="skin-"]{position:absolute;top:53px;left:0;z-index:1;width:1674px;height:886px;margin:0;overflow:hidden}
 .site-shell>.show-viewport--scrollable,.site-shell>.show-page--scrollable{overflow-x:hidden;overflow-y:auto}
-.site-shell[data-artwork-mode="page"]{background-color:#05090c;background-image:var(--show-page-image);background-position:0 var(--show-page-offset,72px);background-size:var(--show-page-size,1674px auto);background-repeat:no-repeat}
+.site-shell[data-artwork-mode="page"]{background-color:#05090c;background-image:var(--show-page-image);background-position:0 72px;background-size:1674px auto;background-repeat:no-repeat}
 .site-shell[data-artwork-mode="page"]>.page.page-landing{background:transparent}
