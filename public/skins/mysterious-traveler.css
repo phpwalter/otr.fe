@@ -102,3 +102,68 @@
 
 /* Keep featured artwork hidden; debugging outlines removed. */
 .page-landing .featured-art{display:none!important}
+
+
+/* Mysterious Traveler panel restoration: original geometry and two-column debug framing. */
+.site-shell[data-artwork-mode="page"] > .page.page-landing > .featured-episode {
+  position: absolute;
+  left: 48px;
+  top: 565px;
+  width: 828px;
+  height: 271px;
+  min-height: 0;
+  display: grid !important;
+  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-rows: 90px minmax(0, 1fr) 42px;
+  column-gap: 20px;
+  row-gap: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid red;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+/* Red guide around the entire right-hand column. */
+.page-landing > .featured-episode::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 350px;
+  border: 2px solid red;
+  pointer-events: none;
+  z-index: 10;
+}
+.page-landing > .featured-episode > .featured-art {
+  display: block !important;
+  grid-column: 1;
+  grid-row: 1 / 4;
+  position: static;
+  width: 320px;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  background-color: transparent;
+  background-image: url('/art/mystery/mysterious-traveler/hero.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-landing > .featured-episode > .featured-header {
+  grid-column: 2;
+  grid-row: 1;
+}
+.page-landing > .featured-episode > .featured-body {
+  grid-column: 2;
+  grid-row: 2;
+}
+.page-landing > .featured-episode > .audio-player {
+  grid-column: 2;
+  grid-row: 3;
+}
