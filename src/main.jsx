@@ -11,6 +11,7 @@ import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
 import CastPage from './pages/CastPage.jsx';
 import TravelerSectionPage from './pages/TravelerSectionPage.jsx';
 import WhistlerSectionPage from './pages/WhistlerSectionPage.jsx';
+import InnerSanctumSectionPage from './pages/InnerSanctumSectionPage.jsx';
 import './styles/common.css';
 
 function anniversary(years){
@@ -56,6 +57,7 @@ function ShowApp(){
   case 'episodes':page=<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
   case 'cast':page=<CastPage slug={slug} show={show} data={pageData}/>;break;
+  case 'innerSanctumSection':page=<InnerSanctumSectionPage slug={slug} section={route.section}/>;break;
   case 'whistlerSection':page=<WhistlerSectionPage slug={slug} section={route.section}/>;break;
   case 'travelerSection':page=<TravelerSectionPage slug={slug} section={route.section}/>;break;
   default:page=<main className={"page page-not-found skin-"+slug+" show-page--scrollable"}><h1>Page not found</h1><a href={'/'+slug}>Return to {show[0]}</a></main>;
