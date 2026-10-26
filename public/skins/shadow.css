@@ -32,10 +32,10 @@
 .skin-shadow .broadcast-label{font-size:13px;letter-spacing:.3px;margin:5px 0}
 .skin-shadow .featured-content h3{font:24px/1.1 Georgia,serif;margin:0}
 .skin-shadow .featured-content p:not(.broadcast-label){display:none}
-.skin-shadow .player{position:absolute;left:23px;right:20px;bottom:6px;margin:0;gap:8px}
-.skin-shadow .player button{height:33px;min-width:33px;width:33px;border:1px solid #d94e40;color:#f9efdb;background:#08090b}
-.skin-shadow .player input{accent-color:#dd252a}
-.skin-shadow .player time{font:12px Arial,sans-serif}
+.skin-shadow .audio-player{position:absolute;left:23px;right:20px;bottom:6px;margin:0;gap:8px}
+.skin-shadow .audio-player button{height:33px;min-width:33px;width:33px;border:1px solid #d94e40;color:#f9efdb;background:#08090b}
+.skin-shadow .audio-player input{accent-color:#dd252a}
+.skin-shadow .audio-player time{font:12px Arial,sans-serif}
 .skin-shadow .about,.skin-shadow .footer{display:none}
 
 /* Migrated from common CSS: show-only positions. */
