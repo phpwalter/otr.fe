@@ -1,3 +1,4 @@
+.generic-site-shell:has(> .skin-whistler){--show-page-image:url('/art/mystery/whistler/page.png')}
 /* The Whistler: fixed 1674 x 1030 shared shell and native header/footer.
    The shared content viewport starts 53px from the top and is 886px tall.
    All Whistler overlay coordinates below are relative to that viewport. */
