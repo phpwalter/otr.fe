@@ -226,6 +226,10 @@
         },
         "whistler": {
           "title": "The Whistler",
+          "artwork": {
+            "mode": "page",
+            "src": "/art/mystery/whistler/page.png"
+          },
           "href": "/whistler",
           "years": "1942–1955",
           "featuredEligible": true,
