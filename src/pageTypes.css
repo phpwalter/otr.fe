@@ -17,13 +17,13 @@
 .page-empty-message{font-size:20px}
 .episode-detail{max-width:1050px}
 .episode-detail__art{height:260px}
-.show-viewport.skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
-.show-viewport.skin-suspense .featured-art{left:0}
-.show-viewport.skin-suspense .cards>.featured{display:none}
-.show-viewport.skin-shadow .shadow-side{display:block}
-.show-viewport.skin-shadow .shadow-side-links a{display:block}
-.show-viewport.skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
-.show-viewport.skin-suspense .page-navigation,.show-viewport.skin-shadow .page-navigation{display:none}
+.page.skin-suspense .featured{position:absolute;z-index:4;top:65%;right:2.2%;width:49%;height:32%;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;color:#241712}
+.page.skin-suspense .featured-art{left:0}
+.page.skin-suspense .cards>.featured{display:none}
+.page.skin-shadow .shadow-side{display:block}
+.page.skin-shadow .shadow-side-links a{display:block}
+.page.skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
+.page.skin-suspense .page-navigation,.page.skin-shadow .page-navigation{display:none}
 
 /* Optional landing controls exist in the common DOM; only skins that place them show them. */
 .page-landing .landing-actions{display:none}
