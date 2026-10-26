@@ -218,6 +218,9 @@
         },
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
+          "showCardGrid": false,
+          "showNav": true,
+          "featuredEpisode": false,
           "artwork": {
             "mode": "page"
           },
