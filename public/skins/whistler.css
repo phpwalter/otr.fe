@@ -1,7 +1,6 @@
 /* The Whistler: fixed 1674 x 1030 shared shell and native header/footer.
    The shared content viewport starts 53px from the top and is 886px tall.
    All Whistler overlay coordinates below are relative to that viewport. */
-.generic-site-shell:has(.skin-whistler){background:#05090c url('/art/mystery/whistler/page.png') 0 72px / 1674px auto no-repeat}
 .site-shell>.page.skin-whistler{width:1674px;height:886px;min-height:886px;max-height:886px;background:transparent;color:#ebcc91;font-family:Georgia,'Times New Roman',serif}
 .canvas.page-landing.skin-whistler{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
 .page-landing.skin-whistler > section.hero.show-hero,
