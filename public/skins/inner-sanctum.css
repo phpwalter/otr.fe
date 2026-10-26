@@ -123,3 +123,15 @@
 
 /* Featured heading contains only the numeral for this show. */
 .skin-inner-sanctum .featured-episode__heading>.anniversary-number{transform:translate(-10px,-6px)}
+
+/* Whistler-equivalent canvas and six-button ShowNav. Do not override FeaturedEpisode. */
+.site-shell>.page.skin-inner-sanctum{width:1674px;height:886px;min-height:886px;max-height:886px}
+.canvas.page-landing.skin-inner-sanctum{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
+.page-landing.skin-inner-sanctum>.hero.show-hero{display:none!important}
+.skin-inner-sanctum .show-nav{position:absolute;z-index:8;top:204px;left:1220px;width:385px;height:480px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,96px);gap:7px;overflow:visible}
+.skin-inner-sanctum .show-nav__card{display:flex;align-items:center;justify-content:center;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;color:#2b190f;font:bold 22px Georgia,serif;text-shadow:0 1px #eacda6;outline:0;transition:filter 150ms ease}
+.skin-inner-sanctum .show-nav__card--episodes{background-image:url('/art/mystery/inner-sanctum/nav.card.episodes.png')}
+.skin-inner-sanctum .show-nav__card--history{background-image:url('/art/mystery/inner-sanctum/nav.card.history.png')}
+.skin-inner-sanctum .show-nav__card--about{background-image:url('/art/mystery/inner-sanctum/nav.card.about.png')}
+.skin-inner-sanctum .show-nav__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
+.skin-inner-sanctum .show-nav__card .sr-only{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal}
