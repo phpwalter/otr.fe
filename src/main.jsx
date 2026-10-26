@@ -11,8 +11,7 @@ import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
 import CastPage from './pages/CastPage.jsx';
 import TravelerSectionPage from './pages/TravelerSectionPage.jsx';
 import WhistlerSectionPage from './pages/WhistlerSectionPage.jsx';
-import './structure.css';
-import './pageTypes.css';
+import './styles/common.css';
 
 function anniversary(years){
  const date=new Date();date.setFullYear(date.getFullYear()-years);
@@ -32,7 +31,9 @@ function ShowApp(){
  useEffect(()=>{
   if(!slug)return;
   const link=document.getElementById('series-skin')||document.createElement('link');
-  link.id='series-skin';link.rel='stylesheet';link.href='/skins/'+slug+'.css';
+  link.id='series-skin';link.rel='stylesheet';
+  link.onerror=()=>{if(!link.href.endsWith('/default-show.css'))link.href='/skins/default-show.css';};
+  link.href='/skins/'+slug+'.css';
   document.head.appendChild(link);
   document.title=shows[slug][0]+' | Classic Radio Vault';
   document.body.dataset.series=slug;
