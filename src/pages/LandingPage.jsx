@@ -1,7 +1,6 @@
 import React from 'react';
 import FeaturedEpisode from '../components/FeaturedEpisode.jsx';
 import ShowCardGrid from '../components/ShowCardGrid.jsx';
-import PageNavigation from '../components/PageNavigation.jsx';
 import ShowNav from '../components/ShowNav.jsx';
 import ShadowSide from '../components/ShadowSide.jsx';
 import vaultCatalog from '../vaultCatalog.json';
@@ -22,7 +21,6 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
     {label:'History',desc:'The story behind a classic radio legend.'}
   ]:data.cards}/>}
   {slug==='shadow'&&<ShadowSide slug={slug}/>}
-  <div className="landing-actions" aria-label="Landing page actions"><a className="landing-actions__cast" href={'/'+slug+'/cast'}>Meet the Cast</a><button className="landing-actions__learn-more" type="button" disabled aria-label="Learn more (coming soon)">Learn More</button></div>
-  <PageNavigation slug={slug} active="landing"/>
+
  </main>;
 }
