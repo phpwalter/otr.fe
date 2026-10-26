@@ -231,6 +231,7 @@
         },
         "whistler": {
           "title": "The Whistler",
+          "showNav": true,
           "showCardGrid": false,
           "artwork": {
             "mode": "page"
