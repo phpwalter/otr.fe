@@ -4,16 +4,16 @@
 html,body,#root{height:100%;overflow:hidden}
 .site-shell{position:relative;width:1674px;height:1030px;min-height:1030px;margin:0 auto;overflow:hidden}
 .site-shell>.vault-header{position:absolute;top:0;left:0;z-index:5;width:1674px;height:88px}
-.site-shell>.site-viewport{position:absolute;top:53px;left:0;z-index:1;width:1674px;height:886px;overflow:hidden;overscroll-behavior:contain}
-.site-shell>.site-viewport--scrollable{overflow-x:hidden;overflow-y:auto}
+.site-shell>.show-viewport{position:absolute;top:53px;left:0;z-index:1;width:1674px;height:886px;overflow:hidden;overscroll-behavior:contain}
+.site-shell>.show-viewport--scrollable{overflow-x:hidden;overflow-y:auto}
 .site-shell>.vault-footer{position:absolute;top:939px;left:0;z-index:3;width:1674px;height:91px}
 .generic-site-shell{background:#f5d9a7 url('/art/home/repeat.bkgrd.png') center/cover;font-family:Georgia,'Times New Roman',serif}
-.site-viewport>.site[class*="skin-"]{position:relative;width:1674px;height:886px;min-height:886px;max-height:886px;margin:0;overflow:hidden;transform:none}
-.site-viewport--scrollable>.site[class*="skin-"]{height:auto;min-height:886px;max-height:none;overflow:visible}
-.site-viewport .canvas{width:100%;max-width:100%}
-.site-viewport .skin-suspense .cards{left:2.22%;width:95.56%;top:65%;height:32%}
-.site-viewport .skin-suspense .cards>.featured{height:100%}
-.site-viewport .skin-shadow .hero{width:75%;height:82%}
-.site-viewport .skin-shadow .shadow-side{width:25%;height:73%}
-.site-viewport .skin-shadow .cards{left:1.4%;top:83.3%;width:67%;height:15%}
-.site-viewport .skin-shadow .featured{right:0.85%;bottom:1.5%}
+.show-viewport>.site[class*="skin-"]{position:relative;width:1674px;height:886px;min-height:886px;max-height:886px;margin:0;overflow:hidden;transform:none}
+.show-viewport--scrollable>.site[class*="skin-"]{height:auto;min-height:886px;max-height:none;overflow:visible}
+.show-viewport .canvas{width:100%;max-width:100%}
+.show-viewport .skin-suspense .cards{left:2.22%;width:95.56%;top:65%;height:32%}
+.show-viewport .skin-suspense .cards>.featured{height:100%}
+.show-viewport .skin-shadow .hero{width:75%;height:82%}
+.show-viewport .skin-shadow .shadow-side{width:25%;height:73%}
+.show-viewport .skin-shadow .cards{left:1.4%;top:83.3%;width:67%;height:15%}
+.show-viewport .skin-shadow .featured{right:0.85%;bottom:1.5%}
