@@ -167,3 +167,19 @@
   grid-column: 2;
   grid-row: 3;
 }
+
+/* Align the anniversary numeral flush to the top of the right column. */
+.page-landing > .featured-episode > .featured-header {
+  justify-content: flex-start;
+  align-items: flex-start;
+  transform: none;
+  padding: 0;
+  margin: 0;
+}
+.page-landing > .featured-episode > .featured-header > .anniversary-number {
+  font-size: 38px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  transform: none;
+}
