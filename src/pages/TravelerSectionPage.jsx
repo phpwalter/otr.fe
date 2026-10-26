@@ -6,7 +6,7 @@ const sections={
 };
 export default function TravelerSectionPage({slug,section}){
  const info=sections[section];
- return <main className="page page-traveler-section">
+ return <main className={"page page-traveler-section skin-"+slug+" show-page--scrollable"}>
   <a href={'/'+slug} className="traveler-back">← Back to The Mysterious Traveler</a>
   <h1>{info.title}</h1><p>{info.intro}</p>
   {section==='gallery'?<img src="/art/mystery/mysterious-traveler/card.png" alt="The Mysterious Traveler archive artwork" className="traveler-gallery-image"/>:null}
