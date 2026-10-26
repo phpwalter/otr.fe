@@ -34,14 +34,14 @@
  .page-navigation__link{padding:6px 7px;min-height:33px;font:20px/1.1 Georgia,serif;color:#2b190f;text-shadow:0 1px #eacda6}
  .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
  .featured-episode{z-index:6;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
- .featured-episode__heading{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
- .featured-episode__heading .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
- .featured-episode__heading h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
- .featured-episode__heading time{font:13px Georgia,serif;color:#27170d}
- .featured-episode__art, .broadcast-label{display:none}
- .featured-episode__content{position:absolute;left:244px;right:20px;top:66px;max-height:114px;overflow:hidden}
- .featured-episode__title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
- .featured-episode__description{font:14px/1.25 Georgia,serif;margin:0}
+ .featured-header{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
+ .featured-header .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
+ .featured-header h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
+ .featured-header time{font:13px Georgia,serif;color:#27170d}
+ .featured-art, .broadcast-label{display:none}
+ .featured-content{position:absolute;left:244px;right:20px;top:66px;max-height:114px;overflow:hidden}
+ .featured-title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
+ .featured-description{font:14px/1.25 Georgia,serif;margin:0}
  .audio-player{position:absolute;bottom:19px;left:243px;right:20px;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
  .audio-player button{flex:0 0 34px;width:34px;min-width:34px;height:34px;border-radius:50%;background:#9e1216;color:#f8dfba;border:1px solid #7f1818;cursor:pointer}
  .audio-player input[type="range"]{flex:1;min-width:18px;accent-color:#a41116}
@@ -96,31 +96,31 @@
 /* The featured region is the lower-left artwork panel. The numeral spans
    the combined heading and date, with a narrow gap before the heading. */
 
- .featured-episode__heading{
+ .featured-header{
   left:254px;right:13px;top:0;height:66px;
   display:flex;align-items:flex-start;gap:7px;
 }
- .featured-episode__heading>.anniversary-number{
+ .featured-header>.anniversary-number{
   display:block;flex:none;
   font:bold 60px/.97 Georgia,'Times New Roman',serif;
   color:#aa1017;text-shadow:1px 1px 0 #250b08;
 }
- .featured-episode__heading>div{
+ .featured-header>div{
   display:flex;flex-direction:column;align-items:flex-start;padding-top:5px;transform:translateX(-10px);
 }
- .featured-episode__heading h2{
+ .featured-header h2{
   margin:0;white-space:nowrap;
   font:700 23px/1.08 Georgia,'Times New Roman',serif;
   color:#231207;
 }
- .featured-episode__heading h2::before{content:none}
- .featured-episode__heading time{
+ .featured-header h2::before{content:none}
+ .featured-header time{
   display:block;margin-top:30px;position:relative;left:-1px;
   font:16px/1.2 Georgia,'Times New Roman',serif;color:#241407;
 }
 
 /* Featured heading contains only the numeral for this show. */
- .featured-episode__heading>.anniversary-number{transform:translate(-10px,-6px)}
+ .featured-header>.anniversary-number{transform:translate(-10px,-6px)}
 
 /* Whistler-equivalent canvas and six-button ShowNav. Do not override FeaturedEpisode. */
 .site-shell>.page{width:1674px;height:886px;min-height:886px;max-height:886px}
