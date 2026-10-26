@@ -37,3 +37,12 @@
 .skin-shadow .player input{accent-color:#dd252a}
 .skin-shadow .player time{font:12px Arial,sans-serif}
 .skin-shadow .about,.skin-shadow .footer{display:none}
+
+/* Migrated from common CSS: show-only positions. */
+.page.skin-shadow .hero{width:75%;height:82%}
+.page.skin-shadow .shadow-side{width:25%;height:73%}
+.page.skin-shadow .cards{left:1.4%;top:83.3%;width:67%;height:15%}
+.page.skin-shadow .featured{right:0.85%;bottom:1.5%}
+.page.skin-shadow .shadow-side{display:block}
+.page.skin-shadow .shadow-side-links a{display:block}
+.page.skin-shadow .featured{position:absolute;right:.85%;bottom:1.5%}
