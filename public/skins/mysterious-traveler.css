@@ -120,23 +120,11 @@
   box-sizing: border-box;
   padding: 10px;
   margin: 0;
-  border: 2px solid red;
+  border: 0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
   overflow: hidden;
-}
-/* Red guide around the entire right-hand column. */
-.page-landing > .featured-episode::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 382px;
-  border: 2px solid red;
-  pointer-events: none;
-  z-index: 10;
 }
 .page-landing > .featured-episode > .featured-art {
   display: block !important;
@@ -148,7 +136,7 @@
   min-height: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 2px solid red;
+  border: 0;
   background-color: transparent;
   background-image: url('/art/mystery/mysterious-traveler/hero.png');
   background-position: center;
@@ -177,9 +165,19 @@
   margin: 0;
 }
 .page-landing > .featured-episode > .featured-header > .anniversary-number {
-  font-size: 38px;
+  font-size: 44px;
   line-height: 1;
   padding: 0;
   margin: 0;
   transform: none;
+}
+
+/* Debug frames: date and episode body only. */
+.page-landing > .featured-episode > .featured-header time {
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+.page-landing > .featured-episode > .featured-body {
+  box-sizing: border-box;
+  border: 2px solid red;
 }
