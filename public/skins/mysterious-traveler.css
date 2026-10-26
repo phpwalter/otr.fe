@@ -108,12 +108,12 @@
 .site-shell[data-artwork-mode="page"] > .page.page-landing > .featured-episode {
   position: absolute;
   left: 48px;
-  top: 565px;
-  width: 828px;
-  height: 271px;
+  top: 595px;
+  width: 850px;
+  height: 250px;
   min-height: 0;
   display: grid !important;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: 344px minmax(0, 1fr);
   grid-template-rows: 90px minmax(0, 1fr) 42px;
   column-gap: 20px;
   row-gap: 0;
@@ -133,7 +133,7 @@
   top: 10px;
   right: 10px;
   bottom: 10px;
-  left: 350px;
+  left: 374px;
   border: 2px solid red;
   pointer-events: none;
   z-index: 10;
@@ -143,7 +143,7 @@
   grid-column: 1;
   grid-row: 1 / 4;
   position: static;
-  width: 320px;
+  width: 344px;
   height: 100%;
   min-height: 0;
   margin: 0;
