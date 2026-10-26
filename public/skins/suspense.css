@@ -32,10 +32,10 @@
 .skin-suspense .featured-content h3{font:bold 27px/1.07 Georgia,serif;color:#9e1915;margin:0 0 5px}
 .skin-suspense .featured-content .broadcast-label{font:12px Georgia,serif;letter-spacing:.2px;margin:0 0 5px}
 .skin-suspense .featured-content p:not(.broadcast-label){font:16px/1.25 Georgia,serif;margin:3px auto;max-height:85px;overflow:hidden}
-.skin-suspense .player{position:absolute;left:305px;right:17px;bottom:12px;display:flex;gap:8px;align-items:center;margin:0}
-.skin-suspense .player button{width:44px;height:44px;min-width:44px;border:0;border-radius:50%;background:#1b1917;color:#f5d6a5}
-.skin-suspense .player input{accent-color:#2f2b27}
-.skin-suspense .player time{font:13px Georgia,serif;color:#271e16}
+.skin-suspense .audio-player{position:absolute;left:305px;right:17px;bottom:12px;display:flex;gap:8px;align-items:center;margin:0}
+.skin-suspense .audio-player button{width:44px;height:44px;min-width:44px;border:0;border-radius:50%;background:#1b1917;color:#f5d6a5}
+.skin-suspense .audio-player input{accent-color:#2f2b27}
+.skin-suspense .audio-player time{font:13px Georgia,serif;color:#271e16}
 .skin-suspense .about,.skin-suspense .footer{display:none}
 
 /* Reference-matched three-column parchment strip; override earlier prototype rules. */
@@ -66,7 +66,7 @@
 .skin-suspense .featured-art{position:absolute;left:0;top:0;height:100%;width:46%;margin:0;background:url('/art/mystery/suspense/card-feature.png') left center / auto 100% no-repeat;pointer-events:none}
 .skin-suspense .featured-header{left:45%;right:6px;top:13px}
 .skin-suspense .featured-content{left:46%;right:14px;top:104px}
-.skin-suspense .player{left:45%;right:16px;bottom:12px}
+.skin-suspense .audio-player{left:45%;right:16px;bottom:12px}
 
 /* Compact featured content for the fixed 1440 x 900 canvas. */
 .skin-suspense .featured-header{top:6px;height:65px}
@@ -76,7 +76,7 @@
 .skin-suspense .featured-content{top:76px}
 .skin-suspense .featured-content h3{font-size:23px}
 .skin-suspense .featured-content p:not(.broadcast-label){font-size:14px;max-height:70px}
-.skin-suspense .player{bottom:8px}
+.skin-suspense .audio-player{bottom:8px}
 
 /* Anchored SiteViewport compatibility: use the standardized hero-art element.
    Align at the top so 'cover' cannot crop away the upper portion of the image. */
