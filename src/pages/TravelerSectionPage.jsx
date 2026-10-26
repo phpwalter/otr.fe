@@ -1,5 +1,8 @@
 import React from 'react';
 const sections={
+ host:{title:'Host',intro:'Meet the voice behind The Mysterious Traveler.',items:[]},
+ about:{title:'About',intro:'Explore the history and legacy of The Mysterious Traveler.',items:[]},
+ contact:{title:'Contact',intro:'Contact information will be available here.',items:[]},
  themes:{title:'Themes',intro:'Journeys into mystery, the supernatural, suspense, and the unexplained.',items:['Mystery and suspense','Supernatural encounters','Unexplained events']},
  gallery:{title:'Gallery',intro:'Artwork from The Mysterious Traveler archive.',items:[]},
  history:{title:'History',intro:'The Mysterious Traveler aired from 1943 to 1952, taking listeners into strange and terrifying stories.',items:[]}
