@@ -9,7 +9,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
  const artwork = showConfig?.artwork;
  const showCardGrid = showConfig?.showCardGrid !== false;
  const display = showConfig?.featuredDisplay || {};
- return <main className={"canvas page "+(artwork?.mode==="page"?"page-landing":"hero-landing")} data-page-type="landing" data-artwork-mode={artwork?.mode || 'hero'}>
+ return <main className={"canvas page page-landing"+(artwork?.mode==="page"?"":" hero-landing")} data-page-type="landing" data-artwork-mode={artwork?.mode || 'hero'}>
   <section className="hero show-hero"><div className="hero-art" role="img" aria-label={show[0]+' artwork'}/>
    <div className="hero-copy"><span className="eyebrow">A CLASSIC RADIO BROADCAST</span><h1>{show[0]}</h1>
     <p className="tagline">{show[1]}</p><a className="hero-link" href={'/'+slug+'/episodes'}>EXPLORE THE EPISODES →</a></div></section>
