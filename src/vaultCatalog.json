@@ -219,10 +219,7 @@
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
           "artwork": {
-            "mode": "page",
-            "src": "/art/mystery/mysterious-traveler/page.png",
-            "offsetY": 63,
-            "size": "1674px 876px"
+            "mode": "page"
           },
           "href": "/mysterious-traveler",
           "years": "1943–1952",
@@ -234,10 +231,7 @@
           "title": "The Whistler",
           "showCardGrid": false,
           "artwork": {
-            "mode": "page",
-            "src": "/art/mystery/whistler/page.png",
-            "offsetY": 72,
-            "size": "1674px auto"
+            "mode": "page"
           },
           "href": "/whistler",
           "years": "1942–1955",
