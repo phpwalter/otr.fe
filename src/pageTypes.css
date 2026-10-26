@@ -28,3 +28,6 @@
 /* Optional landing controls exist in the common DOM; only skins that place them show them. */
 .page-landing .landing-actions{display:none}
 .skin-inner-sanctum .page-landing .landing-actions{display:block}
+
+/* Full-page artwork is presented by the show skin, not a banner hero. */
+.page-landing[data-artwork-mode="page"] > .hero.show-hero{display:none!important}
