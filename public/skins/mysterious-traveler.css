@@ -1,3 +1,4 @@
+.generic-site-shell:has(> .skin-mysterious-traveler){--show-page-image:url('/art/mystery/mysterious-traveler/page.png')}
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 /* Mysterious Traveler: shared ShowShell header/footer and common LandingPage DOM.
    Fixed 1674 x 1030 outer shell. The 886px content viewport begins at y=53. */
