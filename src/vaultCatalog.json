@@ -232,6 +232,7 @@
         },
         "whistler": {
           "title": "The Whistler",
+          "showCardGrid": false,
           "artwork": {
             "mode": "page",
             "src": "/art/mystery/whistler/page.png",
