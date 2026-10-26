@@ -181,3 +181,15 @@
   box-sizing: border-box;
   border: 2px solid red;
 }
+
+/* Traveler debug adjustments: date aligns to parent left; body extends downward. */
+.page-landing > .featured-episode > .featured-header time {
+  transform: none;
+  width: 442px;
+  margin: 0;
+  border: 2px solid red;
+}
+.page-landing > .featured-episode > .featured-body {
+  height: 160px;
+  border: 2px solid red;
+}
