@@ -3,8 +3,10 @@ import FeaturedEpisode from '../components/FeaturedEpisode.jsx';
 import ShowCardGrid from '../components/ShowCardGrid.jsx';
 import PageNavigation from '../components/PageNavigation.jsx';
 import ShowNav from '../components/ShowNav.jsx';
+import vaultCatalog from '../vaultCatalog.json';
 export default function LandingPage({slug,show,data={},historicalDate=''}) {
- return <main className={"canvas page page-landing skin-"+slug} data-page-type="landing">
+ const artwork = Object.values(vaultCatalog.categories).map(category => category.shows[slug]).find(Boolean)?.artwork;
+ return <main className={"canvas page page-landing skin-"+slug} data-page-type="landing" data-artwork-mode={artwork?.mode || 'hero'}>
   <section className="hero show-hero"><div className="hero-art" role="img" aria-label={show[0]+' artwork'}/>
    <div className="hero-copy"><span className="eyebrow">A CLASSIC RADIO BROADCAST</span><h1>{show[0]}</h1>
     <p className="tagline">{show[1]}</p><a className="hero-link" href={'/'+slug+'/episodes'}>EXPLORE THE EPISODES →</a></div></section>
