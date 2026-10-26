@@ -10,16 +10,16 @@
 .skin-whistler .page-landing .show-about,
 .skin-whistler .page-landing .landing-actions,
 .skin-whistler .page-landing .page-navigation{display:none!important}
-.skin-whistler .whistler-navigation{position:absolute;z-index:8;top:204px;left:1220px;width:385px;height:480px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,96px);gap:7px;overflow:visible}
-.skin-whistler .whistler-navigation__card{display:block;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;outline:0;transition:filter 150ms ease}
-.skin-whistler .whistler-navigation__card--episodes{background-image:url('/art/mystery/whistler/nav.card.episodes.png')}
-.skin-whistler .whistler-navigation__card--host{background-image:url('/art/mystery/whistler/nav.card.host.png')}
-.skin-whistler .whistler-navigation__card--themes{background-image:url('/art/mystery/whistler/nav.card.themes.png')}
-.skin-whistler .whistler-navigation__card--history{background-image:url('/art/mystery/whistler/nav.card.history.png')}
-.skin-whistler .whistler-navigation__card--gallery{background-image:url('/art/mystery/whistler/nav.card.gallery.png')}
-.skin-whistler .whistler-navigation__card--about{background-image:url('/art/mystery/whistler/nav.card.about.png')}
-.skin-whistler .whistler-navigation__card--contact{background-image:url('/art/mystery/whistler/nav.card.contact.png')}
-.skin-whistler .whistler-navigation__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
+.skin-whistler .show-nav{position:absolute;z-index:8;top:204px;left:1220px;width:385px;height:480px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,96px);gap:7px;overflow:visible}
+.skin-whistler .show-nav__card{display:block;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;outline:0;transition:filter 150ms ease}
+.skin-whistler .show-nav__card--episodes{background-image:url('/art/mystery/whistler/nav.card.episodes.png')}
+.skin-whistler .show-nav__card--host{background-image:url('/art/mystery/whistler/nav.card.host.png')}
+.skin-whistler .show-nav__card--themes{background-image:url('/art/mystery/whistler/nav.card.themes.png')}
+.skin-whistler .show-nav__card--history{background-image:url('/art/mystery/whistler/nav.card.history.png')}
+.skin-whistler .show-nav__card--gallery{background-image:url('/art/mystery/whistler/nav.card.gallery.png')}
+.skin-whistler .show-nav__card--about{background-image:url('/art/mystery/whistler/nav.card.about.png')}
+.skin-whistler .show-nav__card--contact{background-image:url('/art/mystery/whistler/nav.card.contact.png')}
+.skin-whistler .show-nav__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
 .skin-whistler .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .skin-whistler .featured-episode{position:absolute;z-index:6;top:633px;left:38px;width:1165px;height:240px;min-height:0;margin:0;padding:0;border:0;border-radius:0;background:#08090b;color:#edca8a;box-shadow:inset 0 0 0 3px #a67c36,inset 0 0 0 6px #221609}
 .skin-whistler .featured-episode__heading{position:absolute;left:480px;right:27px;top:15px;height:67px;display:flex;justify-content:center;align-items:center;gap:12px}
