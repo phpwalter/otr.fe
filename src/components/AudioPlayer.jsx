@@ -40,7 +40,7 @@ export default function AudioPlayer({episode,radioStyle=false}){
   const progress=<input type="range" aria-label="Seek" min="0" max={duration||1} step="0.1" value={Math.min(position,duration||1)} onChange={seek} disabled={!available}/>;
   const clock=<time aria-label="Elapsed time and duration">{formatTime(position)} / {formatTime(duration)}</time>;
 
-  return <div className="player audio-player">
+  return <div className="audio-player">
     <audio ref={ref} src={url||undefined} preload="metadata" muted={muted} volume={volume}
       onPlay={()=>setPlaying(true)} onPause={()=>setPlaying(false)}
       onEnded={()=>setPlaying(false)} onTimeUpdate={e=>setPosition(e.currentTarget.currentTime)}
