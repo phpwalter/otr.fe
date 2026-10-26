@@ -93,29 +93,29 @@
 .skin-mysterious-traveler .show-card-grid{left:891px}
 
 /* Restored HTML/CSS Featured Episode panel; keeps the shared React data and audio controls. */
-.skin-mysterious-traveler .page-landing .featured-episode{
+.page-landing.skin-mysterious-traveler .featured-episode{
  display:block!important;
  position:absolute;left:48px;top:565px;width:832px;height:271px;
  background:linear-gradient(155deg,#102b26 0%,#091d1a 57%,#061411 100%);
  border:4px solid #8d6c3c;border-radius:7px;
  box-shadow:inset 0 0 0 2px #d2ac66,0 4px 14px #0008;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading{
+.page-landing.skin-mysterious-traveler .featured-episode__heading{
  left:318px;top:10px;right:15px;height:50px;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__body{
+.page-landing.skin-mysterious-traveler .featured-episode__body{
  inset:65px 13px 57px 13px;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__art{
+.page-landing.skin-mysterious-traveler .featured-episode__art{
  flex-basis:287px;
  border:2px solid #9f8150;
 }
-.skin-mysterious-traveler .page-landing .audio-player{
+.page-landing.skin-mysterious-traveler .audio-player{
  left:316px;right:14px;bottom:11px;
 }
 
 /* Featured panel: transparent and frameless; retain content and controls. */
-.skin-mysterious-traveler .page-landing .featured-episode{
+.page-landing.skin-mysterious-traveler .featured-episode{
  background:transparent;
  border:0;
  border-radius:0;
@@ -125,7 +125,7 @@
 /* Traveler's artwork and episode body are independent sibling elements.
    The image retains its original left edge, rises 30px, extends 24px
    farther right, and reaches 24px farther down. */
-.skin-mysterious-traveler .page-landing .featured-episode__art{
+.page-landing.skin-mysterious-traveler .featured-episode__art{
  position:absolute;
  left:13px;
  top:5px;
@@ -134,7 +134,7 @@
  flex:none;
  margin:0;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__body{
+.page-landing.skin-mysterious-traveler .featured-episode__body{
  position:absolute;
  top:85px;
  left:357px;
@@ -142,7 +142,7 @@
  bottom:57px;
  display:block;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__content{
+.page-landing.skin-mysterious-traveler .featured-episode__content{
  position:absolute;
  left:0;
  right:0;
@@ -151,11 +151,11 @@
 }
 
 /* Featured panel debugging highlights. */
-.skin-mysterious-traveler .page-landing .featured-episode{border:1px solid red}
-.skin-mysterious-traveler .page-landing .featured-episode__content{background:rgba(255,255,0,.8)}
+.page-landing.skin-mysterious-traveler .featured-episode{border:1px solid red}
+.page-landing.skin-mysterious-traveler .featured-episode__content{background:rgba(255,255,0,.8)}
 
 /* Anniversary numeral: red, bold, 80px, shifted 80px to the right. */
-.skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
+.page-landing.skin-mysterious-traveler .featured-episode__heading .anniversary-number{
  color:red;
  font-size:56px;
  font-weight:700;
@@ -163,13 +163,13 @@
 }
 
 /* Traveler date: red, moved 200px right and 60px down. */
-.skin-mysterious-traveler .page-landing .featured-episode__heading>div{
+.page-landing.skin-mysterious-traveler .featured-episode__heading>div{
  position:absolute;
  left:0;
  right:0;
  width:100%;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading time{
+.page-landing.skin-mysterious-traveler .featured-episode__heading time{
  display:block;
  width:100%;
  color:red;
@@ -181,7 +181,7 @@
 }
 
 /* Traveler audio controls: borderless, translucent green background. */
-.skin-mysterious-traveler .page-landing .audio-player{
+.page-landing.skin-mysterious-traveler .audio-player{
  border:0;
  background:rgba(0,128,0,0.6);
 }
@@ -189,7 +189,7 @@
 
 /* Two-column featured episode. Traveler only; shared FeaturedEpisode markup unchanged.
    Border-box 832x271; 2px border, 10px padding, 20px column gap. */
-.skin-mysterious-traveler .page-landing .featured-episode{
+.page-landing.skin-mysterious-traveler .featured-episode{
  display:grid!important;
  grid-template-columns:320px minmax(0,1fr);
  grid-template-rows:90px minmax(0,1fr) 42px;
@@ -204,7 +204,7 @@
  box-shadow:none;
  overflow:hidden;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__art{
+.page-landing.skin-mysterious-traveler .featured-episode__art{
  grid-column:1;
  grid-row:1 / 4;
  position:static;
@@ -220,7 +220,7 @@
  background-size:contain;
  background-repeat:no-repeat;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading{
+.page-landing.skin-mysterious-traveler .featured-episode__heading{
  grid-column:2;grid-row:1;
  position:static;
  left:auto;right:auto;top:auto;
@@ -233,7 +233,7 @@
  gap:0;
  margin:0;padding:0;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
+.page-landing.skin-mysterious-traveler .featured-episode__heading .anniversary-number{
  display:block;
  flex:none;
  font-family:'Times New Roman','Liberation Serif',serif;
@@ -244,7 +244,7 @@
  line-height:1;
  transform:translateY(-6px);
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading>div{
+.page-landing.skin-mysterious-traveler .featured-episode__heading>div{
  position:static;
  left:auto;right:auto;
  width:100%;
@@ -254,7 +254,7 @@
  justify-content:center;
  align-items:center;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading time{
+.page-landing.skin-mysterious-traveler .featured-episode__heading time{
  display:block;
  padding-right:0;
  transform:none;
@@ -266,7 +266,7 @@
  text-align:center;
  background:transparent;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__body{
+.page-landing.skin-mysterious-traveler .featured-episode__body{
  grid-column:2;grid-row:2;
  position:relative;
  z-index:5;
@@ -277,7 +277,7 @@
  display:block;
  overflow:hidden;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__content{
+.page-landing.skin-mysterious-traveler .featured-episode__content{
  position:static;
  left:auto;right:auto;top:auto;
  width:100%;height:100%;
@@ -285,14 +285,14 @@
  overflow:hidden;
  background:transparent;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__description{
+.page-landing.skin-mysterious-traveler .featured-episode__description{
  display:-webkit-box;
  -webkit-box-orient:vertical;
  -webkit-line-clamp:4;
  line-clamp:4;
  overflow:hidden;
 }
-.skin-mysterious-traveler .page-landing .audio-player{
+.page-landing.skin-mysterious-traveler .audio-player{
  grid-column:2;grid-row:3;
  position:static;
  left:auto;right:auto;bottom:auto;
@@ -305,7 +305,7 @@
 }
 
 /* Traveler's custom featured title and description. */
-.skin-mysterious-traveler .page-landing .featured-episode__title{
+.page-landing.skin-mysterious-traveler .featured-episode__title{
  font-family:'Cinzel','Times New Roman',serif;
  font-weight:700;
  letter-spacing:0.025em;
@@ -313,12 +313,12 @@
  text-shadow:0 1px 1px rgba(0,0,0,.9);
  text-transform:uppercase;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__description{
+.page-landing.skin-mysterious-traveler .featured-episode__description{
  font-size:16px;
 }
 
 /* Center the Traveler-specific h2 without affecting other shows' h3 titles. */
-.skin-mysterious-traveler .page-landing h2.featured-episode__title{
+.page-landing.skin-mysterious-traveler h2.featured-episode__title{
  text-align:center;
 }
 
