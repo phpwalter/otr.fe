@@ -10,7 +10,7 @@ const sectionDetails = {
 };
 export default function WhistlerSectionPage({slug,section}) {
   const [title,intro] = sectionDetails[section] || ['The Whistler',''];
-  return <main className="page page-whistler-section">
+  return <main className={"page page-whistler-section skin-"+slug+" show-page--scrollable"}>
     <a className="whistler-back" href={'/'+slug}>← Back to The Whistler</a>
     <h1>{title}</h1>
     <p>{intro}</p>
