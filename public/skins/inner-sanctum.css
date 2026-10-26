@@ -14,8 +14,8 @@
 .featured-episode{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
 .anniversary-number{color:#a92018}
 .featured-art{background-image:url('/art/inner-sanctum-card.webp')}
-.player button{border-color:#a92018;color:#a92018}
-.player input{accent-color:#a92018}
+.audio-player button{border-color:#a92018;color:#a92018}
+.audio-player input{accent-color:#a92018}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
 .archive-card{background:#131b21;color:#f3e2cb;border:1px solid #a92018}
 .archive-card .card-image{background-image:url('/art/inner-sanctum-hero.webp')}
