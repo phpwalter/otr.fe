@@ -6,7 +6,7 @@ const whistlerItems = [
 ];
 
 const innerSanctumItems = [
-  ['Episodes','episodes'],['Cast','cast'],['Writers','writers'],
+  ['Episodes','episodes'],['Writers','writers'],
   ['History','history'],['About','about']
 ];
 
