@@ -44,7 +44,7 @@
   top: 75px;
   left: 75px;
   width: 300px;
-  height: 500px;
+  height: 450px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, minmax(0, 1fr));
   gap: 7px;
