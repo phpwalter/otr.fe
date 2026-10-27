@@ -189,8 +189,3 @@
   color: #21140b;
   white-space: nowrap;
 }
-/* Diagnostic frames for the Featured Episode panel and all its elements. */
-.featured-episode,
-.featured-episode * {
-  outline: 2px solid red;
-}
