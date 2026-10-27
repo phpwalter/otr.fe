@@ -129,12 +129,13 @@ html,body,#root{height:100%;overflow:hidden}
 /* Shared two-column layout is defined once in .featured-episode above. */
 .page .featured-episode > .featured-art {
   display: block !important;
-  position: static !important;
+  position: relative !important;
   grid-column: 1 !important;
-  grid-row: 1 / 4 !important;
-  width: 220px !important;
+  grid-row: 1 / -1 !important;
+  align-self: stretch !important;
+  width: 100% !important;
   height: 100% !important;
-  min-height: 0 !important;
+  min-height: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
