@@ -57,7 +57,7 @@
  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
  gap:0;margin:0;padding:0;
 }
-.page-landing .featured-header .anniversary-number{
+.page-landing .featured-header .anniversary{
  display:block;flex:none;font-family:'Times New Roman',Georgia,serif;
  font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(26px,-3px);
  width:calc(2ch - 6px);
@@ -98,7 +98,7 @@
 .page-landing .featured-episode{background:transparent}
 
 /* Anniversary numeral: translucent red background, Traveler only. */
-.page-landing .featured-header .anniversary-number{background:transparent}
+.page-landing .featured-header .anniversary{background:transparent}
 
 /* Keep featured artwork hidden; debugging outlines removed. */
 .page-landing .featured-art{display:none!important}
@@ -164,7 +164,7 @@
   padding: 0;
   margin: 0;
 }
-.page-landing > .featured-episode > .featured-header > .anniversary-number {
+.page-landing > .featured-episode > .featured-header > .anniversary {
   font-size: 44px;
   line-height: 1;
   padding: 0;
@@ -200,4 +200,18 @@
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+/* Anniversary heading spans the complete date-column width. */
+.page-landing > .featured-episode > .featured-header > .anniversary {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 44px;
+  padding: 0;
+  margin: 0;
+  transform: none;
+  border: 2px solid red;
 }
