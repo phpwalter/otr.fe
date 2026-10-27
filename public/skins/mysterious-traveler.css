@@ -220,3 +220,20 @@
 .page-landing > .featured-episode > .featured-header {
   transform: translateY(40px);
 }
+
+/* Traveler heading and date alignment refinements. */
+.page-landing > .featured-episode > .featured-header {
+  transform: translateY(8px);
+}
+.page-landing > .featured-episode > .featured-header > .anniversary {
+  font-size: 34px;
+}
+.page-landing > .featured-episode > .featured-header > div {
+  padding: 0;
+  transform: translateY(8px);
+  width: 100%;
+  box-sizing: border-box;
+}
+.page-landing > .featured-episode > .featured-header time {
+  width: 100%;
+}
