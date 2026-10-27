@@ -1,4 +1,4 @@
-/* Traveler uses Whistler's exact content canvas and six-item ShowNav geometry.
+/* Traveler uses Whistler's exact content canvas and five-item ShowNav geometry.
    Its original featured-panel CSS and JSX are preserved in src/backups/traveler/. */
 .site-shell>.page{width:1674px;height:886px;min-height:886px;max-height:886px;background:transparent;color:#ebcc91;font-family:Georgia,'Times New Roman',serif}
 .canvas.page-landing{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
@@ -243,4 +243,25 @@
 .page-landing .featured-description {
   padding: 0;
   margin: 0;
+}
+
+/* Traveler five-item navigation, matching available artwork assets. */
+.show-nav {
+  height: 508px;
+  grid-template-rows: repeat(5, 96px);
+}
+.show-nav__card--episodes { background-image: url('/art/mystery/mysterious-traveler/card.nav.episodes.png'); }
+.show-nav__card--history { background-image: url('/art/mystery/mysterious-traveler/card.nav.history.png'); }
+.show-nav__card--gallery { background-image: url('/art/mystery/mysterious-traveler/card.nav.gallery.png'); }
+.show-nav__card--about { background-image: url('/art/mystery/mysterious-traveler/card.nav.about.png'); }
+.show-nav__card--episodes .sr-only,
+.show-nav__card--history .sr-only,
+.show-nav__card--gallery .sr-only,
+.show-nav__card--about .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
