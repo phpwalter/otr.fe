@@ -23,7 +23,7 @@
 .skin-shadow .featured-episode{position:absolute;right:12px;bottom:13px;width:420px;height:252px;z-index:6;border:0;padding:0;background:transparent url('/art/mystery/shadow/card.feature.background.png') center/100% 100% no-repeat;color:#f6eddf;box-shadow:none}
 .skin-shadow .featured-art{display:none}
 .skin-shadow .featured-header{position:absolute;left:23px;top:15px;right:22px;height:90px;display:flex;gap:8px;align-items:start}
-.skin-shadow .anniversary-number{font:900 74px/1 Arial,sans-serif;color:#ed171c}
+.skin-shadow .anniversary{font:900 74px/1 Arial,sans-serif;color:#ed171c}
 .skin-shadow .featured-header>div{padding-top:5px}
 .skin-shadow .featured-header h2{font:700 24px/.99 Georgia,serif;margin:0;color:#f7efdf;white-space:nowrap}
 .skin-shadow .featured-header time{font:18px Georgia,serif;color:#f6eddf}
