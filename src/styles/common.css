@@ -159,17 +159,9 @@ html,body,#root{height:100%;overflow:hidden}
 }
 .page .featured-header > .anniversary {
   display: inline-block !important;
-  position: static !important;
   flex: none !important;
-  width: auto !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  transform: none !important;
   text-align: left !important;
-  /* Typography is controlled by each show skin. */
-  color: inherit !important;
-  text-shadow: none !important;
+  color: white;
 }
 .page .featured-header > div {
   display: flex !important;
