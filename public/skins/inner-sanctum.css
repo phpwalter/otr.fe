@@ -89,15 +89,7 @@
 }
 
 /* Featured Episode: shared outer panel geometry remains in common.css. */
-.featured-episode {
-  z-index: 6;
-  padding: 0;
-  border: 0;
-  box-shadow: none;
-  background: transparent;
-  color: #24160e;
-  overflow: hidden;
-}
+.featured-episode { }
 .featured-header {
   position: absolute;
   left: 254px;
