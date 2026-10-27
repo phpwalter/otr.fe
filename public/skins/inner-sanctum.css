@@ -107,7 +107,7 @@
 .featured-header > .anniversary {
   display: block;
   flex: none;
-  font: bold 60px/.97 Georgia, 'Times New Roman', serif;
+  font: bold 48px/.97 Georgia, 'Times New Roman', serif;
   color: #aa1017;
   text-shadow: 1px 1px 0 #250b08;
   transform: translate(-10px, -6px);
