@@ -105,12 +105,9 @@
   gap: 7px;
 }
 .featured-header > .anniversary {
-  display: block;
   flex: none;
-  font: bold 48px/.97 Georgia, 'Times New Roman', serif;
-  color: #aa1017;
+  font: bold 48px / .97 Georgia, 'Times New Roman', serif;
   text-shadow: 1px 1px 0 #250b08;
-  transform: translate(-10px, -6px);
 }
 .featured-header > div {
   display: flex;
