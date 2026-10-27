@@ -137,3 +137,38 @@
 /* Full-page art uses the same fixed 1674px width and 72px offset as Whistler/Traveler. */
 .generic-site-shell{--show-page-image:url('/art/mystery/inner-sanctum/page.png')}
 .site-shell[data-artwork-mode="page"]>.page{background:transparent}
+
+/* Inner Sanctum: five image-backed navigation entries in a 204 x 356px column. */
+.page-landing > .show-nav {
+  position: absolute;
+  width: 204px;
+  height: 356px;
+  display: grid;
+  grid-template-columns: 204px;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+}
+.page-landing > .show-nav > .show-nav__card {
+  display: block;
+  width: 204px;
+  height: 100%;
+  min-height: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  text-shadow: none;
+}
+.page-landing > .show-nav > .show-nav__card--episodes { background-image: url('/art/mystery/inner-sanctum/nav.card.episodes.png'); }
+.page-landing > .show-nav > .show-nav__card--cast { background-image: url('/art/mystery/inner-sanctum/nav.card.cast.png'); }
+.page-landing > .show-nav > .show-nav__card--writers { background-image: url('/art/mystery/inner-sanctum/nav.card.writers.png'); }
+.page-landing > .show-nav > .show-nav__card--history { background-image: url('/art/mystery/inner-sanctum/nav.card.history.png'); }
+.page-landing > .show-nav > .show-nav__card--about { background-image: url('/art/mystery/inner-sanctum/nav.card.about.png'); }
+.page-landing > .show-nav > .show-nav__card > .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
