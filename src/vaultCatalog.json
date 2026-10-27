@@ -238,6 +238,7 @@
           "tagline": "JOURNEYS INTO THE STRANGE AND TERRIFYING",
           "anniversaryYears": 80,
           "featuredDisplay": {
+            "anniversaryText": "80 YEARS AGO TONIGHT",
             "headingDetails": false,
             "separateArtwork": true,
             "hideBroadcastLabel": true,
