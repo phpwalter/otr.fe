@@ -123,13 +123,13 @@
   padding-top: 5px;
   transform: translateX(-10px);
 }
-.featured-header h2 {
+.featured-header h3 {
   margin: 0;
   white-space: nowrap;
   font: 700 23px/1.08 Georgia, 'Times New Roman', serif;
   color: #231207;
 }
-.featured-header h2::before { content: none; }
+.featured-header h3::before { content: none; }
 .featured-header time {
   display: block;
   position: relative;

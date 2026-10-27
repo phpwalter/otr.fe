@@ -269,3 +269,6 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
+
+/* Preserve Traveler's existing layout while the shared heading stays in the DOM. */
+.featured-header h3 { display: none; }
