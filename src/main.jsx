@@ -11,8 +11,8 @@ import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
 import CastPage from './pages/CastPage.jsx';
 import TravelerSectionPage from './pages/TravelerSectionPage.jsx';
 import WhistlerSectionPage from './pages/WhistlerSectionPage.jsx';
-import './structure.css';
-import './pageTypes.css';
+import InnerSanctumSectionPage from './pages/InnerSanctumSectionPage.jsx';
+import './styles/common.css';
 
 function anniversary(years){
  const date=new Date();date.setFullYear(date.getFullYear()-years);
@@ -32,7 +32,9 @@ function ShowApp(){
  useEffect(()=>{
   if(!slug)return;
   const link=document.getElementById('series-skin')||document.createElement('link');
-  link.id='series-skin';link.rel='stylesheet';link.href='/skins/'+slug+'.css';
+  link.id='series-skin';link.rel='stylesheet';
+  link.onerror=()=>{if(!link.href.endsWith('/default-show.css'))link.href='/skins/default-show.css';};
+  link.href='/skins/'+slug+'.css';
   document.head.appendChild(link);
   document.title=shows[slug][0]+' | Classic Radio Vault';
   document.body.dataset.series=slug;
@@ -55,9 +57,10 @@ function ShowApp(){
   case 'episodes':page=<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
   case 'cast':page=<CastPage slug={slug} show={show} data={pageData}/>;break;
+  case 'innerSanctumSection':page=<InnerSanctumSectionPage slug={slug} section={route.section}/>;break;
   case 'whistlerSection':page=<WhistlerSectionPage slug={slug} section={route.section}/>;break;
   case 'travelerSection':page=<TravelerSectionPage slug={slug} section={route.section}/>;break;
-  default:page=<main className="page page-not-found"><h1>Page not found</h1><a href={'/'+slug}>Return to {show[0]}</a></main>;
+  default:page=<main className={"page page-not-found skin-"+slug+" show-page--scrollable"}><h1>Page not found</h1><a href={'/'+slug}>Return to {show[0]}</a></main>;
  }
  return <ShowShell slug={slug} scrollable={route.type!=='landing' && route.type!=='contact'}>
   {page}

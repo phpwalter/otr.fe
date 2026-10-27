@@ -1,5 +1,5 @@
 /* Independent inner-sanctum presentation. Shared HTML/DOM remains unchanged. */
-.site{background:#080808;color:#f3e2cb;font-family:Georgia,serif}
+.page{background:#080808;color:#f3e2cb;font-family:Georgia,serif}
 .header{background:#0b0d11;border-bottom:2px solid #a92018;padding:15px 28px;}
 .header nav{display:flex;justify-content:center;gap:25px;}
 .header a{color:#f3e2cb}.header a.active{color:#a92018}
@@ -11,115 +11,129 @@
 .hero h1{font-family:Georgia,serif;font-style:italic;font-size:100px;color:#a92018;text-shadow:3px 4px #000}
 .tagline{color:#fff0ce}
 .hero-link{background:#a92018;color:#fff5de}
-.featured{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
-.anniversary-number{color:#a92018}
+.featured-episode{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
+.anniversary{color:#a92018}
 .featured-art{background-image:url('/art/inner-sanctum-card.webp')}
-.player button{border-color:#a92018;color:#a92018}
-.player input{accent-color:#a92018}
+.audio-player button{border-color:#a92018;color:#a92018}
+.audio-player input{accent-color:#a92018}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
 .archive-card{background:#131b21;color:#f3e2cb;border:1px solid #a92018}
 .archive-card .card-image{background-image:url('/art/inner-sanctum-hero.webp')}
 .archive-card h2{color:#a92018}
 .about{border-top:1px solid #a92018}
 .footer{color:#f3e2cb;font-size:12px}
-@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
+@media(max-width:1400px){.page{margin-left:0;margin-right:0}}
 
 
 /* Fixed 1674px by 886px LandingPage overlay. Existing art remains unaltered. */
-.site-viewport .site.skin-inner-sanctum{background:#130b08 url('/art/mystery/inner-sanctum/hero.png') center top / cover no-repeat;color:#f5dfbd}
-.skin-inner-sanctum .canvas.page-landing{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
-.skin-inner-sanctum .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
-.skin-inner-sanctum .hero-art,.skin-inner-sanctum .hero-copy{display:none}
-.skin-inner-sanctum .page-navigation{position:absolute;z-index:8;left:65px;top:301px;width:234px;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
-.skin-inner-sanctum .page-navigation__link{padding:6px 7px;min-height:33px;font:20px/1.1 Georgia,serif;color:#2b190f;text-shadow:0 1px #eacda6}
-.skin-inner-sanctum .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
-.skin-inner-sanctum .featured-episode{position:absolute;z-index:6;left:47px;top:576px;width:660px;height:239px;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
-.skin-inner-sanctum .featured-episode__heading{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
-.skin-inner-sanctum .featured-episode__heading .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
-.skin-inner-sanctum .featured-episode__heading h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
-.skin-inner-sanctum .featured-episode__heading time{font:13px Georgia,serif;color:#27170d}
-.skin-inner-sanctum .featured-episode__art,.skin-inner-sanctum .broadcast-label{display:none}
-.skin-inner-sanctum .featured-episode__content{position:absolute;left:244px;right:20px;top:66px;max-height:114px;overflow:hidden}
-.skin-inner-sanctum .featured-episode__title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
-.skin-inner-sanctum .featured-episode__description{font:14px/1.25 Georgia,serif;margin:0}
-.skin-inner-sanctum .audio-player{position:absolute;bottom:19px;left:243px;right:20px;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
-.skin-inner-sanctum .audio-player button{flex:0 0 34px;width:34px;min-width:34px;height:34px;border-radius:50%;background:#9e1216;color:#f8dfba;border:1px solid #7f1818;cursor:pointer}
-.skin-inner-sanctum .audio-player input[type="range"]{flex:1;min-width:18px;accent-color:#a41116}
-.skin-inner-sanctum .audio-player input.audio-player__volume{flex:0 0 52px;width:52px}
-.skin-inner-sanctum .audio-player time{font:12px Georgia,serif;color:#21140b;white-space:nowrap}
-.skin-inner-sanctum .cards,.skin-inner-sanctum .shadow-side,.skin-inner-sanctum .about{display:none}
-.skin-inner-sanctum .landing-actions{position:absolute;inset:0;z-index:7;pointer-events:none}
-.skin-inner-sanctum .landing-actions__cast,.skin-inner-sanctum .landing-actions__learn-more{position:absolute;top:771px;width:191px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #7c1714;border-radius:3px;background:#951015;color:#f9e6c6;font:700 15px Georgia,serif;text-transform:uppercase;pointer-events:auto}
-.skin-inner-sanctum .landing-actions__cast{left:1023px}
-.skin-inner-sanctum .landing-actions__learn-more{left:1398px}
-.skin-inner-sanctum .landing-actions__learn-more:disabled{opacity:.65;cursor:not-allowed}
+.page{background:transparent;color:#f5dfbd}
+.canvas.page-landing{display:block;position:relative;padding:0;margin:0;width:100%;height:886px;min-height:886px;overflow:hidden}
+ .hero{position:absolute;inset:0;min-height:0;border:0;pointer-events:none}
+ .hero-art, .hero-copy{display:none}
+ .page-navigation{position:absolute;z-index:8;left:65px;top:301px;width:234px;display:flex;flex-direction:column;gap:0;align-items:stretch;background:transparent}
+ .page-navigation__link{padding:6px 7px;min-height:33px;font:20px/1.1 Georgia,serif;color:#2b190f;text-shadow:0 1px #eacda6}
+ .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
+ .featured-episode{z-index:6;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
+ .featured-header{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
+ .featured-header .anniversary{font:italic 18px Georgia,serif;color:#2b170e}
+ .featured-header h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
+ .featured-header time{font:13px Georgia,serif;color:#27170d}
+ .featured-art, .broadcast-label{display:none}
+ .featured-content{position:absolute;left:244px;right:20px;top:66px;max-height:114px;overflow:hidden}
+ .featured-title{font:700 23px/1.1 Georgia,serif;color:#a31216;margin:0 0 5px}
+ .featured-description{font:14px/1.25 Georgia,serif;margin:0}
+ .audio-player{position:absolute;bottom:19px;left:243px;right:20px;margin:0;padding:4px;display:flex;gap:5px;align-items:center;background:#e9cda9ed;border:1px solid #955f3c;border-radius:4px}
+ .audio-player button{flex:0 0 34px;width:34px;min-width:34px;height:34px;border-radius:50%;background:#9e1216;color:#f8dfba;border:1px solid #7f1818;cursor:pointer}
+ .audio-player input[type="range"]{flex:1;min-width:18px;accent-color:#a41116}
+ .audio-player input.audio-player__volume{flex:0 0 52px;width:52px}
+ .audio-player time{font:12px Georgia,serif;color:#21140b;white-space:nowrap}
+ .cards, .shadow-side, .about{display:none}
+ .landing-actions{position:absolute;inset:0;z-index:7;pointer-events:none}
+ .landing-actions__cast, .landing-actions__learn-more{position:absolute;top:771px;width:191px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #7c1714;border-radius:3px;background:#951015;color:#f9e6c6;font:700 15px Georgia,serif;text-transform:uppercase;pointer-events:auto}
+ .landing-actions__cast{left:1023px}
+ .landing-actions__learn-more{left:1398px}
+ .landing-actions__learn-more:disabled{opacity:.65;cursor:not-allowed}
 
 /* Inner Sanctum left navigation adjustment; shared PageNavigation DOM is unchanged. */
-.skin-inner-sanctum .page-navigation{transform:translate(28px,31px);width:160px;padding-bottom:20px}
-.skin-inner-sanctum .page-navigation__link:nth-child(1),
-.skin-inner-sanctum .page-navigation__link:nth-child(7),
-.skin-inner-sanctum .page-navigation__link:nth-child(8){display:none}
+ .page-navigation{transform:translate(28px,31px);width:160px;padding-bottom:20px}
+ .page-navigation__link:nth-child(1),
+ .page-navigation__link:nth-child(7),
+ .page-navigation__link:nth-child(8){display:none}
 
 /* Move both bottom actions together without changing their size or spacing. */
-.skin-inner-sanctum .landing-actions__cast{transform:translate(-6px,20px)}
-.skin-inner-sanctum .landing-actions__learn-more{transform:translate(-26px,20px)}
+ .landing-actions__cast{transform:translate(-6px,20px)}
+ .landing-actions__learn-more{transform:translate(-26px,20px)}
 
 
 /* 2026-10-23 approved Inner Sanctum landing composition.
    The five navigation links are the SAME shared PageNavigation DOM;
    each is an artwork-backed button. Artwork is loaded from nav.card.*.png files in the show directory.
    Keep link text accessible to assistive technology. */
-.skin-inner-sanctum .page-landing>.page-navigation{
+.page-landing>.page-navigation{
   left:54px;top:51px;width:251px;
   transform:none;padding:0;gap:7px;
   display:flex;align-items:stretch;flex-direction:column;
 }
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link{
+.page-landing>.page-navigation .page-navigation__link{
   display:block;flex:none;order:10;
   width:251px;height:88px;min-height:88px;
   padding:0;border:0;border-radius:0;background-repeat:no-repeat;
   background-position:center;background-size:251px 88px;
   font-size:0;line-height:0;text-shadow:none;
 }
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(1),
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(7),
-.skin-inner-sanctum .page-landing>.page-navigation .page-navigation__link:nth-child(8){display:none}
-.skin-inner-sanctum .page-navigation__link:nth-child(2){order:1;background-image:url('/art/mystery/inner-sanctum/nav.card.episodes.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(3){order:2;background-image:url('/art/mystery/inner-sanctum/nav.card.cast.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(4){order:3;background-image:url('/art/mystery/inner-sanctum/nav.card.writers.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(6){order:4;background-image:url('/art/mystery/inner-sanctum/nav.card.history.png')}
-.skin-inner-sanctum .page-navigation__link:nth-child(5){order:5;background-image:url('/art/mystery/inner-sanctum/nav.card.about.png')}
-.skin-inner-sanctum .page-navigation__link:is(:hover,:focus-visible){
+.page-landing>.page-navigation .page-navigation__link:nth-child(1),
+.page-landing>.page-navigation .page-navigation__link:nth-child(7),
+.page-landing>.page-navigation .page-navigation__link:nth-child(8){display:none}
+ .page-navigation__link:nth-child(2){order:1;background-image:url('/art/mystery/inner-sanctum/nav.card.episodes.png')}
+ .page-navigation__link:nth-child(3){order:2;background-image:url('/art/mystery/inner-sanctum/nav.card.cast.png')}
+ .page-navigation__link:nth-child(4){order:3;background-image:url('/art/mystery/inner-sanctum/nav.card.writers.png')}
+ .page-navigation__link:nth-child(6){order:4;background-image:url('/art/mystery/inner-sanctum/nav.card.history.png')}
+ .page-navigation__link:nth-child(5){order:5;background-image:url('/art/mystery/inner-sanctum/nav.card.about.png')}
+ .page-navigation__link:is(:hover,:focus-visible){
   background-color:transparent;outline:2px solid #d2a45d;outline-offset:1px;
 }
 
 /* The featured region is the lower-left artwork panel. The numeral spans
    the combined heading and date, with a narrow gap before the heading. */
-.skin-inner-sanctum .featured-episode{
-  left:46px;top:564px;width:665px;height:266px;
-}
-.skin-inner-sanctum .featured-episode__heading{
+
+ .featured-header{
   left:254px;right:13px;top:0;height:66px;
   display:flex;align-items:flex-start;gap:7px;
 }
-.skin-inner-sanctum .featured-episode__heading>.anniversary-number{
+ .featured-header>.anniversary{
   display:block;flex:none;
   font:bold 60px/.97 Georgia,'Times New Roman',serif;
   color:#aa1017;text-shadow:1px 1px 0 #250b08;
 }
-.skin-inner-sanctum .featured-episode__heading>div{
+ .featured-header>div{
   display:flex;flex-direction:column;align-items:flex-start;padding-top:5px;transform:translateX(-10px);
 }
-.skin-inner-sanctum .featured-episode__heading h2{
+ .featured-header h2{
   margin:0;white-space:nowrap;
   font:700 23px/1.08 Georgia,'Times New Roman',serif;
   color:#231207;
 }
-.skin-inner-sanctum .featured-episode__heading h2::before{content:none}
-.skin-inner-sanctum .featured-episode__heading time{
+ .featured-header h2::before{content:none}
+ .featured-header time{
   display:block;margin-top:30px;position:relative;left:-1px;
   font:16px/1.2 Georgia,'Times New Roman',serif;color:#241407;
 }
 
 /* Featured heading contains only the numeral for this show. */
-.skin-inner-sanctum .featured-episode__heading>.anniversary-number{transform:translate(-10px,-6px)}
+ .featured-header>.anniversary{transform:translate(-10px,-6px)}
+
+/* Whistler-equivalent canvas and six-button ShowNav. Do not override FeaturedEpisode. */
+.site-shell>.page{width:1674px;height:886px;min-height:886px;max-height:886px}
+.canvas.page-landing{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
+.page-landing>.hero.show-hero{display:none!important}
+ .show-nav{position:absolute;z-index:8;top:204px;left:1220px;width:385px;height:480px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,96px);gap:7px;overflow:visible}
+ .show-nav__card{display:flex;align-items:center;justify-content:center;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;color:#2b190f;font:bold 22px Georgia,serif;text-shadow:0 1px #eacda6;outline:0;transition:filter 150ms ease}
+ .show-nav__card--episodes{background-image:url('/art/mystery/inner-sanctum/nav.card.episodes.png')}
+ .show-nav__card--history{background-image:url('/art/mystery/inner-sanctum/nav.card.history.png')}
+ .show-nav__card--about{background-image:url('/art/mystery/inner-sanctum/nav.card.about.png')}
+ .show-nav__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
+ .show-nav__card .sr-only{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal}
+
+/* Full-page art uses the same fixed 1674px width and 72px offset as Whistler/Traveler. */
+.generic-site-shell{--show-page-image:url('/art/mystery/inner-sanctum/page.png')}
+.site-shell[data-artwork-mode="page"]>.page{background:transparent}

@@ -4,7 +4,7 @@ import PageNavigation from '../components/PageNavigation.jsx';
 export default function EpisodeDetailPage({slug,show,data={}}){
  const ep=data.episode||{};
  const empty=!ep.title;
- return <main className="page page-episode-detail" data-page-type="episode-detail">
+ return <main className={"page page-episode-detail skin-"+slug+" show-page--scrollable"} data-page-type="episode-detail">
  <header className="page-heading"><h1>{show[0]} — Episode</h1></header><PageNavigation slug={slug} active="episodes"/>
  <article className={'episode-detail'+(empty?' is-empty':'')}>
   <div className="episode-detail__art" role="img" aria-label="Episode artwork"/>

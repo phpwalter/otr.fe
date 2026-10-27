@@ -1,347 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
-/* Mysterious Traveler: shared ShowShell header/footer and common LandingPage DOM.
-   Fixed 1674 x 1030 outer shell. The 886px content viewport begins at y=53. */
-.site-viewport .site.skin-mysterious-traveler{
- background:transparent url('/art/mystery/mysterious-traveler/page.png') center 10px / 1674px 876px no-repeat;
- color:#f1dbad;
- font-family:Georgia,'Times New Roman',serif;
+/* Traveler uses Whistler's exact content canvas and five-item ShowNav geometry.
+   Its original featured-panel CSS and JSX are preserved in src/backups/traveler/. */
+.site-shell>.page{width:1674px;height:886px;min-height:886px;max-height:886px;background:transparent;color:#ebcc91;font-family:Georgia,'Times New Roman',serif}
+.canvas.page-landing{display:block;position:relative;width:1674px;height:886px;min-height:886px;padding:0;margin:0;overflow:hidden}
+ .show-nav{position:absolute;z-index:8;top:204px;left:1220px;width:385px;height:480px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,96px);gap:7px;overflow:visible}
+ .show-nav__card{display:block;width:385px;height:96px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;outline:0;transition:filter 150ms ease}
+ .show-nav__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
+ .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+ .show-nav__card{display:flex;align-items:center;justify-content:center;background-image:none;color:#eadbb4;font:bold 24px Georgia,serif;text-transform:uppercase;text-shadow:0 2px 5px #000}
+ .show-nav__card .sr-only{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal}
+/* Page-mode artwork is on the shared shell. No featured panel or card grid is rendered. */
+.generic-site-shell{--show-page-image:url('/art/mystery/mysterious-traveler/page.png')}
+/* Traveler section routes retain their existing visual treatment. */
+.page-landing .featured-episode{
+ display:grid!important;
+ grid-template-columns:370px minmax(0,1fr);
+ grid-template-rows:90px minmax(0,1fr) 42px;
+ column-gap:20px;row-gap:0;
+ margin:0;padding:10px;border:0;border-radius:0;
+ background:transparent;box-shadow:none;overflow:hidden;
 }
-.skin-mysterious-traveler .canvas.page-landing{
- display:block;position:relative;width:1674px;height:886px;min-height:886px;
- margin:0;padding:0;overflow:hidden;
-}
-.skin-mysterious-traveler .hero{position:absolute;inset:0;border:0;pointer-events:none}
-.skin-mysterious-traveler .hero-art,.skin-mysterious-traveler .hero-copy,
-.skin-mysterious-traveler .page-navigation,.skin-mysterious-traveler .shadow-side,
-.skin-mysterious-traveler .about,.skin-mysterious-traveler .landing-actions{display:none!important}
-/* Opaque overlays hide the baked-in feature panel text and faux controls. */
-.skin-mysterious-traveler .featured-episode{
- position:absolute;z-index:5;left:48px;top:575px;width:772px;height:271px;
- margin:0;padding:11px 13px;overflow:hidden;
- border:5px ridge #af8050;border-radius:8px;
- background:linear-gradient(135deg,#0a201c 0%,#04120f 100%);
- box-shadow:inset 0 0 0 2px #2c1d12;color:#f5e0ae;
-}
-.skin-mysterious-traveler .featured-episode__heading{
- position:absolute;left:316px;top:9px;right:12px;height:54px;
- display:flex;align-items:center;gap:7px;
-}
-.skin-mysterious-traveler .anniversary-number{
- font:bold 39px/1 Georgia,serif;color:#f3dda9;
-}
-.skin-mysterious-traveler .featured-episode__heading h2{
- font:bold 23px/1 Georgia,serif;margin:0;color:#f3dda9;white-space:nowrap;
-}
-.skin-mysterious-traveler .featured-episode__heading time{font:italic 16px Georgia,serif;color:#dfc99d}
-.skin-mysterious-traveler .featured-episode__heading>div{display:flex;flex-direction:column;gap:3px}
-.skin-mysterious-traveler .featured-episode__body{position:absolute;inset:65px 12px 57px 12px;display:flex;gap:15px}
-.skin-mysterious-traveler .featured-episode__art{
- flex:0 0 290px;height:100%;margin:0;
- border:2px solid #aa7d43;background:#23332f url('/art/mystery/mysterious-traveler/card.png') center/cover no-repeat;
-}
-.skin-mysterious-traveler .featured-episode__content{
- flex:1;min-width:0;max-height:100%;overflow:auto;
-}
-.skin-mysterious-traveler .broadcast-label{margin:0 0 5px;color:#baaa89;font:11px Georgia,serif;letter-spacing:1px}
-.skin-mysterious-traveler .featured-episode__title{font:bold 21px/1.1 Georgia,serif;margin:2px 0 6px;color:#f3dfb3}
-.skin-mysterious-traveler .featured-episode__description{font:14px/1.3 Georgia,serif;margin:0}
-.skin-mysterious-traveler .audio-player{
- position:absolute;left:317px;right:12px;bottom:12px;height:39px;
- margin:0;display:flex;align-items:center;gap:7px;
- background:#091714;border-top:1px solid #ad844b;padding:3px 0;
-}
-.skin-mysterious-traveler .audio-player button{
- width:33px;height:33px;min-width:33px;padding:0;
- background:#102722;border:1px solid #e8cb89;color:#f8deac;
-}
-.skin-mysterious-traveler .audio-player input[type=range]{flex:1;min-width:15px;accent-color:#d5ac4b}
-.skin-mysterious-traveler .audio-player input.audio-player__volume{flex:0 0 48px;width:48px}
-.skin-mysterious-traveler .audio-player time{font:12px Georgia,serif;color:#f5dfbd}
-/* Four genuine, independently linked cards replace the baked-in artwork panels. */
-.skin-mysterious-traveler .show-card-grid{
- position:absolute;left:831px;top:777px;width:740px;height:60px;
- z-index:6;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
-}
-.skin-mysterious-traveler .show-card-grid .archive-card{
- display:flex;flex-direction:column;align-items:center;text-align:center;
- min-width:0;min-height:0;padding:10px 7px 8px;
- border:0;border-radius:0;
- background:linear-gradient(155deg,#112923,#061511 80%);color:#f4dfae;
-}
-.skin-mysterious-traveler .show-card-grid .archive-card .card-image{
- height:118px;min-height:118px;width:100%;background:linear-gradient(140deg,#254239,#0b1e19);
- overflow:hidden;
-}
-.skin-mysterious-traveler .show-card-grid .archive-card .card-image img{width:100%;height:100%;object-fit:cover}
-.skin-mysterious-traveler .show-card-grid .archive-card h2{
- font:bold 19px Georgia,serif;margin:0 0 6px;order:-1;color:#f9e2ac;
-}
-.skin-mysterious-traveler .show-card-grid .archive-card p{font:13px/1.27 Georgia,serif;margin:8px 0 0}
-.skin-mysterious-traveler .show-card-grid .archive-card span{margin-top:auto;color:#f5c45c;font-size:12px}
-.skin-mysterious-traveler .show-card-grid .archive-card:is(:hover,:focus-visible){outline:2px solid #f5c45c;outline-offset:1px}
-.skin-mysterious-traveler .show-card-grid .archive-card.is-empty{display:none}
-.skin-mysterious-traveler .page-traveler-section{
+ .page-traveler-section{
  min-height:886px;padding:88px 92px;color:#e9d5aa;
  background:linear-gradient(#061d18e8,#061510f2),url('/art/mystery/mysterious-traveler/page.png') center/cover;
 }
-.skin-mysterious-traveler .page-traveler-section h1{font-size:46px}
-.skin-mysterious-traveler .page-traveler-section p{font-size:21px;max-width:900px}
-.skin-mysterious-traveler .traveler-back{color:#f8c758}
-.skin-mysterious-traveler .traveler-gallery-image{width:360px;max-height:400px;object-fit:contain}
-
-/* Four right-hand cards retain their current position. */
-.skin-mysterious-traveler .show-card-grid{left:891px}
-
-/* Restored HTML/CSS Featured Episode panel; keeps the shared React data and audio controls. */
-.skin-mysterious-traveler .page-landing .featured-episode{
- display:block!important;
- position:absolute;left:48px;top:565px;width:832px;height:271px;
- background:linear-gradient(155deg,#102b26 0%,#091d1a 57%,#061411 100%);
- border:4px solid #8d6c3c;border-radius:7px;
- box-shadow:inset 0 0 0 2px #d2ac66,0 4px 14px #0008;
-}
-.skin-mysterious-traveler .page-landing .featured-episode__heading{
- left:318px;top:10px;right:15px;height:50px;
-}
-.skin-mysterious-traveler .page-landing .featured-episode__body{
- inset:65px 13px 57px 13px;
-}
-.skin-mysterious-traveler .page-landing .featured-episode__art{
- flex-basis:287px;
- border:2px solid #9f8150;
-}
-.skin-mysterious-traveler .page-landing .audio-player{
- left:316px;right:14px;bottom:11px;
-}
-
-/* Featured panel: transparent and frameless; retain content and controls. */
-.skin-mysterious-traveler .page-landing .featured-episode{
- background:transparent;
- border:0;
- border-radius:0;
- box-shadow:none;
-}
-
-/* Traveler's artwork and episode body are independent sibling elements.
-   The image retains its original left edge, rises 30px, extends 24px
-   farther right, and reaches 24px farther down. */
-.skin-mysterious-traveler .page-landing .featured-episode__art{
- position:absolute;
- left:13px;
- top:5px;
- width:321px;
- height:245px;
- flex:none;
- margin:0;
-}
-.skin-mysterious-traveler .page-landing .featured-episode__body{
- position:absolute;
- top:85px;
- left:357px;
- right:-27px;
- bottom:57px;
- display:block;
-}
-.skin-mysterious-traveler .page-landing .featured-episode__content{
- position:absolute;
- left:0;
- right:0;
- width:auto;
- max-height:100%;
-}
-
-/* Featured panel debugging highlights. */
-.skin-mysterious-traveler .page-landing .featured-episode{border:1px solid red}
-.skin-mysterious-traveler .page-landing .featured-episode__content{background:rgba(255,255,0,.8)}
-
-/* Anniversary numeral: red, bold, 80px, shifted 80px to the right. */
-.skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
- color:red;
- font-size:56px;
- font-weight:700;
- transform:translate(30px, 4px);
-}
-
-/* Traveler date: red, moved 200px right and 60px down. */
-.skin-mysterious-traveler .page-landing .featured-episode__heading>div{
- position:absolute;
- left:0;
- right:0;
- width:100%;
-}
-.skin-mysterious-traveler .page-landing .featured-episode__heading time{
- display:block;
- width:100%;
- color:red;
- font-size:22px;
- font-style:italic;
- transform:translate(20px,40px);
- text-align:center;
- background:rgba(255,255,0,0.8);
-}
-
-/* Traveler audio controls: borderless, translucent green background. */
-.skin-mysterious-traveler .page-landing .audio-player{
- border:0;
- background:rgba(0,128,0,0.6);
-}
+ .page-traveler-section h1{font-size:46px}
+ .page-traveler-section p{font-size:21px;max-width:900px}
+ .traveler-back{color:#f8c758}
+ .traveler-gallery-image{width:360px;max-height:400px;object-fit:contain}
 
 
-/* Two-column featured episode. Traveler only; shared FeaturedEpisode markup unchanged.
-   Border-box 832x271; 2px border, 10px padding, 20px column gap. */
-.skin-mysterious-traveler .page-landing .featured-episode{
+.page-landing .featured-art{display:none!important}
+
+/* Whistler-equivalent FeaturedEpisode positions and dimensions. */
+/* Traveler featured panel adapted from the Mysterious Traveler's final two-column
+   FeaturedEpisode layout. Shared React audio player and Traveler copy are retained. */
+.page-landing .featured-episode{
  display:grid!important;
- grid-template-columns:320px minmax(0,1fr);
+ grid-template-columns:370px minmax(0,1fr);
  grid-template-rows:90px minmax(0,1fr) 42px;
- column-gap:20px;
- row-gap:0;
- position:absolute;
- left:48px;top:565px;width:828px;height:271px;
- padding:10px;
- border:0;
- border-radius:0;
- background:transparent;
- box-shadow:none;
- overflow:hidden;
+ column-gap:20px;row-gap:0;
+ margin:0;padding:10px;border:0;border-radius:0;
+ background:transparent;box-shadow:none;overflow:hidden;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__art{
- grid-column:1;
- grid-row:1 / 4;
- position:static;
- left:auto;top:auto;
- width:320px;height:100%;
- min-width:0;min-height:0;
- margin:0;
- flex:none;
- border:0;
+.page-landing .featured-art{
+ grid-column:1;grid-row:1 / 4;position:static;
+ left:auto;top:auto;width:370px;height:100%;min-width:0;min-height:0;
+ margin:0;flex:none;border:0;
  background-color:transparent;
- background-image:none;
- background-position:center;
- background-size:contain;
- background-repeat:no-repeat;
+ background-image:url('/art/mystery/mysterious-traveler/hero.png');
+ background-position:center;background-size:contain;background-repeat:no-repeat;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading{
- grid-column:2;grid-row:1;
- position:static;
- left:auto;right:auto;top:auto;
- width:100%;height:90px;
- min-width:0;
- display:flex;
- flex-direction:column;
- justify-content:center;
- align-items:flex-start;
- gap:0;
- margin:0;padding:0;
+.page-landing .featured-header{
+ grid-column:2;grid-row:1;position:static;
+ left:auto;right:auto;top:auto;width:100%;height:90px;min-width:0;
+ transform:translateY(-9px);
+ display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+ gap:0;margin:0;padding:0;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading .anniversary-number{
- display:block;
- flex:none;
- font-family:'Times New Roman','Liberation Serif',serif;
- font-stretch:condensed;
- font-size:52px;
- font-weight:700;
- color:red;
- line-height:1;
- transform:translateY(-6px);
+.page-landing .featured-header .anniversary{
+ display:block;flex:none;font-family:'Times New Roman',Georgia,serif;
+ font-size:28px;font-weight:700;color:red;line-height:1;transform:translate(26px,-3px);
+ width:calc(2ch - 6px);
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading>div{
- position:static;
- left:auto;right:auto;
- width:100%;
- padding:0 20px 0 0;
- transform:translateY(-6px);
- display:flex;
- justify-content:center;
- align-items:center;
+.page-landing .featured-header>div{
+ position:static;left:auto;right:auto;width:100%;padding:0 20px 0 0;
+ transform:translateY(-6px);display:flex;justify-content:center;align-items:center;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__heading time{
- display:block;
- padding-right:0;
- transform:none;
- width:100%;
- margin:0;
- font-size:22px;
- font-style:italic;
- color:red;
- text-align:center;
- background:transparent;
+.page-landing .featured-header time{
+ display:block;padding-right:0;transform:translateX(-20px);width:382px;
+ margin:0;font-size:22px;font-style:italic;
+ text-align:center;background:transparent;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__body{
- grid-column:2;grid-row:2;
- position:relative;
- z-index:5;
- transform:translateY(-10px);
- inset:auto;
- width:100%;height:80px;
- min-width:0;min-height:0;
- display:block;
- overflow:hidden;
+.featured-episode > .featured-body{
+ position:relative;z-index:5;
+ transform:translateY(-38px);inset:auto;width:100%;height:80px;
+ min-width:0;min-height:0;display:block;overflow:hidden;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__content{
- position:static;
- left:auto;right:auto;top:auto;
- width:100%;height:100%;
- max-height:100%;
- overflow:hidden;
- background:transparent;
+.page-landing .featured-content{
+ position:static;left:auto;right:auto;top:auto;width:calc(100% - 6px);height:100%;
+ max-height:100%;overflow:hidden;background:transparent;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__description{
- display:-webkit-box;
- -webkit-box-orient:vertical;
- -webkit-line-clamp:4;
- line-clamp:4;
- overflow:hidden;
+.featured-content > .featured-title{
+ font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:.025em;
+ color:#eadbb4;text-shadow:0 1px 1px rgba(0,0,0,.9);text-transform:uppercase;
+
+ padding-bottom:0;
 }
-.skin-mysterious-traveler .page-landing .audio-player{
- grid-column:2;grid-row:3;
- position:static;
- left:auto;right:auto;bottom:auto;
- width:calc(100% - 12px);height:46px;
- min-width:0;
- margin:0 auto 0 0;
- transform:translateY(-10px);
- border:0;
- background:transparent;
+.page-landing .featured-description{
+ font-size:16px;display:-webkit-box;-webkit-box-orient:vertical;
+ -webkit-line-clamp:4;line-clamp:4;overflow:hidden;
+}
+.page-landing .audio-player{
+ grid-column:2;grid-row:3;position:static;left:auto;right:auto;bottom:auto;
+ width:calc(100% - 12px);height:46px;min-width:0;margin:0 auto 0 0;
+ transform:translateY(-10px);border:0;background:transparent;
 }
 
-/* Traveler's custom featured title and description. */
-.skin-mysterious-traveler .page-landing .featured-episode__title{
- font-family:'Cinzel','Times New Roman',serif;
- font-weight:700;
- letter-spacing:0.025em;
- color:#eadbb4;
- text-shadow:0 1px 1px rgba(0,0,0,.9);
- text-transform:uppercase;
+/* Traveler featured panel: translucent red overlay (60% opacity). */
+.page-landing .featured-episode{background:transparent}
+
+/* Anniversary numeral: translucent red background, Traveler only. */
+.page-landing .featured-header .anniversary{background:transparent}
+
+/* Keep featured artwork hidden; debugging outlines removed. */
+.page-landing .featured-art{display:none!important}
+
+
+/* Mysterious Traveler panel restoration: original geometry and two-column debug framing. */
+.site-shell[data-artwork-mode="page"] > .page.page-landing > .featured-episode {
+  position: absolute;
+  left: 27px;
+  top: 594px;
+  width: 856px;
+  height: 252px;
+  min-height: 0;
+  display: grid !important;
+  grid-template-columns: 342px minmax(0, 1fr);
+  grid-template-rows: 90px minmax(0, 1fr) 42px;
+  column-gap: 20px;
+  row-gap: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
 }
-.skin-mysterious-traveler .page-landing .featured-episode__description{
- font-size:16px;
+.page-landing > .featured-episode > .featured-art {
+  display: block !important;
+  grid-column: 1;
+  grid-row: 1 / 4;
+  position: static;
+  width: 342px;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  background-color: transparent;
+  background-image: url('/art/mystery/mysterious-traveler/hero.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-landing > .featured-episode > .featured-header {
+  grid-column: 2;
+  grid-row: 1;
+}
+.page-landing > .featured-episode > .audio-player {
+  grid-column: 2;
+  grid-row: 3;
 }
 
-/* Center the Traveler-specific h2 without affecting other shows' h3 titles. */
-.skin-mysterious-traveler .page-landing h2.featured-episode__title{
- text-align:center;
+/* Align the anniversary numeral flush to the top of the right column. */
+.page-landing > .featured-episode > .featured-header {
+  justify-content: flex-start;
+  align-items: flex-start;
+  transform: none;
+  padding: 0;
+  margin: 0;
+}
+.page-landing > .featured-episode > .featured-header > .anniversary {
+  font-size: 40px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  transform: none;
 }
 
-/* Traveler navigation: the arrow alone is an interactive link; no full-panel hover. */
-.skin-mysterious-traveler .show-card-grid .archive-card:is(:hover,:focus-visible){outline:none}
-.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow{
- display:flex;align-items:center;justify-content:center;
- margin:auto 0 0;
- width:28px;height:28px;min-height:28px;
- border-radius:50%;text-decoration:none;
- color:#f5c45c;background:transparent;
- outline:none;
- transition:background-color .15s ease,box-shadow .15s ease;
+/* Debug frames: date and episode body only. */
+.page-landing > .featured-episode > .featured-header time {
+  box-sizing: border-box;
+
 }
-.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow span{
- font:bold 27px/1 Georgia,serif;color:#f5c45c;
-}
-.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow:is(:hover,:focus-visible){
- background:rgba(255,255,255,.12);
- box-shadow:0 0 8px 4px rgba(255,255,255,.8),0 0 16px 7px rgba(255,255,255,.35);
+.page-landing > .featured-episode > .featured-body {
+  box-sizing: border-box;
+
 }
 
-/* Traveler lower-right panels: retain existing frames and arrow placement; reveal page art. */
-.skin-mysterious-traveler .show-card-grid .archive-card{
- background:transparent;
+/* Traveler debug adjustments: date aligns to parent left; body extends downward. */
+.page-landing > .featured-episode > .featured-header time {
+  transform: none;
+  width: 442px;
+  margin: 0;
+
+}
+.page-landing > .featured-episode > .featured-body {
+  height: 160px;
+
+}
+
+/* Traveler Featured Episode section artwork. Asset expected at public/art/mystery/mysterious-traveler/feature.panel.png. */
+.site-shell[data-artwork-mode="page"] > .page.page-landing > .featured-episode {
+  background-image: url('/art/mystery/mysterious-traveler/feature.panel.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Anniversary heading spans the complete date-column width. */
+.page-landing > .featured-episode > .featured-header > .anniversary {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  transform: none;
+
+}
+
+/* Traveler heading and date alignment refinements. */
+.page-landing > .featured-episode > .featured-header {
+  transform: translateY(8px);
+}
+.page-landing > .featured-episode > .featured-header > .anniversary {
+  font-size: 34px;
+}
+.page-landing > .featured-episode > .featured-header > div {
+  padding: 0;
+  transform: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.page-landing > .featured-episode > .featured-header time {
+  width: 100%;
+}
+
+/* Featured Episode spacing adjustments. */
+.page-landing > .featured-episode > .featured-header {
+  padding-right: 5px;
+}
+.page-landing > .featured-episode > .featured-body {
+  padding-left: 0px;
+}
+
+/* Traveler episode description has no internal padding. */
+.page-landing .featured-description {
+  padding: 0;
+  margin: 0;
+}
+
+/* Traveler five-item navigation, matching available artwork assets. */
+.show-nav {
+  top: 294px;
+  height: 540px;
+  row-gap: 15px;
+  grid-template-rows: repeat(5, 96px);
+}
+.show-nav__card--episodes { background-image: url('/art/mystery/mysterious-traveler/card.nav.episodes.png'); }
+.show-nav__card--history { background-image: url('/art/mystery/mysterious-traveler/card.nav.history.png'); }
+.show-nav__card--gallery { background-image: url('/art/mystery/mysterious-traveler/card.nav.gallery.png'); }
+.show-nav__card--about { background-image: url('/art/mystery/mysterious-traveler/card.nav.about.png'); }
+.show-nav__card--contact { background-image: url('/art/mystery/mysterious-traveler/card.nav.contact.png'); }
+.show-nav__card--episodes .sr-only,
+.show-nav__card--history .sr-only,
+.show-nav__card--gallery .sr-only,
+.show-nav__card--about .sr-only,
+.show-nav__card--contact .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './siteChrome.css';
 
 const navigation = [['Home','/'],['Shows','/shows'],['Browse','/browse'],['Categories','/categories'],['About','/about']];
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import SiteHeader from './SiteHeader.jsx';
 import SiteFooter from './SiteFooter.jsx';
-/** Fixed site-wide shell: only the central SiteViewport may scroll. */
+import vaultCatalog from '../vaultCatalog.json';
+/** Shared chrome. Show pages are direct children; the Vault retains its own viewport. */
 export default function ShowShell({slug,children,scrollable=false}){
  const home=slug==null;
- return <div className={'site-shell site-chrome '+(home?'vault-page':'generic-site-shell')}>
+ const artwork=home?null:Object.values(vaultCatalog.categories).map(category=>category.shows[slug]?.artwork).find(Boolean);
+ const fullPage=artwork?.mode==='page';
+ return <div className={'site-shell site-chrome '+(home?'vault-page':'generic-site-shell')} data-artwork-mode={fullPage?'page':undefined}>
   <SiteHeader/>
-  <div className={'site-viewport'+(scrollable?' site-viewport--scrollable':'')}>
-   {home?children:<div className={'site skin-'+slug}>{children}</div>}
-  </div>
+  {home?<div className={'show-viewport'+(scrollable?' show-viewport--scrollable':'')}>{children}</div>:children}
   <SiteFooter/>
  </div>;
 }

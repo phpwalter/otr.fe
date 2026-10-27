@@ -3,7 +3,7 @@ import EpisodeCard from '../components/EpisodeCard.jsx';
 import PageNavigation from '../components/PageNavigation.jsx';
 export default function EpisodesPage({slug,show,data={}}){
  const episodes=Array.isArray(data.episodes)?data.episodes:[];
- return <main className="page page-episodes" data-page-type="episodes">
+ return <main className={"page page-episodes skin-"+slug+" show-page--scrollable"} data-page-type="episodes">
  <header className="page-heading"><h1>{show[0]} — Episodes</h1><p className="page-description">{data.description||''}</p></header>
  <PageNavigation slug={slug} active="episodes"/>
  <section className={'episode-grid'+(!episodes.length?' is-empty':'')} aria-label="Episode list">
