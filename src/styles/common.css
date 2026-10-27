@@ -10,7 +10,7 @@
   min-height: 0;
   z-index: 6;
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 298px minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr) auto;
   column-gap: 0;
   row-gap: 0;
@@ -167,7 +167,7 @@ html,body,#root{height:100%;overflow:hidden}
   padding: 0 !important;
   transform: none !important;
   text-align: left !important;
-  font: inherit !important;
+  /* Typography is controlled by each show skin. */
   color: inherit !important;
   text-shadow: none !important;
 }
