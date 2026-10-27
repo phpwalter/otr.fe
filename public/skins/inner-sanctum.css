@@ -43,8 +43,8 @@
 .show-nav {
   top: 75px;
   left: 75px;
-  width: 204px;
-  height: 356px;
+  width: 300px;
+  height: 500px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 96px);
   gap: 7px;
