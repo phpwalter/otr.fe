@@ -230,7 +230,7 @@
 }
 .page-landing > .featured-episode > .featured-header > div {
   padding: 0;
-  transform: translateY(8px);
+  transform: none;
   width: 100%;
   box-sizing: border-box;
 }
