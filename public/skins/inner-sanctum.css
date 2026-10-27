@@ -139,7 +139,7 @@
 .site-shell[data-artwork-mode="page"]>.page{background:transparent}
 
 /* Inner Sanctum four-item navigation positioning and image treatments. */
-nav.show-nav {
+.show-nav {
   position: absolute;
   z-index: 8;
   top: 75px;
@@ -152,16 +152,16 @@ nav.show-nav {
   gap: 7px;
   overflow: visible;
 }
-nav.show-nav > .show-nav__card {
+.show-nav > .show-nav__card {
   width: 204px;
   height: 96px;
   background-size: 100% 100%;
 }
-nav.show-nav > .show-nav__card--episodes { background-image: url('/art/mystery/inner-sanctum/nav.card.episodes.png'); }
-nav.show-nav > .show-nav__card--writers { background-image: url('/art/mystery/inner-sanctum/nav.card.writers.png'); }
-nav.show-nav > .show-nav__card--history { background-image: url('/art/mystery/inner-sanctum/nav.card.history.png'); }
-nav.show-nav > .show-nav__card--about { background-image: url('/art/mystery/inner-sanctum/nav.card.about.png'); }
-nav.show-nav > .show-nav__card > .sr-only {
+.show-nav > .show-nav__card--episodes { background-image: url('/art/mystery/inner-sanctum/nav.card.episodes.png'); }
+.show-nav > .show-nav__card--writers { background-image: url('/art/mystery/inner-sanctum/nav.card.writers.png'); }
+.show-nav > .show-nav__card--history { background-image: url('/art/mystery/inner-sanctum/nav.card.history.png'); }
+.show-nav > .show-nav__card--about { background-image: url('/art/mystery/inner-sanctum/nav.card.about.png'); }
+.show-nav > .show-nav__card > .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
