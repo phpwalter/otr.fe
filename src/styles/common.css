@@ -135,14 +135,8 @@ html,body,#root{height:100%;overflow:hidden}
   align-self: stretch !important;
   justify-self: stretch !important;
   box-sizing: border-box !important;
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 20px solid green !important;
-  background: yellow !important;
-  background-image: none !important;
+  margin: 24px !important;
+  background-color: transparent !important;
 }
 .page .featured-episode > .featured-header {
   display: flex !important;
