@@ -23,7 +23,7 @@
 .skin-suspense .featured-art{position:absolute;left:0;top:0;width:320px;height:300px;margin:0;background:url('/art/mystery/suspense/card-feature.png') left center/auto 300px no-repeat}
 .skin-suspense .featured-body{display:contents}
 .skin-suspense .featured-header{position:absolute;left:315px;right:8px;top:12px;display:block;text-align:center;height:76px}
-.skin-suspense .anniversary-number{font-size:0}
+.skin-suspense .anniversary{font-size:0}
 .skin-suspense .featured-header>div{display:block}
 .skin-suspense .featured-header h2{color:#9e1915;font:bold 26px/1.05 Georgia,serif;margin:0;white-space:nowrap}
 .skin-suspense .featured-header h2::before{content:attr(data-years);font:bold 35px/1 Georgia,serif;margin-right:8px}
