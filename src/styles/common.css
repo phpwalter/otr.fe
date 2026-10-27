@@ -112,3 +112,188 @@ html,body,#root{height:100%;overflow:hidden}
   z-index: 8;
   overflow: visible;
 }
+
+/* Shared Featured Episode contract: fixed artwork column, stacked heading/body/player.
+   Overrides legacy show-skin composition without altering show navigation or artwork. */
+.page .featured-episode {
+  display: grid !important;
+  grid-template-columns: 220px minmax(0, 1fr) !important;
+  grid-template-rows: auto minmax(0, 1fr) auto !important;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  overflow: visible !important;
+}
+.page .featured-episode > .featured-art {
+  display: block !important;
+  position: static !important;
+  grid-column: 1 !important;
+  grid-row: 1 / 4 !important;
+  width: 220px !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+.page .featured-episode > .featured-header {
+  display: flex !important;
+  position: static !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  flex-direction: row !important;
+  gap: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  transform: none !important;
+  text-align: left !important;
+  background: transparent !important;
+}
+.page .featured-header > .anniversary {
+  display: inline-block !important;
+  position: static !important;
+  flex: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  text-align: left !important;
+  font: inherit !important;
+  color: inherit !important;
+  text-shadow: none !important;
+}
+.page .featured-header > div {
+  display: flex !important;
+  position: static !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  flex: 0 1 auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  transform: none !important;
+  text-align: left !important;
+}
+.page .featured-header h3,
+.page .featured-header time {
+  display: block !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  font: inherit !important;
+  color: inherit !important;
+  text-align: left !important;
+  white-space: normal !important;
+}
+.page .featured-header h3::before { content: none !important; }
+.page .featured-episode > .featured-body {
+  display: block !important;
+  position: static !important;
+  grid-column: 2 !important;
+  grid-row: 2 !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  transform: none !important;
+  background: transparent !important;
+}
+.page .featured-body > .featured-content {
+  display: block !important;
+  position: static !important;
+  width: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  transform: none !important;
+  text-align: left !important;
+}
+.page .featured-content > .featured-title,
+.page .featured-content > .featured-description {
+  display: block !important;
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font: inherit !important;
+  color: inherit !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  text-shadow: none !important;
+}
+.page .featured-episode > .audio-player {
+  display: flex !important;
+  position: static !important;
+  grid-column: 2 !important;
+  grid-row: 3 !important;
+  align-items: center !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 8px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  transform: none !important;
+}
+.page .audio-player button {
+  flex: 0 0 34px !important;
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+.page .audio-player input[type="range"] {
+  flex: 1 1 0 !important;
+  min-width: 12px !important;
+  width: auto !important;
+}
+.page .audio-player input.audio-player__volume {
+  flex: 0 0 52px !important;
+  width: 52px !important;
+}
+.page .audio-player time {
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  font: inherit !important;
+  color: inherit !important;
+  white-space: nowrap !important;
+}
+.page .featured-episode,
+.page .featured-episode * {
+  outline: 2px solid red !important;
+  outline-offset: 0 !important;
+}
