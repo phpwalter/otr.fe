@@ -240,4 +240,5 @@
 /* Traveler episode description has no internal padding. */
 .page-landing .featured-description {
   padding: 0;
+  margin: 0;
 }
