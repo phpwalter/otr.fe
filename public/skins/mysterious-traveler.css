@@ -241,5 +241,13 @@
 /* Debug outlines for Traveler Featured Episode sections. */
 .page-landing > .featured-episode > .featured-header,
 .page-landing > .featured-episode > .featured-body {
-  border: 2px solid red;
+
+}
+
+/* Featured Episode spacing adjustments. */
+.page-landing > .featured-episode > .featured-header {
+  padding-right: 5px;
+}
+.page-landing > .featured-episode > .featured-body {
+  padding-left: 5px;
 }
