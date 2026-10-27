@@ -16,9 +16,6 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
   {showConfig?.showNav===true&&<ShowNav slug={slug}/>}
   <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null}
     historicalDate={display.historicalDate??historicalDate}
-    separateArtwork={display.separateArtwork===true}
-    hideBroadcastLabel={display.hideBroadcastLabel===true}
-    titleAsH2={display.titleAsH2===true}
     titleOverride={display.title??null} descriptionOverride={display.description??null}/>
   {showCardGrid&&<ShowCardGrid slug={slug} cards={showConfig?.cards??data.cards}/>}
   {showConfig?.shadowSide===true&&<ShadowSide slug={slug}/>}
