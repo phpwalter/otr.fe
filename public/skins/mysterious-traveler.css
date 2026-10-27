@@ -113,7 +113,7 @@
   height: 252px;
   min-height: 0;
   display: grid !important;
-  grid-template-columns: 352px minmax(0, 1fr);
+  grid-template-columns: 342px minmax(0, 1fr);
   grid-template-rows: 90px minmax(0, 1fr) 42px;
   column-gap: 20px;
   row-gap: 0;
@@ -131,7 +131,7 @@
   grid-column: 1;
   grid-row: 1 / 4;
   position: static;
-  width: 352px;
+  width: 342px;
   height: 100%;
   min-height: 0;
   margin: 0;
@@ -165,7 +165,7 @@
   margin: 0;
 }
 .page-landing > .featured-episode > .featured-header > .anniversary {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1;
   padding: 0;
   margin: 0;
@@ -209,9 +209,14 @@
   max-width: 100%;
   box-sizing: border-box;
   text-align: center;
-  font-size: 44px;
+  font-size: 40px;
   padding: 0;
   margin: 0;
   transform: none;
   border: 2px solid red;
+}
+
+/* Traveler heading offset for layout review. */
+.page-landing > .featured-episode > .featured-header {
+  transform: translateY(40px);
 }
