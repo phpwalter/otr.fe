@@ -138,8 +138,8 @@
 .generic-site-shell{--show-page-image:url('/art/mystery/inner-sanctum/page.png')}
 .site-shell[data-artwork-mode="page"]>.page{background:transparent}
 
-/* Inner Sanctum five-item navigation positioning and image treatments. */
-.page-landing > nav.show-nav {
+/* Inner Sanctum four-item navigation positioning and image treatments. */
+nav.show-nav {
   position: absolute;
   z-index: 8;
   top: 75px;
@@ -148,21 +148,20 @@
   height: 356px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 96px);
+  grid-template-rows: repeat(4, 96px);
   gap: 7px;
   overflow: visible;
 }
-.page-landing > nav.show-nav > .show-nav__card {
+nav.show-nav > .show-nav__card {
   width: 204px;
   height: 96px;
   background-size: 100% 100%;
 }
-.page-landing > nav.show-nav > .show-nav__card--episodes { background-image: url('/art/mystery/inner-sanctum/nav.card.episodes.png'); }
-.page-landing > nav.show-nav > .show-nav__card--cast { background-image: url('/art/mystery/inner-sanctum/nav.card.cast.png'); }
-.page-landing > nav.show-nav > .show-nav__card--writers { background-image: url('/art/mystery/inner-sanctum/nav.card.writers.png'); }
-.page-landing > nav.show-nav > .show-nav__card--history { background-image: url('/art/mystery/inner-sanctum/nav.card.history.png'); }
-.page-landing > nav.show-nav > .show-nav__card--about { background-image: url('/art/mystery/inner-sanctum/nav.card.about.png'); }
-.page-landing > nav.show-nav > .show-nav__card > .sr-only {
+nav.show-nav > .show-nav__card--episodes { background-image: url('/art/mystery/inner-sanctum/nav.card.episodes.png'); }
+nav.show-nav > .show-nav__card--writers { background-image: url('/art/mystery/inner-sanctum/nav.card.writers.png'); }
+nav.show-nav > .show-nav__card--history { background-image: url('/art/mystery/inner-sanctum/nav.card.history.png'); }
+nav.show-nav > .show-nav__card--about { background-image: url('/art/mystery/inner-sanctum/nav.card.about.png'); }
+nav.show-nav > .show-nav__card > .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
