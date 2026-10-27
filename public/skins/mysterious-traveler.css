@@ -193,3 +193,11 @@
   height: 160px;
   border: 2px solid red;
 }
+
+/* Traveler Featured Episode section artwork. Asset expected at public/art/mystery/mysterious-traveler/feature.panel.png. */
+.site-shell[data-artwork-mode="page"] > .page.page-landing > .featured-episode {
+  background-image: url('/art/mystery/mysterious-traveler/feature.panel.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
