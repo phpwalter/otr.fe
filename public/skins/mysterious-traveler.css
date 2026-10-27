@@ -237,3 +237,9 @@
 .page-landing > .featured-episode > .featured-header time {
   width: 100%;
 }
+
+/* Debug outlines for Traveler Featured Episode sections. */
+.page-landing > .featured-episode > .featured-header,
+.page-landing > .featured-episode > .featured-body {
+  border: 2px solid red;
+}
