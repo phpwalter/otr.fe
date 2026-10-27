@@ -14,7 +14,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
    <div className="hero-copy"><span className="eyebrow">A CLASSIC RADIO BROADCAST</span><h1>{show[0]}</h1>
     <p className="tagline">{show[1]}</p><a className="hero-link" href={'/'+slug+'/episodes'}>EXPLORE THE EPISODES →</a></div></section>
   {showConfig?.showNav===true&&<ShowNav slug={slug}/>}
-  <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]}
+  <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null}
     historicalDate={display.historicalDate??historicalDate}
     showHeadingDetails={display.headingDetails!==false} showDate={true}
     separateArtwork={display.separateArtwork===true}
