@@ -254,10 +254,12 @@
 .show-nav__card--history { background-image: url('/art/mystery/mysterious-traveler/card.nav.history.png'); }
 .show-nav__card--gallery { background-image: url('/art/mystery/mysterious-traveler/card.nav.gallery.png'); }
 .show-nav__card--about { background-image: url('/art/mystery/mysterious-traveler/card.nav.about.png'); }
+.show-nav__card--contact { background-image: url('/art/mystery/mysterious-traveler/card.nav.contact.png'); }
 .show-nav__card--episodes .sr-only,
 .show-nav__card--history .sr-only,
 .show-nav__card--gallery .sr-only,
-.show-nav__card--about .sr-only {
+.show-nav__card--about .sr-only,
+.show-nav__card--contact .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
