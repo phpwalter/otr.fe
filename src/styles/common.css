@@ -104,3 +104,9 @@ html,body,#root{height:100%;overflow:hidden}
   padding: 0;
   overflow: hidden;
 }
+
+/* Shared navigation behavior; each active show skin supplies geometry and artwork. */
+.show-nav {
+  position: absolute;
+  display: grid;
+}
