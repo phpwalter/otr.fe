@@ -222,7 +222,7 @@
             "mode": "page"
           },
           "featuredDisplay": {
-            "headingDetails": false
+            "headingDetails": true
           }
         },
         "mysterious-traveler": {
