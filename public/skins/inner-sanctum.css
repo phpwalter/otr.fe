@@ -90,6 +90,10 @@
 
 /* Featured Episode: shared outer panel geometry remains in common.css. */
 .featured-episode { }
+
+.featured-episode > .featured-art {
+  background-image: url('/art/mystery/inner-sanctum/f.art.png') !important;
+}
 .featured-header {
   position: absolute;
   left: 254px;
