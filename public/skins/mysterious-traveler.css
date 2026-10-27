@@ -247,7 +247,9 @@
 
 /* Traveler five-item navigation, matching available artwork assets. */
 .show-nav {
-  height: 508px;
+  top: 264px;
+  height: 520px;
+  row-gap: 10px;
   grid-template-rows: repeat(5, 96px);
 }
 .show-nav__card--episodes { background-image: url('/art/mystery/mysterious-traveler/card.nav.episodes.png'); }
