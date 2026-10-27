@@ -41,13 +41,11 @@
 
 /* Navigation: Episodes, Writers, History, About. */
 .show-nav {
-  position: absolute;
   z-index: 8;
   top: 75px;
   left: 75px;
   width: 204px;
   height: 356px;
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 96px);
   gap: 7px;
