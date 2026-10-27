@@ -16,7 +16,6 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
   {showConfig?.showNav===true&&<ShowNav slug={slug}/>}
   <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null}
     historicalDate={display.historicalDate??historicalDate}
-    showHeadingDetails={display.headingDetails!==false} headingAsH3={slug==='inner-sanctum'} showDate={true}
     separateArtwork={display.separateArtwork===true}
     hideBroadcastLabel={display.hideBroadcastLabel===true}
     titleAsH2={display.titleAsH2===true}
