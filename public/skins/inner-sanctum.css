@@ -12,7 +12,7 @@
 .tagline{color:#fff0ce}
 .hero-link{background:#a92018;color:#fff5de}
 .featured-episode{border:2px solid #a92018;background:#100e0e;color:#f3e2cb;}
-.anniversary-number{color:#a92018}
+.anniversary{color:#a92018}
 .featured-art{background-image:url('/art/inner-sanctum-card.webp')}
 .audio-player button{border-color:#a92018;color:#a92018}
 .audio-player input{accent-color:#a92018}
@@ -35,7 +35,7 @@
  .page-navigation__link:is(:hover,:focus-visible){color:#9e1012;background:#f6deabb8}
  .featured-episode{z-index:6;padding:0;border:0;box-shadow:none;background:transparent;color:#24160e;overflow:hidden}
  .featured-header{position:absolute;top:0;left:13px;right:7px;height:35px;display:flex;align-items:center;gap:8px}
- .featured-header .anniversary-number{font:italic 18px Georgia,serif;color:#2b170e}
+ .featured-header .anniversary{font:italic 18px Georgia,serif;color:#2b170e}
  .featured-header h2{font:italic 18px Georgia,serif;color:#2b170e;margin:0}
  .featured-header time{font:13px Georgia,serif;color:#27170d}
  .featured-art, .broadcast-label{display:none}
@@ -100,7 +100,7 @@
   left:254px;right:13px;top:0;height:66px;
   display:flex;align-items:flex-start;gap:7px;
 }
- .featured-header>.anniversary-number{
+ .featured-header>.anniversary{
   display:block;flex:none;
   font:bold 60px/.97 Georgia,'Times New Roman',serif;
   color:#aa1017;text-shadow:1px 1px 0 #250b08;
@@ -120,7 +120,7 @@
 }
 
 /* Featured heading contains only the numeral for this show. */
- .featured-header>.anniversary-number{transform:translate(-10px,-6px)}
+ .featured-header>.anniversary{transform:translate(-10px,-6px)}
 
 /* Whistler-equivalent canvas and six-button ShowNav. Do not override FeaturedEpisode. */
 .site-shell>.page{width:1674px;height:886px;min-height:886px;max-height:886px}
