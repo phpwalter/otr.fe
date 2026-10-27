@@ -130,7 +130,6 @@
   font: 16px/1.2 Georgia, 'Times New Roman', serif;
   color: #241407;
 }
-.featured-art, .broadcast-label { display: none; }
 .featured-content {
   position: absolute;
   left: 244px;
