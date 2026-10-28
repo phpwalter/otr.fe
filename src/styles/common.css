@@ -21,6 +21,7 @@
   box-shadow: none;
   background: transparent;
   background-image: none;
+  color: black;
   overflow: visible;
 }.audio-player{display:flex;align-items:center;gap:10px;margin-top:18px}.audio-player button{border:1px solid #bd955c;color:inherit;background:#171719;border-radius:50%;height:42px;min-width:42px;cursor:pointer}.audio-player button:disabled{opacity:.45;cursor:default}.audio-player input{min-width:0;flex:1;accent-color:#d33129}.audio-player time{white-space:nowrap;font:12px Arial,sans-serif}.cards{grid-area:cards;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.archive-card{display:block;background:#e9d5ad;color:#201c19;padding:12px;min-height:225px}.card-image{height:100px;background-size:cover;background-position:center}.archive-card h2{font-size:22px;text-transform:uppercase;margin:9px 0}.archive-card p{font-size:14px}.archive-card span{font:700 12px Arial,sans-serif}.about{grid-area:about;text-align:center;padding:22px}.footer{text-align:center;padding:15px;letter-spacing:3px}.skin-switch{position:fixed;z-index:20;bottom:10px;right:12px;background:#0b0c0ef0;padding:9px;font:12px Arial,sans-serif;color:#fff}.skin-switch select{margin-left:8px}.api-notice{position:fixed;bottom:55px;right:12px;background:#502316;color:white;padding:10px;z-index:10}
 
@@ -159,7 +160,7 @@ html,body,#root{height:100%;overflow:hidden}
 }
 .page .featured-header > .anniversary {
   flex: none;
-  font: bold 53px / .97 Georgia, 'Times New Roman', serif;
+  font: bold 60px / .97 Georgia, 'Times New Roman', serif;
 }
 .page .featured-header > div {
   display: flex;
@@ -173,6 +174,9 @@ html,body,#root{height:100%;overflow:hidden}
 .page .featured-header time {
   display: block;
   margin: 0;
+}
+.page .featured-header time {
+  font-size: 22px;
 }
 .page .featured-header h3 {
   width: 100%;
