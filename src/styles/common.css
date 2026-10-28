@@ -172,7 +172,8 @@ html,body,#root{height:100%;overflow:hidden}
   flex-direction: column !important;
   align-items: flex-start !important;
   justify-content: flex-start !important;
-  flex: 0 1 auto !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
   width: auto !important;
   margin: 0 !important;
   padding: 0 !important;
