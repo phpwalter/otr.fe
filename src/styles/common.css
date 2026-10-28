@@ -167,7 +167,7 @@ html,body,#root{height:100%;overflow:hidden}
   min-width: 0;
   flex-direction: column;
   position: relative;
-  top: 8px;
+  top: 16px;
 }
 .page .featured-header h3,
 .page .featured-header time {
