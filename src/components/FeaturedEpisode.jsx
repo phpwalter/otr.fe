@@ -6,7 +6,7 @@ export default function FeaturedEpisode({episode={},anniversaryYears=75,annivers
   <div className="featured-art" role="img" aria-label="Featured episode artwork"/>
   <header className="featured-header">
    <strong className="anniversary">{anniversaryText??anniversaryYears}</strong>
-   <div><h3>YEARS AGO YESTERDAY</h3><time>{historicalDate}</time></div>
+   <div><h3><span>YEARS AGO YESTERDAY</span></h3><time>{historicalDate}</time></div>
   </header>
   <div className="featured-body">
    <div className="featured-content">
