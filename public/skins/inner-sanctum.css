@@ -125,12 +125,12 @@
   transform-origin: left center;
 }
 .featured-header h3::before { content: none; }
-.featured-header time {
+.page .featured-header time {
   display: block;
   position: relative;
   left: -1px;
   margin-top: 30px;
-  font: 16px/1.2 Georgia, 'Times New Roman', serif;
+  font: 19px/1.2 Georgia, 'Times New Roman', serif;
   color: #241407;
 }
 .featured-content {
