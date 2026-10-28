@@ -1,4 +1,12 @@
-/* Mysterious Traveler page artwork on the shared shell. */
-.generic-site-shell {
+/* Mysterious Traveler full-page artwork on the shared show shell. */
+.site-shell.generic-site-shell[data-artwork-mode="page"] {
   --show-page-image: url('/art/mystery/mysterious-traveler/page.png');
+  background-image: url('/art/mystery/mysterious-traveler/page.png');
+  background-position: 0 72px;
+  background-size: 1674px auto;
+  background-repeat: no-repeat;
+}
+
+.site-shell.generic-site-shell[data-artwork-mode="page"] > .page.page-landing {
+  background: transparent;
 }
