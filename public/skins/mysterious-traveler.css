@@ -1,0 +1,4 @@
+/* Mysterious Traveler page artwork on the shared shell. */
+.generic-site-shell {
+  --show-page-image: url('/art/mystery/mysterious-traveler/page.png');
+}
