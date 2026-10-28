@@ -139,14 +139,24 @@
 }
 
 .featured-art {
-  position: absolute;
-  left: 14px;
-  top: 14px;
-  width: 430px;
-  height: 212px;
+  grid-column: 1;
+  grid-row: 1 / 4;
+  position: static;
+  left: auto;
+  top: auto;
+  width: 370px;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
   margin: 0;
-  background: url('/art/mystery/mysterious-traveler/hero.png') center/cover no-repeat;
-  border: 2px solid #8b653a
+  flex: none;
+  border: 0;
+  background-color: transparent;
+  background-image: url('/art/mystery/mysterious-traveler/hero.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none !important;
 }
 
 .featured-content {
@@ -233,8 +243,7 @@
 
 /* mysterious-traveler featured panel adapted from the Mysterious Traveler's final two-column
    FeaturedEpisode layout. Shared React audio player and mysterious-traveler copy are retained. */
-.page-landing .featured-episode {
-  z-index: 6;
+.featured-episode {
   color: #edca8a;
   grid-template-columns:370px minmax(0, 1fr);
   grid-template-rows:90px minmax(0, 1fr) 42px;
@@ -243,31 +252,9 @@
   margin: 0;
   padding: 10px;
   border: 2px solid red;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-  overflow: hidden;
 }
 
-.page-landing .featured-art {
-  grid-column: 1;
-  grid-row: 1 / 4;
-  position: static;
-  left: auto;
-  top: auto;
-  width: 370px;
-  height: 100%;
-  min-width: 0;
-  min-height: 0;
-  margin: 0;
-  flex: none;
-  border: 0;
-  background-color: transparent;
-  background-image: url('/art/mystery/mysterious-traveler/hero.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 
 .page-landing .featured-header {
   grid-column: 2;
@@ -391,7 +378,4 @@
   background: transparent
 }
 
-/* Keep featured artwork hidden; debugging outlines removed. */
-.page-landing .featured-art {
-  display: none !important
-}
+
