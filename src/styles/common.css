@@ -162,7 +162,9 @@ html,body,#root{height:100%;overflow:hidden}
   flex: none !important;
   text-align: left !important;
   align-self: flex-start !important;
-  transform: translateY(-8px);
+  position: relative !important;
+  top: -8px !important;
+  transform: none !important;
 }
 .page .featured-header > div {
   display: flex !important;
