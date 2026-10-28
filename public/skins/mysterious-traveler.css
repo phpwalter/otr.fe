@@ -1,12 +1,143 @@
-/* Mysterious Traveler full-page artwork on the shared show shell. */
-.site-shell.generic-site-shell[data-artwork-mode="page"] {
+/* Mysterious Traveler show skin.
+   Shared structure is defined in src/styles/common.css.
+   Only the Mysterious Traveler skin is loaded while this show is active. */
+
+.generic-site-shell {
   --show-page-image: url('/art/mystery/mysterious-traveler/page.png');
-  background-image: url('/art/mystery/mysterious-traveler/page.png');
-  background-position: 0 72px;
-  background-size: 1674px auto;
+}
+
+/* Show chrome and page surface */
+.page {
+  background: transparent;
+  color: #f5dfbd;
+  font-family: Georgia, serif;
+}
+.header {
+  background: #0b0d11;
+  border-bottom: 2px solid #a92018;
+  padding: 15px 28px;
+}
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.header a { color: #f3e2cb; }
+.header a.active { color: #a92018; }
+.masthead { font-size: 12px; white-space: nowrap; }
+.footer { color: #f3e2cb; font-size: 12px; }
+
+.canvas.page-landing {
+  display: block;
+  position: relative;
+  width: 1674px;
+  height: 886px;
+  min-height: 886px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.page-landing > .hero.show-hero { display: none !important; }
+
+/* Navigation: Episodes, Writers, History, About. */
+.show-nav {
+  top: 75px;
+  left: 75px;
+  width: 256px;
+  height: 450px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+}
+.show-nav > .show-nav__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #2b190f;
+  font: bold 22px Georgia, serif;
+  text-shadow: 0 1px #eacda6;
+  outline: 0;
+  transition: filter 150ms ease;
+}
+.show-nav > .show-nav__card--episodes {
+  background-image: none;
+}
+.show-nav > .show-nav__card--writers {
+  background-image: none;
+}
+.show-nav > .show-nav__card--history {
+  background-image: none;
+}
+.show-nav > .show-nav__card--about {
+  background-image: none;
+}
+.show-nav > .show-nav__card:is(:hover, :focus-visible) {
+  filter: brightness(1.17) drop-shadow(0 0 8px #ffcf72);
+}
+.show-nav > .show-nav__card > .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Featured Episode: shared outer panel geometry remains in common.css. */
+.featured-episode { }
+
+.featured-episode > .featured-art {
+  background-image: url('/art/mystery/mysterious-traveler/card.png') !important;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
-.site-shell.generic-site-shell[data-artwork-mode="page"] > .page.page-landing {
-  background: transparent;
+/* Shared AudioPlayer, with Mysterious Traveler's vintage controls. */
+.audio-player button {
+  flex: 0 0 34px;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #9e1216;
+  color: #f8dfba;
+  border: 1px solid #7f1818;
+  cursor: pointer;
+}
+.audio-player input[type="range"] {
+  flex: 1;
+  min-width: 18px;
+  accent-color: #a41116;
+}
+.audio-player input.audio-player__volume {
+  flex: 0 0 52px;
+  width: 52px;
+}
+.audio-player time {
+  font: 12px Georgia, serif;
+  color: #21140b;
+  white-space: nowrap;
+}
+
+/* Traveler navigation images do not exist yet; keep all five links legible. */
+.show-nav > .show-nav__card {
+  background: rgba(18, 30, 34, 0.85);
+  border: 1px solid #b29a71;
+  color: #f3e1bb;
+  font-size: 22px;
+  text-shadow: 0 1px 3px #000;
+}
+.show-nav > .show-nav__card > .sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
 }
