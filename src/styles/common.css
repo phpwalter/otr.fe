@@ -252,8 +252,10 @@ html,body,#root{height:100%;overflow:hidden}
   color: inherit !important;
   white-space: nowrap !important;
 }
-.page .featured-episode,
-.page .featured-episode * {
-  outline: 2px solid red !important;
-  outline-offset: 0 !important;
+/* Debug borders only on the three right-column rows. */
+.page .featured-episode > .featured-header,
+.page .featured-episode > .featured-body,
+.page .featured-episode > .audio-player {
+  outline: 1px solid red;
+  outline-offset: 0;
 }
