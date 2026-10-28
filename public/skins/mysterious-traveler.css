@@ -35,7 +35,7 @@
 }
 
 .show-nav {
-  top: 300px;
+  top: 380px;
   left: 1280px;
   width: 285px;
   height: 506px;
@@ -90,17 +90,6 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap
-}
-
-.featured-episode {
-  z-index: 6;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: #08090b;
-  color: #edca8a;
-  box-shadow: inset 0 0 0 3px #a67c36, inset 0 0 0 6px #221609
 }
 
 .featured-header {
@@ -245,14 +234,15 @@
 /* mysterious-traveler featured panel adapted from the Mysterious Traveler's final two-column
    FeaturedEpisode layout. Shared React audio player and mysterious-traveler copy are retained. */
 .page-landing .featured-episode {
-  display: grid !important;
+  z-index: 6;
+  color: #edca8a;
   grid-template-columns:370px minmax(0, 1fr);
   grid-template-rows:90px minmax(0, 1fr) 42px;
   column-gap: 20px;
   row-gap: 0;
   margin: 0;
   padding: 10px;
-  border: 0;
+  border: 2px solid red;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -394,11 +384,6 @@
   transform: translateY(-10px);
   border: 0;
   background: transparent;
-}
-
-/* mysterious-traveler featured panel: translucent red overlay (60% opacity). */
-.page-landing .featured-episode {
-  background: transparent
 }
 
 /* Anniversary numeral: translucent red background, mysterious-traveler only. */
