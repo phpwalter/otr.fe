@@ -1,42 +1,19 @@
-/* Mysterious Traveler show skin.
-   Shared structure is defined in src/styles/common.css.
-   Only the Mysterious Traveler skin is loaded while this show is active. */
-
 .generic-site-shell {
-  --show-page-image: url('/art/mystery/mysterious-traveler/page.png');
+  --show-page-image: url('/art/mystery/mysterious-traveler/page.png')
 }
 
-/* Explicit page-mode image; this must win over the generic shell wallpaper. */
-.site-shell.generic-site-shell[data-artwork-mode="page"] {
-  background-image: url('/art/mystery/mysterious-traveler/page.png');
-  background-position: 0 72px;
-  background-size: 1674px auto;
-  background-repeat: no-repeat;
-}
-.site-shell.generic-site-shell[data-artwork-mode="page"] > .page.page-landing {
+/* The mysterious-traveler: fixed 1674 x 1030 shared shell and native header/footer.
+   The shared content viewport starts 53px from the top and is 886px tall.
+   All mysterious-traveler overlay coordinates below are relative to that viewport. */
+.site-shell > .page {
+  width: 1674px;
+  height: 886px;
+  min-height: 886px;
+  max-height: 886px;
   background: transparent;
+  color: #ebcc91;
+  font-family: Georgia, 'Times New Roman', serif
 }
-
-/* Show chrome and page surface */
-.page {
-  background: transparent;
-  color: #f5dfbd;
-  font-family: Georgia, serif;
-}
-.header {
-  background: #0b0d11;
-  border-bottom: 2px solid #a92018;
-  padding: 15px 28px;
-}
-.header nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-.header a { color: #f3e2cb; }
-.header a.active { color: #a92018; }
-.masthead { font-size: 12px; white-space: nowrap; }
-.footer { color: #f3e2cb; font-size: 12px; }
 
 .canvas.page-landing {
   display: block;
@@ -46,109 +23,398 @@
   min-height: 886px;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden
 }
-.page-landing > .hero.show-hero { display: none !important; }
 
-/* Navigation: Episodes, Writers, History, About. */
-.show-nav {
-  top: 75px;
-  left: 75px;
-  width: 256px;
-  height: 450px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, minmax(0, 1fr));
-  gap: 7px;
+.page-landing > section.hero.show-hero,
+.page-landing .shadow-side,
+.page-landing .show-about,
+.page-landing .landing-actions,
+.page-landing .page-navigation {
+  display: none !important
 }
-.show-nav > .show-nav__card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+
+.show-nav {
+  position: absolute;
+  z-index: 8;
+  top: 204px;
+  left: 1220px;
+  width: 385px;
+  height: 480px;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows:repeat(6, 96px);
+  gap: 7px;
+  overflow: visible
+}
+
+.show-nav__card {
+  display: block;
+  width: 385px;
+  height: 96px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: #2b190f;
-  font: bold 22px Georgia, serif;
-  text-shadow: 0 1px #eacda6;
   outline: 0;
-  transition: filter 150ms ease;
+  transition: filter 150ms ease
 }
-.show-nav > .show-nav__card--episodes {
-  background-image: none;
+
+.show-nav__card--episodes {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.episodes.png')
 }
-.show-nav > .show-nav__card--writers {
-  background-image: none;
+
+.show-nav__card--host {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.host.png')
 }
-.show-nav > .show-nav__card--history {
-  background-image: none;
+
+.show-nav__card--themes {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.themes.png')
 }
-.show-nav > .show-nav__card--about {
-  background-image: none;
+
+.show-nav__card--history {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.history.png')
 }
-.show-nav > .show-nav__card:is(:hover, :focus-visible) {
-  filter: brightness(1.17) drop-shadow(0 0 8px #ffcf72);
+
+.show-nav__card--gallery {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.gallery.png')
 }
-.show-nav > .show-nav__card > .sr-only {
+
+.show-nav__card--about {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.about.png')
+}
+
+.show-nav__card--contact {
+  background-image: url('/art/mystery/mysterious-traveler/nav.card.contact.png')
+}
+
+.show-nav__card:is(:hover,:focus-visible) {
+  filter: brightness(1.17) drop-shadow(0 0 8px #ffcf72)
+}
+
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  white-space: nowrap
 }
 
-/* Featured Episode: shared outer panel geometry remains in common.css. */
-.featured-episode { }
+.featured-episode {
+  z-index: 6;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #08090b;
+  color: #edca8a;
+  box-shadow: inset 0 0 0 3px #a67c36, inset 0 0 0 6px #221609
+}
 
-.featured-episode > .featured-art {
-  background-image: url('/art/mystery/mysterious-traveler/card.png') !important;
+.featured-header {
+  position: absolute;
+  left: 480px;
+  right: 27px;
+  top: 15px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px
+}
+
+.anniversary {
+  font: bold 38px/1 Georgia, serif;
+  color: #edc78a
+}
+
+.featured-header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px
+}
+
+.featured-header h2 {
+  margin: 0;
+  font: bold 28px/1.1 Georgia, serif;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  color: #edc78a
+}
+
+.featured-header time {
+  font: 19px Georgia, serif;
+  color: #e7bd80
+}
+
+.featured-body {
+  position: absolute;
+  left: 470px;
+  right: 25px;
+  top: 90px;
+  height: 83px;
+  display: block
+}
+
+.featured-art {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 430px;
+  height: 212px;
+  margin: 0;
+  background: url('/art/mystery/mysterious-traveler/hero.png') center/cover no-repeat;
+  border: 2px solid #8b653a
+}
+
+.featured-content {
+  text-align: center
+}
+
+.featured-title {
+  font: bold 26px/1.15 Georgia, serif;
+  letter-spacing: 1px;
+  margin: 0 0 7px;
+  color: #edc78a
+}
+
+.featured-description {
+  font: italic 17px/1.3 Georgia, serif;
+  margin: 0;
+  color: #dcb884
+}
+
+.audio-player {
+  position: absolute;
+  left: 480px;
+  right: 30px;
+  bottom: 17px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  background: transparent
+}
+
+.audio-player button {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border: 2px solid #dbaf63;
+  border-radius: 50%;
+  background: #0a0b0c;
+  color: #e8bd79
+}
+
+.audio-player input[type=range] {
+  accent-color: #d6ae65;
+  min-width: 0
+}
+
+.audio-player input.audio-player__volume {
+  flex: 0 0 100px;
+  width: 100px
+}
+
+.audio-player time {
+  font: 14px Georgia, serif;
+  color: #e8c58b
+}
+
+.page-mysterious-traveler-section {
+  min-height: 886px;
+  padding: 100px 110px;
+  background: linear-gradient(90deg, #071016ee, #071016dd), url('/art/mystery/mysterious-traveler/page.png') center / cover;
+  color: #eac78b
+}
+
+.page-mysterious-traveler-section h1 {
+  font: bold 50px Georgia, serif
+}
+
+.page-mysterious-traveler-section p {
+  font: 22px/1.5 Georgia, serif
+}
+
+.mysterious-traveler-back {
+  color: #f4ce89;
+  text-decoration: underline
+}
+
+.mysterious-traveler-section-placeholder {
+  font-style: italic;
+  opacity: .75
+}
+
+
+/* mysterious-traveler featured panel adapted from the Mysterious Traveler's final two-column
+   FeaturedEpisode layout. Shared React audio player and mysterious-traveler copy are retained. */
+.page-landing .featured-episode {
+  display: grid !important;
+  grid-template-columns:370px minmax(0, 1fr);
+  grid-template-rows:90px minmax(0, 1fr) 42px;
+  column-gap: 20px;
+  row-gap: 0;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.page-landing .featured-art {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  position: static;
+  left: auto;
+  top: auto;
+  width: 370px;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  flex: none;
+  border: 0;
+  background-color: transparent;
+  background-image: url('/art/mystery/mysterious-traveler/hero.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-/* Shared AudioPlayer, with Mysterious Traveler's vintage controls. */
-.audio-player button {
-  flex: 0 0 34px;
-  width: 34px;
-  min-width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: #9e1216;
-  color: #f8dfba;
-  border: 1px solid #7f1818;
-  cursor: pointer;
-}
-.audio-player input[type="range"] {
-  flex: 1;
-  min-width: 18px;
-  accent-color: #a41116;
-}
-.audio-player input.audio-player__volume {
-  flex: 0 0 52px;
-  width: 52px;
-}
-.audio-player time {
-  font: 12px Georgia, serif;
-  color: #21140b;
-  white-space: nowrap;
+.page-landing .featured-header {
+  grid-column: 2;
+  grid-row: 1;
+  position: static;
+  left: auto;
+  right: auto;
+  top: auto;
+  width: 100%;
+  height: 90px;
+  min-width: 0;
+  transform: translateY(-9px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Traveler navigation images do not exist yet; keep all five links legible. */
-.show-nav > .show-nav__card {
-  background: rgba(18, 30, 34, 0.85);
-  border: 1px solid #b29a71;
-  color: #f3e1bb;
-  font-size: 22px;
-  text-shadow: 0 1px 3px #000;
+.page-landing .featured-header .anniversary {
+  display: block;
+  flex: none;
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: red;
+  line-height: 1;
+  transform: translate(26px, -3px);
+  width: calc(2ch - 6px);
 }
-.show-nav > .show-nav__card > .sr-only {
+
+.page-landing .featured-header > div {
   position: static;
-  width: auto;
-  height: auto;
-  overflow: visible;
-  clip: auto;
-  white-space: normal;
+  left: auto;
+  right: auto;
+  width: 100%;
+  padding: 0 20px 0 0;
+  transform: translateY(-6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-landing .featured-header time {
+  display: block;
+  padding-right: 0;
+  transform: translateX(-20px);
+  width: 382px;
+  margin: 0;
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  background: transparent;
+}
+
+.page-landing .featured-body {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  z-index: 5;
+  transform: translateY(-30px);
+  inset: auto;
+  width: 100%;
+  height: 80px;
+  min-width: 0;
+  min-height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.page-landing .featured-content {
+  position: static;
+  left: auto;
+  right: auto;
+  top: auto;
+  width: calc(100% - 6px);
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.page-landing .featured-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: .025em;
+  color: #eadbb4;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .9);
+  text-transform: uppercase;
+}
+
+.page-landing .featured-description {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.page-landing .audio-player {
+  grid-column: 2;
+  grid-row: 3;
+  position: static;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  width: calc(100% - 12px);
+  height: 46px;
+  min-width: 0;
+  margin: 0 auto 0 0;
+  transform: translateY(-10px);
+  border: 0;
+  background: transparent;
+}
+
+/* mysterious-traveler featured panel: translucent red overlay (60% opacity). */
+.page-landing .featured-episode {
+  background: transparent
+}
+
+/* Anniversary numeral: translucent red background, mysterious-traveler only. */
+.page-landing .featured-header .anniversary {
+  background: transparent
+}
+
+/* Keep featured artwork hidden; debugging outlines removed. */
+.page-landing .featured-art {
+  display: none !important
 }
