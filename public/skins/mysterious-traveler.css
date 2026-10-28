@@ -6,6 +6,17 @@
   --show-page-image: url('/art/mystery/mysterious-traveler/page.png');
 }
 
+/* Explicit page-mode image; this must win over the generic shell wallpaper. */
+.site-shell.generic-site-shell[data-artwork-mode="page"] {
+  background-image: url('/art/mystery/mysterious-traveler/page.png');
+  background-position: 0 72px;
+  background-size: 1674px auto;
+  background-repeat: no-repeat;
+}
+.site-shell.generic-site-shell[data-artwork-mode="page"] > .page.page-landing {
+  background: transparent;
+}
+
 /* Show chrome and page surface */
 .page {
   background: transparent;
