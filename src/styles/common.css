@@ -124,7 +124,7 @@ html,body,#root{height:100%;overflow:hidden}
   position: absolute;
   display: grid;
   z-index: 8;
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* Shared two-column layout is defined once in .featured-episode above. */
