@@ -6,8 +6,8 @@
   left: 63px;
   top: 568px;
   width: 658px;
-  height: 266px;
-  min-height: 0;
+  height: auto;
+  min-height: 266px;
   z-index: 6;
   display: grid;
   grid-template-columns: 298px minmax(0, 1fr);
@@ -167,8 +167,7 @@ html,body,#root{height:100%;overflow:hidden}
   flex: 1 1 auto;
   min-width: 0;
   flex-direction: column;
-  position: relative;
-  top: 16px;
+  padding-top: 0;
 }
 .page .featured-header h3,
 .page .featured-header time {
@@ -216,7 +215,7 @@ html,body,#root{height:100%;overflow:hidden}
 .page .featured-episode > .audio-player {
   grid-column: 2;
   grid-row: 3;
-  margin: 0;
+  margin: 0 0 24px;
   display: flex;
   align-items: center;
   gap: 8px;
