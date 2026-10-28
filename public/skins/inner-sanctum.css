@@ -94,78 +94,8 @@
 .featured-episode > .featured-art {
   background-image: url('/art/mystery/inner-sanctum/f.art.png') !important;
 }
-.featured-header {
-  margin-top: 6px;
-  left: 254px;
-  right: 13px;
-  top: 0;
-}
-.featured-header > .anniversary {
-  margin-right: 10px;
-  font: bold 53px / .65 Georgia, 'Times New Roman', serif;
-}
-.featured-header > div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 5px;
-  transform: translateX(-10px);
-}
-.featured-header h3 {
-  margin: 0;
-  white-space: nowrap;
-  font: 700 26px/1.08 'Libre Bodoni', Georgia, serif;
-  letter-spacing: -0.5px;
-  color: #231207;
-}
-.featured-header h3 > span {
-  display: inline-block;
-  white-space: nowrap;
-  transform: scaleX(0.8);
-  transform-origin: left center;
-}
-.featured-header h3::before { content: none; }
-.page .featured-header time {
-  display: block;
-  position: relative;
-  left: -1px;
-  margin-top: 30px;
-  font: 19px/1.2 Georgia, 'Times New Roman', serif;
-  color: #241407;
-}
-.featured-content {
-  position: absolute;
-  left: 244px;
-  right: 20px;
-  top: 66px;
-  max-height: 114px;
-  overflow: hidden;
-}
-.featured-title {
-  font: 700 23px/1.1 Georgia, serif;
-  color: #a31216;
-  margin: 0 0 5px;
-}
-.featured-description {
-  font: 14px/1.25 Georgia, serif;
-  margin: 0;
-}
 
 /* Shared AudioPlayer, with Inner Sanctum's vintage controls. */
-.audio-player {
-  position: absolute;
-  bottom: 19px;
-  left: 243px;
-  right: 20px;
-  margin: 0;
-  padding: 4px;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  background: #e9cda9ed;
-  border: 1px solid #955f3c;
-  border-radius: 4px;
-}
 .audio-player button {
   flex: 0 0 34px;
   width: 34px;
