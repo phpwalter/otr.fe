@@ -195,7 +195,8 @@ html,body,#root{height:100%;overflow:hidden}
 }
 .page .featured-header h3::before { content: none !important; }
 .page .featured-episode > .featured-body {
-  display: block !important;
+  display: flex !important;
+  flex-direction: column !important;
   position: static !important;
   grid-column: 2 !important;
   grid-row: 2 !important;
@@ -209,7 +210,11 @@ html,body,#root{height:100%;overflow:hidden}
   background: transparent !important;
 }
 .page .featured-body > .featured-content {
-  display: block !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  height: 100% !important;
   position: static !important;
   width: auto !important;
   max-height: none !important;
@@ -219,12 +224,20 @@ html,body,#root{height:100%;overflow:hidden}
   transform: none !important;
   text-align: left !important;
 }
+.page .featured-content > .featured-title {
+  margin: 0 !important;
+  padding-bottom: 5px !important;
+}
+.page .featured-content > .featured-description {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  width: 100% !important;
+}
 .page .featured-content > .featured-title,
 .page .featured-content > .featured-description {
   display: block !important;
   position: static !important;
   margin: 0 !important;
-  padding: 0 !important;
   font: inherit !important;
   color: inherit !important;
   line-height: normal !important;
