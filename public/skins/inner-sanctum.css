@@ -114,7 +114,8 @@
 .featured-header h3 {
   margin: 0;
   white-space: nowrap;
-  font: 700 23px/1.08 Georgia, 'Times New Roman', serif;
+  font: 700 26px/1.08 'Libre Bodoni', Georgia, serif;
+  letter-spacing: -0.5px;
   color: #231207;
 }
 .featured-header h3::before { content: none; }
