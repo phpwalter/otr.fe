@@ -210,7 +210,7 @@ html,body,#root{height:100%;overflow:hidden}
 }
 .page .featured-content > .featured-title {
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
 }
 .page .featured-content > .featured-description {
   flex: 1 1 auto;
@@ -226,6 +226,8 @@ html,body,#root{height:100%;overflow:hidden}
   gap: 8px;
   min-width: 0;
   padding-right: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 .page .audio-player button {
   flex: 0 0 34px !important;
@@ -233,7 +235,7 @@ html,body,#root{height:100%;overflow:hidden}
   min-width: 34px !important;
   height: 34px !important;
   border-radius: 0 !important;
-  border: 0 !important;
+  border: 1px solid black !important;
   padding: 0 !important;
   background: transparent !important;
   color: inherit !important;
@@ -257,10 +259,4 @@ html,body,#root{height:100%;overflow:hidden}
   color: inherit !important;
   white-space: nowrap !important;
 }
-/* Debug borders only on the three right-column rows. */
-.page .featured-episode > .featured-header,
-.page .featured-episode > .featured-body,
-.page .featured-episode > .audio-player {
-  outline: 1px solid red;
-  outline-offset: 0;
-}
+
