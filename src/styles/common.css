@@ -163,7 +163,7 @@ html,body,#root{height:100%;overflow:hidden}
   text-align: left !important;
   align-self: flex-start !important;
   position: relative !important;
-  top: 0 !important;
+  top: -5px !important;
   transform: none !important;
 }
 .page .featured-header > div {
@@ -184,7 +184,7 @@ html,body,#root{height:100%;overflow:hidden}
 .page .featured-header time {
   display: block !important;
   position: static !important;
-  width: auto !important;
+  width: 100% !important;
   height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
