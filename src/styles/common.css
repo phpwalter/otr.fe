@@ -205,9 +205,13 @@ html,body,#root{height:100%;overflow:hidden}
   min-height: 0;
   height: 100%;
 }
+.page .featured-content > .featured-title {
+  margin: 0;
+}
 .page .featured-content > .featured-description {
   flex: 1 1 auto;
   min-height: 0;
+  margin: 0;
 }
 .page .featured-episode > .audio-player {
   grid-column: 2;
