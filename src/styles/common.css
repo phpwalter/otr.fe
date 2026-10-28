@@ -159,6 +159,7 @@ html,body,#root{height:100%;overflow:hidden}
 }
 .page .featured-header > .anniversary {
   flex: none;
+  font: bold 53px / .97 Georgia, 'Times New Roman', serif;
 }
 .page .featured-header > div {
   display: flex;
@@ -170,6 +171,17 @@ html,body,#root{height:100%;overflow:hidden}
 .page .featured-header time {
   display: block;
   margin: 0;
+}
+.page .featured-header h3 {
+  width: 100%;
+  min-width: 0;
+  font: 700 26px/1.08 'Libre Bodoni', Georgia, serif;
+}
+.page .featured-header h3 > span {
+  display: inline-block;
+  white-space: nowrap;
+  transform: scaleX(0.8);
+  transform-origin: left top;
 }
 .page .featured-episode > .featured-body {
   grid-column: 2;
