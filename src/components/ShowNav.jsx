@@ -12,7 +12,7 @@ const innerSanctumItems = [
 
 const travelerItems = [
   ['Episodes','episodes'],['History','history'],['Gallery','gallery'],
-  ['About','about'],['Contact','contact']
+  ['About','about']
 ];
 
 /** Shared show navigation region; individual skins control its appearance. */
