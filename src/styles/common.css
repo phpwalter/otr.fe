@@ -126,6 +126,12 @@ html,body,#root{height:100%;overflow:hidden}
   z-index: 8;
   overflow: hidden;
 }
+.show-nav__card {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  outline: 0;
+}
 
 /* Shared two-column layout is defined once in .featured-episode above. */
 .page .featured-episode > .featured-art {
