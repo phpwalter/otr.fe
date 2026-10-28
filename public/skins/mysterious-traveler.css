@@ -139,9 +139,6 @@
 }
 
 .featured-art {
-  grid-column: 1;
-  grid-row: 1 / 4;
-  position: static;
   left: auto;
   top: auto;
   width: 370px;
@@ -150,13 +147,11 @@
   min-height: 0;
   margin: 0;
   flex: none;
-  border: 0;
-  background-color: transparent;
-  background-image: url('/art/mystery/mysterious-traveler/hero.png');
+  border: 2px solid green;
+  background-image: url('/art/mystery/mysterious-traveler/feature.panel.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  display: none !important;
 }
 
 .featured-content {
@@ -254,28 +249,6 @@
   border: 2px solid red;
 }
 
-
-
-.page-landing .featured-header {
-  grid-column: 2;
-  grid-row: 1;
-  position: static;
-  left: auto;
-  right: auto;
-  top: auto;
-  width: 100%;
-  height: 90px;
-  min-width: 0;
-  transform: translateY(-9px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-}
-
 .page-landing .featured-header .anniversary {
   display: block;
   flex: none;
@@ -312,21 +285,6 @@
   background: transparent;
 }
 
-.page-landing .featured-body {
-  grid-column: 2;
-  grid-row: 2;
-  position: relative;
-  z-index: 5;
-  transform: translateY(-30px);
-  inset: auto;
-  width: 100%;
-  height: 80px;
-  min-width: 0;
-  min-height: 0;
-  display: block;
-  overflow: hidden;
-}
-
 .page-landing .featured-content {
   position: static;
   left: auto;
@@ -355,22 +313,6 @@
   -webkit-line-clamp: 4;
   line-clamp: 4;
   overflow: hidden;
-}
-
-.page-landing .audio-player {
-  grid-column: 2;
-  grid-row: 3;
-  position: static;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  width: calc(100% - 12px);
-  height: 46px;
-  min-width: 0;
-  margin: 0 auto 0 0;
-  transform: translateY(-10px);
-  border: 0;
-  background: transparent;
 }
 
 /* Anniversary numeral: translucent red background, mysterious-traveler only. */
