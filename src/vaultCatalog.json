@@ -221,9 +221,7 @@
           "artwork": {
             "mode": "page"
           },
-          "featuredDisplay": {
-            "headingDetails": false
-          }
+          "featuredDisplay": {}
         },
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
@@ -239,7 +237,6 @@
           "anniversaryYears": 80,
           "featuredDisplay": {
             "anniversaryText": "80 YEARS AGO TONIGHT",
-            "headingDetails": false,
             "separateArtwork": true,
             "hideBroadcastLabel": true,
             "titleAsH2": true,
