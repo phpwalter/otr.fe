@@ -118,6 +118,12 @@
   letter-spacing: -0.5px;
   color: #231207;
 }
+.featured-header h3 > span {
+  display: inline-block;
+  white-space: nowrap;
+  transform: scaleX(0.8);
+  transform-origin: left center;
+}
 .featured-header h3::before { content: none; }
 .featured-header time {
   display: block;
