@@ -37,7 +37,7 @@
 .show-nav {
   top: 300px;
   left: 1280px;
-  width: 385px;
+  width: 285px;
   height: 506px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 96px);
@@ -46,13 +46,9 @@
 
 .show-nav__card {
   display: block;
-  width: 385px;
-  height: 96px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  outline: 0;
-  transition: filter 150ms ease
+  width: 100%;
+  height: 100%;
+  transition: filter 150ms ease;
 }
 
 .show-nav__card--episodes {
