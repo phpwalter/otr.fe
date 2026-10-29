@@ -142,7 +142,6 @@ html,body,#root{height:100%;overflow:hidden}
   align-self: stretch !important;
   justify-self: stretch !important;
   box-sizing: border-box !important;
-  margin: 24px !important;
   background-color: transparent !important;
 }
 
