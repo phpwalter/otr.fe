@@ -37,7 +37,8 @@
 }
  .featured-header time{
 }
- .featured-body{
+.featured-body {
+  margin-left: 14px;
 }
 .featured-art {
   background-image: url('/art/mystery/whistler/f.art.png');
@@ -73,8 +74,6 @@
  .page-landing .featured-header>div{
 }
  .page-landing .featured-header time{
-}
- .page-landing .featured-body{
 }
  .page-landing .featured-content{
 }
