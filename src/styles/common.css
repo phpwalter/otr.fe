@@ -166,11 +166,11 @@ html,body,#root{height:100%;overflow:hidden}
   justify-content: flex-start;
   min-width: 0;
 }
-.page .featured-header > .anniversary {
+.featured-header > .anniversary {
   flex: none;
-  font: bold 60px / .97 Georgia, 'Times New Roman', serif;
-  position: relative;
-  top: -14px;
+  font: bold 26px / 1.08 Georgia, 'Times New Roman', serif;
+  position: static;
+  top: auto;
 }
 .page .featured-header > div {
   display: flex;
@@ -276,7 +276,9 @@ html,body,#root{height:100%;overflow:hidden}
   gap: 8px;
 }
 .page .anniversary-layout--dropcap > .anniversary {
+  position: relative;
   font-size: 60px;
+  line-height: .97;
   top: -14px;
 }
 .page .anniversary-layout--dropcap > div {
@@ -295,12 +297,7 @@ html,body,#root{height:100%;overflow:hidden}
   align-items: baseline;
   gap: 0 8px;
 }
-.page .anniversary-layout--centered > .anniversary {
-  position: static;
-  top: auto;
-  font-size: 26px;
-  line-height: 1.08;
-}
+
 .page .anniversary-layout--centered > div {
   flex: 0 1 auto;
   display: contents;
