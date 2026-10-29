@@ -92,11 +92,7 @@
   white-space: nowrap
 }
 
-.featured-header {
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-}
+
 
 .anniversary {
   color: #edc78a;
@@ -146,17 +142,15 @@
 
 
 .audio-player {
-  position: absolute;
-  left: 480px;
-  right: 30px;
-  bottom: 17px;
-  height: 43px;
+  position: static;
+  height: auto;
+  min-height: 0;
   display: flex;
   align-items: center;
   gap: 12px;
   margin: 0;
   padding: 0;
-  background: transparent
+  background: transparent;
 }
 
 .audio-player button {
@@ -218,9 +212,9 @@
   width: 860px;
   background-image: url('/art/mystery/mysterious-traveler/feature.panel.png');
   grid-template-columns: 316px minmax(0, 1fr);
-  grid-template-rows: 90px minmax(0, 1fr) 42px;
+  grid-template-rows: auto minmax(0, 1fr) auto;
   column-gap: 20px;
-  row-gap: 0;
+  row-gap: 8px;
   margin: 0;
   padding: 35px 30px 27px 30px;
 
@@ -244,4 +238,10 @@
 
 .featured-body {
   color: white;
+}
+
+/* Traveler heading uses the shared centered layout with 32px text. */
+.page .featured-header.anniversary-layout--centered > .anniversary,
+.page .featured-header.anniversary-layout--centered h3 {
+  font-size: 32px;
 }
