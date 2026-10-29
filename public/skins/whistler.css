@@ -21,6 +21,14 @@
  .show-nav__card:is(:hover,:focus-visible){filter:brightness(1.17) drop-shadow(0 0 8px #ffcf72)}
  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
  .page-landing .featured-episode {
+  border: 2px solid red;
+  left: 41px;
+  top: 630px;
+  width: 866px;
+  height: 9px;
+  color: #F4E4B3;
+  grid-template-columns: 304px minmax(0, 1fr);
+  padding: 20px;
 }
  .featured-header{
 }
@@ -34,7 +42,8 @@
 }
  .featured-body{
 }
- .featured-art{
+.featured-art {
+  background-image: url('/art/mystery/whistler/f.art.png');
 }
  .featured-content{
 }
@@ -62,9 +71,6 @@
 
 /* Whistler featured panel adapted from the Mysterious Traveler's final two-column
    FeaturedEpisode layout. Shared React audio player and Whistler copy are retained. */
- 
- .page-landing .featured-art{
-}
  .page-landing .featured-header{
 }
  .page-landing .featured-header .anniversary{
@@ -92,5 +98,3 @@
 }
 
 /* Keep featured artwork hidden; debugging outlines removed. */
- .page-landing .featured-art{
-}
