@@ -89,7 +89,9 @@
 }
 
 /* Featured Episode: shared outer panel geometry remains in common.css. */
-.featured-episode { }
+.featured-episode {
+  grid-template-columns: 256px minmax(0, 1fr);
+}
 
 .featured-episode > .featured-art {
   background-image: url('/art/mystery/inner-sanctum/f.art.png') !important;
@@ -121,3 +123,4 @@
   color: #21140b;
   white-space: nowrap;
 }
+
