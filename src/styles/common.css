@@ -12,9 +12,9 @@
   display: grid;
   grid-template-columns: 298px minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr) auto;
-  column-gap: 0;
+  column-gap: 20px;
   row-gap: 8px;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   border: 0;
   border-radius: 0;
