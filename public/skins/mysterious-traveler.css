@@ -239,13 +239,15 @@
 /* mysterious-traveler featured panel adapted from the Mysterious Traveler's final two-column
    FeaturedEpisode layout. Shared React audio player and mysterious-traveler copy are retained. */
 .featured-episode {
-  color: #edca8a;
+  top: 508px;
+  height: 320px;
+  width: 860px;
+  background-image: url('/art/mystery/mysterious-traveler/feature.panel.png');
   grid-template-columns:370px minmax(0, 1fr);
   grid-template-rows:90px minmax(0, 1fr) 42px;
   column-gap: 20px;
   row-gap: 0;
   margin: 0;
-  padding: 10px;
   border: 2px solid red;
 }
 
