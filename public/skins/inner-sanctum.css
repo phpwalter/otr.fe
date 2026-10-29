@@ -121,3 +121,22 @@
   color: #21140b;
   white-space: nowrap;
 }
+
+/* Drop-cap anniversary: number at left; heading and date share a left edge. */
+.page .featured-episode > .featured-header {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.page .featured-header > .anniversary {
+  font-size: 60px;
+  top: -14px;
+}
+.page .featured-header > div {
+  align-items: flex-start;
+  text-align: left;
+}
+.page .featured-header h3,
+.page .featured-header time {
+  text-align: left;
+}
