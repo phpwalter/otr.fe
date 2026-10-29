@@ -7,7 +7,6 @@
   top: 568px;
   width: 658px;
   height: auto;
-  min-height: 266px;
   z-index: 6;
   display: grid;
   grid-template-columns: 298px minmax(0, 1fr);
