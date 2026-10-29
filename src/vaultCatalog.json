@@ -275,7 +275,7 @@
           "tagline": "MYSTERY RADIO ARCHIVE",
           "anniversaryYears": 75,
           "featuredDisplay": {
-            "anniversaryLayout": "dropcap",
+            "anniversaryLayout": "centered",
             "headingDetails": false,
             "separateArtwork": true,
             "hideBroadcastLabel": true,
