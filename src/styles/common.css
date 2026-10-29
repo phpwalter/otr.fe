@@ -265,3 +265,54 @@ html,body,#root{height:100%;overflow:hidden}
   white-space: nowrap !important;
 }
 
+
+/* Anniversary layouts: same HTML, selected by featuredDisplay.anniversaryLayout. */
+.page .featured-episode > .featured-header.anniversary-layout--dropcap {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.page .anniversary-layout--dropcap > .anniversary {
+  font-size: 60px;
+  top: -14px;
+}
+.page .anniversary-layout--dropcap > div {
+  align-items: flex-start;
+  text-align: left;
+}
+.page .anniversary-layout--dropcap h3,
+.page .anniversary-layout--dropcap time {
+  text-align: left;
+}
+.page .featured-episode > .featured-header.anniversary-layout--centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: baseline;
+  gap: 0 8px;
+  padding-top: 16px;
+}
+.page .anniversary-layout--centered > .anniversary {
+  position: static;
+  top: auto;
+  font-size: 26px;
+  line-height: 1.08;
+}
+.page .anniversary-layout--centered > div {
+  flex: 0 1 auto;
+  display: contents;
+}
+.page .anniversary-layout--centered h3 {
+  width: auto;
+  min-width: 0;
+  line-height: 1.08;
+}
+.page .anniversary-layout--centered h3 > span { transform: none; }
+.page .anniversary-layout--centered time {
+  flex: 0 0 100%;
+  width: 100%;
+  margin-top: 4px;
+  font-size: 22px;
+  text-align: center;
+}
