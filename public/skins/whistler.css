@@ -32,8 +32,6 @@
 }
  .featured-header{
 }
- .anniversary{
-}
  .featured-header>div{
 }
  .featured-header h2{
@@ -73,8 +71,6 @@
    FeaturedEpisode layout. Shared React audio player and Whistler copy are retained. */
  .page-landing .featured-header{
 }
- .page-landing .featured-header .anniversary{
-}
  .page-landing .featured-header>div{
 }
  .page-landing .featured-header time{
@@ -93,8 +89,16 @@
 
  
 
-/* Anniversary numeral: translucent red background, Whistler only. */
- .page-landing .featured-header .anniversary{
-}
+
 
 /* Keep featured artwork hidden; debugging outlines removed. */
+
+/* Whistler anniversary: consolidated presentation. */
+.featured-header .anniversary {
+  flex: none;
+  font: bold 60px / .97 Georgia, 'Times New Roman', serif;
+  position: static;
+  top: auto;
+  font-size: 26px;
+  line-height: 1.08;
+}
