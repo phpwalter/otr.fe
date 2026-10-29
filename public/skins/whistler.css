@@ -93,12 +93,3 @@
 
 /* Keep featured artwork hidden; debugging outlines removed. */
 
-/* Whistler anniversary: consolidated presentation. */
-.featured-header .anniversary {
-  flex: none;
-  font: bold 60px / .97 Georgia, 'Times New Roman', serif;
-  position: static;
-  top: auto;
-  font-size: 26px;
-  line-height: 1.08;
-}
