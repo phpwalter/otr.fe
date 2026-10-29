@@ -93,11 +93,6 @@
 }
 
 .featured-header {
-  position: absolute;
-  left: 480px;
-  right: 27px;
-  top: 15px;
-  height: 67px;
   display: flex;
   justify-content: center;
   align-items: center;
