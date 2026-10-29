@@ -236,10 +236,6 @@
           "tagline": "JOURNEYS INTO THE STRANGE AND TERRIFYING",
           "anniversaryYears": 80,
           "featuredDisplay": {
-            "anniversaryText": "80 YEARS AGO TONIGHT",
-            "separateArtwork": true,
-            "hideBroadcastLabel": true,
-            "titleAsH2": true,
             "title": "The Haunted Lighthouse",
             "description": "A remote lighthouse. A keeper who vanished without a trace. And alight that still shines on stormy nights..."
           },
