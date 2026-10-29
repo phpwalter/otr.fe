@@ -94,5 +94,5 @@
 
 /* Align the numeral's visible top with the centered h3 text in Whistler. */
 .page .featured-header.anniversary-layout--centered > .anniversary {
-  transform: translateY(-12px);
+  transform: translateY(-5px);
 }
