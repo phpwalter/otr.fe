@@ -13,7 +13,7 @@
   grid-template-columns: 298px minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr) auto;
   column-gap: 0;
-  row-gap: 0;
+  row-gap: 8px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -224,7 +224,8 @@ html,body,#root{height:100%;overflow:hidden}
 .page .featured-episode > .audio-player {
   grid-column: 2;
   grid-row: 3;
-  margin: 0 10px 24px 0;
+  margin: 0;
+  align-self: end;
   display: flex;
   align-items: center;
   gap: 8px;
