@@ -232,17 +232,6 @@
   padding: 35px 30px 27px 30px;
 }
 
-.page-landing .featured-header .anniversary {
-  display: block;
-  flex: none;
-  font-family: 'Times New Roman', Georgia, serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: red;
-  line-height: 1;
-  transform: translate(26px, -3px);
-  width: calc(2ch - 6px);
-}
 
 .page-landing .featured-header > div {
   position: static;
@@ -275,8 +264,5 @@
 
 
 /* Anniversary numeral: translucent red background, mysterious-traveler only. */
-.page-landing .featured-header .anniversary {
-  background: transparent
-}
 
 
