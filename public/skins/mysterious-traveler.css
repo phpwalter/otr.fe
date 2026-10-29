@@ -208,7 +208,7 @@
    FeaturedEpisode layout. Shared React audio player and mysterious-traveler copy are retained. */
 .featured-episode {
   top: 508px;
-  height: 319px;
+  height: 313px;
   width: 860px;
   background-image: url('/art/mystery/mysterious-traveler/feature.panel.png');
   grid-template-columns: 316px minmax(0, 1fr);
