@@ -162,7 +162,6 @@ html,body,#root{height:100%;overflow:hidden}
   align-items: flex-start;
   justify-content: flex-start;
   min-width: 0;
-  padding-top: 16px;
 }
 .page .featured-header > .anniversary {
   flex: none;
@@ -291,7 +290,6 @@ html,body,#root{height:100%;overflow:hidden}
   align-content: flex-start;
   align-items: baseline;
   gap: 0 8px;
-  padding-top: 16px;
 }
 .page .anniversary-layout--centered > .anniversary {
   position: static;
