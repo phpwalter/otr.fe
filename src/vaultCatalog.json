@@ -221,7 +221,9 @@
           "artwork": {
             "mode": "page"
           },
-          "featuredDisplay": {}
+          "featuredDisplay": {
+            "anniversaryLayout": "dropcap"
+          }
         },
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
@@ -236,6 +238,7 @@
           "tagline": "JOURNEYS INTO THE STRANGE AND TERRIFYING",
           "anniversaryYears": 80,
           "featuredDisplay": {
+            "anniversaryLayout": "centered",
             "title": "The Haunted Lighthouse",
             "description": "A remote lighthouse. A keeper who vanished without a trace. And alight that still shines on stormy nights..."
           },
@@ -272,6 +275,7 @@
           "tagline": "MYSTERY RADIO ARCHIVE",
           "anniversaryYears": 75,
           "featuredDisplay": {
+            "anniversaryLayout": "dropcap",
             "headingDetails": false,
             "separateArtwork": true,
             "hideBroadcastLabel": true,
