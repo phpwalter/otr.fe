@@ -332,3 +332,7 @@ html,body,#root{height:100%;overflow:hidden}
   position: relative;
   left: calc(-1 * var(--heading-scale-inset, 0px));
 }
+
+/* Every landing page renders both regions; catalog flags control visibility. */
+.page-landing[data-show-nav="false"] > nav.show-nav { display: none !important; }
+.page-landing[data-show-card-grid="false"] > section.cards.show-card-grid { display: none !important; }
