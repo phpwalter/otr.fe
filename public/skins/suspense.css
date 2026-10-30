@@ -10,15 +10,15 @@
 .skin-suspense .hero-art,.skin-suspense .hero-copy{display:none}
 .skin-suspense .cards,.skin-suspense .featured-episode{position:absolute;z-index:3;top:728px;height:300px;background:#efddbd;color:#221814;border:0;box-shadow:0 2px 6px #0504039c}
 .skin-suspense .cards{left:32px;width:1385px;display:grid;grid-template-columns:repeat(2,329px);gap:0;padding:16px 10px;background:transparent url('/art/mystery/suspense/cards-panel.png') center/100% 100% no-repeat;box-shadow:none;border-radius:0}
-.skin-suspense .archive-card{border:0;border-right:1px solid #cbb59b;padding:0 9px;min-height:0;color:#251914;text-align:center;background:transparent;display:block}
-.skin-suspense .archive-card:nth-child(2){border-right:0}
-.skin-suspense .archive-card:nth-child(n+3){display:none}
-.skin-suspense .archive-card .card-image{height:155px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:none}
+.skin-suspense .show-card-grid__card{border:0;border-right:1px solid #cbb59b;padding:0 9px;min-height:0;color:#251914;text-align:center;background:transparent;display:block}
+.skin-suspense .show-card-grid__card:nth-child(2){border-right:0}
+.skin-suspense .show-card-grid__card:nth-child(n+3){display:none}
+.skin-suspense .show-card-grid__card .card-image{height:155px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:none}
 .skin-suspense .card-0 .card-image{background-image:url('/art/mystery/suspense/card-episodes.png')}
 .skin-suspense .card-1 .card-image{background-image:url('/art/mystery/suspense/card-cast.png')}
-.skin-suspense .archive-card h2{color:#961a16;font:bold 25px/1.1 Georgia,serif;text-transform:uppercase;margin:8px 0}
-.skin-suspense .archive-card p{font:18px/1.28 Georgia,serif;margin:0 10px}
-.skin-suspense .archive-card span{display:block;font-size:0;width:74px;border-bottom:2px solid #ad3225;margin:20px auto 0}
+.skin-suspense .show-card-grid__card h2{color:#961a16;font:bold 25px/1.1 Georgia,serif;text-transform:uppercase;margin:8px 0}
+.skin-suspense .show-card-grid__card p{font:18px/1.28 Georgia,serif;margin:0 10px}
+.skin-suspense .show-card-grid__card span{display:block;font-size:0;width:74px;border-bottom:2px solid #ad3225;margin:20px auto 0}
 .skin-suspense .cards>.featured-episode{position:absolute;top:0;right:0;width:707px;height:300px;z-index:1;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none}
 .skin-suspense .featured-art{position:absolute;left:0;top:0;width:320px;height:300px;margin:0;background:url('/art/mystery/suspense/card-feature.png') left center/auto 300px no-repeat}
 .skin-suspense .featured-body{display:contents}
@@ -55,13 +55,13 @@
   box-shadow:none;
   border-radius:0;
 }
-.skin-suspense .cards>.archive-card{min-width:0;min-height:0;height:100%;padding:0 10px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;background:transparent;border:0;border-right:1px solid #cfb99e;text-align:center}
-.skin-suspense .cards>.archive-card:nth-child(2){border-right:0}
-.skin-suspense .cards>.archive-card:nth-child(n+3){display:none}
-.skin-suspense .archive-card .card-image{height:125px;width:100%;flex:0 0 125px;background-size:contain;background-position:center;background-repeat:no-repeat}
-.skin-suspense .archive-card h2{margin:8px 0 7px;color:#9b1a17;font:700 26px/1.05 Georgia,'Times New Roman',serif}
-.skin-suspense .archive-card p{font:17px/1.25 Georgia,'Times New Roman',serif;margin:0 14px;max-width:290px}
-.skin-suspense .archive-card span{margin:18px auto 0}
+.skin-suspense .cards>.show-card-grid__card{min-width:0;min-height:0;height:100%;padding:0 10px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;background:transparent;border:0;border-right:1px solid #cfb99e;text-align:center}
+.skin-suspense .cards>.show-card-grid__card:nth-child(2){border-right:0}
+.skin-suspense .cards>.show-card-grid__card:nth-child(n+3){display:none}
+.skin-suspense .show-card-grid__card .card-image{height:125px;width:100%;flex:0 0 125px;background-size:contain;background-position:center;background-repeat:no-repeat}
+.skin-suspense .show-card-grid__card h2{margin:8px 0 7px;color:#9b1a17;font:700 26px/1.05 Georgia,'Times New Roman',serif}
+.skin-suspense .show-card-grid__card p{font:17px/1.25 Georgia,'Times New Roman',serif;margin:0 14px;max-width:290px}
+.skin-suspense .show-card-grid__card span{margin:18px auto 0}
 .skin-suspense .cards>.featured-episode{position:relative;grid-column:3;grid-row:1;top:auto;right:auto;left:auto;width:auto;height:100%;min-height:0;z-index:auto;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent}
 .skin-suspense .featured-art{position:absolute;left:0;top:0;height:100%;width:46%;margin:0;background:url('/art/mystery/suspense/card-feature.png') left center / auto 100% no-repeat;pointer-events:none}
 .skin-suspense .featured-header{left:45%;right:6px;top:13px}
