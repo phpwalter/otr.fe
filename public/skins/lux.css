@@ -8,10 +8,10 @@
 .skin-lux .featured{min-height:530px}
 .skin-lux .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-lux .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-lux .archive-card{min-height:172px}
+.skin-lux .show-card-grid__card{min-height:172px}
 .skin-lux .card-image{height:40px;background:none}
-.skin-lux .archive-card h2{font-size:18px}
-.skin-lux .archive-card p{font-size:12px}
+.skin-lux .show-card-grid__card h2{font-size:18px}
+.skin-lux .show-card-grid__card p{font-size:12px}
 .skin-lux .about{padding:8px}
 .skin-lux .footer{padding:6px}
 /* Category: Drama; no artwork is required until a final skin is designed. */
