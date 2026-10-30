@@ -17,9 +17,9 @@
 .player button{border-color:#ff482d;color:#ff482d}
 .player input{accent-color:#ff482d}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
-.archive-card{background:#131b21;color:#fff0ca;border:1px solid #ff482d}
-.archive-card .card-image{background-image:url('/art/journey-into-space-hero.webp')}
-.archive-card h2{color:#ff482d}
+.show-card-grid__card{background:#131b21;color:#fff0ca;border:1px solid #ff482d}
+.show-card-grid__card .card-image{background-image:url('/art/journey-into-space-hero.webp')}
+.show-card-grid__card h2{color:#ff482d}
 .about{border-top:1px solid #ff482d}
 .footer{color:#fff0ca;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
