@@ -17,9 +17,9 @@
 .player button{border-color:#7b1920;color:#7b1920}
 .player input{accent-color:#7b1920}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
-.archive-card{background:#efe0bf;color:#17242a;border:1px solid #7b1920}
-.archive-card .card-image{background-image:url('/art/2000-plus-hero.webp')}
-.archive-card h2{color:#7b1920}
+.show-card-grid__card{background:#efe0bf;color:#17242a;border:1px solid #7b1920}
+.show-card-grid__card .card-image{background-image:url('/art/2000-plus-hero.webp')}
+.show-card-grid__card h2{color:#7b1920}
 .about{border-top:1px solid #7b1920}
 .footer{color:#25323c;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
