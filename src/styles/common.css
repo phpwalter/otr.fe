@@ -165,11 +165,11 @@ html,body,#root{height:100%;overflow:hidden}
   justify-content: flex-start;
   min-width: 0;
 }
-.featured-header > .anniversary {
+.page .featured-header > .anniversary {
   flex: none;
-  font: bold 26px / 1.08 Georgia, 'Times New Roman', serif;
-  position: static;
-  top: auto;
+  font: bold 60px / .97 Georgia, 'Times New Roman', serif;
+  position: relative;
+  top: -14px;
 }
 .page .featured-header > div {
   display: flex;
@@ -275,9 +275,7 @@ html,body,#root{height:100%;overflow:hidden}
   gap: 8px;
 }
 .page .anniversary-layout--dropcap > .anniversary {
-  position: relative;
   font-size: 60px;
-  line-height: .97;
   top: -14px;
 }
 .page .anniversary-layout--dropcap > div {
@@ -289,28 +287,48 @@ html,body,#root{height:100%;overflow:hidden}
   text-align: left;
 }
 .page .featured-episode > .featured-header.anniversary-layout--centered {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: auto auto;
   justify-content: center;
-  align-content: flex-start;
+  justify-self: stretch;
+  position: relative;
+  left: var(--heading-scale-inset, 0px);
   align-items: baseline;
-  gap: 0 8px;
+  column-gap: 8px;
+  row-gap: 4px;
+  font: 700 26px / 1.08 'Libre Bodoni', Georgia, serif;
 }
-
+.page .anniversary-layout--centered > .anniversary {
+  position: static;
+  top: auto;
+  font-size: 26px;
+  line-height: 1.08;
+}
 .page .anniversary-layout--centered > div {
-  flex: 0 1 auto;
   display: contents;
+}
+.page .anniversary-layout--centered > .anniversary {
+  grid-column: 1;
+  grid-row: 1;
 }
 .page .anniversary-layout--centered h3 {
   width: auto;
   min-width: 0;
   line-height: 1.08;
+  position: relative;
+  left: calc(-1 * var(--heading-scale-inset, 0px));
 }
-.page .anniversary-layout--centered h3 > span { transform: none; }
+.page .anniversary-layout--centered h3 > span {
+  transform-origin: center top;
+}
 .page .anniversary-layout--centered time {
-  flex: 0 0 100%;
+  grid-column: 1 / -1;
+  grid-row: 2;
   width: 100%;
-  margin-top: 4px;
+  margin-top: 0;
   font-size: 22px;
   text-align: center;
+  position: relative;
+  left: calc(-1 * var(--heading-scale-inset, 0px));
 }
