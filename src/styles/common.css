@@ -316,6 +316,8 @@ html,body,#root{height:100%;overflow:hidden}
   width: auto;
   min-width: 0;
   line-height: 1.08;
+  position: relative;
+  left: calc(-1 * var(--heading-scale-inset, 0px));
 }
 .page .anniversary-layout--centered h3 > span {
   transform: scaleX(0.8);
@@ -328,4 +330,6 @@ html,body,#root{height:100%;overflow:hidden}
   margin-top: 0;
   font-size: 22px;
   text-align: center;
+  position: relative;
+  left: calc(-1 * var(--heading-scale-inset, 0px));
 }
