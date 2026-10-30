@@ -8,10 +8,10 @@
 .skin-life-of-riley .featured{min-height:530px}
 .skin-life-of-riley .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-life-of-riley .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-life-of-riley .archive-card{min-height:172px}
+.skin-life-of-riley .show-card-grid__card{min-height:172px}
 .skin-life-of-riley .card-image{height:40px;background:none}
-.skin-life-of-riley .archive-card h2{font-size:18px}
-.skin-life-of-riley .archive-card p{font-size:12px}
+.skin-life-of-riley .show-card-grid__card h2{font-size:18px}
+.skin-life-of-riley .show-card-grid__card p{font-size:12px}
 .skin-life-of-riley .about{padding:8px}
 .skin-life-of-riley .footer{padding:6px}
 /* Category: Comedy; no artwork is required until a final skin is designed. */
