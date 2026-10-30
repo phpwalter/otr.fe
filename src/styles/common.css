@@ -289,21 +289,23 @@ html,body,#root{height:100%;overflow:hidden}
   text-align: left;
 }
 .page .featured-episode > .featured-header.anniversary-layout--centered {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: auto auto;
   justify-content: center;
-  justify-self: center;
-  width: max-content;
-  max-width: 100%;
-  align-content: flex-start;
+  justify-self: stretch;
   align-items: baseline;
-  gap: 0 8px;
+  column-gap: 8px;
+  row-gap: 4px;
   font: 700 26px / 1.08 'Libre Bodoni', Georgia, serif;
 }
 
 .page .anniversary-layout--centered > div {
-  flex: 0 1 auto;
   display: contents;
+}
+.page .anniversary-layout--centered > .anniversary {
+  grid-column: 1;
+  grid-row: 1;
 }
 .page .anniversary-layout--centered h3 {
   width: auto;
@@ -315,9 +317,10 @@ html,body,#root{height:100%;overflow:hidden}
   transform-origin: center top;
 }
 .page .anniversary-layout--centered time {
-  flex: 0 0 100%;
+  grid-column: 1 / -1;
+  grid-row: 2;
   width: 100%;
-  margin-top: 4px;
+  margin-top: 0;
   font-size: 22px;
   text-align: center;
 }
