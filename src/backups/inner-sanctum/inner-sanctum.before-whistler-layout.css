@@ -17,9 +17,9 @@
 .player button{border-color:#a92018;color:#a92018}
 .player input{accent-color:#a92018}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
-.archive-card{background:#131b21;color:#f3e2cb;border:1px solid #a92018}
-.archive-card .card-image{background-image:url('/art/inner-sanctum-hero.webp')}
-.archive-card h2{color:#a92018}
+.show-card-grid__card{background:#131b21;color:#f3e2cb;border:1px solid #a92018}
+.show-card-grid__card .card-image{background-image:url('/art/inner-sanctum-hero.webp')}
+.show-card-grid__card h2{color:#a92018}
 .about{border-top:1px solid #a92018}
 .footer{color:#f3e2cb;font-size:12px}
 @media(max-width:1400px){.page.skin-inner-sanctum{margin-left:0;margin-right:0}}
