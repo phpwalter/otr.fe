@@ -90,7 +90,7 @@
 
 /* Featured Episode: shared outer panel geometry remains in common.css. */
 .featured-episode {
-  height: 266px;
+  min-height: 266px;
   grid-template-columns: 256px minmax(0, 1fr);
 }
 
