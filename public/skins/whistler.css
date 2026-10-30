@@ -96,3 +96,7 @@
 .page .featured-header.anniversary-layout--centered > .anniversary {
   transform: translateY(-5px);
 }
+
+.page .anniversary-layout--centered h3 > span {
+  transform: scaleX(0.9);
+}
