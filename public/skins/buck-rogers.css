@@ -17,9 +17,9 @@
 .player button{border-color:#dd2b1a;color:#dd2b1a}
 .player input{accent-color:#dd2b1a}
 .cards{grid-template-columns:repeat(2,1fr);align-self:start}
-.archive-card{background:#131b21;color:#ffe6a8;border:1px solid #dd2b1a}
-.archive-card .card-image{background-image:url('/art/buck-rogers-hero.webp')}
-.archive-card h2{color:#dd2b1a}
+.show-card-grid__card{background:#131b21;color:#ffe6a8;border:1px solid #dd2b1a}
+.show-card-grid__card .card-image{background-image:url('/art/buck-rogers-hero.webp')}
+.show-card-grid__card h2{color:#dd2b1a}
 .about{border-top:1px solid #dd2b1a}
 .footer{color:#ffe6a8;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
