@@ -292,6 +292,9 @@ html,body,#root{height:100%;overflow:hidden}
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  justify-self: center;
+  width: max-content;
+  max-width: 100%;
   align-content: flex-start;
   align-items: baseline;
   gap: 0 8px;
