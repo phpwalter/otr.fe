@@ -63,24 +63,24 @@
  position:absolute;left:831px;top:777px;width:740px;height:60px;
  z-index:6;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
 }
-.skin-mysterious-traveler .show-card-grid .archive-card{
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card{
  display:flex;flex-direction:column;align-items:center;text-align:center;
  min-width:0;min-height:0;padding:10px 7px 8px;
  border:0;border-radius:0;
  background:linear-gradient(155deg,#112923,#061511 80%);color:#f4dfae;
 }
-.skin-mysterious-traveler .show-card-grid .archive-card .card-image{
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card .card-image{
  height:118px;min-height:118px;width:100%;background:linear-gradient(140deg,#254239,#0b1e19);
  overflow:hidden;
 }
-.skin-mysterious-traveler .show-card-grid .archive-card .card-image img{width:100%;height:100%;object-fit:cover}
-.skin-mysterious-traveler .show-card-grid .archive-card h2{
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card .card-image img{width:100%;height:100%;object-fit:cover}
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card h2{
  font:bold 19px Georgia,serif;margin:0 0 6px;order:-1;color:#f9e2ac;
 }
-.skin-mysterious-traveler .show-card-grid .archive-card p{font:13px/1.27 Georgia,serif;margin:8px 0 0}
-.skin-mysterious-traveler .show-card-grid .archive-card span{margin-top:auto;color:#f5c45c;font-size:12px}
-.skin-mysterious-traveler .show-card-grid .archive-card:is(:hover,:focus-visible){outline:2px solid #f5c45c;outline-offset:1px}
-.skin-mysterious-traveler .show-card-grid .archive-card.is-empty{display:none}
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card p{font:13px/1.27 Georgia,serif;margin:8px 0 0}
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card span{margin-top:auto;color:#f5c45c;font-size:12px}
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card:is(:hover,:focus-visible){outline:2px solid #f5c45c;outline-offset:1px}
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card.is-empty{display:none}
 .skin-mysterious-traveler .page-traveler-section{
  min-height:886px;padding:88px 92px;color:#e9d5aa;
  background:linear-gradient(#061d18e8,#061510f2),url('/art/mystery/mysterious-traveler/page.png') center/cover;
@@ -324,8 +324,8 @@
 }
 
 /* Traveler navigation: the arrow alone is an interactive link; no full-panel hover. */
-.skin-mysterious-traveler .show-card-grid .archive-card:is(:hover,:focus-visible){outline:none}
-.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow{
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card:is(:hover,:focus-visible){outline:none}
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card .traveler-card-arrow{
  display:flex;align-items:center;justify-content:center;
  margin:auto 0 0;
  width:28px;height:28px;min-height:28px;
@@ -334,15 +334,15 @@
  outline:none;
  transition:background-color .15s ease,box-shadow .15s ease;
 }
-.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow span{
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card .traveler-card-arrow span{
  font:bold 27px/1 Georgia,serif;color:#f5c45c;
 }
-.skin-mysterious-traveler .show-card-grid .archive-card .traveler-card-arrow:is(:hover,:focus-visible){
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card .traveler-card-arrow:is(:hover,:focus-visible){
  background:rgba(255,255,255,.12);
  box-shadow:0 0 8px 4px rgba(255,255,255,.8),0 0 16px 7px rgba(255,255,255,.35);
 }
 
 /* Traveler lower-right panels: retain existing frames and arrow placement; reveal page art. */
-.skin-mysterious-traveler .show-card-grid .archive-card{
+.skin-mysterious-traveler .show-card-grid .show-card-grid__card{
  background:transparent;
 }
