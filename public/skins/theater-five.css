@@ -8,10 +8,10 @@
 .skin-theater-five .featured{min-height:530px}
 .skin-theater-five .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-theater-five .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-theater-five .archive-card{min-height:172px}
+.skin-theater-five .show-card-grid__card{min-height:172px}
 .skin-theater-five .card-image{height:40px;background:none}
-.skin-theater-five .archive-card h2{font-size:18px}
-.skin-theater-five .archive-card p{font-size:12px}
+.skin-theater-five .show-card-grid__card h2{font-size:18px}
+.skin-theater-five .show-card-grid__card p{font-size:12px}
 .skin-theater-five .about{padding:8px}
 .skin-theater-five .footer{padding:6px}
 /* Category: Drama; no artwork is required until a final skin is designed. */
