@@ -8,10 +8,10 @@
 .skin-johnny-dollar .featured{min-height:530px}
 .skin-johnny-dollar .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-johnny-dollar .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-johnny-dollar .archive-card{min-height:172px}
+.skin-johnny-dollar .show-card-grid__card{min-height:172px}
 .skin-johnny-dollar .card-image{height:40px;background:none}
-.skin-johnny-dollar .archive-card h2{font-size:18px}
-.skin-johnny-dollar .archive-card p{font-size:12px}
+.skin-johnny-dollar .show-card-grid__card h2{font-size:18px}
+.skin-johnny-dollar .show-card-grid__card p{font-size:12px}
 .skin-johnny-dollar .about{padding:8px}
 .skin-johnny-dollar .footer{padding:6px}
 /* Category: Detective; no artwork is required until a final skin is designed. */
