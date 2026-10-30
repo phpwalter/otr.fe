@@ -8,10 +8,10 @@
 .skin-green-hornet .featured{min-height:530px}
 .skin-green-hornet .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-green-hornet .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-green-hornet .archive-card{min-height:172px}
+.skin-green-hornet .show-card-grid__card{min-height:172px}
 .skin-green-hornet .card-image{height:40px;background:none}
-.skin-green-hornet .archive-card h2{font-size:18px}
-.skin-green-hornet .archive-card p{font-size:12px}
+.skin-green-hornet .show-card-grid__card h2{font-size:18px}
+.skin-green-hornet .show-card-grid__card p{font-size:12px}
 .skin-green-hornet .about{padding:8px}
 .skin-green-hornet .footer{padding:6px}
 /* Category: Detective; no artwork is required until a final skin is designed. */
