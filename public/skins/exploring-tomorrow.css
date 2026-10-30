@@ -8,10 +8,10 @@
 .skin-exploring-tomorrow .featured{min-height:530px}
 .skin-exploring-tomorrow .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-exploring-tomorrow .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-exploring-tomorrow .archive-card{min-height:172px}
+.skin-exploring-tomorrow .show-card-grid__card{min-height:172px}
 .skin-exploring-tomorrow .card-image{height:40px;background:none}
-.skin-exploring-tomorrow .archive-card h2{font-size:18px}
-.skin-exploring-tomorrow .archive-card p{font-size:12px}
+.skin-exploring-tomorrow .show-card-grid__card h2{font-size:18px}
+.skin-exploring-tomorrow .show-card-grid__card p{font-size:12px}
 .skin-exploring-tomorrow .about{padding:8px}
 .skin-exploring-tomorrow .footer{padding:6px}
 /* Category: Science Fiction; no artwork is required until a final skin is designed. */
