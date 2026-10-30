@@ -17,9 +17,9 @@
 .player button{border-color:#f9b930;color:#f9b930}
 .player input{accent-color:#f9b930}
 .cards{grid-template-columns:repeat(2,1fr);align-self:start}
-.archive-card{background:#131b21;color:#f9e7bb;border:1px solid #f9b930}
-.archive-card .card-image{background-image:url('/art/x-minus-one-hero.webp')}
-.archive-card h2{color:#f9b930}
+.show-card-grid__card{background:#131b21;color:#f9e7bb;border:1px solid #f9b930}
+.show-card-grid__card .card-image{background-image:url('/art/x-minus-one-hero.webp')}
+.show-card-grid__card h2{color:#f9b930}
 .about{border-top:1px solid #f9b930}
 .footer{color:#f9e7bb;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
