@@ -320,7 +320,6 @@ html,body,#root{height:100%;overflow:hidden}
   left: calc(-1 * var(--heading-scale-inset, 0px));
 }
 .page .anniversary-layout--centered h3 > span {
-  transform: scaleX(0.8);
   transform-origin: center top;
 }
 .page .anniversary-layout--centered time {
