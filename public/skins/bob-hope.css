@@ -8,10 +8,10 @@
 .skin-bob-hope .featured{min-height:530px}
 .skin-bob-hope .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-bob-hope .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-bob-hope .archive-card{min-height:172px}
+.skin-bob-hope .show-card-grid__card{min-height:172px}
 .skin-bob-hope .card-image{height:40px;background:none}
-.skin-bob-hope .archive-card h2{font-size:18px}
-.skin-bob-hope .archive-card p{font-size:12px}
+.skin-bob-hope .show-card-grid__card h2{font-size:18px}
+.skin-bob-hope .show-card-grid__card p{font-size:12px}
 .skin-bob-hope .about{padding:8px}
 .skin-bob-hope .footer{padding:6px}
 /* Category: Comedy; no artwork is required until a final skin is designed. */
