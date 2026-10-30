@@ -8,10 +8,10 @@
 .skin-thin-man .featured{min-height:530px}
 .skin-thin-man .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-thin-man .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-thin-man .archive-card{min-height:172px}
+.skin-thin-man .show-card-grid__card{min-height:172px}
 .skin-thin-man .card-image{height:40px;background:none}
-.skin-thin-man .archive-card h2{font-size:18px}
-.skin-thin-man .archive-card p{font-size:12px}
+.skin-thin-man .show-card-grid__card h2{font-size:18px}
+.skin-thin-man .show-card-grid__card p{font-size:12px}
 .skin-thin-man .about{padding:8px}
 .skin-thin-man .footer{padding:6px}
 /* Category: Detective; no artwork is required until a final skin is designed. */
