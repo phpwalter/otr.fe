@@ -17,9 +17,9 @@
 .player button{border-color:#ed4a2e;color:#ed4a2e}
 .player input{accent-color:#ed4a2e}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
-.archive-card{background:#131b21;color:#f5d47a;border:1px solid #ed4a2e}
-.archive-card .card-image{background-image:url('/art/dimension-x-hero.webp')}
-.archive-card h2{color:#ed4a2e}
+.show-card-grid__card{background:#131b21;color:#f5d47a;border:1px solid #ed4a2e}
+.show-card-grid__card .card-image{background-image:url('/art/dimension-x-hero.webp')}
+.show-card-grid__card h2{color:#ed4a2e}
 .about{border-top:1px solid #ed4a2e}
 .footer{color:#f5d47a;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
