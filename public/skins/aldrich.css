@@ -8,10 +8,10 @@
 .skin-aldrich .featured{min-height:530px}
 .skin-aldrich .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-aldrich .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-aldrich .archive-card{min-height:172px}
+.skin-aldrich .show-card-grid__card{min-height:172px}
 .skin-aldrich .card-image{height:40px;background:none}
-.skin-aldrich .archive-card h2{font-size:18px}
-.skin-aldrich .archive-card p{font-size:12px}
+.skin-aldrich .show-card-grid__card h2{font-size:18px}
+.skin-aldrich .show-card-grid__card p{font-size:12px}
 .skin-aldrich .about{padding:8px}
 .skin-aldrich .footer{padding:6px}
 /* Category: Comedy; no artwork is required until a final skin is designed. */
