@@ -295,6 +295,7 @@ html,body,#root{height:100%;overflow:hidden}
   align-content: flex-start;
   align-items: baseline;
   gap: 0 8px;
+  font: 700 26px / 1.08 'Libre Bodoni', Georgia, serif;
 }
 
 .page .anniversary-layout--centered > div {
