@@ -8,10 +8,10 @@
 .skin-duffys-tavern .featured{min-height:530px}
 .skin-duffys-tavern .featured-art{background:repeating-linear-gradient(135deg,#283544,#283544 12px,#313f4d 12px,#313f4d 24px)}
 .skin-duffys-tavern .cards{grid-template-columns:repeat(5,minmax(0,1fr))}
-.skin-duffys-tavern .archive-card{min-height:172px}
+.skin-duffys-tavern .show-card-grid__card{min-height:172px}
 .skin-duffys-tavern .card-image{height:40px;background:none}
-.skin-duffys-tavern .archive-card h2{font-size:18px}
-.skin-duffys-tavern .archive-card p{font-size:12px}
+.skin-duffys-tavern .show-card-grid__card h2{font-size:18px}
+.skin-duffys-tavern .show-card-grid__card p{font-size:12px}
 .skin-duffys-tavern .about{padding:8px}
 .skin-duffys-tavern .footer{padding:6px}
 /* Category: Comedy; no artwork is required until a final skin is designed. */
