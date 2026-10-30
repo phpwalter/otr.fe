@@ -292,6 +292,8 @@ html,body,#root{height:100%;overflow:hidden}
   grid-template-rows: auto auto;
   justify-content: center;
   justify-self: stretch;
+  position: relative;
+  left: var(--heading-scale-inset, 0px);
   align-items: baseline;
   column-gap: 8px;
   row-gap: 4px;
