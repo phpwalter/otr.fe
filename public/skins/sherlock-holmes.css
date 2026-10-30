@@ -17,9 +17,9 @@
 .player button{border-color:#b68a3d;color:#b68a3d}
 .player input{accent-color:#b68a3d}
 .cards{grid-template-columns:repeat(5,1fr);align-self:start}
-.archive-card{background:#131b21;color:#e9cb95;border:1px solid #b68a3d}
-.archive-card .card-image{background-image:url('/art/sherlock-holmes-hero.webp')}
-.archive-card h2{color:#b68a3d}
+.show-card-grid__card{background:#131b21;color:#e9cb95;border:1px solid #b68a3d}
+.show-card-grid__card .card-image{background-image:url('/art/sherlock-holmes-hero.webp')}
+.show-card-grid__card h2{color:#b68a3d}
 .about{border-top:1px solid #b68a3d}
 .footer{color:#e9cb95;font-size:12px}
 @media(max-width:1400px){.site{margin-left:0;margin-right:0}}
