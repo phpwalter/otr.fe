@@ -150,3 +150,7 @@ body[data-series="shadow"] .show-nav__card--writers {
 body[data-series="shadow"] .show-nav__card--writers::after {
   content: "Writers";
 }
+
+body[data-series="shadow"] .show-nav__card--the-shadow {
+  background-image: url('/art/mystery/shadow/nav.card.shadow.png');
+}
