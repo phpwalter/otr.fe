@@ -1,5 +1,5 @@
 import React from 'react';
-const defaultCards=[['Episodes','Explore the complete collection of broadcasts'],['Cast','Discover the performers'],['Writers','Meet the authors'],['History',"The show's history"],['Gallery','Historic artwork']];
+export const defaultCards=[['Episodes','Explore the complete collection of broadcasts'],['Cast','Discover the performers'],['Writers','Meet the authors'],['History',"The show's history"],['Gallery','Historic artwork']];
 const shadowCards=[{label:'Episodes',desc:'Mystery. Intrigue. Justice.',image:'/art/mystery/shadow/cards.episodes.png'},{label:'The Shadow',desc:'Heroes, villains, and more.',image:'/art/mystery/shadow/cards.characters.png'},{label:'Cast',desc:'Legendary performances.',image:'/art/mystery/shadow/cards.voices.png'}];
 export default function ShowCardGrid({slug,cards=[]}){
  const populated=slug==='shadow'?shadowCards:(cards.length?cards:defaultCards.map(([label,desc])=>({label,desc})));
