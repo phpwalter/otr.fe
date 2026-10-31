@@ -115,6 +115,7 @@ html,body,#root{height:100%;overflow:hidden}
   min-height: 886px;
   margin: 0;
   padding: 30px;
+  color: black;
   overflow: hidden;
 }
 
@@ -129,7 +130,8 @@ html,body,#root{height:100%;overflow:hidden}
   top: 300px;
   right: 30px;
   width: 200px;
-  height: 400px;
+  height: 300px;
+  gap: 10px;
   border: 2px solid red;
 }
 .show-nav__card {
