@@ -24,3 +24,11 @@ body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode 
   right: 6px;
   bottom: 6px;
 }
+
+/* Shadow-specific Featured Episode background artwork. */
+body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode {
+  background-image: url('/art/mystery/shadow/card.feature.background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
