@@ -107,7 +107,7 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav::befo
   content: "";
   grid-column: 1;
   grid-row: 1;
-  height: 210px;
+  height: 246px;
   background-image: url('/art/mystery/shadow/nav.panel.background.png');
   background-position: right top;
   background-repeat: no-repeat;
