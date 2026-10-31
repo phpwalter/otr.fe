@@ -8,6 +8,7 @@ export default function ShowCardGrid({slug,cards=[]}){
  const label=card?.label||'';const route=label==='The Shadow'?'the-shadow':label.toLowerCase().replaceAll(' ','-');
  const contents=<><div className="card-image" aria-hidden="true">{card?.image?<img src={card.image} alt="" />:null}</div><h2>{label}</h2><p>{card?.desc||''}</p></>;
  const cls='show-card-grid__card card-'+i+(empty?' is-empty':'');
+ if(slug==='shadow')return <a key={i} className={cls} href={empty?'#':'/'+slug+'/'+route} aria-label={label||undefined} tabIndex={empty?-1:undefined} aria-hidden={empty?'true':undefined} style={card?.image?{backgroundImage:'url("'+card.image+'")'}:undefined}><h2>{label}</h2></a>;
  if(slug==='mysterious-traveler')return <div key={i} className={cls} aria-hidden={empty?'true':undefined}>
   {!empty&&<a className="traveler-card-arrow" href={'/'+slug+'/'+route} aria-label={'Explore '+label}><span aria-hidden="true">›</span></a>}
  </div>;
