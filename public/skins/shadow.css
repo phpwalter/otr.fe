@@ -2,8 +2,8 @@
 body[data-series="shadow"] .page.page-landing > .hero.show-hero {
   position: absolute;
   top: var(--page-padding);
-  right: var(--page-padding);
-  left: auto;
+  right: auto;
+  left: var(--page-padding);
   width: 800px;
   height: 420px;
   min-height: 0;
@@ -12,7 +12,7 @@ body[data-series="shadow"] .page.page-landing > .hero.show-hero {
 
 body[data-series="shadow"] .page.page-landing .hero-art {
   background-image: url('/art/mystery/shadow/hero.png');
-  background-position: right top;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: contain;
 }
