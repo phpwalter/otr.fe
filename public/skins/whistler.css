@@ -100,3 +100,11 @@
 .page .anniversary-layout--centered h3 > span {
   transform: scaleX(0.9);
 }
+
+/* Show-specific placement: featured panel at the lower-left padding edge. */
+.site-shell > .page.page-landing > .featured-episode {
+  top: auto;
+  right: auto;
+  bottom: 30px;
+  left: 30px;
+}
