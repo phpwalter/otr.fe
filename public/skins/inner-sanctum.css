@@ -125,3 +125,11 @@
   white-space: nowrap;
 }
 
+
+/* Keep Inner Sanctum featured panel at the lower-left page padding edge. */
+body[data-series="inner-sanctum"] .site-shell > .page.page-landing > .featured-episode {
+  top: auto;
+  right: auto;
+  bottom: var(--page-padding);
+  left: var(--page-padding);
+}
