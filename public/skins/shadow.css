@@ -86,13 +86,33 @@ body[data-series="shadow"] .site-shell > .page.page-landing {
   background-color: black;
 }
 
-/* Shadow navigation panel artwork, flush to the page's upper-right edge. */
+/* Shadow: decorative image occupies the first grid row, without extra HTML. */
 body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav {
+  position: absolute;
   top: 0;
   right: 0;
   left: auto;
+  width: 300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 150px repeat(5, 50px);
+  grid-auto-rows: 50px;
+  gap: 0;
+  background: none;
+  overflow: visible;
+}
+
+body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1;
   background-image: url('/art/mystery/shadow/nav.panel.background.png');
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
+}
+
+body[data-series="shadow"] .show-nav__card {
+  min-height: 0;
 }
