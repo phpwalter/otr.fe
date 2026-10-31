@@ -59,3 +59,12 @@ body[data-series="shadow"] .page .featured-episode > .audio-player {
   grid-column: 1;
   grid-row: 3;
 }
+
+/* Shadow card grid: lower-left edge of the landing page. */
+body[data-series="shadow"] .site-shell > .page.page-landing > .cards.show-card-grid {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  top: auto;
+  height: 194px;
+}
