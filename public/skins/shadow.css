@@ -94,5 +94,5 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav {
   background-image: url('/art/mystery/shadow/nav.panel.background.png');
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
 }
