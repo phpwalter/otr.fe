@@ -116,7 +116,7 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav::befo
 body[data-series="shadow"] .show-nav__card {
   min-height: 0;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
   background-origin: content-box;
   background-clip: content-box;
   background-size: contain;
