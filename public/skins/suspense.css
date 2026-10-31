@@ -122,6 +122,11 @@ body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav {
 
 /* Two populated show cards: Episodes and Cast. */
 body[data-series="suspense"] .site-shell > .page.page-landing > .cards.show-card-grid {
+  left: var(--page-padding);
+  right: var(--page-padding);
+  width: auto;
+  top: auto;
+  bottom: var(--page-padding);
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 body[data-series="suspense"] .show-card-grid__card:nth-child(n+3) {
