@@ -12,7 +12,7 @@ body[data-series="shadow"] .page.page-landing > .hero.show-hero {
 
 body[data-series="shadow"] .page.page-landing .hero-art {
   background-image: url('/art/mystery/shadow/hero.png');
-  background-position: left top;
+  background-position: left 20px;
   background-repeat: no-repeat;
   background-size: 50% auto;
 }
