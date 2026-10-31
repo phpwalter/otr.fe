@@ -14,7 +14,7 @@ body[data-series="shadow"] .page.page-landing .hero-art {
   background-image: url('/art/mystery/shadow/hero.png');
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 50% auto;
 }
 
 /* Shadow featured episode: lower-right, 6px inside page edges. */
