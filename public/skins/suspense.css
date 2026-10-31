@@ -127,3 +127,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .cards.show-card
 body[data-series="suspense"] .show-card-grid__card:nth-child(n+3) {
   display: none;
 }
+
+body[data-series="suspense"] .page.page-landing .hero-copy {
+  display: none;
+}
