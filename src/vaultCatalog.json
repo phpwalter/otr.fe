@@ -191,6 +191,11 @@
     "mystery": {
       "shows": {
         "suspense": {
+          "artwork": {"mode": "hero"},
+          "cards": [
+            {"label": "Episodes", "desc": "Explore the episodes", "image": "/art/mystery/suspense/card-episodes.png"},
+            {"label": "Cast", "desc": "Meet the cast", "image": "/art/mystery/suspense/card-cast.png"}
+          ],
           "title": "Suspense",
           "href": "/suspense",
           "years": "1942–1962",
