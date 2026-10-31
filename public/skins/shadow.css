@@ -14,7 +14,12 @@ body[data-series="shadow"] .page.page-landing .hero-art {
   background-image: url('/art/mystery/shadow/hero.png');
   background-position: left 20px;
   background-repeat: no-repeat;
-  background-size: 50% auto;
+  background-size: 74%;
+}
+
+/* Hide the Shadow landing hero copy without affecting other shows. */
+body[data-series="shadow"] .page.page-landing .hero-copy {
+  display: none;
 }
 
 /* Shadow featured episode: lower-right, 6px inside page edges. */
