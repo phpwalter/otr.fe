@@ -200,6 +200,7 @@
           "anniversaryYears": 75
         },
         "shadow": {
+          "navItems": [["Episodes","episodes"],["Cast","cast"],["History","history"],["Gallery","gallery"],["Contact","contact"]],
           "title": "The Shadow",
           "href": "/shadow",
           "years": "1930–1954",
