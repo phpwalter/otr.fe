@@ -124,7 +124,7 @@ body[data-series="shadow"] .show-nav__card {
 
 /* Shadow navigation card artwork: matches the configured route names. */
 body[data-series="shadow"] .show-nav__card--episodes {
-  width: 1082px;
+  padding: 5px 15px;
   background-image: url('/art/mystery/shadow/nav.card.episodes.png');
 }
 body[data-series="shadow"] .show-nav__card--cast {
@@ -150,4 +150,17 @@ body[data-series="shadow"] .show-nav__card--writers {
 
 body[data-series="shadow"] .show-nav__card--the-shadow {
   background-image: url('/art/mystery/shadow/nav.card.shadow.png');
+}
+
+/* Keep navigation labels accessible without displaying them over the card artwork. */
+body[data-series="shadow"] .show-nav__card .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
