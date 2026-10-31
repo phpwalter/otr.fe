@@ -114,7 +114,8 @@ html,body,#root{height:100%;overflow:hidden}
   height: 886px;
   min-height: 886px;
   margin: 0;
-  padding: 30px;
+  --page-padding: 30px;
+  padding: var(--page-padding);
   color: black;
   overflow: hidden;
 }
@@ -128,7 +129,7 @@ html,body,#root{height:100%;overflow:hidden}
   z-index: 8;
   overflow: hidden;
   top: 300px;
-  right: 30px;
+  right: var(--page-padding);
   width: 200px;
   height: 300px;
   gap: 10px;
@@ -351,8 +352,8 @@ html,body,#root{height:100%;overflow:hidden}
 
 /* Place featured episode at the top-right landing padding edge. */
 .site-shell > .page.page-landing > .featured-episode {
-  top: 30px;
-  right: 30px;
+  top: var(--page-padding);
+  right: var(--page-padding);
   bottom: auto;
   left: auto;
 }
