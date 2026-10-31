@@ -101,8 +101,8 @@
   transform: scaleX(0.9);
 }
 
-/* Show-specific placement: featured panel at the lower-left padding edge. */
-.site-shell > .page.page-landing > .featured-episode {
+/* Show-specific placement: higher specificity than the common top-right default. */
+body[data-series="whistler"] .site-shell > .page.page-landing > .featured-episode {
   top: auto;
   right: auto;
   bottom: var(--page-padding);
