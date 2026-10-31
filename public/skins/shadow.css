@@ -67,4 +67,15 @@ body[data-series="shadow"] .site-shell > .page.page-landing > .cards.show-card-g
   bottom: 6px;
   top: auto;
   height: 194px;
+  width: 1200px;
+}
+
+/* Shadow navigation card images are card backgrounds, not content images. */
+body[data-series="shadow"] .show-card-grid__card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body[data-series="shadow"] .show-card-grid__card h2 {
+  display: none;
 }
