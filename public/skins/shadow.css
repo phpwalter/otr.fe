@@ -125,8 +125,6 @@ body[data-series="shadow"] .show-nav__card {
 
 /* Shadow navigation card artwork: matches the configured route names. */
 body[data-series="shadow"] .show-nav__card--episodes {
-  padding: 0;
-  margin-top: 8px;
   background-image: url('/art/mystery/shadow/nav.card.episodes.png');
 }
 body[data-series="shadow"] .show-nav__card--cast {
