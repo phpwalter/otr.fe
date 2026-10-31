@@ -114,7 +114,7 @@ html,body,#root{height:100%;overflow:hidden}
   height: 886px;
   min-height: 886px;
   margin: 0;
-  padding: 0;
+  padding: 30px;
   overflow: hidden;
 }
 
@@ -336,3 +336,11 @@ html,body,#root{height:100%;overflow:hidden}
 /* Every landing page renders both regions; catalog flags control visibility. */
 .page-landing[data-show-nav="false"] > nav.show-nav { display: none !important; }
 .page-landing[data-show-card-grid="false"] > section.cards.show-card-grid { display: none !important; }
+
+/* Place featured episode at the top-right landing padding edge. */
+.site-shell > .page.page-landing > .featured-episode {
+  top: 30px;
+  right: 30px;
+  bottom: auto;
+  left: auto;
+}
