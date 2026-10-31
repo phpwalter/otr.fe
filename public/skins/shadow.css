@@ -80,3 +80,8 @@ body[data-series="shadow"] .show-card-grid__card {
 body[data-series="shadow"] .show-card-grid__card h2 {
   display: none;
 }
+
+/* Shadow landing page background. */
+body[data-series="shadow"] .site-shell > .page.page-landing {
+  background-color: black;
+}
