@@ -108,7 +108,7 @@ body[data-series="suspense"] .page.page-landing > .hero.show-hero {
 body[data-series="suspense"] .page.page-landing .hero-art {
   display: block;
   background-image: url('/art/mystery/suspense/hero.png');
-  background-position: left top;
+  background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
 }
