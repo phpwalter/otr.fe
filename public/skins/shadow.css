@@ -16,3 +16,11 @@ body[data-series="shadow"] .page.page-landing .hero-art {
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+/* Shadow featured episode: lower-right, 6px inside page edges. */
+body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode {
+  top: auto;
+  left: auto;
+  right: 6px;
+  bottom: 6px;
+}
