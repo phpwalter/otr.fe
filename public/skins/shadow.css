@@ -1,0 +1,18 @@
+/* The Shadow: HERO artwork anchored to the landing page's upper-right padding edge. */
+body[data-series="shadow"] .page.page-landing > .hero.show-hero {
+  position: absolute;
+  top: var(--page-padding);
+  right: var(--page-padding);
+  left: auto;
+  width: 800px;
+  height: 420px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+body[data-series="shadow"] .page.page-landing .hero-art {
+  background-image: url('/art/mystery/shadow/hero.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
