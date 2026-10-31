@@ -85,3 +85,14 @@ body[data-series="shadow"] .show-card-grid__card h2 {
 body[data-series="shadow"] .site-shell > .page.page-landing {
   background-color: black;
 }
+
+/* Shadow navigation panel artwork, flush to the page's upper-right edge. */
+body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav {
+  top: 0;
+  right: 0;
+  left: auto;
+  background-image: url('/art/mystery/shadow/nav.panel.background.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
