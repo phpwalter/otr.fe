@@ -200,7 +200,32 @@
           "anniversaryYears": 75
         },
         "shadow": {
-          "navItems": [["Episodes","episodes"],["Cast","cast"],["Writers","writers"],["History","history"],["Gallery","gallery"],["Contact","contact"]],
+          "navItems": [
+            [
+              "Episodes",
+              "episodes"
+            ],
+            [
+              "Cast",
+              "cast"
+            ],
+            [
+              "Writers",
+              "writers"
+            ],
+            [
+              "The Shadow",
+              "the-shadow"
+            ],
+            [
+              "History",
+              "history"
+            ],
+            [
+              "Gallery",
+              "gallery"
+            ]
+          ],
           "title": "The Shadow",
           "href": "/shadow",
           "years": "1930–1954",
@@ -217,7 +242,24 @@
           "featuredEligible": true,
           "tagline": "MYSTERY… SUSPENSE… THE UNEXPECTED…",
           "anniversaryYears": 75,
-          "navItems": [["Episodes","episodes"],["Writers","writers"],["History","history"],["About","about"]],
+          "navItems": [
+            [
+              "Episodes",
+              "episodes"
+            ],
+            [
+              "Writers",
+              "writers"
+            ],
+            [
+              "History",
+              "history"
+            ],
+            [
+              "About",
+              "about"
+            ]
+          ],
           "showNav": true,
           "showCardGrid": false,
           "artwork": {
@@ -230,7 +272,24 @@
         "mysterious-traveler": {
           "title": "The Mysterious Traveler",
           "showCardGrid": false,
-          "navItems": [["Episodes","episodes"],["History","history"],["Gallery","gallery"],["About","about"]],
+          "navItems": [
+            [
+              "Episodes",
+              "episodes"
+            ],
+            [
+              "History",
+              "history"
+            ],
+            [
+              "Gallery",
+              "gallery"
+            ],
+            [
+              "About",
+              "about"
+            ]
+          ],
           "showNav": true,
           "artwork": {
             "mode": "page"
@@ -267,7 +326,32 @@
         },
         "whistler": {
           "title": "The Whistler",
-          "navItems": [["Episodes","episodes"],["Host","host"],["History","history"],["Gallery","gallery"],["About","about"],["Contact","contact"]],
+          "navItems": [
+            [
+              "Episodes",
+              "episodes"
+            ],
+            [
+              "Host",
+              "host"
+            ],
+            [
+              "History",
+              "history"
+            ],
+            [
+              "Gallery",
+              "gallery"
+            ],
+            [
+              "About",
+              "about"
+            ],
+            [
+              "Contact",
+              "contact"
+            ]
+          ],
           "showNav": true,
           "showCardGrid": false,
           "artwork": {
