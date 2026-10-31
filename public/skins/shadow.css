@@ -116,3 +116,20 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav::befo
 body[data-series="shadow"] .show-nav__card {
   min-height: 0;
 }
+
+/* Shadow navigation card artwork: matches the configured route names. */
+body[data-series="shadow"] .show-nav__card--episodes {
+  background-image: url('/art/mystery/shadow/nav.card.episodes.png');
+}
+body[data-series="shadow"] .show-nav__card--cast {
+  background-image: url('/art/mystery/shadow/nav.card.cast.png');
+}
+body[data-series="shadow"] .show-nav__card--history {
+  background-image: url('/art/mystery/shadow/nav.card.history.png');
+}
+body[data-series="shadow"] .show-nav__card--gallery {
+  background-image: url('/art/mystery/shadow/nav.card.gallery.png');
+}
+body[data-series="shadow"] .show-nav__card--contact {
+  background-image: url('/art/mystery/shadow/nav.card.contact.png');
+}
