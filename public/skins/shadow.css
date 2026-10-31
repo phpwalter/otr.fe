@@ -67,7 +67,7 @@ body[data-series="shadow"] .site-shell > .page.page-landing > .cards.show-card-g
   bottom: 6px;
   top: auto;
   height: 194px;
-  width: 1096px;
+  width: 1083px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -92,7 +92,7 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav {
   top: 0;
   right: 0;
   left: auto;
-  width: 300px;
+  width: 450px;
   height: auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
