@@ -32,3 +32,8 @@ body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode 
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+/* Shadow Featured Episode text color. */
+body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode {
+  color: white;
+}
