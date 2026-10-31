@@ -96,8 +96,8 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav {
   height: auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: 150px repeat(5, 50px);
-  grid-auto-rows: 50px;
+  grid-template-rows: 150px repeat(6, 90px);
+  grid-auto-rows: 90px;
   gap: 0;
   background: none;
   overflow: visible;
@@ -115,6 +115,11 @@ body[data-series="shadow"] .site-shell > .page.page-landing > nav.show-nav::befo
 
 body[data-series="shadow"] .show-nav__card {
   min-height: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-size: contain;
 }
 
 /* Shadow navigation card artwork: matches the configured route names. */
@@ -133,4 +138,15 @@ body[data-series="shadow"] .show-nav__card--gallery {
 }
 body[data-series="shadow"] .show-nav__card--contact {
   background-image: url('/art/mystery/shadow/nav.card.contact.png');
+}
+
+/* Writers image is not yet available; display a visible text fallback. */
+body[data-series="shadow"] .show-nav__card--writers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+body[data-series="shadow"] .show-nav__card--writers::after {
+  content: "Writers";
 }
