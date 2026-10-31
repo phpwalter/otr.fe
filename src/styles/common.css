@@ -133,12 +133,10 @@ html,body,#root{height:100%;overflow:hidden}
   width: 200px;
   height: 300px;
   gap: 10px;
-  border: 2px solid red;
 }
 .show-nav__card {
   display: block;
   min-height: 0;
-  background-color: #e9d5ad;
   color: #201c19;
   background-position: left;
   background-repeat: no-repeat;
