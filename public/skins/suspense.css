@@ -121,7 +121,9 @@ body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav {
 }
 
 /* Two populated show cards: Episodes and Cast. */
-body[data-series="suspense"] .site-shell > .page.page-landing > .cards.show-card-grid {
+body[data-series="suspense"] .site-shell > .page.page-landing > section.cards.show-card-grid {
+  position: absolute;
+  height: 290px;
   left: var(--page-padding);
   right: var(--page-padding);
   width: auto;
