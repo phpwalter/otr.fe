@@ -134,7 +134,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > section.cards.sh
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 605px;
 }
 body[data-series="suspense"] .show-card-grid__card:nth-child(n+3) {
   display: none;
@@ -142,4 +142,9 @@ body[data-series="suspense"] .show-card-grid__card:nth-child(n+3) {
 
 body[data-series="suspense"] .page.page-landing .hero-copy {
   display: none;
+}
+
+/* Suspense landing page background. */
+body[data-series="suspense"] .site-shell > .page.page-landing {
+  background-color: black;
 }
