@@ -37,3 +37,24 @@ body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode 
 body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode {
   color: white;
 }
+
+/* Shadow Featured Episode uses a single column instead of the common two-column layout. */
+body[data-series="shadow"] .site-shell > .page.page-landing > .featured-episode {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+body[data-series="shadow"] .page .featured-episode > .featured-art {
+  display: none !important;
+}
+body[data-series="shadow"] .page .featured-episode > .featured-header {
+  grid-column: 1;
+  grid-row: 1;
+}
+body[data-series="shadow"] .page .featured-episode > .featured-body {
+  grid-column: 1;
+  grid-row: 2;
+}
+body[data-series="shadow"] .page .featured-episode > .audio-player {
+  grid-column: 1;
+  grid-row: 3;
+}
