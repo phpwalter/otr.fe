@@ -142,13 +142,18 @@ body[data-series="shadow"] .show-nav__card--contact {
 
 /* Writers image is not yet available; display a visible text fallback. */
 body[data-series="shadow"] .show-nav__card--writers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: block;
+  grid-column: 1;
+  width: 100%;
   color: white;
 }
 body[data-series="shadow"] .show-nav__card--writers::after {
   content: "Writers";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
 }
 
 body[data-series="shadow"] .show-nav__card--the-shadow {
