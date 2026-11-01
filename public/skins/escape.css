@@ -36,8 +36,6 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-
   width: 550px;
   color: #F4D3A0;
   border: 2px solid red;
-  background-image: url('/art/adventure/escape/f.art.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  --featured-episode-tall-frame: url('/art/adventure/escape/f.art.png');
+  background-image: none;
 }
