@@ -374,3 +374,10 @@ html,body,#root{height:100%;overflow:hidden}
   object-fit: contain;
   object-position: center;
 }
+
+/* All show-card-grid cards use artwork only; hide printed HTML text. */
+.page-landing .show-card-grid__card h2,
+.page-landing .show-card-grid__card p,
+.page-landing .show-card-grid__card span {
+  display: none;
+}
