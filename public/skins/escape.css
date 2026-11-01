@@ -16,4 +16,8 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode 
   bottom: 30px;
   left: auto;
   border: 2px solid red;
+  background-image: url('/art/adventure/escape/f.art.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
