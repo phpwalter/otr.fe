@@ -191,7 +191,7 @@
     "mystery": {
       "shows": {
         "suspense": {
-          "navItems": [["Home",""],["Episodes","episodes"],["Cast","cast"],["Writers","writers"],["About","about"],["History","history"],["Gallery","gallery"]],
+          "navItems": [["Home",""],["Episodes","episodes"],["Cast","cast"],["Writers","writers"],["History","history"],["Gallery","gallery"]],
           "artwork": {"mode": "hero"},
           "cards": [
             {"label": "Episodes", "desc": "Explore the episodes", "image": "/art/mystery/suspense/card-episodes.png"},
