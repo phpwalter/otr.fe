@@ -220,3 +220,65 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episod
   min-width: 0;
   margin: 0;
 }
+
+
+/* Suspense text-only left navigation, based on the supplied reference. */
+body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav {
+  top: 0;
+  left: 0;
+  right: auto;
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  overflow: visible;
+  background: transparent;
+}
+body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav::before {
+  content: "A\\A CBS RADIO\\A PRODUCTION";
+  white-space: pre;
+  display: block;
+  padding: 18px 0 16px;
+  text-align: center;
+  color: #ede1cf;
+  font: 16px/1.4 Georgia, "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+body[data-series="suspense"] .page.page-landing .show-nav__card {
+  display: block;
+  position: relative;
+  width: auto;
+  min-height: 0;
+  padding: 0 0 8px;
+  color: #e7dac9;
+  font: 16px/1 Georgia, "Times New Roman", serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: none;
+}
+body[data-series="suspense"] .page.page-landing .show-nav__card .sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+body[data-series="suspense"] .page.page-landing .show-nav__card--home {
+  color: #f22a20;
+}
+body[data-series="suspense"] .page.page-landing .show-nav__card--home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f22a20;
+}
