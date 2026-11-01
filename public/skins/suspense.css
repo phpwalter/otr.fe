@@ -204,3 +204,19 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episod
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+
+/* Suspense audio spans the bottom grid row and extends one-third into column one. */
+body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episode {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episode > .audio-player {
+  position: static;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  align-self: end;
+  justify-self: end;
+  width: calc(100% - (320px * 2 / 3));
+  min-width: 0;
+  margin: 0;
+}
