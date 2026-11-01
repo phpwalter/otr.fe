@@ -197,6 +197,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episod
   left: auto;
   width: 750px;
   height: 250px;
+  padding: 20px 0 0 0;
   grid-template-columns: 320px minmax(0, 1fr);
   border: solid 1px red;
   background-image: url('/art/mystery/suspense/card-feature.png');
@@ -216,7 +217,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episod
   grid-row: 3;
   align-self: end;
   justify-self: end;
-  width: calc(100% - (320px * 2 / 3));
+  width: 500px;
   min-width: 0;
   margin: 0;
 }
