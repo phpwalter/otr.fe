@@ -234,7 +234,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 16px;
+  gap: 24px;
   overflow: visible;
   background: transparent;
 }
@@ -250,7 +250,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav::be
   background-position: center bottom;
   color: #ede1cf;
   font-family: "Bodoni Moda", Georgia, serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 1px;
@@ -276,6 +276,7 @@ body[data-series="suspense"] .page.page-landing .show-nav__card {
   background: none;
 }
 body[data-series="suspense"] .page.page-landing .show-nav__card .sr-only {
+  font-size: 30px;
   position: static;
   width: auto;
   height: auto;
