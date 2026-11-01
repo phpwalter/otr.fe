@@ -261,7 +261,7 @@ body[data-series="suspense"] .page.page-landing .show-nav__card {
   position: relative;
   width: auto;
   min-height: 0;
-  padding: 0 0 8px 30px;
+  padding: 10px 0 10px 30px;
   color: #e7dac9;
   font-family: "Bodoni Moda", Georgia, serif;
   font-size: 30px;
