@@ -239,7 +239,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav {
   background: transparent;
 }
 body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav::before {
-  content: "A\\A CBS RADIO\\A PRODUCTION";
+  content: "A\A CBS RADIO\A PRODUCTION";
   white-space: pre;
   display: block;
   padding: 0 0 14px;
