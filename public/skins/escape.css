@@ -30,9 +30,11 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode 
 body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-tall {
   display: grid;
   top: auto;
-  right: 30px;
-  bottom: 30px;
+  right: 25px;
+  bottom: 50px;
   left: auto;
+  width: 550px;
+  color: #F4D3A0;
   border: 2px solid red;
   background-image: url('/art/adventure/escape/f.art.png');
   background-position: center;
