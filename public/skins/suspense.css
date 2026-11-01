@@ -166,6 +166,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > section.cards.sh
   grid-template-rows: minmax(0, 1fr);
 }
 body[data-series="suspense"] .page.page-landing .show-card-grid__card {
+  padding: 0;
   box-sizing: border-box;
   min-height: 0;
   height: 100%;
