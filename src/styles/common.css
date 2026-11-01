@@ -396,12 +396,46 @@ html,body,#root{height:100%;overflow:hidden}
   box-sizing: border-box;
   color: black;
   background: transparent;
+  isolation: isolate;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr) auto;
   row-gap: 12px;
   overflow: hidden;
 }
+/* The episode image sits beneath the decorative frame overlay. */
+.featured-episode-tall::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: var(--featured-episode-tall-frame, none);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.featured-episode-tall > .featured-episode-tall__image {
+  grid-row: 2;
+  grid-column: 1;
+  position: relative;
+  z-index: 0;
+  justify-self: start;
+  align-self: start;
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  object-fit: contain;
+  object-position: left top;
+}
+.featured-episode-tall > .featured-episode-tall__heading,
+.featured-episode-tall > .featured-episode-tall__content,
+.featured-episode-tall > .audio-player {
+  position: relative;
+  z-index: 3;
+}
 .featured-episode-tall__heading {
+  grid-row: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -423,21 +457,13 @@ html,body,#root{height:100%;overflow:hidden}
   display: block;
 }
 .featured-episode-tall__content {
-  display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  align-items: start;
-  column-gap: 12px;
+  display: block;
+  grid-row: 2;
+  grid-column: 1;
+  padding-left: 172px;
   min-height: 0;
   min-width: 0;
   overflow: hidden;
-}
-.featured-episode-tall__image {
-  display: block;
-  width: 160px;
-  height: 160px;
-  margin: 0;
-  object-fit: contain;
-  object-position: left top;
 }
 .featured-episode-tall__details {
   display: flex;
