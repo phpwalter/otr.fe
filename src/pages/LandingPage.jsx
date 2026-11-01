@@ -1,5 +1,6 @@
 import React from 'react';
 import FeaturedEpisode from '../components/FeaturedEpisode.jsx';
+import FeaturedEpisodeTall from '../components/FeaturedEpisodeTall.jsx';
 import ShowCardGrid from '../components/ShowCardGrid.jsx';
 import ShowNav from '../components/ShowNav.jsx';
 import ShadowSide from '../components/ShadowSide.jsx';
@@ -16,6 +17,9 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
     <p className="tagline">{show[1]}</p><a className="hero-link" href={'/'+slug+'/episodes'}>EXPLORE THE EPISODES →</a></div></section>
   <ShowNav slug={slug} items={showConfig?.navItems ?? []}/>
   <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={display.headingText??'YEARS AGO YESTERDAY'} anniversaryLayout={display.anniversaryLayout??'dropcap'}
+    historicalDate={display.historicalDate??historicalDate}
+    titleOverride={display.title??null} descriptionOverride={display.description??null}/>
+  <FeaturedEpisodeTall episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={display.headingText??'YEARS AGO YESTERDAY'}
     historicalDate={display.historicalDate??historicalDate}
     titleOverride={display.title??null} descriptionOverride={display.description??null}/>
   <ShowCardGrid slug={slug} cards={showConfig?.cards??data.cards}/>
