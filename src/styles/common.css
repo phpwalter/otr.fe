@@ -423,14 +423,30 @@ html,body,#root{height:100%;overflow:hidden}
   display: block;
 }
 .featured-episode-tall__content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 12px;
   min-height: 0;
   min-width: 0;
   overflow: hidden;
 }
-.featured-episode-tall__content h3 { margin: 0 0 8px; }
-.featured-episode-tall__content p { margin: 0; overflow: auto; }
+.featured-episode-tall__image {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  object-fit: contain;
+  object-position: left top;
+}
+.featured-episode-tall__details {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+}
+.featured-episode-tall__details h3 { margin: 0 0 8px; }
+.featured-episode-tall__details p { margin: 0; overflow: auto; }
 .featured-episode-tall > .audio-player {
   grid-column: 1;
   grid-row: 3;
