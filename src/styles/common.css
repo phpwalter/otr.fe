@@ -403,9 +403,24 @@ html,body,#root{height:100%;overflow:hidden}
 }
 .featured-episode-tall__heading {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
   min-width: 0;
+}
+.featured-episode-tall__heading > .anniversary {
+  flex: 0 0 auto;
+}
+.featured-episode-tall__heading > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.featured-episode-tall__heading h3 {
+  margin: 0;
+}
+.featured-episode-tall__heading time {
+  display: block;
 }
 .featured-episode-tall__content {
   display: flex;
