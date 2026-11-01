@@ -227,7 +227,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episod
 /* Suspense text-only left navigation, based on the supplied reference. */
 body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav {
   top: 30px;
-  left: 0;
+  left: -30px;
   right: auto;
   width: 200px;
   height: auto;
@@ -242,8 +242,12 @@ body[data-series="suspense"] .site-shell > .page.page-landing > nav.show-nav::be
   content: "A\A CBS RADIO\A PRODUCTION";
   white-space: pre;
   display: block;
-  padding: 0 0 14px;
+  padding: 0 0 30px;
   text-align: center;
+  background-image: linear-gradient(#ede1cf, #ede1cf);
+  background-repeat: no-repeat;
+  background-size: 50% 1px;
+  background-position: center bottom;
   color: #ede1cf;
   font-family: "Bodoni Moda", Georgia, serif;
   font-size: 24px;
