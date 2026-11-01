@@ -199,6 +199,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episod
   left: auto;
   width: 750px;
   height: 250px;
+  grid-template-columns: 320px minmax(0, 1fr);
   border: solid 1px red;
   background-image: url('/art/mystery/suspense/card-feature.png');
   background-position: center;
