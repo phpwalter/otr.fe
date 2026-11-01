@@ -3,6 +3,7 @@
     "adventure": {
       "shows": {
         "escape": {
+          "artwork": {"mode": "page"},
           "title": "Escape",
           "href": "/escape",
           "years": "1947–1954",
