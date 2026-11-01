@@ -194,7 +194,8 @@
           "artwork": {"mode": "hero"},
           "cards": [
             {"label": "Episodes", "desc": "Explore the episodes", "image": "/art/mystery/suspense/card-episodes.png"},
-            {"label": "Cast", "desc": "Meet the cast", "image": "/art/mystery/suspense/card-cast.png"}
+            {"label": "Cast", "desc": "Meet the cast", "image": "/art/mystery/suspense/card-cast.png"},
+            {"label": "Writers", "desc": "Meet the writers", "image": "/art/mystery/suspense/card-writers.png"}
           ],
           "title": "Suspense",
           "href": "/suspense",
