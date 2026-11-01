@@ -1,0 +1,19 @@
+/* Escape: full-page artwork behind the shared landing-page overlays. */
+body[data-series="escape"] .site-shell[data-artwork-mode="page"] {
+  --show-page-image: url('/art/adventure/escape/hero.png');
+  background-position: 0 53px;
+  background-size: 1674px auto;
+}
+body[data-series="escape"] .page.page-landing .hero-copy {
+  display: none;
+}
+
+/* Escape Featured Episode: inset 30px from bottom and right. */
+body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode {
+  position: absolute;
+  top: auto;
+  right: 30px;
+  bottom: 30px;
+  left: auto;
+  border: 2px solid red;
+}
