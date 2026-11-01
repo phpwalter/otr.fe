@@ -134,7 +134,7 @@ body[data-series="suspense"] .site-shell > .page.page-landing > section.cards.sh
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 605px;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 3fr);
 }
 body[data-series="suspense"] .show-card-grid__card:nth-child(n+3) {
   display: none;
