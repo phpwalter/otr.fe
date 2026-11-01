@@ -189,3 +189,15 @@ body[data-series="suspense"] .page.page-landing .show-card-grid__card .card-imag
   object-fit: contain;
   object-position: center;
 }
+
+/* Position the Suspense featured episode inside the bottom-right artwork. */
+body[data-series="suspense"] .site-shell > .page.page-landing > .featured-episode {
+  position: absolute;
+  top: auto;
+  right: 50px;
+  bottom: 30px;
+  left: auto;
+  width: 750px;
+  height: 200px;
+  border: solid 1px red;
+}
