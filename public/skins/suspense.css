@@ -140,7 +140,7 @@ body[data-series="suspense"] .show-card-grid__card:nth-child(n+4) {
   display: none;
 }
 body[data-series="suspense"] .card-2 .card-image {
-  background-image: url('/art/mystery/suspense/card-writers.png');
+  background-image: none;
 }
 
 body[data-series="suspense"] .page.page-landing .hero-copy {
