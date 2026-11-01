@@ -148,3 +148,10 @@ body[data-series="suspense"] .page.page-landing .hero-copy {
 body[data-series="suspense"] .site-shell > .page.page-landing {
   background-color: black;
 }
+
+/* Hide text inside the first Suspense show card; preserve its artwork. */
+body[data-series="suspense"] .show-card-grid__card.card-0 h2,
+body[data-series="suspense"] .show-card-grid__card.card-0 p,
+body[data-series="suspense"] .show-card-grid__card.card-0 span {
+  display: none;
+}
