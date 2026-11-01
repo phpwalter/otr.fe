@@ -1,6 +1,6 @@
 /* Escape: full-page artwork behind the shared landing-page overlays. */
 body[data-series="escape"] .site-shell[data-artwork-mode="page"] {
-  --show-page-image: url('/art/adventure/escape/hero.png');
+  --show-page-image: url('/art/adventure/escape/page.png');
   background-position: 0 53px;
   background-size: 1674px auto;
 }
