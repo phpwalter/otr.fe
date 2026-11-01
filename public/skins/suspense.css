@@ -298,3 +298,9 @@ body[data-series="suspense"] .page.page-landing .show-nav__card--home::after {
   height: 2px;
   background: #f22a20;
 }
+
+/* Highlight Suspense navigation text on hover and keyboard focus. */
+body[data-series="suspense"] .page.page-landing .show-nav__card:hover,
+body[data-series="suspense"] .page.page-landing .show-nav__card:focus-visible {
+  color: #f22a20;
+}
