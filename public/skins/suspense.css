@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&display=swap");
+
 /* Suspense: one shared React DOM, standalone desktop CSS skin. */
 .site.skin-suspense{position:relative;width:1440px;height:900px;min-height:900px;max-height:900px;overflow:hidden;background:#090807;color:#f4e8d2;font-family:Georgia,serif}
 .skin-suspense .header{position:absolute;z-index:4;left:0;top:0;width:200px;height:640px;border:0;background:transparent;display:block;padding:0}
@@ -253,7 +255,11 @@ body[data-series="suspense"] .page.page-landing .show-nav__card {
   min-height: 0;
   padding: 0 0 8px;
   color: #e7dac9;
-  font: 16px/1 Georgia, "Times New Roman", serif;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  transform: scaleX(0.75);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
