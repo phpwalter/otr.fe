@@ -10,9 +10,11 @@ export default function FeaturedEpisodeTall({
   const empty=!episode||episode.no_broadcast||!episode.title;
   return <section className={'featured-episode-tall'+(empty?' is-empty':'')} aria-label="Featured episode (tall)">
     <header className="featured-episode-tall__heading">
-      <strong>{anniversaryText??anniversaryYears}</strong>
-      <span>{headingText}</span>
-      <time>{historicalDate}</time>
+      <strong className="anniversary">{anniversaryText??anniversaryYears}</strong>
+      <div>
+        <h3>{headingText}</h3>
+        <time>{historicalDate}</time>
+      </div>
     </header>
     <div className="featured-episode-tall__content">
       <h3>{titleOverride??(empty?'No broadcast this date':episode.title)}</h3>
