@@ -381,3 +381,46 @@ html,body,#root{height:100%;overflow:hidden}
 .page-landing .show-card-grid__card span {
   display: none;
 }
+
+
+/* Optional reusable single-column Featured Episode panel. */
+.featured-episode-tall {
+  display: none;
+  position: absolute;
+  z-index: 6;
+  width: 360px;
+  height: 500px;
+  padding: 20px;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: black;
+  background: transparent;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  row-gap: 12px;
+  overflow: hidden;
+}
+.featured-episode-tall__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.featured-episode-tall__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+.featured-episode-tall__content h3 { margin: 0 0 8px; }
+.featured-episode-tall__content p { margin: 0; overflow: auto; }
+.featured-episode-tall > .audio-player {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
