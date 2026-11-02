@@ -79,7 +79,19 @@ body[data-series="escape"] .featured-episode-tall__heading > .anniversary {
   font-family: "Libre Bodoni", Georgia, serif;
 }
 
-/* Escape's vintage burgundy-and-gold play/pause control only. */
+/* Keep the whole Escape audio-controls row 30px above the panel's bottom edge. */
+body[data-series="escape"] .featured-episode-tall > .audio-player {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  width: auto;
+  margin: 0;
+  z-index: 3;
+}
+
+/* Escape-only play/pause control: enamel burgundy, fine gold ring and
+   illuminated gold symbol. Do not affect the volume/mute button. */
 body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type {
   position: relative;
   display: grid;
@@ -89,37 +101,49 @@ body[data-series="escape"] .featured-episode-tall .audio-player > button:first-o
   height: 82px;
   min-width: 82px;
   padding: 0;
-  border: 3px solid #EFC77B;
+  overflow: hidden;
+  border: 2px solid #F4D18B;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 28%, #8C1510 0%, #5B0806 48%, #240303 100%);
+  background:
+    radial-gradient(ellipse at 34% 23%, rgba(190,42,25,.48), transparent 48%),
+    radial-gradient(circle at 56% 57%, #690b08 0%, #440504 72%, #210302 100%);
   box-shadow:
-    0 0 0 2px #522009,
-    inset 0 0 0 2px #FFE2A0,
-    inset 0 5px 12px rgba(255, 200, 100, 0.18),
-    inset 0 -8px 14px rgba(0, 0, 0, 0.6),
-    0 3px 6px rgba(0, 0, 0, 0.6);
+    0 0 0 2px #3C1309,
+    0 0 0 3px #B98443,
+    inset 0 0 0 2px #41200D,
+    inset 0 0 0 4px #F5DB9F,
+    inset 0 0 0 6px #A46A30,
+    inset 0 12px 16px rgba(0,0,0,.28),
+    inset 0 -8px 12px rgba(0,0,0,.35),
+    0 3px 7px rgba(0,0,0,.65);
   color: transparent;
   font-size: 0;
+  line-height: 0;
   cursor: pointer;
 }
 body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type::before {
   content: "";
   display: block;
-  width: 0;
-  height: 0;
-  margin-left: 6px;
-  border-top: 19px solid transparent;
-  border-bottom: 19px solid transparent;
-  border-left: 28px solid #FFD27A;
-  filter: drop-shadow(2px 2px 2px #542000);
+  width: 33px;
+  height: 39px;
+  margin-left: 5px;
+  border: 0;
+  background: linear-gradient(
+    145deg, #FFF5D2 0%, #FFF0B8 24%, #FFD779 46%,
+    #EAA747 72%, #AF651D 100%
+  );
+  clip-path: polygon(3% 0, 100% 50%, 3% 100%);
+  filter: drop-shadow(1px 2px 1px #351005);
 }
 body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type[aria-label="Pause"]::before {
-  width: 24px;
+  width: 28px;
   height: 36px;
   margin-left: 0;
-  border: 0;
-  background: linear-gradient(to right, #FFD27A 0 38%, transparent 38% 62%, #FFD27A 62% 100%);
-  filter: drop-shadow(2px 2px 2px #542000);
+  clip-path: none;
+  background: linear-gradient(
+    to right,
+    #FCE8AE 0 38%, transparent 38% 62%, #FCE8AE 62% 100%
+  );
 }
 body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type:focus-visible {
   outline: 3px solid #FFF1C4;
