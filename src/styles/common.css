@@ -437,51 +437,32 @@ html,body,#root{height:100%;overflow:hidden}
 .featured-episode-tall__heading {
   grid-row: 1;
   display: grid;
-  grid-template-columns: max-content max-content;
   grid-template-rows: auto auto;
-  justify-content: center;
-  align-content: start;
-  align-items: start;
-  column-gap: 8px;
   row-gap: 4px;
-  min-width: 0;
-  /* Center the intrinsic text width, then scale around that same center. */
+  justify-items: center;
+  align-content: start;
   width: max-content;
   max-width: none;
   justify-self: center;
-  transform: scaleX(var(--featured-episode-tall-heading-scale, 0.7));
+  text-align: center;
+  transform: scaleX(0.75);
   transform-origin: center top;
 }
-.featured-episode-tall__heading > div {
-  display: contents;
-}
-.featured-episode-tall__heading > .anniversary,
-.featured-episode-tall__heading h3 {
-  font: normal 700 60px/1 Georgia, 'Times New Roman', serif;
-  letter-spacing: normal;
+.featured-episode-tall__heading > .anniversary {
+  display: block;
+  font: normal 700 55px/1 Georgia, 'Times New Roman', serif;
   position: static;
   top: auto;
-  align-self: start;
   margin: 0;
   padding: 0;
   white-space: nowrap;
 }
-.featured-episode-tall__heading > .anniversary {
-  grid-column: 1;
-  grid-row: 1;
-}
-.featured-episode-tall__heading h3 {
-  grid-column: 2;
-  grid-row: 1;
-}
-.featured-episode-tall__heading time {
+.featured-episode-tall__heading > time {
   display: block;
-  grid-column: 1 / -1;
-  grid-row: 2;
-  width: 100%;
+  font-size: 34px;
+  line-height: 1.1;
+  margin: 0;
   text-align: center;
-  transform: scaleX(calc(1 / var(--featured-episode-tall-heading-scale, 0.7)));
-  transform-origin: center top;
 }
 .featured-episode-tall__content {
   display: block;
