@@ -60,3 +60,10 @@ body[data-series="escape"] .featured-episode-tall__heading time {
   font-size: 26px;
   text-align: center;
 }
+
+/* Condense the tall-panel heading text without altering its font size. */
+body[data-series="escape"] .featured-episode-tall__heading h3,
+body[data-series="escape"] .featured-episode-tall__heading .anniversary {
+  transform: scaleX(0.8);
+  transform-origin: center;
+}
