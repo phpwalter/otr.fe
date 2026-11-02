@@ -35,7 +35,6 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-
   left: auto;
   width: 550px;
   color: #F4D3A0;
-  border: 2px solid red;
   --featured-episode-tall-frame: url('/art/adventure/escape/f.art.png');
   background-image: none;
 }
@@ -83,7 +82,7 @@ body[data-series="escape"] .featured-episode-tall__heading > .anniversary {
 body[data-series="escape"] .featured-episode-tall > .audio-player {
   position: absolute;
   left: 20px;
-  right: 20px;
+  right: 30px;
   bottom: 30px;
   width: auto;
   margin: 0;
@@ -268,4 +267,9 @@ body[data-series="escape"] .featured-episode-tall .audio-player input[type="rang
   border: 2px solid #FFE4A0;
   border-radius: 50%;
   background: #F5C14B;
+}
+
+/* Escape episode text inset. */
+body[data-series="escape"] .featured-episode-tall__content {
+  padding: 20px 0 0 220px;
 }
