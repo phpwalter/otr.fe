@@ -19,7 +19,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
   <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={display.headingText??'YEARS AGO YESTERDAY'} anniversaryLayout={display.anniversaryLayout??'dropcap'}
     historicalDate={display.historicalDate??historicalDate}
     titleOverride={display.title??null} descriptionOverride={display.description??null}/>
-  <FeaturedEpisodeTall imageSrc={slug==='escape'?'/art/adventure/escape/sample.png':null} imageFallback={slug==='escape'?'/art/adventure/escape/sample.png':'/sample.png'} episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={display.headingText??'YEARS AGO YESTERDAY'}
+  <FeaturedEpisodeTall imageSrc={slug==='escape'?'/art/adventure/escape/sample.png':null} imageFallback={slug==='escape'?'/art/adventure/escape/sample.png':'/sample.png'} episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={slug==='escape'?'Years Ago Yesterday':(display.headingText??'YEARS AGO YESTERDAY')}
     historicalDate={display.historicalDate??historicalDate}
     titleOverride={display.title??null} descriptionOverride={display.description??null}/>
   <ShowCardGrid slug={slug} cards={showConfig?.cards??data.cards}/>
