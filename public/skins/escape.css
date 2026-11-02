@@ -273,3 +273,77 @@ body[data-series="escape"] .featured-episode-tall .audio-player input[type="rang
 body[data-series="escape"] .featured-episode-tall__content {
   padding: 20px 0 0 220px;
 }
+
+/* Escape navigation: four vintage burgundy-and-gold buttons. */
+body[data-series="escape"] .page.page-landing > .show-nav {
+  left: 30px;
+  right: auto;
+  top: 300px;
+  width: 260px;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 44px);
+  grid-auto-rows: 44px;
+  gap: 12px;
+  overflow: visible;
+}
+body[data-series="escape"] .show-nav > .show-nav__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 28px 0 43px;
+  border: 1px solid #DCA34B;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #420600 0%, #790900 45%, #350400 100%);
+  box-shadow: inset 0 1px 2px #F1B75A, inset 0 -3px 8px #180000, 0 3px 5px #0009;
+  color: #F8DDA9;
+  text-decoration: none;
+}
+body[data-series="escape"] .show-nav__label {
+  font: 700 14px Georgia, serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+body[data-series="escape"] .show-nav > .show-nav__card::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  transform: translateY(-50%);
+  border: 1px solid #E5B04B;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #A8170B, #510500 75%);
+  box-shadow: inset 0 0 0 2px #63200C, 0 2px 5px #0009;
+}
+body[data-series="escape"] .show-nav__label::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 12px solid #FFD374;
+}
+body[data-series="escape"] .show-nav > .show-nav__card::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #FFD374;
+  border-right: 2px solid #FFD374;
+  transform: translateY(-50%) rotate(45deg);
+}
+body[data-series="escape"] .show-nav > .show-nav__card:hover,
+body[data-series="escape"] .show-nav > .show-nav__card:focus-visible {
+  background: linear-gradient(180deg, #650C03, #A31A0B 50%, #420600);
+  outline: 2px solid #FFE2A0;
+  outline-offset: 2px;
+}
