@@ -49,6 +49,7 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-
    bright cream highlight, and a deeper gold lower edge. Apply to each text
    row so the bands run through the glyphs rather than the empty header area. */
 body[data-series="escape"] .featured-episode-tall__heading {
+  font-family: "Libre Bodoni", Georgia, serif;
   --escape-gold-lettering: linear-gradient(
     to bottom,
     #BB7C31 0%,
@@ -69,4 +70,9 @@ body[data-series="escape"] .featured-episode-tall__heading > time {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+/* Override the common Georgia shorthand only for Escape's anniversary row. */
+body[data-series="escape"] .featured-episode-tall__heading > .anniversary {
+  font-family: "Libre Bodoni", Georgia, serif;
 }
