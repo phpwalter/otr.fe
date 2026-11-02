@@ -453,15 +453,13 @@ html,body,#root{height:100%;overflow:hidden}
 .featured-episode-tall__heading > .anniversary {
   display: block;
   font: normal 700 55px/1.2 Georgia, 'Times New Roman', serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
   position: static;
   top: auto;
   margin: 0;
   padding: 0 0 4px;
   white-space: nowrap;
-}
-.featured-episode-tall__heading .anniversary__number {
-  display: inline-block;
-  transform: translateY(-6px);
 }
 .featured-episode-tall__heading > time {
   display: block;
