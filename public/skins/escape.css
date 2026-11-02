@@ -52,14 +52,14 @@ body[data-series="escape"] .featured-episode-tall__heading {
   font-family: "Libre Bodoni", Georgia, serif;
   --escape-gold-lettering: linear-gradient(
     to bottom,
-    #BB7C31 0%,
-    #DFA957 20%,
-    #F4C77E 33%,
-    #FFF1C4 43%,
-    #FFE9B6 62%,
-    #F3CB83 79%,
-    #DDA14D 94%,
-    #B87830 100%
+    #B87930 0%,
+    #E4B46D 35%,
+    #F2D295 46%,
+    #FFF4CC 49%,
+    #FFF8DC 51%,
+    #F2D295 54%,
+    #E0AD60 68%,
+    #B87930 100%
   );
 }
 body[data-series="escape"] .featured-episode-tall__heading > .anniversary,
