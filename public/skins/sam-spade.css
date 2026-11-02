@@ -1,6 +1,6 @@
 /* Sam Spade: fixed-width artwork and transparent interactive overlays. */
 body[data-series="sam-spade"] .site-shell[data-artwork-mode="page"] {
-  --show-page-image: url('/art/detective/sam-spade/skin.png');
+  --show-page-image: url('/art/detective/sam-spade/page.png');
   background-position: center 0;
   background-size: 1674px auto;
   background-color: #120905;
