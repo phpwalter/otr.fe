@@ -20,7 +20,7 @@ export default function FeaturedEpisodeTall({
       alt=""
     />
     <header className="featured-episode-tall__heading">
-      <strong className="anniversary">{anniversaryText??anniversaryYears} {headingText}</strong>
+      <div className="anniversary">{anniversaryText??anniversaryYears} {headingText}</div>
       <time>{historicalDate}</time>
     </header>
     <div className="featured-episode-tall__content">
