@@ -42,7 +42,7 @@ body[data-series="sam-spade"] .spade-hotspot {
   border:0; box-sizing:border-box; pointer-events:auto;
   outline:none;
 }
-body[data-series="sam-spade"] .spade-hotspot--characters {left:151px;top:360px;width:320px;height:287px}
+body[data-series="sam-spade"] .spade-hotspot--characters {left:148px;top:358px;width:330px;height:300px}
 body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:360px;width:321px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:360px;width:333px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:656px;width:566px;height:182px}
