@@ -282,8 +282,8 @@ body[data-series="escape"] .page.page-landing > .show-nav {
   width: 260px;
   height: auto;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 44px);
-  grid-auto-rows: 44px;
+  grid-template-rows: repeat(4, 50px);
+  grid-auto-rows: 50px;
   gap: 12px;
   overflow: visible;
 }
@@ -292,8 +292,9 @@ body[data-series="escape"] .show-nav > .show-nav__card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
-  min-height: 44px;
+  box-sizing: border-box;
+  height: 50px;
+  min-height: 50px;
   padding: 0 28px 0 43px;
   border: 1px solid #DCA34B;
   border-radius: 12px;
@@ -313,8 +314,8 @@ body[data-series="escape"] .show-nav > .show-nav__card::before {
   position: absolute;
   left: -9px;
   top: 50%;
-  width: 42px;
-  height: 42px;
+  width: 54px;
+  height: 54px;
   transform: translateY(-50%);
   border: 1px solid #E5B04B;
   border-radius: 50%;
@@ -324,7 +325,7 @@ body[data-series="escape"] .show-nav > .show-nav__card::before {
 body[data-series="escape"] .show-nav__label::before {
   content: "";
   position: absolute;
-  left: 9px;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
   border-top: 9px solid transparent;
