@@ -154,3 +154,118 @@ body[data-series="escape"] .featured-episode-tall .audio-player > button:first-o
   outline: 3px solid #FFF1C4;
   outline-offset: 5px;
 }
+
+/* Two-row Escape player: play / clock / speaker / volume, seek below. */
+body[data-series="escape"] .featured-episode-tall > .audio-player {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr) 38px 145px;
+  grid-template-rows: 82px 24px;
+  column-gap: 12px;
+  row-gap: 16px;
+  align-items: center;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > audio {
+  display: none;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type {
+  grid-column: 1;
+  grid-row: 1;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > time {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  color: #F6D9A7 !important;
+  font: 700 22px/1 Georgia, serif !important;
+  white-space: nowrap;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:nth-of-type(2) {
+  grid-column: 3;
+  grid-row: 1;
+  display: grid;
+  place-items: center;
+  width: 38px !important;
+  min-width: 38px !important;
+  height: 38px !important;
+  flex: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-size: 0;
+  cursor: pointer;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 34px;
+  background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M4 15h8L22 7v26L12 25H4z' fill='%23F5C369' stroke='%23824B19' stroke-width='1.5'/%3E%3Cpath d='M26 12q10 8 0 16M30 7q17 13 0 26' fill='none' stroke='%23F3B858' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:nth-of-type(2)[aria-pressed="true"]::before {
+  opacity: .4;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > input.audio-player__volume {
+  grid-column: 4;
+  grid-row: 1;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 18px;
+  margin: 0;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > input[aria-label="Seek"] {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 24px;
+  margin: 0;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  accent-color: #E8AF40;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player input[type="range"]::-webkit-slider-runnable-track {
+  height: 12px;
+  border: 2px solid #A87839;
+  border-radius: 10px;
+  background: linear-gradient(#202022, #4A4541 55%, #171719);
+  box-shadow: 0 0 0 2px #28180E, inset 0 2px 3px #090909;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > input.audio-player__volume::-webkit-slider-runnable-track {
+  height: 9px;
+  border-color: #D69A32;
+  background: linear-gradient(#A90E06, #680B08);
+}
+body[data-series="escape"] .featured-episode-tall .audio-player input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 23px;
+  height: 23px;
+  margin-top: -7px;
+  border: 2px solid #FFE4A0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 28%, #FFF3B7, #F5C14B 55%, #C4821C);
+  box-shadow: 0 1px 4px #170A04;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > input.audio-player__volume::-webkit-slider-thumb {
+  margin-top: -9px;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player input[type="range"]::-moz-range-track {
+  height: 9px;
+  border: 2px solid #A87839;
+  border-radius: 10px;
+  background: #302C2C;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > input.audio-player__volume::-moz-range-track {
+  background: #8E0D08;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player input[type="range"]::-moz-range-thumb {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #FFE4A0;
+  border-radius: 50%;
+  background: #F5C14B;
+}
