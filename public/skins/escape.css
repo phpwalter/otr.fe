@@ -61,21 +61,10 @@ body[data-series="escape"] .featured-episode-tall__heading time {
   text-align: center;
 }
 
-/* Condense the tall-panel heading text without altering its font size. */
-body[data-series="escape"] .featured-episode-tall__heading h3,
-body[data-series="escape"] .featured-episode-tall__heading .anniversary {
-  transform: scaleX(0.8);
-  transform-origin: center;
-}
-
 /* Keep anniversary and title on one top-aligned line, centered as a group. */
 body[data-series="escape"] .featured-episode-tall__heading > .anniversary {
   line-height: 1;
   margin: 0;
-}
-body[data-series="escape"] .featured-episode-tall__heading > div {
-  flex: 0 0 auto;
-  align-items: center;
 }
 body[data-series="escape"] .featured-episode-tall__heading h3 {
   width: max-content;
