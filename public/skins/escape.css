@@ -125,9 +125,13 @@ body[data-series="escape"] .featured-episode-tall .audio-player > button:first-o
 body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type::before {
   content: "";
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(3px);
   width: 33px;
   height: 39px;
-  margin-left: 5px;
+  margin: 0;
   border: 0;
   background: linear-gradient(
     145deg, #FFF5D2 0%, #FFF0B8 24%, #FFD779 46%,
@@ -139,7 +143,7 @@ body[data-series="escape"] .featured-episode-tall .audio-player > button:first-o
 body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type[aria-label="Pause"]::before {
   width: 28px;
   height: 36px;
-  margin-left: 0;
+  transform: translate(-50%, -50%);
   clip-path: none;
   background: linear-gradient(
     to right,
