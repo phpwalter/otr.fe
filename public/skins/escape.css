@@ -78,3 +78,50 @@ body[data-series="escape"] .featured-episode-tall__heading > time {
 body[data-series="escape"] .featured-episode-tall__heading > .anniversary {
   font-family: "Libre Bodoni", Georgia, serif;
 }
+
+/* Escape's vintage burgundy-and-gold play/pause control only. */
+body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: 0 0 82px;
+  width: 82px;
+  height: 82px;
+  min-width: 82px;
+  padding: 0;
+  border: 3px solid #EFC77B;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 28%, #8C1510 0%, #5B0806 48%, #240303 100%);
+  box-shadow:
+    0 0 0 2px #522009,
+    inset 0 0 0 2px #FFE2A0,
+    inset 0 5px 12px rgba(255, 200, 100, 0.18),
+    inset 0 -8px 14px rgba(0, 0, 0, 0.6),
+    0 3px 6px rgba(0, 0, 0, 0.6);
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 6px;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-left: 28px solid #FFD27A;
+  filter: drop-shadow(2px 2px 2px #542000);
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type[aria-label="Pause"]::before {
+  width: 24px;
+  height: 36px;
+  margin-left: 0;
+  border: 0;
+  background: linear-gradient(to right, #FFD27A 0 38%, transparent 38% 62%, #FFD27A 62% 100%);
+  filter: drop-shadow(2px 2px 2px #542000);
+}
+body[data-series="escape"] .featured-episode-tall .audio-player > button:first-of-type:focus-visible {
+  outline: 3px solid #FFF1C4;
+  outline-offset: 5px;
+}
