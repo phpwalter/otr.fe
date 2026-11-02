@@ -1,7 +1,7 @@
 /* Sam Spade: fixed-width artwork and transparent interactive overlays. */
 body[data-series="sam-spade"] .site-shell[data-artwork-mode="page"] {
   --show-page-image: url('/art/detective/sam-spade/page.png');
-  background-position: center 40px;
+  background-position: center 50px;
   background-size: 1674px auto;
   background-color: #120905;
 }
