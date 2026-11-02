@@ -276,15 +276,15 @@ body[data-series="escape"] .featured-episode-tall__content {
 
 /* Escape navigation: four vintage burgundy-and-gold buttons. */
 body[data-series="escape"] .page.page-landing > .show-nav {
-  left: 30px;
+  left: 80px;
   right: auto;
-  top: 300px;
+  top: 580px;
   width: 260px;
   height: auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 50px);
   grid-auto-rows: 50px;
-  gap: 12px;
+  gap: 20px;
   overflow: visible;
 }
 body[data-series="escape"] .show-nav > .show-nav__card {
