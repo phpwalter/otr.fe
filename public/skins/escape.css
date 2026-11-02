@@ -323,7 +323,7 @@ body[data-series="escape"] .show-nav > .show-nav__card::before {
 body[data-series="escape"] .show-nav__label::before {
   content: "";
   position: absolute;
-  left: 17px;
+  left: 9px;
   top: 50%;
   transform: translateY(-50%);
   border-top: 9px solid transparent;
