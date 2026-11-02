@@ -45,9 +45,26 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-
   transform: translate(8px, 80px);
 }
 
-/* Shared gold gradient across the Escape anniversary, heading, and date glyphs. */
-body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-tall > .featured-episode-tall__heading {
-  background: linear-gradient(to bottom, #ECB468 25%, #FFF0BC 20%, #F8D698 55%, #F0C079 76%, #E9AD5C 100%);
+/* Reference-matched metallic lettering: a warm gold upper band, a narrow
+   bright cream highlight, and a deeper gold lower edge. Apply to each text
+   row so the bands run through the glyphs rather than the empty header area. */
+body[data-series="escape"] .featured-episode-tall__heading {
+  --escape-gold-lettering: linear-gradient(
+    to bottom,
+    #BB7C31 0%,
+    #DFA957 20%,
+    #F4C77E 33%,
+    #FFF1C4 43%,
+    #FFE9B6 62%,
+    #F3CB83 79%,
+    #DDA14D 94%,
+    #B87830 100%
+  );
+}
+body[data-series="escape"] .featured-episode-tall__heading > .anniversary,
+body[data-series="escape"] .featured-episode-tall__heading > time {
+  background-image: var(--escape-gold-lettering);
+  background-repeat: no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
