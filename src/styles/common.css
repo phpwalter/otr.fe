@@ -445,6 +445,8 @@ html,body,#root{height:100%;overflow:hidden}
   column-gap: 8px;
   row-gap: 4px;
   min-width: 0;
+  transform: scaleX(0.8);
+  transform-origin: center top;
 }
 .featured-episode-tall__heading > div {
   display: contents;
@@ -459,8 +461,6 @@ html,body,#root{height:100%;overflow:hidden}
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  transform: scaleX(0.8);
-  transform-origin: center top;
 }
 .featured-episode-tall__heading > .anniversary {
   grid-column: 1;
@@ -476,6 +476,8 @@ html,body,#root{height:100%;overflow:hidden}
   grid-row: 2;
   width: 100%;
   text-align: center;
+  transform: scaleX(1.25);
+  transform-origin: center top;
 }
 .featured-episode-tall__content {
   display: block;
