@@ -292,6 +292,7 @@ body[data-series="escape"] .show-nav > .show-nav__card {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 44px;
   min-height: 44px;
   padding: 0 28px 0 43px;
   border: 1px solid #DCA34B;
