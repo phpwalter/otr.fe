@@ -5,10 +5,8 @@ body[data-series="sam-spade"] .site-shell[data-artwork-mode="page"] {
   background-size: 1674px auto;
   background-color: #120905;
 }
-body[data-series="sam-spade"] .site-shell > .vault-header,
-body[data-series="sam-spade"] .site-shell > .vault-footer { display:none; }
 body[data-series="sam-spade"] .site-shell > .page.page-landing {
-  top:0; height:1030px; min-height:1030px; padding:0;
+  top:53px; height:886px; min-height:886px; padding:0;
   background:transparent; overflow:hidden;
 }
 body[data-series="sam-spade"] .page.page-landing > .hero,
