@@ -278,7 +278,7 @@ body[data-series="escape"] .featured-episode-tall__content {
 body[data-series="escape"] .page.page-landing > .show-nav {
   left: 80px;
   right: auto;
-  top: 580px;
+  top: 600px;
   width: 260px;
   height: auto;
   grid-template-columns: 1fr;
