@@ -9,7 +9,8 @@
           "years": "1947–1954",
           "featuredEligible": true,
           "tagline": "CLASSIC RADIO ARCHIVE",
-          "anniversaryYears": 75
+          "anniversaryYears": 75,
+          "navItems": [["Episodes", "episodes"], ["Cast", "cast"], ["Writers", "writers"], ["About", "about"]]
         }
       }
     },
