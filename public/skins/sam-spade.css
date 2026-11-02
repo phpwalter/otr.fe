@@ -1,25 +1,97 @@
-/* Independent sam-spade presentation. Shared HTML/DOM remains unchanged. */
-.site{background:#100c09;color:#e4cbb2;font-family:Georgia,serif}
-.header{background:#0b0d11;border-bottom:2px solid #bd1018;position:absolute;left:0;top:0;bottom:0;width:165px;display:block;padding:35px 20px;}
-.header nav{display:flex;flex-direction:column;gap:21px;margin-top:45px;}
-.header a{color:#e4cbb2}.header a.active{color:#bd1018}
-.masthead{font-size:13px;line-height:2}
-.canvas{margin-left:165px;grid-template-columns:2.15fr 1fr;grid-template-areas:"hero hero" "cards featured" "about about";gap:15px;padding:10px}
-.hero{min-height:610px;border:1px solid #493728}
-.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/sam-spade-hero.webp')}
-.hero-copy{padding:78px 65px;max-width:100%}
-.hero h1{font-family:Georgia,serif;font-style:normal;font-size:115px;color:#bd1018;text-shadow:3px 4px #000}
-.tagline{color:#fff0ce}
-.hero-link{background:#bd1018;color:#fff5de}
-.featured{border:2px solid #bd1018;background:#100e0e;color:#e4cbb2;align-self:start;}
-.anniversary-number{color:#bd1018}
-.featured-art{background-image:url('/art/sam-spade-card.webp')}
-.player button{border-color:#bd1018;color:#bd1018}
-.player input{accent-color:#bd1018}
-.cards{grid-template-columns:repeat(2,1fr);align-self:start}
-.show-card-grid__card{background:#131b21;color:#e4cbb2;border:1px solid #bd1018}
-.show-card-grid__card .card-image{background-image:url('/art/sam-spade-hero.webp')}
-.show-card-grid__card h2{color:#bd1018}
-.about{border-top:1px solid #bd1018}
-.footer{color:#e4cbb2;font-size:12px}
-@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
+/* Sam Spade: fixed-width artwork and transparent interactive overlays. */
+body[data-series="sam-spade"] .site-shell[data-artwork-mode="page"] {
+  --show-page-image: url('/art/detective/sam-spade/page.png');
+  background-position: center 0;
+  background-size: 1674px auto;
+  background-color: #120905;
+}
+body[data-series="sam-spade"] .site-shell > .vault-header,
+body[data-series="sam-spade"] .site-shell > .vault-footer { display:none; }
+body[data-series="sam-spade"] .site-shell > .page.page-landing {
+  top:0; height:1030px; min-height:1030px; padding:0;
+  background:transparent; overflow:hidden;
+}
+body[data-series="sam-spade"] .page.page-landing > .hero,
+body[data-series="sam-spade"] .page.page-landing > .show-nav,
+body[data-series="sam-spade"] .page.page-landing > .featured-episode,
+body[data-series="sam-spade"] .page.page-landing > .featured-episode-tall,
+body[data-series="sam-spade"] .page.page-landing > .show-card-grid {display:none!important;}
+body[data-series="sam-spade"] .spade-artwork-interactions {
+  position:absolute; inset:0; z-index:8; pointer-events:none;
+}
+body[data-series="sam-spade"] .spade-artwork-interactions a,
+body[data-series="sam-spade"] .spade-artwork-interactions button,
+body[data-series="sam-spade"] .spade-artwork-interactions input {pointer-events:auto;}
+/* Measured against the supplied 1721 x 914 image, displayed at 1674px width. */
+body[data-series="sam-spade"] .spade-artwork-sidebar a {
+  position:absolute; left:42px; width:105px; height:44px;
+  pointer-events:auto; outline-offset:-4px;
+}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(1){top:14px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(2){top:62px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(3){top:109px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(4){top:157px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(5){top:204px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(6){top:251px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(7){top:299px}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible {
+  outline:2px solid #EAC075;
+}
+body[data-series="sam-spade"] .spade-hotspot {
+  position:absolute; display:block; background:transparent;
+  border:0; box-sizing:border-box; pointer-events:auto;
+  outline:none;
+}
+body[data-series="sam-spade"] .spade-hotspot--characters {left:151px;top:360px;width:320px;height:287px}
+body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:360px;width:321px;height:287px}
+body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:360px;width:333px;height:287px}
+body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:656px;width:566px;height:182px}
+body[data-series="sam-spade"] .spade-hotspot--contact {left:722px;top:656px;width:416px;height:181px}
+body[data-series="sam-spade"] .spade-highlight {
+  position:absolute; inset:4px; border:2px solid transparent; border-radius:2px;
+  box-shadow:none; transition:border-color .18s,box-shadow .18s; pointer-events:none;
+}
+body[data-series="sam-spade"] .spade-hotspot:hover .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot:focus-visible .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot.is-selected .spade-highlight {
+  border-color:#D8AD69;
+  box-shadow:0 0 11px #DFAB60B0,inset 0 0 9px #D9A65B50;
+}
+body[data-series="sam-spade"] .spade-hotspot:focus-visible .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot.is-selected .spade-highlight {
+  border-color:#F4D18A;
+}
+/* Contact: border segments end before the telephone/desk artwork. */
+body[data-series="sam-spade"] .spade-hotspot--contact .spade-highlight {
+  inset:4px; border:0; box-shadow:none!important;
+  border-left:2px solid transparent;
+  border-top:2px solid transparent;
+  border-right:2px solid transparent;
+}
+body[data-series="sam-spade"] .spade-hotspot--contact:hover .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--contact:focus-visible .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--contact.is-selected .spade-highlight {
+  border-left-color:#E5B974;border-top-color:#E5B974;border-right-color:#E5B974;
+  filter:drop-shadow(0 0 5px #D8AD69);
+}
+/* Dynamic episode interface replaces the static illustrated information area. */
+body[data-series="sam-spade"] .spade-featured {
+  position:absolute;left:1147px;top:371px;width:482px;height:420px;
+  padding:5px 12px 10px; box-sizing:border-box;
+  color:#F5DDC1; background:#110A08;
+  border:1px solid #D5AF6C; border-radius:6px;
+  display:flex; flex-direction:column; gap:7px; pointer-events:auto;
+}
+body[data-series="sam-spade"] .spade-featured__heading{text-align:center}
+body[data-series="sam-spade"] .spade-featured__heading span{display:block;font:700 25px Georgia,serif;white-space:nowrap}
+body[data-series="sam-spade"] .spade-featured__heading b{font-size:48px;color:#D11224}
+body[data-series="sam-spade"] .spade-featured__heading time{font:19px Georgia,serif}
+body[data-series="sam-spade"] .spade-featured__media {height:145px;position:relative;display:flex;flex-direction:column;justify-content:end;background:#251914}
+body[data-series="sam-spade"] .spade-featured__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7}
+body[data-series="sam-spade"] .spade-featured .audio-player{position:relative;z-index:2;margin:0;display:flex;gap:5px;background:#100907C9;padding:4px;font-size:12px}
+body[data-series="sam-spade"] .spade-featured .audio-player button{width:28px;min-width:28px;height:28px}
+body[data-series="sam-spade"] .spade-featured .audio-player input{min-width:10px}
+body[data-series="sam-spade"] .spade-featured .audio-player input.audio-player__volume{width:40px;flex:0 0 40px}
+body[data-series="sam-spade"] .spade-featured__copy{overflow:auto;min-height:0;padding:1px 10px}
+body[data-series="sam-spade"] .spade-featured__copy h2{font:700 25px Georgia,serif;margin:0 0 5px}
+body[data-series="sam-spade"] .spade-featured__copy p{font:18px/1.35 Georgia,serif;margin:0}
