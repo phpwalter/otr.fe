@@ -51,17 +51,6 @@ body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-
   text-align: center;
 }
 
-body[data-series="escape"] .featured-episode-tall__heading time {
-  font-size: 26px;
-  text-align: center;
-}
-
-body[data-series="escape"] .featured-episode-tall__heading time {
-  display: block;
-  width: 100%;
-  margin: 0;
-}
-
 /* Shared gold gradient across the Escape anniversary, heading, and date glyphs. */
 body[data-series="escape"] .site-shell > .page.page-landing > .featured-episode-tall > .featured-episode-tall__heading {
   background: linear-gradient(
