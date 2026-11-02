@@ -3,14 +3,33 @@
     "adventure": {
       "shows": {
         "escape": {
-          "artwork": {"mode": "page"},
+          "artwork": {
+            "mode": "page"
+          },
           "title": "Escape",
           "href": "/escape",
           "years": "1947–1954",
           "featuredEligible": true,
           "tagline": "CLASSIC RADIO ARCHIVE",
           "anniversaryYears": 75,
-          "navItems": [["Episodes", "episodes"], ["Cast", "cast"], ["Writers", "writers"], ["About", "about"]]
+          "navItems": [
+            [
+              "Episodes",
+              "episodes"
+            ],
+            [
+              "Cast",
+              "cast"
+            ],
+            [
+              "Writers",
+              "writers"
+            ],
+            [
+              "About",
+              "about"
+            ]
+          ]
         }
       }
     },
@@ -114,7 +133,12 @@
           "years": "1946–1951",
           "featuredEligible": true,
           "tagline": "CRIME. WIT. SAN FRANCISCO.",
-          "anniversaryYears": 75
+          "anniversaryYears": 75,
+          "artwork": {
+            "mode": "page"
+          },
+          "showCardGrid": false,
+          "showNav": false
         },
         "sherlock-holmes": {
           "title": "Sherlock Holmes",
@@ -193,12 +217,51 @@
     "mystery": {
       "shows": {
         "suspense": {
-          "navItems": [["Home",""],["Episodes","episodes"],["Cast","cast"],["Writers","writers"],["History","history"],["Gallery","gallery"]],
-          "artwork": {"mode": "hero"},
+          "navItems": [
+            [
+              "Home",
+              ""
+            ],
+            [
+              "Episodes",
+              "episodes"
+            ],
+            [
+              "Cast",
+              "cast"
+            ],
+            [
+              "Writers",
+              "writers"
+            ],
+            [
+              "History",
+              "history"
+            ],
+            [
+              "Gallery",
+              "gallery"
+            ]
+          ],
+          "artwork": {
+            "mode": "hero"
+          },
           "cards": [
-            {"label": "Episodes", "desc": "Explore the episodes", "image": "/art/mystery/suspense/card-episodes.png"},
-            {"label": "Cast", "desc": "Meet the cast", "image": "/art/mystery/suspense/card-cast.png"},
-            {"label": "Writers", "desc": "Meet the writers", "image": "/art/mystery/suspense/card-writers.png"}
+            {
+              "label": "Episodes",
+              "desc": "Explore the episodes",
+              "image": "/art/mystery/suspense/card-episodes.png"
+            },
+            {
+              "label": "Cast",
+              "desc": "Meet the cast",
+              "image": "/art/mystery/suspense/card-cast.png"
+            },
+            {
+              "label": "Writers",
+              "desc": "Meet the writers",
+              "image": "/art/mystery/suspense/card-writers.png"
+            }
           ],
           "title": "Suspense",
           "href": "/suspense",
