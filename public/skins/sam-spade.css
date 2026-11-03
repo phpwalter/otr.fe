@@ -21,11 +21,11 @@ body[data-series="sam-spade"] .spade-artwork-interactions a,
 body[data-series="sam-spade"] .spade-artwork-interactions button,
 body[data-series="sam-spade"] .spade-artwork-interactions input {pointer-events:auto;}
 /* Measured against the supplied 1721 x 914 image, displayed at 1674px width. */
-/* Sam Spade artwork sidebar: live menu 100px lower than its original position. */
+/* Sam Spade artwork sidebar with native swatch page indicator. */
 body[data-series="sam-spade"] .spade-artwork-sidebar {
   position: absolute;
   left: 42px;
-  top: 114px;
+  top: 64px;
   width: 105px;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body[data-series="sam-spade"] .spade-artwork-sidebar a {
   height: 44px;
   padding: 0;
   color: #E8D8C0;
-  font: 700 15px/1 Georgia, serif;
+  font: 400 15px/1 Georgia, serif;
   text-decoration: none;
   text-transform: uppercase;
   outline: none;
@@ -50,23 +50,24 @@ body[data-series="sam-spade"] .spade-artwork-sidebar__text {
   position: relative;
   display: inline-block;
   white-space: nowrap;
+  transform: scaleX(.8);
+  transform-origin: left center;
 }
 body[data-series="sam-spade"] .spade-artwork-sidebar a:hover,
 body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible,
 body[data-series="sam-spade"] .spade-artwork-sidebar a[aria-current="page"] {
   color: #E12D2B;
 }
-body[data-series="sam-spade"] .spade-artwork-sidebar a:hover .spade-artwork-sidebar__text::after,
-body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible .spade-artwork-sidebar__text::after,
-body[data-series="sam-spade"] .spade-artwork-sidebar a[aria-current="page"] .spade-artwork-sidebar__text::after {
-  content: "";
+/* Keep swach.png at native dimensions, independent of the scaled text. */
+body[data-series="sam-spade"] .spade-artwork-sidebar a:hover::after,
+body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible::after,
+body[data-series="sam-spade"] .spade-artwork-sidebar a[aria-current="page"]::after {
+  content: url('/art/detective/sam-spade/swach.png');
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -7px;
-  height: 4px;
-  background: #BF161E;
-  box-shadow: 0 0 5px rgba(201, 20, 31, .5);
+  left: 50%;
+  top: calc(50% + 10px);
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 /* Artwork hotspots: the Characters region gets fixed stacking priority,
    including the 9px overlap with Gallery. */
