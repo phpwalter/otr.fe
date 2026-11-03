@@ -126,7 +126,7 @@ body[data-series="sam-spade"] .spade-hotspot--contact > .spade-highlight {
 }
 /* Dynamic episode interface replaces the static illustrated information area. */
 body[data-series="sam-spade"] .spade-featured {
-  position:absolute;left:1147px;top:371px;width:492px;height:420px;
+  position:absolute;left:1147px;top:371px;width:496px;height:430px;
   padding:5px 12px 10px; box-sizing:border-box;
   color:#F5DDC1; background:transparent;
   border:1px solid #ff0018; border-radius:6px;
@@ -140,6 +140,8 @@ body[data-series="sam-spade"] .spade-featured__heading {
   column-gap: 7px;
   align-items: center;
   text-align: left;
+  position: relative;
+  top: 8px;
 }
 body[data-series="sam-spade"] .spade-featured__years {
   grid-column: 1;
@@ -166,7 +168,7 @@ body[data-series="sam-spade"] .spade-featured__heading-copy {
   line-height: 1;
   white-space: nowrap;
   font-stretch: condensed;
-  transform: scaleX(.8);
+  transform: scaleX(.65);
   transform-origin: left center;
 }
 body[data-series="sam-spade"] .spade-featured__heading time {
