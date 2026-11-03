@@ -35,49 +35,71 @@ body[data-series="sam-spade"] .spade-artwork-sidebar a:nth-child(7){top:299px}
 body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible {
   outline:2px solid #EAC075;
 }
+/* Artwork hotspots: the Characters region gets fixed stacking priority,
+   including the 9px overlap with Gallery. */
 body[data-series="sam-spade"] .spade-hotspot {
-  position:absolute; display:block; background:transparent;
-  border:0; box-sizing:border-box; pointer-events:auto;
-  outline:none;
-}
-body[data-series="sam-spade"] .spade-hotspot--characters {left:148px;top:365px;width:330px;height:300px}
-/* Raise the active hotspot above adjacent panels. Characters overlaps Gallery by 9px. */
-body[data-series="sam-spade"] .spade-hotspot:hover,
-body[data-series="sam-spade"] .spade-hotspot:focus-visible,
-body[data-series="sam-spade"] .spade-hotspot.is-selected {
+  position: absolute;
+  display: block;
   z-index: 2;
+  box-sizing: border-box;
+  pointer-events: auto;
+  background: transparent;
+  border: 0;
+  outline: none;
 }
-
+body[data-series="sam-spade"] .spade-hotspot--characters {
+  left: 148px;
+  top: 365px;
+  width: 330px;
+  height: 300px;
+  z-index: 5;
+}
 body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:360px;width:321px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:360px;width:333px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:656px;width:566px;height:182px}
 body[data-series="sam-spade"] .spade-hotspot--contact {left:722px;top:656px;width:416px;height:181px}
+body[data-series="sam-spade"] .spade-hotspot:hover,
+body[data-series="sam-spade"] .spade-hotspot:focus-visible,
+body[data-series="sam-spade"] .spade-hotspot.is-selected {
+  z-index: 6;
+}
 body[data-series="sam-spade"] .spade-highlight {
-  position:absolute; inset:4px; border:2px solid transparent; border-radius:2px;
-  box-shadow:none; transition:border-color .18s,box-shadow .18s; pointer-events:none;
+  position: absolute;
+  inset: 4px;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  box-shadow: none;
+  pointer-events: none;
+  transition: border-color .18s, box-shadow .18s, filter .18s;
 }
-body[data-series="sam-spade"] .spade-hotspot:hover .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot:focus-visible .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot.is-selected .spade-highlight {
-  border-color:#D8AD69;
-  box-shadow:0 0 11px #DFAB60B0,inset 0 0 9px #D9A65B50;
+body[data-series="sam-spade"] .spade-hotspot:hover > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot:focus-visible > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot.is-selected > .spade-highlight {
+  border-color: #FFE84F;
+  box-shadow:
+    0 0 6px 2px rgba(255,232,79,.9),
+    0 0 16px 4px rgba(255,209,38,.62),
+    inset 0 0 10px rgba(255,232,79,.35);
 }
-body[data-series="sam-spade"] .spade-hotspot:focus-visible .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot.is-selected .spade-highlight {
-  border-color:#F4D18A;
+/* Contact's lower edge is intentionally absent where the telephone and desk
+   overlap. Only the visible three sides receive the yellow glow. */
+body[data-series="sam-spade"] .spade-hotspot--contact > .spade-highlight {
+  inset: 4px;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  box-shadow: none;
 }
-/* Contact: border segments end before the telephone/desk artwork. */
-body[data-series="sam-spade"] .spade-hotspot--contact .spade-highlight {
-  inset:4px; border:0; box-shadow:none!important;
-  border-left:2px solid transparent;
-  border-top:2px solid transparent;
-  border-right:2px solid transparent;
-}
-body[data-series="sam-spade"] .spade-hotspot--contact:hover .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot--contact:focus-visible .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot--contact.is-selected .spade-highlight {
-  border-left-color:#E5B974;border-top-color:#E5B974;border-right-color:#E5B974;
-  filter:drop-shadow(0 0 5px #D8AD69);
+body[data-series="sam-spade"] .spade-hotspot--contact:hover > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--contact:focus-visible > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--contact.is-selected > .spade-highlight {
+  border-left-color: #FFE84F;
+  border-top-color: #FFE84F;
+  border-right-color: #FFE84F;
+  box-shadow: none;
+  filter: drop-shadow(0 0 5px #FFE84F) drop-shadow(0 0 9px #FFD126);
 }
 /* Dynamic episode interface replaces the static illustrated information area. */
 body[data-series="sam-spade"] .spade-featured {
