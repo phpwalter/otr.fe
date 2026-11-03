@@ -148,14 +148,14 @@ body[data-series="sam-spade"] .spade-featured__years {
   grid-row: 1 / 3;
   align-self: start;
   position: relative;
-  top: -6px;
+  top: -11px;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 93px;
   color: #ff0018;
   line-height: 1;
   letter-spacing: -4px;
-  transform: scaleX(.8);
+  transform: scaleX(.7);
   transform-origin: left center;
 }
 body[data-series="sam-spade"] .spade-featured__heading-copy {
@@ -164,11 +164,11 @@ body[data-series="sam-spade"] .spade-featured__heading-copy {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 48px;
-  color: #ff0018;
+  color: white;
   line-height: 1;
   white-space: nowrap;
   font-stretch: condensed;
-  transform: scaleX(.65);
+  transform: scaleX(.7);
   transform-origin: left center;
 }
 body[data-series="sam-spade"] .spade-featured__heading time {
