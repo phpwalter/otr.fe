@@ -41,6 +41,13 @@ body[data-series="sam-spade"] .spade-hotspot {
   outline:none;
 }
 body[data-series="sam-spade"] .spade-hotspot--characters {left:148px;top:365px;width:330px;height:300px}
+/* Raise the active hotspot above adjacent panels. Characters overlaps Gallery by 9px. */
+body[data-series="sam-spade"] .spade-hotspot:hover,
+body[data-series="sam-spade"] .spade-hotspot:focus-visible,
+body[data-series="sam-spade"] .spade-hotspot.is-selected {
+  z-index: 2;
+}
+
 body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:360px;width:321px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:360px;width:333px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:656px;width:566px;height:182px}
