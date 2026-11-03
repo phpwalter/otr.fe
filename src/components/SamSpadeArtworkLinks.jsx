@@ -17,8 +17,8 @@ export default function SamSpadeArtworkLinks({episode, historicalDate, anniversa
     <nav className="spade-artwork-sidebar" aria-label="Sam Spade sections">
       {[
         ['Home', '/sam-spade'], ['Episodes','/sam-spade/episodes'],
-        ['Characters','/sam-spade/cast'], ['History','/sam-spade/history'],
-        ['Gallery','/sam-spade/gallery'], ['About','/sam-spade/about']
+        ['Cast','/sam-spade/cast'], ['Writers','/sam-spade/writers'],
+        ['Gallery','/sam-spade/gallery'], ['Contact','/sam-spade/contact']
       ].map(([label, href])=><a key={label} href={href} aria-label={label} aria-current={location.pathname===href?'page':undefined}><span className="spade-artwork-sidebar__text">{label}</span></a>)}
     </nav>
     {panels.map(([key,label,href])=><a
