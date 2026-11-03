@@ -126,10 +126,10 @@ body[data-series="sam-spade"] .spade-hotspot--contact > .spade-highlight {
 }
 /* Dynamic episode interface replaces the static illustrated information area. */
 body[data-series="sam-spade"] .spade-featured {
-  position:absolute;left:1147px;top:371px;width:482px;height:420px;
+  position:absolute;left:1147px;top:371px;width:492px;height:420px;
   padding:5px 12px 10px; box-sizing:border-box;
-  color:#F5DDC1; background:#110A08;
-  border:1px solid #D5AF6C; border-radius:6px;
+  color:#F5DDC1; background:transparent;
+  border:0; border-radius:6px;
   display:flex; flex-direction:column; gap:7px; pointer-events:auto;
 }
 /* Text-only anniversary heading: ornamental rules are supplied by page artwork. */
