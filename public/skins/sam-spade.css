@@ -54,10 +54,10 @@ body[data-series="sam-spade"] .spade-hotspot--characters {
   height: 300px;
   z-index: 5;
 }
-body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:365px;width:321px;height:287px}
-body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:365px;width:333px;height:287px}
-body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:656px;width:566px;height:182px}
-body[data-series="sam-spade"] .spade-hotspot--contact {left:722px;top:656px;width:416px;height:181px}
+body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:365px;width:300px;height:300px}
+body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:365px;width:300px;height:300px}
+body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:665px;width:574px;height:182px}
+body[data-series="sam-spade"] .spade-hotspot--contact {left:718px;top:665px;width:426px;height:181px}
 body[data-series="sam-spade"] .spade-hotspot:hover,
 body[data-series="sam-spade"] .spade-hotspot:focus-visible,
 body[data-series="sam-spade"] .spade-hotspot.is-selected {
@@ -83,6 +83,18 @@ body[data-series="sam-spade"] .spade-hotspot.is-selected > .spade-highlight {
     0 0 16px 4px rgba(255,209,38,.62),
     inset 0 0 10px rgba(255,232,79,.35);
 }
+/* Gallery is open along the bottom: retain only the other three glowing sides. */
+body[data-series="sam-spade"] .spade-hotspot--gallery > .spade-highlight {
+  border-bottom: 0;
+}
+body[data-series="sam-spade"] .spade-hotspot--gallery:hover > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--gallery:focus-visible > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--gallery.is-selected > .spade-highlight {
+  border-bottom: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 0 6px rgba(255,232,79,.9))
+          drop-shadow(0 0 13px rgba(255,209,38,.62));
+}
 /* Contact's lower edge is intentionally absent where the telephone and desk
    overlap. Only the visible three sides receive the yellow glow. */
 body[data-series="sam-spade"] .spade-hotspot--contact > .spade-highlight {
@@ -99,8 +111,10 @@ body[data-series="sam-spade"] .spade-hotspot--contact.is-selected > .spade-highl
   border-left-color: #FFE84F;
   border-top-color: #FFE84F;
   border-right-color: #FFE84F;
+  border-radius: 4px;
   box-shadow: none;
-  filter: drop-shadow(0 0 5px #FFE84F) drop-shadow(0 0 9px #FFD126);
+  filter: drop-shadow(0 0 6px rgba(255,232,79,.9))
+          drop-shadow(0 0 13px rgba(255,209,38,.62));
 }
 /* Dynamic episode interface replaces the static illustrated information area. */
 body[data-series="sam-spade"] .spade-featured {
