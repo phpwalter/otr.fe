@@ -132,10 +132,40 @@ body[data-series="sam-spade"] .spade-featured {
   border:1px solid #D5AF6C; border-radius:6px;
   display:flex; flex-direction:column; gap:7px; pointer-events:auto;
 }
-body[data-series="sam-spade"] .spade-featured__heading{text-align:center}
-body[data-series="sam-spade"] .spade-featured__heading span{display:block;font:700 25px Georgia,serif;white-space:nowrap}
-body[data-series="sam-spade"] .spade-featured__heading b{font-size:48px;color:#D11224}
-body[data-series="sam-spade"] .spade-featured__heading time{font:19px Georgia,serif}
+/* Text-only anniversary heading: ornamental rules are supplied by page artwork. */
+body[data-series="sam-spade"] .spade-featured__heading {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  grid-template-rows: 43px 26px;
+  column-gap: 7px;
+  align-items: center;
+  text-align: left;
+}
+body[data-series="sam-spade"] .spade-featured__years {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  align-self: start;
+  color: #ED111C;
+  font: 700 70px/.95 Georgia, serif;
+  letter-spacing: -4px;
+}
+body[data-series="sam-spade"] .spade-featured__heading-copy {
+  grid-column: 2;
+  grid-row: 1;
+  color: #F8F5EB;
+  font: 700 28px/1 Georgia, serif;
+  white-space: nowrap;
+  font-stretch: condensed;
+  transform: scaleX(.85);
+  transform-origin: left center;
+}
+body[data-series="sam-spade"] .spade-featured__heading time {
+  grid-column: 2;
+  grid-row: 2;
+  color: #EDE5D9;
+  font: 18px/1 Georgia, serif;
+  text-align: center;
+}
 body[data-series="sam-spade"] .spade-featured__media {height:145px;position:relative;display:flex;flex-direction:column;justify-content:end;background:#251914}
 body[data-series="sam-spade"] .spade-featured__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7}
 body[data-series="sam-spade"] .spade-featured .audio-player{position:relative;z-index:2;margin:0;display:flex;gap:5px;background:#100907C9;padding:4px;font-size:12px}
