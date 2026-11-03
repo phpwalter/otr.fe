@@ -54,8 +54,8 @@ body[data-series="sam-spade"] .spade-hotspot--characters {
   height: 300px;
   z-index: 5;
 }
-body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:360px;width:321px;height:287px}
-body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:360px;width:333px;height:287px}
+body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:365px;width:321px;height:287px}
+body[data-series="sam-spade"] .spade-hotspot--cases {left:804px;top:365px;width:333px;height:287px}
 body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:656px;width:566px;height:182px}
 body[data-series="sam-spade"] .spade-hotspot--contact {left:722px;top:656px;width:416px;height:181px}
 body[data-series="sam-spade"] .spade-hotspot:hover,
