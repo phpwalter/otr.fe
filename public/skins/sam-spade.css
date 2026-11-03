@@ -24,7 +24,7 @@ body[data-series="sam-spade"] .spade-artwork-interactions input {pointer-events:
 /* Sam Spade artwork sidebar with native swatch page indicator. */
 body[data-series="sam-spade"] .spade-artwork-sidebar {
   position: absolute;
-  left: 42px;
+  left: 52px;
   top: 64px;
   width: 105px;
   display: flex;
@@ -64,9 +64,8 @@ body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible::after,
 body[data-series="sam-spade"] .spade-artwork-sidebar a[aria-current="page"]::after {
   content: url('/art/detective/sam-spade/swach.png');
   position: absolute;
-  left: 50%;
+  left: 0;
   top: calc(50% + 10px);
-  transform: translateX(-50%);
   pointer-events: none;
 }
 /* Artwork hotspots: the Characters region gets fixed stacking priority,
