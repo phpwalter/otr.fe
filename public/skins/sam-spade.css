@@ -56,8 +56,8 @@ body[data-series="sam-spade"] .spade-hotspot--characters {
 }
 body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:365px;width:330px;height:300px}
 body[data-series="sam-spade"] .spade-hotspot--cases {left:802px;top:365px;width:347px;height:300px}
-body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:665px;width:574px;height:182px}
-body[data-series="sam-spade"] .spade-hotspot--contact {left:718px;top:665px;width:426px;height:181px}
+body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:659px;width:574px;height:182px}
+body[data-series="sam-spade"] .spade-hotspot--contact {left:718px;top:659px;width:426px;height:181px}
 body[data-series="sam-spade"] .spade-hotspot:hover,
 body[data-series="sam-spade"] .spade-hotspot:focus-visible,
 body[data-series="sam-spade"] .spade-hotspot.is-selected {
