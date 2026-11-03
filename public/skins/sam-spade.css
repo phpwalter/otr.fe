@@ -83,38 +83,13 @@ body[data-series="sam-spade"] .spade-hotspot.is-selected > .spade-highlight {
     0 0 16px 4px rgba(255,209,38,.62),
     inset 0 0 10px rgba(255,232,79,.35);
 }
-/* Gallery is open along the bottom: retain only the other three glowing sides. */
-body[data-series="sam-spade"] .spade-hotspot--gallery > .spade-highlight {
-  border-bottom: 0;
-}
-body[data-series="sam-spade"] .spade-hotspot--gallery:hover > .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot--gallery:focus-visible > .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot--gallery.is-selected > .spade-highlight {
-  border-bottom: 0;
-  box-shadow: none;
-  filter: drop-shadow(0 0 6px rgba(255,232,79,.9))
-          drop-shadow(0 0 13px rgba(255,209,38,.62));
-}
-/* Contact's lower edge is intentionally absent where the telephone and desk
-   overlap. Only the visible three sides receive the yellow glow. */
+/* Gallery and Contact use the exact same 2px yellow frame, 4px corners,
+   and hover/focus/selection glow as Cases, but without a bottom border.
+   Clip only the glow outside their lower edge to preserve the open bottom. */
+body[data-series="sam-spade"] .spade-hotspot--gallery > .spade-highlight,
 body[data-series="sam-spade"] .spade-hotspot--contact > .spade-highlight {
-  inset: 4px;
-  border: 0;
-  border-left: 2px solid transparent;
-  border-top: 2px solid transparent;
-  border-right: 2px solid transparent;
-  box-shadow: none;
-}
-body[data-series="sam-spade"] .spade-hotspot--contact:hover > .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot--contact:focus-visible > .spade-highlight,
-body[data-series="sam-spade"] .spade-hotspot--contact.is-selected > .spade-highlight {
-  border-left-color: #FFE84F;
-  border-top-color: #FFE84F;
-  border-right-color: #FFE84F;
-  border-radius: 4px;
-  box-shadow: none;
-  filter: drop-shadow(0 0 6px rgba(255,232,79,.9))
-          drop-shadow(0 0 13px rgba(255,209,38,.62));
+  border-bottom: 0;
+  clip-path: inset(-24px -24px 0 -24px);
 }
 /* Dynamic episode interface replaces the static illustrated information area. */
 body[data-series="sam-spade"] .spade-featured {
