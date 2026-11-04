@@ -135,6 +135,8 @@ body[data-series="sam-spade"] .spade-featured {
 /* Sam Spade selects shared Style B in its show skin. */
 body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
   --featured-anniversary-variant: b;
+  /* Optional fixed first-column width: --featured-number-track-width: 75px; */
+  /* Omit the override to use the numeral's measured, horizontally scaled width. */
   --featured-heading-font: 'Playfair Display', Georgia, serif;
   --featured-heading-weight: 900;
   --featured-heading-size: 27px;
