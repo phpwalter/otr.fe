@@ -223,8 +223,10 @@ body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type {
   width: 52px !important;
   min-width: 52px !important;
   height: 52px !important;
-  display: grid !important;
-  place-items: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   padding: 0 !important;
   line-height: 1;
   font-size: 23px;
@@ -235,12 +237,16 @@ body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type[aria
 }
 body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type[aria-label="Play"]::before {
   content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 0;
   height: 0;
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
   border-left: 17px solid currentColor;
-  transform: translateX(2px);
+  /* Optical center: a triangle's visual center lies one-third along its width. */
+  transform: translate(-33.333%, -50%);
 }
 body[data-series="sam-spade"] .audio-player--artwork > input[type="range"]:not(.audio-player__volume) {
   grid-column: 1;
