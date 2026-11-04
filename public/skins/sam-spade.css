@@ -141,7 +141,7 @@ body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
   --featured-date-font: Georgia, serif;
   --featured-date-size: 18px;
   --featured-heading-gap: 8px;
-  --featured-date-gap: 5px;
+  --featured-date-gap: 0px;
   color: white;
   width: 100%;
 }
@@ -155,6 +155,7 @@ body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__la
   /* Grow the actual line box so the date flows beneath it automatically.
      Doubling the font size and halving X scale preserves the prior visual shape. */
   font-size: calc(var(--featured-heading-size) * 2);
+  line-height: .8;
   scale: .35 1;
   transform-origin: left top;
 }
