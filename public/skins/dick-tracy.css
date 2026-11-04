@@ -98,8 +98,7 @@ body[data-series="dick-tracy"] .tracy-featured__date {
   justify-content: center;
   align-items: center;
   color: #ffe1a0;
-  background: #b82118;
-  font: 700 32px/1 Georgia, serif;
+  font: 400 32px/1 'Anton', sans-serif;
   letter-spacing: .8px;
   text-transform: uppercase;
   white-space: nowrap;
