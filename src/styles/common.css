@@ -561,7 +561,8 @@ html,body,#root{height:100%;overflow:hidden}
   align-items: stretch;
 }
 .featured-anniversary--b .featured-anniversary__number {
-  align-self: last baseline;
+  /* Keep the numeral anchored to the top of the same grid row as the label. */
+  align-self: start;
 }
 .featured-anniversary--b .featured-anniversary__details {
   display: flex;
