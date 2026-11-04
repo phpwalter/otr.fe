@@ -6,7 +6,7 @@ const formatTime=seconds=>Number.isFinite(seconds)?Math.floor(seconds/60)+':'+St
  * Shared audio playback component for every radio-series page.
  * Pass an episode with audio_url; radioStyle preserves the X Minus One layout.
  */
-export default function AudioPlayer({episode,radioStyle=false}){
+export default function AudioPlayer({episode,radioStyle=false,artworkStyle=false}){
   const ref=useRef(null);
   const [playing,setPlaying]=useState(false);
   const [position,setPosition]=useState(0);
@@ -40,7 +40,7 @@ export default function AudioPlayer({episode,radioStyle=false}){
   const progress=<input type="range" aria-label="Seek" min="0" max={duration||1} step="0.1" value={Math.min(position,duration||1)} onChange={seek} disabled={!available}/>;
   const clock=<time aria-label="Elapsed time and duration">{formatTime(position)} / {formatTime(duration)}</time>;
 
-  return <div className="audio-player">
+  return <div className={'audio-player'+(artworkStyle?' audio-player--artwork':'')}>
     <audio ref={ref} src={url||undefined} preload="metadata" muted={muted} volume={volume}
       onPlay={()=>setPlaying(true)} onPause={()=>setPlaying(false)}
       onEnded={()=>setPlaying(false)} onTimeUpdate={e=>setPosition(e.currentTarget.currentTime)}
@@ -48,7 +48,7 @@ export default function AudioPlayer({episode,radioStyle=false}){
     />
     <button type="button" disabled={!available} onClick={toggle} aria-label={playing?'Pause':'Play'}>{playing?'Ⅱ':'▶'}</button>
     {radioStyle?<div className="x1-progress-group">{progress}{clock}</div>:<>{progress}{clock}</>}
-    <button type="button" onClick={()=>setMuted(value=>!value)} disabled={!available} aria-label={muted?'Unmute':'Mute'} aria-pressed={muted}>{muted?'🔇':radioStyle?'🔊':'♪'}</button>
+    <button type="button" onClick={()=>setMuted(value=>!value)} disabled={!available} aria-label={muted?'Unmute':'Mute'} aria-pressed={muted}>{muted?'🔇':(radioStyle||artworkStyle)?'🔊':'♪'}</button>
     <input className="audio-player__volume" type="range" min="0" max="1" step="0.01" value={volume} disabled={!available} aria-label="Volume" onChange={e=>{const v=Number(e.target.value);setVolume(v);if(v>0)setMuted(false);}}/>
   </div>;
 }
