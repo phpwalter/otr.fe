@@ -1,6 +1,7 @@
 import React, {useLayoutEffect, useRef} from 'react';
 import AudioPlayer from './AudioPlayer.jsx';
-export default function FeaturedEpisode({episode={},anniversaryYears=75,anniversaryText=null,headingText='YEARS AGO YESTERDAY',anniversaryLayout='dropcap',historicalDate='',titleOverride=null,descriptionOverride=null,}) {
+import FeaturedAnniversaryHeader from './FeaturedAnniversaryHeader.jsx';
+export default function FeaturedEpisode({episode={},anniversaryYears=75,anniversaryText=null,headingText='YEARS AGO YESTERDAY',anniversaryLayout='dropcap',headerVariant=null,historicalDate='',titleOverride=null,descriptionOverride=null,}) {
  const empty=!episode||episode.no_broadcast||!episode.title;
  const headerRef=useRef(null);
  const headingSpanRef=useRef(null);
@@ -25,10 +26,10 @@ export default function FeaturedEpisode({episode={},anniversaryYears=75,annivers
  },[anniversaryLayout,headingText]);
  return <section className={'featured-episode'+(empty?' is-empty':'')} aria-label="Featured episode">
   <div className="featured-art" role="img" aria-label="Featured episode artwork"/>
-  <header ref={headerRef} className={"featured-header anniversary-layout--"+(anniversaryLayout==="centered"?"centered":"dropcap")}>
+  {headerVariant ? <FeaturedAnniversaryHeader className={'featured-anniversary--'+headerVariant} years={anniversaryText??anniversaryYears} text={headingText} date={historicalDate}/> : <header ref={headerRef} className={"featured-header anniversary-layout--"+(anniversaryLayout==="centered"?"centered":"dropcap")}>
    <strong className="anniversary">{anniversaryText??anniversaryYears}</strong>
    <div><h3><span ref={headingSpanRef}>{headingText}</span></h3><time>{historicalDate}</time></div>
-  </header>
+  </header>}
   <div className="featured-body">
    <div className="featured-content">
     <h3 className="featured-title">{titleOverride??(empty?'No broadcast this date':episode.title)}</h3>
