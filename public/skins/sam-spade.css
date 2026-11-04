@@ -152,7 +152,10 @@ body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__nu
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__label {
   color: white;
-  scale: .7 2;
+  /* Grow the actual line box so the date flows beneath it automatically.
+     Doubling the font size and halving X scale preserves the prior visual shape. */
+  font-size: calc(var(--featured-heading-size) * 2);
+  scale: .35 1;
   transform-origin: left top;
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__date {
