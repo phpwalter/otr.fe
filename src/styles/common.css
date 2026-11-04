@@ -552,9 +552,38 @@ html,body,#root{height:100%;overflow:hidden}
 .featured-anniversary--a .featured-anniversary__date {
   text-align: center;
 }
-.featured-anniversary--b .featured-anniversary__date {
+/* Option B: one grid row, two intrinsic-width columns.
+   The last baseline of the details stack (its date) lines up with the
+   numeral baseline. The label and date stack tightly in normal flow. */
+.featured-anniversary--b .featured-anniversary__group {
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content;
+  align-items: last baseline;
+}
+.featured-anniversary--b .featured-anniversary__number,
+.featured-anniversary--b .featured-anniversary__details {
+  align-self: last baseline;
+}
+.featured-anniversary--b .featured-anniversary__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  width: max-content;
+  margin: 0;
+  padding: 0;
   text-align: left;
 }
+.featured-anniversary--b .featured-anniversary__label,
+.featured-anniversary--b .featured-anniversary__date {
+  display: block;
+  flex: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 .featured-anniversary--c .featured-anniversary__group {
   grid-template-columns: max-content max-content;
   grid-template-rows: auto auto;
