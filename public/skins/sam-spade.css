@@ -1,25 +1,282 @@
-/* Independent sam-spade presentation. Shared HTML/DOM remains unchanged. */
-.site{background:#100c09;color:#e4cbb2;font-family:Georgia,serif}
-.header{background:#0b0d11;border-bottom:2px solid #bd1018;position:absolute;left:0;top:0;bottom:0;width:165px;display:block;padding:35px 20px;}
-.header nav{display:flex;flex-direction:column;gap:21px;margin-top:45px;}
-.header a{color:#e4cbb2}.header a.active{color:#bd1018}
-.masthead{font-size:13px;line-height:2}
-.canvas{margin-left:165px;grid-template-columns:2.15fr 1fr;grid-template-areas:"hero hero" "cards featured" "about about";gap:15px;padding:10px}
-.hero{min-height:610px;border:1px solid #493728}
-.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/sam-spade-hero.webp')}
-.hero-copy{padding:78px 65px;max-width:100%}
-.hero h1{font-family:Georgia,serif;font-style:normal;font-size:115px;color:#bd1018;text-shadow:3px 4px #000}
-.tagline{color:#fff0ce}
-.hero-link{background:#bd1018;color:#fff5de}
-.featured{border:2px solid #bd1018;background:#100e0e;color:#e4cbb2;align-self:start;}
-.anniversary-number{color:#bd1018}
-.featured-art{background-image:url('/art/sam-spade-card.webp')}
-.player button{border-color:#bd1018;color:#bd1018}
-.player input{accent-color:#bd1018}
-.cards{grid-template-columns:repeat(2,1fr);align-self:start}
-.show-card-grid__card{background:#131b21;color:#e4cbb2;border:1px solid #bd1018}
-.show-card-grid__card .card-image{background-image:url('/art/sam-spade-hero.webp')}
-.show-card-grid__card h2{color:#bd1018}
-.about{border-top:1px solid #bd1018}
-.footer{color:#e4cbb2;font-size:12px}
-@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
+/* Sam Spade: fixed-width artwork and transparent interactive overlays. */
+body[data-series="sam-spade"] .site-shell[data-artwork-mode="page"] {
+  --show-page-image: url('/art/detective/sam-spade/page.png');
+  background-position: center 60px;
+  background-size: 1674px auto;
+  background-color: #120905;
+}
+body[data-series="sam-spade"] .site-shell > .page.page-landing {
+  top:53px; height:886px; min-height:886px; padding:0;
+  background:transparent; overflow:hidden;
+}
+body[data-series="sam-spade"] .page.page-landing > .hero,
+body[data-series="sam-spade"] .page.page-landing > .show-nav,
+body[data-series="sam-spade"] .page.page-landing > .featured-episode,
+body[data-series="sam-spade"] .page.page-landing > .featured-episode-tall,
+body[data-series="sam-spade"] .page.page-landing > .show-card-grid {display:none!important;}
+body[data-series="sam-spade"] .spade-artwork-interactions {
+  position:absolute; inset:0; z-index:8; pointer-events:none;
+}
+body[data-series="sam-spade"] .spade-artwork-interactions a,
+body[data-series="sam-spade"] .spade-artwork-interactions button,
+body[data-series="sam-spade"] .spade-artwork-interactions input {pointer-events:auto;}
+/* Measured against the supplied 1721 x 914 image, displayed at 1674px width. */
+/* Sam Spade artwork sidebar with native swatch page indicator. */
+body[data-series="sam-spade"] .spade-artwork-sidebar {
+  position: absolute;
+  left: 52px;
+  top: 64px;
+  width: 105px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: auto;
+}
+body[data-series="sam-spade"] .spade-artwork-sidebar a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 105px;
+  height: 44px;
+  padding: 0;
+  color: #E8D8C0;
+  font: 400 15px/1 Georgia, serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+}
+body[data-series="sam-spade"] .spade-artwork-sidebar__text {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  transform: scaleX(.8);
+  transform-origin: left center;
+}
+body[data-series="sam-spade"] .spade-artwork-sidebar a:hover,
+body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible,
+body[data-series="sam-spade"] .spade-artwork-sidebar a[aria-current="page"] {
+  color: #E12D2B;
+}
+/* Keep swach.png at native dimensions, independent of the scaled text. */
+body[data-series="sam-spade"] .spade-artwork-sidebar a:hover::after,
+body[data-series="sam-spade"] .spade-artwork-sidebar a:focus-visible::after,
+body[data-series="sam-spade"] .spade-artwork-sidebar a[aria-current="page"]::after {
+  content: url('/art/detective/sam-spade/swach.png');
+  position: absolute;
+  left: 0;
+  top: calc(50% + 10px);
+  pointer-events: none;
+}
+/* Artwork hotspots: the Characters region gets fixed stacking priority,
+   including the 9px overlap with Gallery. */
+body[data-series="sam-spade"] .spade-hotspot {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  box-sizing: border-box;
+  pointer-events: auto;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+body[data-series="sam-spade"] .spade-hotspot--characters {
+  left: 148px;
+  top: 365px;
+  width: 330px;
+  height: 300px;
+  z-index: 5;
+}
+body[data-series="sam-spade"] .spade-hotspot--writers {left:477px;top:365px;width:330px;height:300px}
+body[data-series="sam-spade"] .spade-hotspot--cases {left:802px;top:365px;width:347px;height:300px}
+body[data-series="sam-spade"] .spade-hotspot--gallery {left:151px;top:659px;width:574px;height:182px}
+body[data-series="sam-spade"] .spade-hotspot--contact {left:718px;top:659px;width:426px;height:181px}
+body[data-series="sam-spade"] .spade-hotspot:hover,
+body[data-series="sam-spade"] .spade-hotspot:focus-visible,
+body[data-series="sam-spade"] .spade-hotspot.is-selected {
+  z-index: 6;
+}
+body[data-series="sam-spade"] .spade-highlight {
+  position: absolute;
+  inset: 4px;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  pointer-events: none;
+  transition: border-color .18s, box-shadow .18s, filter .18s;
+}
+body[data-series="sam-spade"] .spade-hotspot:hover > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot:focus-visible > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot.is-selected > .spade-highlight {
+  border-radius: 4px;
+  border-color: #FFE84F;
+  box-shadow:
+    0 0 6px 2px rgba(255,232,79,.9),
+    0 0 16px 4px rgba(255,209,38,.62),
+    inset 0 0 10px rgba(255,232,79,.35);
+}
+/* Gallery and Contact use the exact same 2px yellow frame, 4px corners,
+   and hover/focus/selection glow as Cases, but without a bottom border.
+   Clip only the glow outside their lower edge to preserve the open bottom. */
+body[data-series="sam-spade"] .spade-hotspot--gallery > .spade-highlight,
+body[data-series="sam-spade"] .spade-hotspot--contact > .spade-highlight {
+  border-bottom: 0;
+  clip-path: inset(-24px -24px 0 -24px);
+}
+/* Dynamic episode interface replaces the static illustrated information area. */
+body[data-series="sam-spade"] .spade-featured {
+  position:absolute;left:1147px;top:371px;width:496px;height:430px;
+  padding:5px 12px 10px; box-sizing:border-box;
+  color:#F5DDC1; background:transparent;
+  border:1px solid #ff0018; border-radius:6px;
+  display:flex; flex-direction:column; gap:7px; pointer-events:auto;
+}
+/* Sam Spade selects shared Style B in its show skin. */
+body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
+  --featured-anniversary-variant: b;
+  /* Optional fixed first-column width: --featured-number-track-width: 75px; */
+  /* Omit the override to use the numeral's measured, horizontally scaled width. */
+  --featured-heading-font: 'Playfair Display', Georgia, serif;
+  --featured-heading-weight: 900;
+  --featured-heading-size: 27px;
+  --featured-date-font: Georgia, serif;
+  --featured-date-size: 18px;
+  --featured-heading-gap: 20px;
+  color: white;
+  width: 100%;
+}
+body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__number {
+  padding-left: 10px;
+  color: #ff0018;
+  font-size: 95px;
+  scale: .7 1;
+  transform-origin: left center;
+}
+body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__label {
+  color: white;
+  /* Grow the actual line box so the date flows beneath it automatically.
+     Doubling the font size and halving X scale preserves the prior visual shape. */
+  font-size: calc(var(--featured-heading-size) * 2);
+  line-height: .8;
+  scale: .35 1;
+  transform-origin: left top;
+  position: relative;
+  top: 12px;
+}
+body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__date {
+  color: #EDE5D9;
+  position: relative;
+  top: 10px;
+}
+/* Featured episode artwork occupies the upper-left of the media panel.
+   Play is upper-right; seek, elapsed/duration and mute run beneath the art. */
+body[data-series="sam-spade"] .spade-featured__media {
+  height: 150px;
+  flex: 0 0 150px;
+  position: relative;
+  margin-left: 6px;
+  width: calc(100% - 6px);
+  border: 0;
+  border-radius: 0;
+  background: #110a08;
+  overflow: hidden;
+}
+body[data-series="sam-spade"] .spade-featured__artwork {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  right: 55px;
+  height: 100px;
+  background: #251914 url('/art/detective/sam-spade/sample.png') center / cover no-repeat;
+  overflow: hidden;
+}
+body[data-series="sam-spade"] .spade-featured__artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+body[data-series="sam-spade"] .spade-featured .audio-player--artwork {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content 48px;
+  grid-template-rows: minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 3px 6px;
+  margin: 0;
+  padding: 5px 6px 7px 10px;
+  min-width: 0;
+  background: transparent;
+  font-size: 12px;
+}
+body[data-series="sam-spade"] .audio-player--artwork > audio {
+  display: none;
+}
+body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  width: 52px !important;
+  min-width: 52px !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 !important;
+  line-height: 1;
+  font-size: 23px;
+}
+/* Replace the font-dependent play glyph with a centered CSS triangle. */
+body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type[aria-label="Play"] {
+  font-size: 0;
+}
+body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type[aria-label="Play"]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid currentColor;
+  /* Optical center: a triangle's visual center lies one-third along its width. */
+  transform: translate(-33.333%, -50%);
+}
+body[data-series="sam-spade"] .audio-player--artwork > input[type="range"]:not(.audio-player__volume) {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  min-width: 0;
+}
+body[data-series="sam-spade"] .audio-player--artwork > time {
+  grid-column: 2;
+  grid-row: 2;
+  white-space: nowrap;
+}
+body[data-series="sam-spade"] .audio-player--artwork > button:last-of-type {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: center;
+}
+body[data-series="sam-spade"] .audio-player--artwork > button {
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+  border: 2px solid #e7cd75 !important;
+  background: #080705b8 !important;
+  color: #f1d775 !important;
+}
+body[data-series="sam-spade"] .audio-player--artwork > .audio-player__volume {
+  display: none;
+}
+body[data-series="sam-spade"] .spade-featured__copy{overflow:visible;min-height:0;padding:1px 16px}
+body[data-series="sam-spade"] .spade-featured__copy h2{font:700 25px Georgia,serif;margin:0 0 5px}
+body[data-series="sam-spade"] .spade-featured__copy p{font:18px/1.35 Georgia,serif;margin:0}
