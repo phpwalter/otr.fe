@@ -1,5 +1,6 @@
 import React from 'react';
 import AudioPlayer from './AudioPlayer.jsx';
+import FeaturedAnniversaryHeader from './FeaturedAnniversaryHeader.jsx';
 
 /* Overlay-only controls: the underlying Sam Spade skin stays intact. */
 const panels = [
@@ -29,13 +30,7 @@ export default function SamSpadeArtworkLinks({episode, historicalDate, anniversa
       onBlur={()=>setSelected('')}
     ><span className="spade-highlight" aria-hidden="true"/></a>)}
     <section className="spade-featured" aria-label="Featured episode">
-      <header className="spade-featured__heading">
-        <h2 className="spade-featured__heading-title">
-          <span className="spade-featured__years">{anniversaryYears}</span>
-          <span className="spade-featured__heading-copy">YEARS AGO YESTERDAY</span>
-        </h2>
-        <div className="spade-featured__date">{date}</div>
-      </header>
+      <FeaturedAnniversaryHeader className="spade-featured__heading featured-anniversary--c" years={anniversaryYears} text="YEARS AGO YESTERDAY" date={date}/>
       <div className="spade-featured__media">
         {episode?.artwork_url && <img src={episode.artwork_url} alt="" />}
         <AudioPlayer episode={empty?null:episode}/>
