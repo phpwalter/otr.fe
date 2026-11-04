@@ -37,7 +37,7 @@ export default function FeaturedAnniversaryHeader({
     const update=()=>{
       // A show skin may choose the variant using --featured-anniversary-variant.
       // Explicit variant classes used by Wide/Tall continue to take precedence.
-      const explicit=['a','b','c'].find(v=>className.split(/\\s+/).includes('featured-anniversary--'+v));
+      const explicit=['a','b','c'].find(v=>className.split(/\s+/).includes('featured-anniversary--'+v));
       const cssVariant=getComputedStyle(root).getPropertyValue('--featured-anniversary-variant').trim().toLowerCase();
       const variant=explicit||(['a','b','c'].includes(cssVariant)?cssVariant:'c');
       for(const choice of ['a','b','c']) {
