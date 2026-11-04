@@ -32,8 +32,10 @@ export default function SamSpadeArtworkLinks({episode, historicalDate, anniversa
     <section className="spade-featured" aria-label="Featured episode">
       <FeaturedAnniversaryHeader className="spade-featured__heading" years={anniversaryYears} text="YEARS AGO YESTERDAY" date={date}/>
       <div className="spade-featured__media">
-        {episode?.artwork_url && <img src={episode.artwork_url} alt="" />}
-        <AudioPlayer episode={empty?null:episode}/>
+        <div className="spade-featured__artwork">
+          {episode?.artwork_url && <img src={episode.artwork_url} alt="" />}
+        </div>
+        <AudioPlayer episode={empty?null:episode} artworkStyle/>
       </div>
       <div className="spade-featured__copy">
         <h2>{empty?'No broadcast this date':episode.title}</h2>
