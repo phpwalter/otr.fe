@@ -46,8 +46,21 @@ export default function FeaturedAnniversaryHeader({
       // Reset measured values before sampling the browser's current typography.
       root.style.removeProperty('--featured-number-size');
       root.style.removeProperty('--featured-number-shift');
-      // Style B uses the grid's last-baseline alignment; Style C uses
-      // the shared first-row baseline. Only A requires glyph measurement.
+      root.style.removeProperty('--featured-number-track-width');
+      if(variant==='b') {
+        // CSS scale changes the rendered numeral but not the grid's
+        // max-content width. Size column one to its actual visual width.
+        const style=getComputedStyle(number);
+        const size=parseFloat(style.fontSize)||16;
+        ctx.font=[style.fontStyle,style.fontWeight,style.fontSize,style.fontFamily].join(' ');
+        const value=number.textContent.trim();
+        const spacing=parseFloat(style.letterSpacing)||0;
+        const naturalWidth=ctx.measureText(value).width+spacing*value.length;
+        const scale=parseFloat(style.scale)||1;
+        const width=Math.max(1,Math.ceil(naturalWidth*scale));
+        root.style.setProperty('--featured-number-track-width',width+'px');
+        return;
+      }
       if(variant!=='a')return;
       const labelMetrics=glyph(label);
       const dateMetrics=glyph(dateNode);
@@ -72,6 +85,7 @@ export default function FeaturedAnniversaryHeader({
     const observer=new ResizeObserver(schedule);
     observer.observe(root);
     observer.observe(details);
+    observer.observe(number);
     schedule();
     document.fonts?.ready.then(schedule);
     document.fonts?.addEventListener?.('loadingdone',schedule);
