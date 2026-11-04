@@ -132,8 +132,9 @@ body[data-series="sam-spade"] .spade-featured {
   border:1px solid #ff0018; border-radius:6px;
   display:flex; flex-direction:column; gap:7px; pointer-events:auto;
 }
-/* Sam Spade opts into common Style C; no offsets or per-glyph scaling. */
+/* Sam Spade selects shared Style B in its show skin. */
 body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
+  --featured-anniversary-variant: b;
   --featured-heading-font: 'Playfair Display', Georgia, serif;
   --featured-heading-weight: 900;
   --featured-heading-size: 27px;
