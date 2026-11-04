@@ -147,9 +147,13 @@ body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__number {
   color: #ff0018;
+  scale: .7 1;
+  transform-origin: left center;
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__label {
   color: white;
+  scale: .7 1;
+  transform-origin: left center;
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__date {
   color: #EDE5D9;
