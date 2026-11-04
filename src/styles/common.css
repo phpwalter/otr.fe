@@ -583,3 +583,19 @@ html,body,#root{height:100%;overflow:hidden}
   grid-row: 2;
   text-align: center;
 }
+
+/* Shared header placement when a Wide or Tall panel opts in later.
+   Existing show headers retain their legacy rules until migrated. */
+.page .featured-episode > .featured-anniversary {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: stretch;
+}
+.page .featured-episode-tall > .featured-anniversary.featured-episode-tall__heading {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  justify-self: stretch;
+  transform: none;
+  text-align: center;
+}
