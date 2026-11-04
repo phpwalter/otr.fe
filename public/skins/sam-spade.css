@@ -158,6 +158,8 @@ body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__la
   line-height: .8;
   scale: .35 1;
   transform-origin: left top;
+  position: relative;
+  top: 12px;
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__date {
   color: #EDE5D9;
