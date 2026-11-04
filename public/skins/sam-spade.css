@@ -163,6 +163,8 @@ body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__la
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__date {
   color: #EDE5D9;
+  position: relative;
+  top: 10px;
 }
 body[data-series="sam-spade"] .spade-featured__media {height:145px;position:relative;display:flex;flex-direction:column;justify-content:end;background:#251914}
 body[data-series="sam-spade"] .spade-featured__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7}
