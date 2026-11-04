@@ -45,8 +45,10 @@ export default function FeaturedAnniversaryHeader({
       const numberMetrics=glyph(number);
       const labelRect=label.getBoundingClientRect();
       const dateRect=dateNode.getBoundingClientRect();
-      const visualTop=labelRect.top+(labelMetrics.lineHeight/2-labelMetrics.ascent);
-      const visualBottom=dateRect.top+(dateMetrics.lineHeight/2+dateMetrics.descent);
+      // Canvas supplies actual glyph ink extents. Convert them into line-box
+      // coordinates: visible heading top and the DATE BASELINE, respectively.
+      const visualTop=labelRect.top+(labelMetrics.lineHeight-labelMetrics.ascent-labelMetrics.descent)/2;
+      const visualBottom=dateRect.top+(dateMetrics.lineHeight-dateMetrics.ascent-dateMetrics.descent)/2+dateMetrics.ascent;
       const desiredHeight=Math.max(1,visualBottom-visualTop);
       const numberHeight=numberMetrics.ascent+numberMetrics.descent;
       const targetSize=numberMetrics.size*desiredHeight/Math.max(1,numberHeight);
@@ -54,7 +56,7 @@ export default function FeaturedAnniversaryHeader({
       // Re-measure with the new size to align the top of the actual visible numeral.
       const next=glyph(number);
       const numRect=number.getBoundingClientRect();
-      const numVisibleTop=numRect.top+(next.lineHeight/2-next.ascent);
+      const numVisibleTop=numRect.top+(next.lineHeight-next.ascent-next.descent)/2;
       root.style.setProperty('--featured-number-shift',(visualTop-numVisibleTop)+'px');
     };
     const schedule=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(update)};
