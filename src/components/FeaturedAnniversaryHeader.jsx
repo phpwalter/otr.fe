@@ -46,7 +46,7 @@ export default function FeaturedAnniversaryHeader({
       // Reset measured values before sampling the browser's current typography.
       root.style.removeProperty('--featured-number-size');
       root.style.removeProperty('--featured-number-shift');
-      root.style.removeProperty('--featured-number-track-width');
+      root.style.removeProperty('--featured-number-measured-width');
       if(variant==='b') {
         // CSS scale changes the rendered numeral but not the grid's
         // max-content width. Size column one to its actual visual width.
@@ -58,7 +58,7 @@ export default function FeaturedAnniversaryHeader({
         const naturalWidth=ctx.measureText(value).width+spacing*value.length;
         const scale=parseFloat(style.scale)||1;
         const width=Math.max(1,Math.ceil(naturalWidth*scale));
-        root.style.setProperty('--featured-number-track-width',width+'px');
+        root.style.setProperty('--featured-number-measured-width',width+'px');
         return;
       }
       if(variant!=='a')return;
