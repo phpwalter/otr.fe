@@ -141,7 +141,6 @@ body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
   --featured-date-font: Georgia, serif;
   --featured-date-size: 18px;
   --featured-heading-gap: 8px;
-  --featured-date-gap: 0px;
   color: white;
   width: 100%;
 }
