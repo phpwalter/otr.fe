@@ -146,6 +146,7 @@ body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__number {
   color: #ff0018;
+  font-size: 95px;
   scale: .7 1;
   transform-origin: left center;
 }
