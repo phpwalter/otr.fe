@@ -46,7 +46,9 @@ export default function FeaturedAnniversaryHeader({
       // Reset measured values before sampling the browser's current typography.
       root.style.removeProperty('--featured-number-size');
       root.style.removeProperty('--featured-number-shift');
-      if(variant==='c')return; // Baseline alignment and shared font size are CSS-owned.
+      // Style B uses the grid's last-baseline alignment; Style C uses
+      // the shared first-row baseline. Only A requires glyph measurement.
+      if(variant!=='a')return;
       const labelMetrics=glyph(label);
       const dateMetrics=glyph(dateNode);
       const numberMetrics=glyph(number);
