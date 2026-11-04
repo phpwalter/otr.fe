@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* Dick Tracy full-page, fixed-canvas artwork skin.
    Shared SiteHeader and SiteFooter remain untouched. All coordinates
    refer to the 1674 x 886 show viewport beneath the shared header. */
@@ -80,7 +82,7 @@ body[data-series="dick-tracy"] .tracy-featured__anniversary {
   min-height: 76px;
   display: block;
   color: #20160e;
-  font: 900 55px/1 Georgia, serif;
+  font: 400 55px/1 'Anton', sans-serif;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
