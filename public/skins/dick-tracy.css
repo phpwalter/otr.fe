@@ -71,6 +71,7 @@ body[data-series="dick-tracy"] .tracy-menu__hotspot--inactive {
 body[data-series="dick-tracy"] .tracy-featured {
   position: absolute;
   inset: 0;
+  transform: translateY(40px);
   pointer-events: none;
 }
 /* The anniversary lettering is baked into the supplied page artwork. */
