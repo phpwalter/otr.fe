@@ -37,7 +37,7 @@ export default function DickTracyArtworkLinks({
     </nav>
 
     <section className="tracy-featured" aria-label="Featured episode">
-      <span className="tracy-featured__anniversary sr-only">
+      <span className="tracy-featured__anniversary">
         {anniversaryYears} years ago today
       </span>
       <time className="tracy-featured__date">{historicalDate}</time>
