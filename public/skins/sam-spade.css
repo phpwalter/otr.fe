@@ -187,7 +187,7 @@ body[data-series="sam-spade"] .spade-featured__artwork {
   left: 9px;
   right: 55px;
   height: 100px;
-  background: #251914;
+  background: #251914 url('/art/detective/sam-spade/sample.png') center / cover no-repeat;
   overflow: hidden;
 }
 body[data-series="sam-spade"] .spade-featured__artwork img {
@@ -220,10 +220,27 @@ body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type {
   grid-row: 1;
   justify-self: center;
   align-self: center;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  font-size: 21px;
+  width: 52px !important;
+  min-width: 52px !important;
+  height: 52px !important;
+  display: grid !important;
+  place-items: center;
+  padding: 0 !important;
+  line-height: 1;
+  font-size: 23px;
+}
+/* Replace the font-dependent play glyph with a centered CSS triangle. */
+body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type[aria-label="Play"] {
+  font-size: 0;
+}
+body[data-series="sam-spade"] .audio-player--artwork > button:first-of-type[aria-label="Play"]::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid currentColor;
+  transform: translateX(2px);
 }
 body[data-series="sam-spade"] .audio-player--artwork > input[type="range"]:not(.audio-player__volume) {
   grid-column: 1;
