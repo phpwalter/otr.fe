@@ -14,6 +14,7 @@ export default function SamSpadeArtworkLinks({episode, historicalDate, anniversa
   const [selected, setSelected] = React.useState('');
   const date = historicalDate || '';
   const empty = !episode || episode.no_broadcast || !episode.title;
+  const artwork = episode?.artwork_url || episode?.image_url || episode?.image || episode?.artwork?.url || (typeof episode?.artwork === 'string' ? episode.artwork : null);
   return <div className="spade-artwork-interactions">
     <nav className="spade-artwork-sidebar" aria-label="Sam Spade sections">
       {[
@@ -33,7 +34,7 @@ export default function SamSpadeArtworkLinks({episode, historicalDate, anniversa
       <FeaturedAnniversaryHeader className="spade-featured__heading" years={anniversaryYears} text="YEARS AGO YESTERDAY" date={date}/>
       <div className="spade-featured__media">
         <div className="spade-featured__artwork">
-          {episode?.artwork_url && <img src={episode.artwork_url} alt="" />}
+          {artwork && <img src={artwork} alt="" />}
         </div>
         <AudioPlayer episode={empty?null:episode} artworkStyle/>
       </div>
