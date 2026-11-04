@@ -102,6 +102,7 @@ body[data-series="dick-tracy"] .tracy-featured__art {
   top: 576px;
   width: 325px;
   height: 197px;
+  background: url('/art/detective/dick-tracy/sample.png') center / cover no-repeat;
   overflow: hidden;
   pointer-events: none;
 }
