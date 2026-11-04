@@ -276,6 +276,6 @@ body[data-series="sam-spade"] .audio-player--artwork > button {
 body[data-series="sam-spade"] .audio-player--artwork > .audio-player__volume {
   display: none;
 }
-body[data-series="sam-spade"] .spade-featured__copy{overflow:auto;min-height:0;padding:1px 10px}
+body[data-series="sam-spade"] .spade-featured__copy{overflow:visible;min-height:0;padding:1px 16px}
 body[data-series="sam-spade"] .spade-featured__copy h2{font:700 25px Georgia,serif;margin:0 0 5px}
 body[data-series="sam-spade"] .spade-featured__copy p{font:18px/1.35 Georgia,serif;margin:0}
