@@ -147,6 +147,7 @@ body[data-series="sam-spade"] .spade-featured__heading.featured-anniversary {
   width: 100%;
 }
 body[data-series="sam-spade"] .spade-featured__heading .featured-anniversary__number {
+  padding-left: 10px;
   color: #ff0018;
   font-size: 95px;
   scale: .7 1;
