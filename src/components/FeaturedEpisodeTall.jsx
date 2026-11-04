@@ -1,10 +1,11 @@
 import React from 'react';
 import AudioPlayer from './AudioPlayer.jsx';
+import FeaturedAnniversaryHeader from './FeaturedAnniversaryHeader.jsx';
 
 /** Optional single-column featured panel; hidden by common CSS until a show enables it. */
 export default function FeaturedEpisodeTall({
   episode={}, anniversaryYears=75, anniversaryText=null,
-  headingText='YEARS AGO YESTERDAY', historicalDate='',
+  headingText='YEARS AGO YESTERDAY', historicalDate='', headerVariant=null,
   titleOverride=null, descriptionOverride=null, imageSrc=null, imageFallback='/sample.png'
 }) {
   const empty=!episode||episode.no_broadcast||!episode.title;
@@ -19,10 +20,10 @@ export default function FeaturedEpisodeTall({
       }}
       alt=""
     />
-    <header className="featured-episode-tall__heading">
+    {headerVariant ? <FeaturedAnniversaryHeader className={'featured-episode-tall__heading featured-anniversary--'+headerVariant} years={anniversaryText??anniversaryYears} text={headingText} date={historicalDate}/> : <header className="featured-episode-tall__heading">
       <div className="anniversary">{anniversaryText??anniversaryYears} {headingText}</div>
       <time>{historicalDate}</time>
-    </header>
+    </header>}
     <div className="featured-episode-tall__content">
       <div className="featured-episode-tall__details">
         <h3>{titleOverride??(empty?'No broadcast this date':episode.title)}</h3>
