@@ -153,7 +153,12 @@
           "href": "/dick-tracy",
           "featuredEligible": true,
           "tagline": "DETECTIVE RADIO ARCHIVE",
-          "anniversaryYears": 75
+          "anniversaryYears": 75,
+          "artwork": {
+            "mode": "page"
+          },
+          "showNav": false,
+          "showCardGrid": false
         },
         "dragnet": {
           "title": "Dragnet",
