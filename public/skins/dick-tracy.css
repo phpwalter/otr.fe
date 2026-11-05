@@ -78,12 +78,14 @@ body[data-series="dick-tracy"] .tracy-featured {
 body[data-series="dick-tracy"] .tracy-featured__anniversary {
   position: absolute;
   left: 110px;
-  top: 580px;
+  top: 586px;
   width: 505px;
   min-height: 76px;
   display: block;
   color: #20160e;
-  font: 400 55px/1 'Anton', sans-serif;
+  font: 400 80px/1 'Anton', sans-serif;
+  transform: scaleX(0.8);
+  transform-origin: center;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -93,12 +95,12 @@ body[data-series="dick-tracy"] .tracy-featured__date {
   left: 185px;
   top: 716px;
   width: 406px;
-  height: 48px;
+  height: 78px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffe1a0;
-  font: 400 32px/1 'Anton', sans-serif;
+  font: 400 42px/1 'Anton', sans-serif;
   letter-spacing: .8px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -109,7 +111,7 @@ body[data-series="dick-tracy"] .tracy-featured__art {
   left: 655px;
   top: 576px;
   width: 325px;
-  height: 197px;
+  height: 208px;
   background: url('/art/detective/dick-tracy/sample.png') center / cover no-repeat;
   overflow: hidden;
   pointer-events: none;
