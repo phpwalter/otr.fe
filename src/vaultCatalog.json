@@ -151,7 +151,7 @@
             "mode": "page"
           },
           "showNav": false,
-          "showCardGrid": false
+          "showCardGrid": true
         },
         "dick-tracy": {
           "title": "Dick Tracy",
