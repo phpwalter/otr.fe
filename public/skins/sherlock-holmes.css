@@ -29,23 +29,25 @@ body[data-series="sherlock-holmes"] .page.page-landing > .show-card-grid {
    left column = hover, right column = pressed. Idle is transparent.
    Menu dimensions are configurable without editing React. */
 body[data-series="sherlock-holmes"] .holmes-menu-sprite {
-  --holmes-menu-width: 300px;
+  --holmes-menu-width: 385px;
   --holmes-menu-height: 300px;
   position: absolute;
-  top: 360px;
-  left: 90px;
+  top: 390px;
+  left: 110px;
   z-index: 9;
   width: var(--holmes-menu-width);
   height: var(--holmes-menu-height);
   display: block;
+  box-sizing: border-box;
   padding: 0;
-  border: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
   background-image: none;
   background-repeat: no-repeat;
   background-size: 200% 600%;
   background-position: var(--holmes-menu-frame-x, 0%) var(--holmes-menu-frame-y, 0%);
   cursor: pointer;
-  outline-offset: 4px;
 }
 body[data-series="sherlock-holmes"] .holmes-menu-sprite.is-hovered {
   background-image: url('/art/detective/sherlock-holmes/menu.sprite.png');
