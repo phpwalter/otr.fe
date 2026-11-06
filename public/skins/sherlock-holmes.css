@@ -52,7 +52,7 @@ body[data-series="sherlock-holmes"] .holmes-menu-sprite.is-hovered {
   background-image: url('/art/detective/sherlock-holmes/menu.sprite.png');
 }
 
-/* Sherlock Holmes artwork cards: five cards surrounding an empty fourth track. */
+/* Sherlock Holmes artwork cards: five cards surrounding a featured-art frame in track four. */
 body[data-series="sherlock-holmes"] .page.page-landing > .show-card-grid {
   display: grid !important;
   position: absolute;
@@ -83,9 +83,38 @@ body[data-series="sherlock-holmes"] .show-card-grid__card {
   background-position: center;
   background-size: contain;
 }
-body[data-series="sherlock-holmes"] .show-card-grid__card:nth-child(1) { grid-column: 1; }
-body[data-series="sherlock-holmes"] .show-card-grid__card:nth-child(2) { grid-column: 2; }
-body[data-series="sherlock-holmes"] .show-card-grid__card:nth-child(3) { grid-column: 3; }
-body[data-series="sherlock-holmes"] .show-card-grid__card:nth-child(4) { grid-column: 5; }
-body[data-series="sherlock-holmes"] .show-card-grid__card:nth-child(5) { grid-column: 6; }
+body[data-series="sherlock-holmes"] .show-card-grid__card.card-0 { grid-column: 1; }
+body[data-series="sherlock-holmes"] .show-card-grid__card.card-1 { grid-column: 2; }
+body[data-series="sherlock-holmes"] .show-card-grid__card.card-2 { grid-column: 3; }
+body[data-series="sherlock-holmes"] .show-card-grid__card.card-3 { grid-column: 5; }
+body[data-series="sherlock-holmes"] .show-card-grid__card.card-4 { grid-column: 6; }
 body[data-series="sherlock-holmes"] .show-card-grid__card .card-image { display: none; }
+
+/* Artwork remains below the transparent foreground frame in column four. */
+body[data-series="sherlock-holmes"] .holmes-featured-frame {
+  position: relative;
+  grid-column: 4;
+  grid-row: 1;
+  min-width: 0;
+  width: 100%;
+  height: 190px;
+  isolation: isolate;
+}
+body[data-series="sherlock-holmes"] .holmes-featured-frame > .featured-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body[data-series="sherlock-holmes"] .holmes-featured-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: url('/art/detective/sherlock-holmes/feature.frame.png') center / contain no-repeat;
+}
