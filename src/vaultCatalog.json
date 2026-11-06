@@ -146,7 +146,12 @@
           "years": "1930–1959",
           "featuredEligible": true,
           "tagline": "THE WORLD’S GREATEST DETECTIVE COMES TO RADIO",
-          "anniversaryYears": 75
+          "anniversaryYears": 75,
+          "artwork": {
+            "mode": "page"
+          },
+          "showNav": false,
+          "showCardGrid": false
         },
         "dick-tracy": {
           "title": "Dick Tracy",
