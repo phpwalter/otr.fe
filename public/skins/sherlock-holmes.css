@@ -24,3 +24,37 @@ body[data-series="sherlock-holmes"] .page.page-landing > .featured-episode-tall,
 body[data-series="sherlock-holmes"] .page.page-landing > .show-card-grid {
   display: none !important;
 }
+
+/* Sherlock Holmes illustrated sprite menu, relative to the landing canvas.
+   Three equal-height vertical frames: default / hover / selected.
+   The component reads the actual PNG dimensions at runtime. */
+body[data-series="sherlock-holmes"] .holmes-menu-sprite {
+  position: absolute;
+  left: 90px;
+  top: 360px;
+  z-index: 9;
+  display: block;
+  padding: 0;
+  border: 0;
+  background-image: url('/art/detective/sherlock-holmes/menu.sprite.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+body[data-series="sherlock-holmes"] .holmes-menu-sprite:hover,
+body[data-series="sherlock-holmes"] .holmes-menu-sprite:focus-visible {
+  background-position: 0 calc(-1 * var(--holmes-sprite-frame-height, 0px));
+}
+body[data-series="sherlock-holmes"] .holmes-menu-sprite.is-active {
+  background-position: 0 calc(-2 * var(--holmes-sprite-frame-height, 0px));
+}
+body[data-series="sherlock-holmes"] .holmes-menu-sprite__source {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: none;
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
