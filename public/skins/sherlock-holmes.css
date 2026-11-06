@@ -1,25 +1,26 @@
-/* Independent sherlock-holmes presentation. Shared HTML/DOM remains unchanged. */
-.site{background:#100c0a;color:#e9cb95;font-family:Georgia,serif}
-.header{background:#0b0d11;border-bottom:2px solid #b68a3d;padding:15px 28px;}
-.header nav{display:flex;justify-content:center;gap:25px;}
-.header a{color:#e9cb95}.header a.active{color:#b68a3d}
-.masthead{font-size:12px;white-space:nowrap}
-.canvas{grid-template-columns:2.15fr 1fr;grid-template-areas:"hero featured" "cards cards" "about about";gap:15px;padding:16px}
-.hero{min-height:555px;border:1px solid #493728}
-.hero-art{background-image:linear-gradient(110deg,rgba(0,0,0,.64),rgba(0,0,0,.02)),url('/art/sherlock-holmes-hero.webp')}
-.hero-copy{padding:75px 45px;max-width:100%}
-.hero h1{font-family:Georgia,serif;font-style:normal;font-size:115px;color:#b68a3d;text-shadow:3px 4px #000}
-.tagline{color:#fff0ce}
-.hero-link{background:#b68a3d;color:#fff5de}
-.featured{border:2px solid #b68a3d;background:#100e0e;color:#e9cb95;}
-.anniversary-number{color:#b68a3d}
-.featured-art{background-image:url('/art/sherlock-holmes-card.webp')}
-.player button{border-color:#b68a3d;color:#b68a3d}
-.player input{accent-color:#b68a3d}
-.cards{grid-template-columns:repeat(5,1fr);align-self:start}
-.show-card-grid__card{background:#131b21;color:#e9cb95;border:1px solid #b68a3d}
-.show-card-grid__card .card-image{background-image:url('/art/sherlock-holmes-hero.webp')}
-.show-card-grid__card h2{color:#b68a3d}
-.about{border-top:1px solid #b68a3d}
-.footer{color:#e9cb95;font-size:12px}
-@media(max-width:1400px){.site{margin-left:0;margin-right:0}}
+/* Sherlock Holmes landing page only. Shared SiteHeader and SiteFooter stay intact.
+   The full-page image belongs at public/art/detective/sherlock-holmes/page.png. */
+body[data-series="sherlock-holmes"] .site-shell[data-artwork-mode="page"] {
+  --show-page-image: url('/art/detective/sherlock-holmes/page.png');
+  background-color: #100c0a;
+  background-position: 0 53px;
+  background-size: 1674px 886px;
+  background-repeat: no-repeat;
+}
+body[data-series="sherlock-holmes"] .site-shell > .page.page-landing {
+  top: 53px;
+  left: 0;
+  width: 1674px;
+  height: 886px;
+  min-height: 886px;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+}
+body[data-series="sherlock-holmes"] .page.page-landing > .hero,
+body[data-series="sherlock-holmes"] .page.page-landing > .show-nav,
+body[data-series="sherlock-holmes"] .page.page-landing > .featured-episode,
+body[data-series="sherlock-holmes"] .page.page-landing > .featured-episode-tall,
+body[data-series="sherlock-holmes"] .page.page-landing > .show-card-grid {
+  display: none !important;
+}
