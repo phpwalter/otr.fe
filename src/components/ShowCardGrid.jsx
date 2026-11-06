@@ -11,6 +11,7 @@ const shadowCards=[{label:'Episodes',desc:'Mystery. Intrigue. Justice.',image:'/
 export default function ShowCardGrid({slug,cards=[]}){
  const populated=slug==='sherlock-holmes'?holmesCards:slug==='shadow'?shadowCards:(cards.length?cards:defaultCards.map(([label,desc])=>({label,desc})));
  return <section className="cards show-card-grid" aria-label="Explore this radio show">
+ {slug==='sherlock-holmes'&&<div className="holmes-featured-frame" aria-label="Featured episode artwork"><div className="featured-art" role="img" aria-label="Featured episode artwork" /></div>}
  {Array.from({length:5},(_,i)=>{const card=populated[i];const empty=!card;
  const label=card?.label||'';const route=label==='The Shadow'?'the-shadow':label.toLowerCase().replaceAll(' ','-');
  const contents=<><div className="card-image" aria-hidden="true">{card?.image?<img src={card.image} alt="" />:null}</div><h2>{label}</h2><p>{card?.desc||''}</p></>;
