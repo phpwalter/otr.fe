@@ -33,7 +33,7 @@ body[data-series="sherlock-holmes"] .holmes-menu-sprite {
   --holmes-menu-height: 299px;
   position: absolute;
   top: 390px;
-  left: 105px;
+  left: 104px;
   z-index: 9;
   width: var(--holmes-menu-width);
   height: var(--holmes-menu-height);
