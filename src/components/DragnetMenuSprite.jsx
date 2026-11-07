@@ -26,10 +26,10 @@ export default function DragnetMenuSprite() {
         style={{
           left: item.left + 'px',
           width: item.width + 'px',
-          '--dragnet-sprite-width': (1430 * item.width / 714) + 'px',
-          '--dragnet-sprite-height': (890 * 54 / 133) + 'px',
-          '--dragnet-sprite-active-x': (-716 * item.width / 714) + 'px',
-          '--dragnet-sprite-y': (-index * (890 / 6) * 54 / 133) + 'px'
+          '--dragnet-sprite-width': (1430 * (item.width + 40) / 714) + 'px',
+          '--dragnet-sprite-height': (890 * 68 / 133) + 'px',
+          '--dragnet-sprite-active-x': (-716 * (item.width + 40) / 714) + 'px',
+          '--dragnet-sprite-y': (-index * (890 / 6) * 68 / 133) + 'px'
         }}
       ><span className="sr-only">{item.label}</span></a>;
     })}
