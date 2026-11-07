@@ -26,8 +26,7 @@ export default function DragnetMenuSprite() {
         style={{
           left: item.left + 'px',
           width: item.width + 'px',
-          '--dragnet-sprite-scale': item.width / 714,
-          '--dragnet-sprite-y': -(index * 890 / 6) + 'px'
+          '--dragnet-sprite-row': (index * 20) + '%'
         }}
       ><span className="sr-only">{item.label}</span></a>;
     })}
