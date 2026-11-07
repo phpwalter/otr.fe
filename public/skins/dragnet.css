@@ -64,13 +64,13 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
    frame beyond each clickable tab (20px horizontally, 7px vertically) so
    the painted state covers more of the baked-in parchment and lettering.
    Hotspots and navigation link dimensions remain unchanged. */
-body[data-series="dragnet"] .page.page-landing > .dragnet-menu-sprite {
+body[data-series="dragnet"] .site-shell > .dragnet-menu-sprite {
   position: absolute;
-  top: 4px;
+  top: 57px;
   left: 0;
   width: 1674px;
   height: 58px;
-  z-index: 10;
+  z-index: 20;
   margin: 0;
   padding: 0;
   pointer-events: none;
@@ -89,7 +89,7 @@ body[data-series="dragnet"] .dragnet-menu-sprite__link {
 body[data-series="dragnet"] .dragnet-menu-sprite__link::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: -4px;
   bottom: -7px;
   left: -20px;
   right: -20px;
