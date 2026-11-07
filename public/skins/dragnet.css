@@ -59,10 +59,11 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
   z-index: 1;
 }
 
-/* Six exact-size menu overlays. Source is a 1430 x 890 sprite:
-   hover column 0, active column 1; rows HOME through CONTACT.
-   Crop and scale each full frame to the painted tab bounds so underlying
-   lettering/panels cannot show around the hover/active image. */
+/* Dragnet sprite overlays: 1430 x 890 RGBA, 714 x 133 tab art.
+   The source artwork has transparent border margins. Extend its rendered
+   frame beyond each clickable tab (20px horizontally, 7px vertically) so
+   the painted state covers more of the baked-in parchment and lettering.
+   Hotspots and navigation link dimensions remain unchanged. */
 body[data-series="dragnet"] .page.page-landing > .dragnet-menu-sprite {
   position: absolute;
   top: 4px;
@@ -88,7 +89,10 @@ body[data-series="dragnet"] .dragnet-menu-sprite__link {
 body[data-series="dragnet"] .dragnet-menu-sprite__link::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: -7px;
+  bottom: -7px;
+  left: -20px;
+  right: -20px;
   background-image: none;
   background-repeat: no-repeat;
   background-size: var(--dragnet-sprite-width) var(--dragnet-sprite-height);
