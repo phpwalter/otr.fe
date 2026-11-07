@@ -7,7 +7,7 @@ body[data-series="dragnet"] .site-shell[data-artwork-mode="page"] {
 }
 body[data-series="dragnet"] .site-shell > .page.page-landing {
   position: absolute;
-  top: 0;
+  top: 53px;
   left: 0;
   width: 1674px;
   height: 886px;
@@ -96,18 +96,18 @@ body[data-series="dragnet"] .dragnet-menu-sprite__link::before {
   inset: 0;
   background-image: none;
   background-repeat: no-repeat;
-  background-size: 200% 600%;
-  background-position: 0 var(--dragnet-sprite-row, 0%);
+  background-size: var(--dragnet-sprite-width) var(--dragnet-sprite-height);
+  background-position: 0 var(--dragnet-sprite-y, 0px);
   pointer-events: none;
 }
 body[data-series="dragnet"] .dragnet-menu-sprite__link:hover:not(.is-active)::before,
 body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible:not(.is-active)::before {
   background-image: url('/art/detective/dragnet/menu.sprite.png');
-  background-position: 0 var(--dragnet-sprite-row, 0%);
+  background-position: 0 var(--dragnet-sprite-y, 0px);
 }
 body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active::before {
   background-image: url('/art/detective/dragnet/menu.sprite.png');
-  background-position: 100% var(--dragnet-sprite-row, 0%);
+  background-position: var(--dragnet-sprite-active-x) var(--dragnet-sprite-y, 0px);
 }
 body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
   outline: 2px solid #f4dca2;
