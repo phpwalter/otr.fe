@@ -6,7 +6,6 @@ import ShowNav from '../components/ShowNav.jsx';
 import ShadowSide from '../components/ShadowSide.jsx';
 import SamSpadeArtworkLinks from '../components/SamSpadeArtworkLinks.jsx';
 import DickTracyArtworkLinks from '../components/DickTracyArtworkLinks.jsx';
-import HolmesMenuSprite from '../components/HolmesMenuSprite.jsx';
 import HolmesFeaturedPanel from '../components/HolmesFeaturedPanel.jsx';
 import vaultCatalog from '../vaultCatalog.json';
 export default function LandingPage({slug,show,data={},historicalDate=''}) {
@@ -21,7 +20,6 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
     <p className="tagline">{show[1]}</p><a className="hero-link" href={'/'+slug+'/episodes'}>EXPLORE THE EPISODES →</a></div></section>
   {slug==='sam-spade'&&<SamSpadeArtworkLinks episode={display.episode??data.featured_episode} historicalDate={display.historicalDate??historicalDate} anniversaryYears={show[2]}/>}
   {slug==='dick-tracy'&&<DickTracyArtworkLinks episode={display.episode??data.featured_episode} historicalDate={display.historicalDate??historicalDate} anniversaryYears={show[2]} titleOverride={display.title??null} descriptionOverride={display.description??null}/>}
-  {slug==='sherlock-holmes'&&<HolmesMenuSprite/>}
   {slug==='sherlock-holmes'&&<HolmesFeaturedPanel episode={display.episode??data.featured_episode}/>}
   <ShowNav slug={slug} items={showConfig?.navItems ?? []}/>
   <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={display.headingText??'YEARS AGO YESTERDAY'} anniversaryLayout={display.anniversaryLayout??'dropcap'}
