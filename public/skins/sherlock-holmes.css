@@ -59,12 +59,12 @@ body[data-series="sherlock-holmes"] .page.page-landing > .show-card-grid {
   top: auto;
   right: 30px;
   bottom: 30px;
-  left: 26px;
-  width: auto;
+  left: auto;
+  width: max-content;
   height: auto;
   margin: 0;
   padding: 0;
-  grid-template-columns: 148px 148px minmax(0, 1fr) 148px 148px;
+  grid-template-columns: repeat(5, 148px);
   grid-template-rows: 250px;
   column-gap: 4px;
   row-gap: 0;
