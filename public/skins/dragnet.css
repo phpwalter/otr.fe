@@ -59,11 +59,6 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
   z-index: 1;
 }
 
-/* Dragnet owns its illustrated title/menu bar; do not superimpose the Vault header. */
-body[data-series="dragnet"] .site-shell > .vault-header {
-  display: none !important;
-}
-
 /* Six exact-size menu overlays. Source is a 1430 x 890 sprite:
    hover column 0, active column 1; rows HOME through CONTACT.
    Crop and scale each full frame to the painted tab bounds so underlying
