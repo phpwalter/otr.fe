@@ -4,7 +4,7 @@ const holmesCards=[
  {label:'Cases',image:'/art/detective/sherlock-holmes/card.episode.png',href:'/sherlock-holmes/episodes'},
  {label:'Characters',image:'/art/detective/sherlock-holmes/cards.cast.png',href:'/sherlock-holmes/cast'},
  {label:'Holmes',image:'/art/detective/sherlock-holmes/cards.holmes.png',href:'/sherlock-holmes'},
- {label:'Writers',href:'/sherlock-holmes/writers'},
+ {label:'Writers',image:'/art/detective/sherlock-holmes/cards.writers.png',href:'/sherlock-holmes/writers'},
  {label:'About',image:'/art/detective/sherlock-holmes/cards.about.png',href:'/sherlock-holmes/about'},
  {label:'Contact',image:'/art/detective/sherlock-holmes/cards.contact.png',href:'/sherlock-holmes/contact'}
 ];
