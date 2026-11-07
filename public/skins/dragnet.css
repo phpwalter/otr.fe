@@ -59,8 +59,9 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
   z-index: 1;
 }
 
-/* Dragnet file-tab sprite navigation. Sprite: 2 columns (hover, active) x 6 rows.
-   The original neutral tabs stay visible when no overlay is shown. */
+/* Dragnet sprite: 720 x 452 RGBA; each source cell is 360 x (452 / 6) px.
+   Scale uniformly to each tab width rather than stretching source artwork to 54px high.
+   Hover = left column; active = right column. */
 body[data-series="dragnet"] .page.page-landing > .dragnet-menu-sprite {
   position: absolute;
   top: 4px;
@@ -79,21 +80,33 @@ body[data-series="dragnet"] .dragnet-menu-sprite__link {
   display: block;
   box-sizing: border-box;
   background: transparent;
-  background-repeat: no-repeat;
-  background-size: 200% 600%;
-  background-position: 0 var(--dragnet-sprite-row, 0%);
   pointer-events: auto;
   cursor: pointer;
   outline-offset: 2px;
 }
-body[data-series="dragnet"] .dragnet-menu-sprite__link:hover:not(.is-active),
-body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible:not(.is-active) {
-  background-image: url('/art/detective/dragnet/menu.sprite.png');
-  background-position: 0 var(--dragnet-sprite-row, 0%);
+body[data-series="dragnet"] .dragnet-menu-sprite__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 360px;
+  height: 75.333333px;
+  transform-origin: left center;
+  transform: translateY(-50%) scale(var(--dragnet-sprite-scale, 1));
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 720px 452px;
+  background-position: 0 var(--dragnet-sprite-y, 0px);
+  pointer-events: none;
 }
-body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active {
+body[data-series="dragnet"] .dragnet-menu-sprite__link:hover:not(.is-active)::before,
+body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible:not(.is-active)::before {
   background-image: url('/art/detective/dragnet/menu.sprite.png');
-  background-position: 100% var(--dragnet-sprite-row, 0%);
+  background-position: 0 var(--dragnet-sprite-y, 0px);
+}
+body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active::before {
+  background-image: url('/art/detective/dragnet/menu.sprite.png');
+  background-position: -360px var(--dragnet-sprite-y, 0px);
 }
 body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
   outline: 2px solid #f4dca2;
