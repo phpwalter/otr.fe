@@ -111,3 +111,8 @@ body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active::before {
 body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
   outline: 2px solid #f4dca2;
 }
+
+/* Navigation labels are already provided by aria-label on each link. */
+body[data-series="dragnet"] .dragnet-menu-sprite__link > .sr-only {
+  display: none !important;
+}
