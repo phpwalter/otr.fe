@@ -51,6 +51,7 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .featured-art {
 body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
   position: absolute;
   inset: 0;
+  top: 4px;
   display: block;
   width: 100%;
   height: 100%;
