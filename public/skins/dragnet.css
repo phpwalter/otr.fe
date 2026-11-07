@@ -58,3 +58,43 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
   object-fit: fill;
   z-index: 1;
 }
+
+/* Dragnet file-tab sprite navigation. Sprite: 2 columns (hover, active) x 6 rows.
+   The original neutral tabs stay visible when no overlay is shown. */
+body[data-series="dragnet"] .page.page-landing > .dragnet-menu-sprite {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1674px;
+  height: 58px;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+body[data-series="dragnet"] .dragnet-menu-sprite__link {
+  position: absolute;
+  top: 0;
+  height: 54px;
+  display: block;
+  box-sizing: border-box;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: 200% 600%;
+  background-position: 0 var(--dragnet-sprite-row, 0%);
+  pointer-events: auto;
+  cursor: pointer;
+  outline-offset: 2px;
+}
+body[data-series="dragnet"] .dragnet-menu-sprite__link:hover:not(.is-active),
+body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible:not(.is-active) {
+  background-image: url('/art/detective/dragnet/menu.sprite.png');
+  background-position: 0 var(--dragnet-sprite-row, 0%);
+}
+body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active {
+  background-image: url('/art/detective/dragnet/menu.sprite.png');
+  background-position: 100% var(--dragnet-sprite-row, 0%);
+}
+body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
+  outline: 2px solid #f4dca2;
+}
