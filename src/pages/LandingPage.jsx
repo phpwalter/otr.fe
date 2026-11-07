@@ -8,6 +8,7 @@ import SamSpadeArtworkLinks from '../components/SamSpadeArtworkLinks.jsx';
 import DickTracyArtworkLinks from '../components/DickTracyArtworkLinks.jsx';
 import HolmesFeaturedPanel from '../components/HolmesFeaturedPanel.jsx';
 import DragnetArtworkLayers from '../components/DragnetArtworkLayers.jsx';
+import DragnetMenuSprite from '../components/DragnetMenuSprite.jsx';
 import vaultCatalog from '../vaultCatalog.json';
 export default function LandingPage({slug,show,data={},historicalDate=''}) {
  const showConfig = Object.values(vaultCatalog.categories).map(category => category.shows[slug]).find(Boolean);
@@ -23,6 +24,7 @@ export default function LandingPage({slug,show,data={},historicalDate=''}) {
   {slug==='dick-tracy'&&<DickTracyArtworkLinks episode={display.episode??data.featured_episode} historicalDate={display.historicalDate??historicalDate} anniversaryYears={show[2]} titleOverride={display.title??null} descriptionOverride={display.description??null}/>}
   {slug==='sherlock-holmes'&&<HolmesFeaturedPanel episode={display.episode??data.featured_episode}/>}
   {slug==='dragnet'&&<DragnetArtworkLayers/>}
+  {slug==='dragnet'&&<DragnetMenuSprite/>}
   <ShowNav slug={slug} items={showConfig?.navItems ?? []}/>
   <FeaturedEpisode episode={display.episode??data.featured_episode} anniversaryYears={show[2]} anniversaryText={display.anniversaryText??null} headingText={display.headingText??'YEARS AGO YESTERDAY'} anniversaryLayout={display.anniversaryLayout??'dropcap'}
     historicalDate={display.historicalDate??historicalDate}
