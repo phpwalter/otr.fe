@@ -52,21 +52,21 @@ body[data-series="sherlock-holmes"] .holmes-menu-sprite.is-hovered {
   background-image: url('/art/detective/sherlock-holmes/menu.sprite.png');
 }
 
-/* Sherlock Holmes artwork cards: Cases, Characters, Holmes, About, Contact. */
+/* Sherlock Holmes artwork cards: Cases, Characters, Holmes, Writers, About, Contact. */
 body[data-series="sherlock-holmes"] .page.page-landing > .show-card-grid {
   display: grid !important;
   position: absolute;
   top: auto;
-  right: 30px;
+  right: 60px;
   bottom: 30px;
   left: auto;
   width: max-content;
   height: auto;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(5, 148px);
+  grid-template-columns: repeat(6, 160px);
   grid-template-rows: 250px;
-  column-gap: 4px;
+  column-gap: 10px;
   row-gap: 0;
   z-index: 8;
 }
@@ -88,5 +88,18 @@ body[data-series="sherlock-holmes"] .show-card-grid__card.card-1 { grid-column: 
 body[data-series="sherlock-holmes"] .show-card-grid__card.card-2 { grid-column: 3; }
 body[data-series="sherlock-holmes"] .show-card-grid__card.card-3 { grid-column: 4; }
 body[data-series="sherlock-holmes"] .show-card-grid__card.card-4 { grid-column: 5; }
+body[data-series="sherlock-holmes"] .show-card-grid__card.card-5 { grid-column: 6; }
 body[data-series="sherlock-holmes"] .show-card-grid__card .card-image { display: none; }
 
+
+/* Text fallback until the Sherlock Holmes Writers card artwork is supplied. */
+body[data-series="sherlock-holmes"] .show-card-grid__card.holmes-card--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e9cb95;
+  font: 700 22px Georgia, serif;
+  text-decoration: none;
+  background: rgba(16, 12, 10, .65);
+  border: 1px solid #b68a3d;
+}
