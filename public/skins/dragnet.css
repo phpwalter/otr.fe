@@ -47,6 +47,8 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .featured-art {
   height: var(--dragnet-feature-height);
   object-fit: cover;
   object-position: center;
+  transform: rotate(-9deg);
+  transform-origin: center center;
   z-index: 0;
 }
 body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
