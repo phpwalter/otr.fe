@@ -7,6 +7,7 @@ import {preview} from './api.js';
 import ShowShell from './components/ShowShell.jsx';
 import LandingPage from './pages/LandingPage.jsx';
 import EpisodesPage from './pages/EpisodesPage.jsx';
+import DragnetEpisodesPage from './pages/DragnetEpisodesPage.jsx';
 import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
 import CastPage from './pages/CastPage.jsx';
 import TravelerSectionPage from './pages/TravelerSectionPage.jsx';
@@ -54,7 +55,7 @@ function ShowApp(){
  let page;
  switch(route.type){
   case 'landing':page=<LandingPage slug={slug} show={show} data={pageData} historicalDate={anniversary(show[2])}/>;break;
-  case 'episodes':page=<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
+  case 'episodes':page=slug==='dragnet'?<DragnetEpisodesPage data={pageData}/>:<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
   case 'cast':page=<CastPage slug={slug} show={show} data={pageData}/>;break;
   case 'innerSanctumSection':page=<InnerSanctumSectionPage slug={slug} section={route.section}/>;break;
