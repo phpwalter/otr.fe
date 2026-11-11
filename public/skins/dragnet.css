@@ -104,3 +104,85 @@ body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
 body[data-series="dragnet"] .dragnet-menu-sprite__link > .sr-only {
   display: none !important;
 }
+
+/* Dragnet episode archive: isolated from the landing-page artwork. */
+body[data-series="dragnet"] .site-shell > .page.dragnet-episodes-page {
+  position:absolute;top:53px;left:0;width:1674px;height:951px;overflow:hidden;
+  color:#261508;background:#dfab6b;font-family:Georgia,'Times New Roman',serif;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__art {
+  position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__nav {
+  position:absolute;left:43px;top:113px;width:200px;height:600px;z-index:6;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__nav a {
+  position:absolute;left:0;width:100%;height:100px;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__nav a:focus-visible {outline:3px solid #811a13;outline-offset:-5px;}
+body[data-series="dragnet"] .dragnet-episodes-page__filters {
+  position:absolute;left:279px;top:331px;width:223px;z-index:3;
+  display:flex;flex-direction:column;gap:7px;font:bold 17px Georgia,serif;text-transform:uppercase;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__filters select,
+body[data-series="dragnet"] .dragnet-episodes-page__filters input {
+  color:#29170e;background:#f9dfa9;border:1px solid #886037;border-radius:5px;
+  padding:6px 9px;min-height:37px;width:100%;font:16px Georgia,serif;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__filters input {margin-top:20px;}
+body[data-series="dragnet"] .dragnet-episodes-page__list {
+  position:absolute;left:552px;top:309px;width:517px;height:500px;z-index:3;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__rows {height:412px;overflow-y:auto;}
+body[data-series="dragnet"] .dragnet-episodes-page__row {
+  display:grid;grid-template-columns:46px minmax(0,1fr) 116px 22px;gap:6px;align-items:center;
+  width:100%;height:39px;padding:4px 7px;border:0;border-bottom:1px solid #b47e41;
+  background:#f4d39c;color:#261508;text-align:left;cursor:pointer;
+  font:600 14px Georgia,serif;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__row:nth-child(even) {background:#e8c18d;}
+body[data-series="dragnet"] .dragnet-episodes-page__row.is-selected,
+body[data-series="dragnet"] .dragnet-episodes-page__row:hover,
+body[data-series="dragnet"] .dragnet-episodes-page__row:focus-visible {
+  background:#79180f;color:#fff2dc;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__row span:nth-child(2) {
+  overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__row time {white-space:nowrap;}
+body[data-series="dragnet"] .dragnet-episodes-page__pagination {
+  display:flex;align-items:center;gap:8px;justify-content:space-between;
+  font:bold 15px Georgia,serif;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__pagination button {
+  background:#f2d3a0;border:1px solid #875c30;border-radius:5px;
+  padding:5px 10px;color:#311a0d;cursor:pointer;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__pagination button:disabled {opacity:.45;cursor:default;}
+body[data-series="dragnet"] .dragnet-episodes-page__detail {
+  position:absolute;left:1152px;top:292px;width:457px;height:498px;
+  padding:0 8px;z-index:3;color:#261508;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__detail h2 {
+  font:bold italic 30px/1.15 Georgia,serif;text-align:center;text-transform:uppercase;
+  margin:0 0 8px;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__number,
+body[data-series="dragnet"] .dragnet-episodes-page__detail time {
+  display:block;text-align:center;font:bold 17px Georgia,serif;margin:5px 0;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__desc {
+  position:absolute;left:226px;top:173px;width:223px;max-height:166px;overflow-y:auto;
+  margin:0;font:16px/1.3 'Courier New',monospace;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__player {
+  position:absolute;left:0;bottom:0;width:100%;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__player .audio-player {
+  margin:0;display:flex;gap:6px;align-items:center;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__player .audio-player button {
+  color:#fff;background:#85170e;
+}
+body[data-series="dragnet"] .dragnet-episodes-page__player .audio-player input {accent-color:#80130e;}
