@@ -26,10 +26,10 @@ body[data-series="dragnet"] .page.page-landing > .show-card-grid {
 }
 body[data-series="dragnet"] .dragnet-artwork-layers {
   /* Sample image behind the angled photo opening in the lower-right feature. */
-  --dragnet-feature-left: 972px;
-  --dragnet-feature-top: 516px;
-  --dragnet-feature-width: 310px;
-  --dragnet-feature-height: 230px;
+  --dragnet-feature-left: 952px;
+  --dragnet-feature-top: 496px;
+  --dragnet-feature-width: 350px;
+  --dragnet-feature-height: 350px;
   position: absolute;
   inset: 0;
   width: 1674px;
