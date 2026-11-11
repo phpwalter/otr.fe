@@ -25,10 +25,11 @@ body[data-series="dragnet"] .page.page-landing > .show-card-grid {
   display: none !important;
 }
 body[data-series="dragnet"] .dragnet-artwork-layers {
-  --dragnet-feature-left: 30px;
-  --dragnet-feature-bottom: 30px;
-  --dragnet-feature-width: 550px;
-  --dragnet-feature-height: 320px;
+  /* Sample image behind the angled photo opening in the lower-right feature. */
+  --dragnet-feature-left: 972px;
+  --dragnet-feature-top: 516px;
+  --dragnet-feature-width: 310px;
+  --dragnet-feature-height: 230px;
   position: absolute;
   inset: 0;
   width: 1674px;
@@ -41,7 +42,7 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .featured-art {
   display: block;
   position: absolute;
   left: var(--dragnet-feature-left);
-  bottom: var(--dragnet-feature-bottom);
+  top: var(--dragnet-feature-top);
   width: var(--dragnet-feature-width);
   height: var(--dragnet-feature-height);
   object-fit: cover;
