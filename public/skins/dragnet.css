@@ -59,17 +59,15 @@ body[data-series="dragnet"] .dragnet-artwork-layers > .dragnet-page-art {
   z-index: 1;
 }
 
-/* Dragnet sprite overlays: 1430 x 890 RGBA, 714 x 133 tab art.
-   The source artwork has transparent border margins. Extend its rendered
-   frame beyond each clickable tab (20px horizontally, 7px vertically) so
-   the painted state covers more of the baked-in parchment and lettering.
-   Hotspots and navigation link dimensions remain unchanged. */
+/* Dragnet vertical navigation: page-art coordinates (80px, 96px).
+   The nav is portaled to .site-shell, so account for the page's 53px top
+   offset: 53px + 96px = 149px. New vertical sprite art is not yet supplied. */
 body[data-series="dragnet"] .site-shell > .dragnet-menu-sprite {
   position: absolute;
-  top: 57px;
-  left: 0;
-  width: 1674px;
-  height: 58px;
+  top: 149px;
+  left: 80px;
+  width: 214px;
+  height: 600px;
   z-index: 20;
   margin: 0;
   padding: 0;
@@ -77,42 +75,29 @@ body[data-series="dragnet"] .site-shell > .dragnet-menu-sprite {
 }
 body[data-series="dragnet"] .dragnet-menu-sprite__link {
   position: absolute;
-  top: 0;
-  height: 54px;
+  left: 0;
+  width: 214px;
+  height: 100px;
   display: block;
   box-sizing: border-box;
   background: transparent;
   pointer-events: auto;
   cursor: pointer;
-  outline-offset: 2px;
+  outline-offset: -3px;
 }
-body[data-series="dragnet"] .dragnet-menu-sprite__link::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  bottom: -7px;
-  left: -20px;
-  right: -20px;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-size: var(--dragnet-sprite-width) var(--dragnet-sprite-height);
-  background-position: 0 var(--dragnet-sprite-y, 0px);
-  pointer-events: none;
+/* Preserve hover, active and keyboard-focus states without using the old
+   horizontal sprite. New vertical artwork can be applied to these states. */
+body[data-series="dragnet"] .dragnet-menu-sprite__link:hover,
+body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
+  background: rgba(255, 237, 188, 0.12);
 }
-body[data-series="dragnet"] .dragnet-menu-sprite__link:hover:not(.is-active)::before,
-body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible:not(.is-active)::before {
-  background-image: url('/art/detective/dragnet/menu.sprite.png');
-  background-position: 0 var(--dragnet-sprite-y, 0px);
-}
-body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active::before {
-  background-image: url('/art/detective/dragnet/menu.sprite.png');
-  background-position: var(--dragnet-sprite-active-x) var(--dragnet-sprite-y, 0px);
+body[data-series="dragnet"] .dragnet-menu-sprite__link.is-active {
+  background: rgba(122, 45, 24, 0.10);
 }
 body[data-series="dragnet"] .dragnet-menu-sprite__link:focus-visible {
   outline: 2px solid #f4dca2;
 }
-
-/* Navigation labels are already provided by aria-label on each link. */
+/* Each link has aria-label; no visible text or duplicate screen-reader label. */
 body[data-series="dragnet"] .dragnet-menu-sprite__link > .sr-only {
   display: none !important;
 }
