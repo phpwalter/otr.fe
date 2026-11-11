@@ -1,15 +1,15 @@
 import React, {useLayoutEffect, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';
 
-// The 2 x 6 sheet is ordered: hover (left), active (right).
-// Coordinates are fixed pixels relative to the 1674 x 886 Dragnet page art.
+// Six vertical navigation hotspots, ordered from top to bottom.
+// Artwork is intentionally omitted until the new vertical sprite is supplied.
 const MENU = [
-  {label: 'HOME', route: '', left: 281, width: 156},
-  {label: 'EPISODES', route: 'episodes', left: 434, width: 180},
-  {label: 'CAST', route: 'cast', left: 614, width: 165},
-  {label: 'GALLERY', route: 'gallery', left: 778, width: 180},
-  {label: 'HISTORY', route: 'history', left: 955, width: 176},
-  {label: 'CONTACT', route: 'contact', left: 1130, width: 169}
+  {label: 'HOME', route: ''},
+  {label: 'EPISODES', route: 'episodes'},
+  {label: 'CAST', route: 'cast'},
+  {label: 'GALLERY', route: 'gallery'},
+  {label: 'HISTORY', route: 'history'},
+  {label: 'CONTACT', route: 'contact'}
 ];
 
 export default function DragnetMenuSprite() {
@@ -31,14 +31,7 @@ export default function DragnetMenuSprite() {
         href={href}
         aria-label={item.label}
         aria-current={active ? 'page' : undefined}
-        style={{
-          left: item.left + 'px',
-          width: item.width + 'px',
-          '--dragnet-sprite-width': (1430 * (item.width + 40) / 714) + 'px',
-          '--dragnet-sprite-height': (890 * 65 / 133) + 'px',
-          '--dragnet-sprite-active-x': (-716 * (item.width + 40) / 714) + 'px',
-          '--dragnet-sprite-y': (-index * (890 / 6) * 65 / 133) + 'px'
-        }}
+        style={{top: (index * 100) + 'px'}}
       ><span className="sr-only">{item.label}</span></a>;
     })}
   </nav>;
