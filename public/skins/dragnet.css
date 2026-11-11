@@ -1,5 +1,5 @@
 /* Dragnet full-page foreground art with a featured image below its transparent opening.
-   All coordinates are relative to the fixed 1674 x 886 artwork, not the viewport. */
+   All coordinates are relative to the fixed 1674px-wide artwork, not the viewport. */
 body[data-series="dragnet"] .site-shell[data-artwork-mode="page"] {
   --show-page-image: none;
   background-image: none;
@@ -10,8 +10,8 @@ body[data-series="dragnet"] .site-shell > .page.page-landing {
   top: 53px;
   left: 0;
   width: 1674px;
-  height: 886px;
-  min-height: 886px;
+  height: 951px;
+  min-height: 951px;
   padding: 0;
   margin: 0;
   background: transparent;
@@ -32,7 +32,7 @@ body[data-series="dragnet"] .dragnet-artwork-layers {
   position: absolute;
   inset: 0;
   width: 1674px;
-  height: 886px;
+  height: 951px;
   overflow: hidden;
   z-index: 1;
   pointer-events: none;
