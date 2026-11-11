@@ -14,7 +14,10 @@ export default function DragnetEpisodesPage({data={}}){
  const selected=matching.find((e,i)=>id(e,i)===chosen)??visible[0]??null;
  const active=selected&&id(selected,matching.indexOf(selected));
  return <main className="page dragnet-episodes-page" data-page-type="episodes">
-   <img className="dragnet-episodes-page__art" src="/art/detective/dragnet/episode.page.png" alt="" aria-hidden="true"/>
+   <div className="dragnet-episodes-page__artwork-layers" aria-hidden="true">
+    <img className="featured-art" src="/art/detective/dragnet/sample.png" alt=""/>
+    <img className="dragnet-page-art" src="/art/detective/dragnet/episode.page.png" alt=""/>
+   </div>
    <nav className="dragnet-episodes-page__nav" aria-label="Dragnet sections">{['HOME','EPISODES','CAST','GALLERY','HISTORY','CONTACT'].map((label,i)=><a key={label} href={'/dragnet'+(i?'/'+label.toLowerCase():'')} style={{top:i*100+'px'}} aria-label={label} aria-current={i===1?'page':undefined}><span className="sr-only">{label}</span></a>)}</nav>
    <section className="dragnet-episodes-page__filters" aria-label="Filter episodes">
     <label htmlFor="dragnet-season">Season</label><select id="dragnet-season" value={season} onChange={e=>setSeason(e.target.value)}><option value="all">All Seasons</option>{seasons.map(s=><option key={s} value={String(s)}>Season {s}</option>)}</select>
