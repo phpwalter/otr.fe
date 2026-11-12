@@ -10,6 +10,7 @@ import EpisodesPage from './pages/EpisodesPage.jsx';
 import DragnetEpisodesPage from './pages/DragnetEpisodesPage.jsx';
 import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
 import CastPage from './pages/CastPage.jsx';
+import DragnetCastPage from './pages/DragnetCastPage.jsx';
 import TravelerSectionPage from './pages/TravelerSectionPage.jsx';
 import WhistlerSectionPage from './pages/WhistlerSectionPage.jsx';
 import InnerSanctumSectionPage from './pages/InnerSanctumSectionPage.jsx';
@@ -57,7 +58,7 @@ function ShowApp(){
   case 'landing':page=<LandingPage slug={slug} show={show} data={pageData} historicalDate={anniversary(show[2])}/>;break;
   case 'episodes':page=slug==='dragnet'?<DragnetEpisodesPage data={pageData}/>:<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
-  case 'cast':page=<CastPage slug={slug} show={show} data={pageData}/>;break;
+  case 'cast':page=slug==='dragnet'?<DragnetCastPage data={pageData}/>:<CastPage slug={slug} show={show} data={pageData}/>;break;
   case 'innerSanctumSection':page=<InnerSanctumSectionPage slug={slug} section={route.section}/>;break;
   case 'whistlerSection':page=<WhistlerSectionPage slug={slug} section={route.section}/>;break;
   case 'travelerSection':page=<TravelerSectionPage slug={slug} section={route.section}/>;break;
