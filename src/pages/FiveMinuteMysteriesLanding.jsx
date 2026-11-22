@@ -1,6 +1,6 @@
 import React from 'react';
 
-const sampleArtwork = '/art/mystery/5mm/sample.png';
+const sampleArtwork = '/art/mystery/five-minute-mysteries/sample.png';
 
 const cards = [
   {label: 'Episodes', path: 'episodes', left: 857, arrow: 1066},
