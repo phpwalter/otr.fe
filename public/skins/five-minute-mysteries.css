@@ -22,11 +22,23 @@ body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing
 
 .five-minute-landing__art {
   display: block;
+  position: relative;
+}
+
+.five-minute-landing__picture {
+  position: absolute;
+  top: 634px;
+  left: 46px;
+  width: 348px;
+  height: 263px;
+  object-fit: cover;
 }
 
 /* Scale the artwork and its card overlays from the same fixed top edge. */
-.five-minute-landing__art,
+.five-minute-landing__artwork,
 .five-minute-cards {
+  position: absolute;
+  inset: 0;
   height: 932px;
   transform: scaleY(calc(935 / 932));
   transform-origin: top center;
@@ -41,8 +53,6 @@ body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing
 }
 
 .five-minute-cards {
-  position: absolute;
-  inset: 0;
   pointer-events: none;
 }
 

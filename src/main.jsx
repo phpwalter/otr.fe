@@ -56,7 +56,7 @@ function ShowApp(){
  const pageData=data||(route.type==='landing'?preview:{});
  let page;
  switch(route.type){
-  case 'landing':page=slug==='five-minute-mysteries'?<FiveMinuteMysteriesLanding slug={slug} title={show[0]}/>:<LandingPage slug={slug} show={show} data={pageData} historicalDate={anniversary(show[2])}/>;break;
+  case 'landing':page=slug==='five-minute-mysteries'?<FiveMinuteMysteriesLanding slug={slug} title={show[0]} episode={pageData.featured_episode}/>:<LandingPage slug={slug} show={show} data={pageData} historicalDate={anniversary(show[2])}/>;break;
   case 'episodes':page=slug==='dragnet'?<DragnetEpisodesPage data={pageData}/>:<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
   case 'cast':page=slug==='dragnet'?<DragnetCastPage data={pageData}/>:<CastPage slug={slug} show={show} data={pageData}/>;break;
