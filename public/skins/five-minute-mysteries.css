@@ -1,0 +1,108 @@
+body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing) {
+  width: 1688px;
+  height: 1111px;
+}
+
+.site-shell:has(> .five-minute-landing) > :is(.vault-header, .vault-footer) {
+  width: 1688px;
+}
+
+.site-shell:has(> .five-minute-landing) > .vault-footer {
+  top: 1020px;
+}
+
+.site-shell > .page.five-minute-landing {
+  --five-minute-art: url("/art/mystery/five-minute-mysteries/page.png");
+  top: 88px;
+  width: 1688px;
+  height: 932px;
+  padding: 0;
+  background: #180e08;
+}
+
+.five-minute-landing__art {
+  display: block;
+}
+
+.five-minute-landing__description {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.five-minute-cards {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.five-minute-card {
+  position: absolute;
+  top: 615px;
+  left: var(--card-left);
+  width: 262px;
+  height: 300px;
+  border-radius: 14px;
+  pointer-events: auto;
+}
+
+.five-minute-card__heading,
+.five-minute-card__arrow {
+  display: none;
+  position: absolute;
+  top: 16px;
+  height: 41px;
+  background-image: var(--five-minute-art);
+  background-repeat: no-repeat;
+}
+
+.five-minute-card__heading {
+  left: 15px;
+  right: 15px;
+}
+
+.five-minute-card__arrow {
+  left: var(--arrow-offset);
+  width: 32px;
+}
+
+.five-minute-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .five-minute-card:hover::after {
+    background: linear-gradient(180deg, #ffc76a38, transparent 70px);
+    box-shadow: inset 0 0 0 2px #ffcf7e, 0 0 9px #d59449;
+  }
+
+  .five-minute-card:hover .five-minute-card__arrow {
+    display: block;
+    background-position: calc(3px - var(--card-left) - var(--arrow-offset)) -631px;
+  }
+}
+
+.five-minute-card:focus-visible {
+  outline: 3px solid #ffe299;
+  outline-offset: 2px;
+}
+
+.five-minute-card:active .five-minute-card__arrow {
+  display: none;
+}
+
+.five-minute-card:active .five-minute-card__heading {
+  display: block;
+  background-position: calc(-15px - var(--card-left)) -629px;
+}
+
+.five-minute-card:active::after {
+  background: transparent;
+  box-shadow: inset 0 5px 12px #251205c9, inset 0 0 0 2px #6c411c;
+}

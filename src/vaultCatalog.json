@@ -229,6 +229,11 @@
     },
     "mystery": {
       "shows": {
+        "five-minute-mysteries": {
+          "title": "Five Minute Mysteries",
+          "href": "/five-minute-mysteries",
+          "tagline": "Can you solve it in five minutes?"
+        },
         "suspense": {
           "navItems": [
             [

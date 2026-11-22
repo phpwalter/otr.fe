@@ -6,6 +6,7 @@ import {parseShowRoute,fetchPageData} from './api/pageApi.js';
 import {preview} from './api.js';
 import ShowShell from './components/ShowShell.jsx';
 import LandingPage from './pages/LandingPage.jsx';
+import FiveMinuteMysteriesLanding from './pages/FiveMinuteMysteriesLanding.jsx';
 import EpisodesPage from './pages/EpisodesPage.jsx';
 import DragnetEpisodesPage from './pages/DragnetEpisodesPage.jsx';
 import EpisodeDetailPage from './pages/EpisodeDetailPage.jsx';
@@ -55,10 +56,11 @@ function ShowApp(){
  const pageData=data||(route.type==='landing'?preview:{});
  let page;
  switch(route.type){
-  case 'landing':page=<LandingPage slug={slug} show={show} data={pageData} historicalDate={anniversary(show[2])}/>;break;
+  case 'landing':page=slug==='five-minute-mysteries'?<FiveMinuteMysteriesLanding slug={slug} title={show[0]}/>:<LandingPage slug={slug} show={show} data={pageData} historicalDate={anniversary(show[2])}/>;break;
   case 'episodes':page=slug==='dragnet'?<DragnetEpisodesPage data={pageData}/>:<EpisodesPage slug={slug} show={show} data={pageData}/>;break;
   case 'episodeDetail':page=<EpisodeDetailPage slug={slug} show={show} data={pageData}/>;break;
   case 'cast':page=slug==='dragnet'?<DragnetCastPage data={pageData}/>:<CastPage slug={slug} show={show} data={pageData}/>;break;
+  case 'writers':page=<CastPage slug={slug} show={show} data={pageData} section="writers"/>;break;
   case 'innerSanctumSection':page=<InnerSanctumSectionPage slug={slug} section={route.section}/>;break;
   case 'whistlerSection':page=<WhistlerSectionPage slug={slug} section={route.section}/>;break;
   case 'travelerSection':page=<TravelerSectionPage slug={slug} section={route.section}/>;break;
