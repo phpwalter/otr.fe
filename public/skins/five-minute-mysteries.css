@@ -1,6 +1,6 @@
 body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing) {
   width: 1688px;
-  height: 1089px;
+  height: 1085px;
 }
 
 .site-shell:has(> .five-minute-landing) > :is(.vault-header, .vault-footer) {
@@ -8,12 +8,12 @@ body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing
 }
 
 .site-shell:has(> .five-minute-landing) > .vault-footer {
-  top: 998px;
+  top: 994px;
 }
 
 .site-shell > .page.five-minute-landing {
   --five-minute-art: url("/art/mystery/five-minute-mysteries/page.png");
-  top: 66px;
+  top: 62px;
   width: 1688px;
   height: 932px;
   padding: 0;
