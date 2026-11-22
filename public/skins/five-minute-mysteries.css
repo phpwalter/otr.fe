@@ -1,6 +1,6 @@
 body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing) {
   width: 1688px;
-  height: 1085px;
+  height: 1088px;
 }
 
 .site-shell:has(> .five-minute-landing) > :is(.vault-header, .vault-footer) {
@@ -8,20 +8,28 @@ body[data-series="five-minute-mysteries"] .site-shell:has(> .five-minute-landing
 }
 
 .site-shell:has(> .five-minute-landing) > .vault-footer {
-  top: 994px;
+  top: 997px;
 }
 
 .site-shell > .page.five-minute-landing {
   --five-minute-art: url("/art/mystery/five-minute-mysteries/page.png");
   top: 62px;
   width: 1688px;
-  height: 932px;
+  height: 935px;
   padding: 0;
   background: #180e08;
 }
 
 .five-minute-landing__art {
   display: block;
+}
+
+/* Scale the artwork and its card overlays from the same fixed top edge. */
+.five-minute-landing__art,
+.five-minute-cards {
+  height: 932px;
+  transform: scaleY(calc(935 / 932));
+  transform-origin: top center;
 }
 
 .five-minute-landing__description {
