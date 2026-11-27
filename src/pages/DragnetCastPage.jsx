@@ -1,4 +1,5 @@
 import React, {useMemo, useState} from 'react';
+import PersonPortrait from '../components/PersonPortrait.jsx';
 
 const ROOT='/art/detective/dragnet/';
 const names=['HOME','EPISODES','CAST','GALLERY','HISTORY','CONTACT'];
@@ -13,10 +14,9 @@ export default function DragnetCastPage({data={}}){
   const filtered=useMemo(()=>cast.filter(p=>[p.name,p.role,p.character,p.biography].filter(Boolean).join(' ').toLowerCase().includes(query.toLowerCase().trim())),[cast,query]);
   const selected=filtered.find((p,i)=>personId(p,i)===chosen)??filtered[0]??null;
   const selectedKey=selected?personId(selected,filtered.indexOf(selected)):null;
-  const portrait=selected?.portrait_url??selected?.image_url??selected?.photo_url??ROOT+'sample.png';
   return <main className="page dragnet-cast-page" data-page-type="cast">
     <div className="dragnet-cast-page__artwork" aria-hidden="true">
-      <img className="dragnet-cast-page__portrait" src={portrait} alt=""/>
+      <PersonPortrait key={selectedKey??"none"} className="dragnet-cast-page__portrait" person={selected??{}} fallbackUrl={ROOT+"sample.png"} alt=""/>
       <img className="dragnet-cast-page__background" src={ROOT+'cast.page.png'} alt=""/>
     </div>
     <nav className="dragnet-cast-page__nav" aria-label="Dragnet sections">
