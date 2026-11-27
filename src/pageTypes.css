@@ -31,3 +31,7 @@
 
 /* Full-page artwork is presented by the show skin, not a banner hero. */
 .page-landing[data-artwork-mode="page"] > .hero.show-hero{display:none!important}
+
+/* Preserve the existing decorative cast card while displaying slug-based portraits. */
+.person-card__portrait{overflow:hidden}
+.person-card__portrait-image{display:block;width:100%;height:100%;object-fit:cover}
